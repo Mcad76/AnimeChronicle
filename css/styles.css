@@ -130,7 +130,7 @@ button { cursor: pointer; }
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  min-height: 36px;
+  min-height: 30px;
 }
 .topbar__fecha { color: var(--cyan); text-transform: capitalize; white-space: nowrap; font-weight: 700; }
 .topbar__edicion { color: #7d789f; }
@@ -170,12 +170,19 @@ button { cursor: pointer; }
 .audio-btn[aria-pressed="false"] { color: #6b6690; }
 .audio-btn--sfx[aria-pressed="true"] { color: var(--yellow); }
 
-/* ---------- Cabecera ---------- */
+/* ---------- Franja superior fija ---------- */
+.cabecera-fija {
+  position: sticky;
+  top: 0;
+  z-index: 70;
+}
+
+/* ---------- Cabecera compacta ---------- */
 .masthead {
   position: relative;
   z-index: 60;
-  margin-top: 10px;
-  padding: 20px 0 18px;
+  margin-top: 0;
+  padding: 8px 0 6px;
   background: linear-gradient(180deg, rgba(20, 14, 46, .92), rgba(8, 6, 22, .75));
   border-top: 2px solid var(--pink);
   border-bottom: 2px solid var(--cyan);
@@ -183,7 +190,7 @@ button { cursor: pointer; }
 }
 .masthead__inner {
   display: flex; flex-direction: column; align-items: center;
-  position: relative; gap: 10px; padding: 4px 0;
+  position: relative; gap: 2px; padding: 2px 0;
 }
 .menu-wrap { position: absolute; left: 0; top: 4px; }
 .menu-btn {
@@ -212,16 +219,16 @@ button { cursor: pointer; }
 
 .brand { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .brand__jp {
-  font-family: 'Noto Sans JP', sans-serif; font-size: 13px; letter-spacing: .5em;
-  color: var(--cyan); text-shadow: var(--glow-cyan); margin-bottom: 2px;
+  font-family: 'Noto Sans JP', sans-serif; font-size: 10px; letter-spacing: .4em;
+  color: var(--cyan); text-shadow: var(--glow-cyan); margin-bottom: 0;
 }
 .brand__main {
   position: relative;
   margin: 0;
   font-family: var(--fuente-tit);
   font-weight: 900;
-  font-size: clamp(32px, 7.4vw, 78px);
-  line-height: .95;
+  font-size: clamp(28px, 5.4vw, 54px);
+  line-height: .88;
   letter-spacing: -.02em;
   text-transform: uppercase;
   color: #fff;
@@ -241,7 +248,7 @@ button { cursor: pointer; }
 .brand__main::before { color: var(--cyan); animation: glitch 6.5s steps(1) infinite; }
 .brand__main::after { color: var(--pink); animation: glitch 6.5s steps(1) reverse infinite; }
 .brand__tag {
-  margin-top: 8px; font-size: 10px; letter-spacing: .26em;
+  margin-top: 3px; font-size: 8px; letter-spacing: .22em;
   color: var(--yellow); text-transform: uppercase;
 }
 @keyframes flotar { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
@@ -286,7 +293,7 @@ button { cursor: pointer; }
 .tabs-generos button {
   flex: 0 0 auto; border: 0; border-bottom: 3px solid transparent;
   background: none; color: var(--texto-suave);
-  padding: 11px 15px 9px;
+  padding: 7px 13px 6px;
   font: 700 13px var(--fuente-tit); text-transform: uppercase; letter-spacing: .04em;
   white-space: nowrap; transition: color .18s, background .18s, border-color .18s, text-shadow .18s;
 }
@@ -299,11 +306,11 @@ button { cursor: pointer; }
 
 /* ---------- Accesos rápidos ---------- */
 .accesos { background: rgba(16, 13, 38, .9); border-bottom: 1px solid var(--borde); }
-.accesos__inner { display: flex; align-items: center; gap: 14px; min-height: 48px; }
+.accesos__inner { display: flex; align-items: center; gap: 14px; min-height: 38px; }
 .accesos__label {
   font: 700 10px var(--fuente-tit); letter-spacing: .18em; color: #6f6a94; white-space: nowrap;
 }
-.accesos__lista { display: flex; gap: 8px; overflow-x: auto; padding: 7px 0; scrollbar-width: none; }
+.accesos__lista { display: flex; gap: 8px; overflow-x: auto; padding: 5px 0; scrollbar-width: none; }
 .accesos__lista::-webkit-scrollbar { display: none; }
 .acceso {
   flex: 0 0 auto; padding: 5px 13px; border: 1px solid var(--secc-color);
@@ -324,7 +331,7 @@ button { cursor: pointer; }
   box-shadow: 0 4px 18px rgba(0, 0, 0, .5);
   backdrop-filter: blur(10px);
 }
-.nav__inner { display: flex; align-items: stretch; min-height: 46px; gap: 2px; overflow-x: auto; }
+.nav__inner { display: flex; align-items: stretch; min-height: 38px; gap: 2px; overflow-x: auto; }
 .nav__link, .nav__secciones a {
   display: flex; align-items: center; padding: 0 14px;
   font: 700 13px var(--fuente-tit); text-transform: uppercase; letter-spacing: .03em;

@@ -13,7 +13,7 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Portada visual:** hero con destacadas, rejillas por sección y tarjetas con brillo,
   elevación y entrada escalonada al cargar.
 - **Radar de tendencias arriba del todo:** dos paneles enfrentados con lo más visto en España y en el mundo, calculado a partir de las menciones a franquicias en las noticias.
-- **Buscadores bajo «Alerta Anime»:** los dos buscadores (noticias y web) están justo debajo del ticker, y la barra superior ya no se queda fija al desplazarse.
+- **Cabecera fija y compacta:** desde la fecha hasta justo encima de «Alerta Anime» (barra superior, título, pestañas, accesos y navegación) permanece fija al desplazarse, con el título más bajo y la línea roja pegada a la fecha. Los buscadores quedan debajo del ticker y sí se desplazan.
 - **Pestañas por género:** cambia de shōnen a isekai y toda la portada se regenera al instante.
 - **Páginas separadas:** el **archivo de noticias** (`archivo.html`) y el **glosario otaku** (`glosario.html`) tienen su propia página, con búsqueda, filtros y navegación propia.
 - **Glosario otaku:** **225 términos clasificados en 10 categorías** (géneros, formatos, producción, arquetipos, poderes, jerga, cultura, expresiones, eventos y merchandising).
