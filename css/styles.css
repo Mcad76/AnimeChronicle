@@ -253,9 +253,16 @@ button { cursor: pointer; }
   97% { opacity: 0; }
 }
 
-.masthead__tools {
+/* Buscadores debajo del ticker "Alerta Anime" */
+.buscadores {
+  position: relative; z-index: 40;
+  background: rgba(9, 7, 24, .96);
+  border-bottom: 1px solid var(--borde);
+  padding: 12px 0;
+}
+.buscadores__inner {
   display: flex; flex-wrap: nowrap; justify-content: center;
-  gap: 10px; width: 100%; max-width: 660px;
+  gap: 10px; width: 100%; max-width: 760px;
 }
 .search-box {
   display: flex; flex: 1 1 0; min-width: 0; align-items: center; gap: 8px;
@@ -311,7 +318,7 @@ button { cursor: pointer; }
 
 /* ---------- Navegación ---------- */
 .nav {
-  position: sticky; top: 0; z-index: 50;
+  position: relative; z-index: 50;
   background: rgba(8, 6, 22, .94);
   border-bottom: 1px solid var(--borde);
   box-shadow: 0 4px 18px rgba(0, 0, 0, .5);
