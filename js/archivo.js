@@ -41,7 +41,7 @@ function construirArchivo() {
 
 function imgFallback(el, color) {
   el.onerror = null;
-  const ps = ['guerrero', 'espadachina', 'ninja', 'maga', 'mecha', 'detective', 'idol', 'dragon'];
+  const ps = ['guerrero', 'espadachina', 'ninja', 'maga', 'mecha', 'detective', 'idol', 'dragon', 'samurai', 'pirata', 'cazador', 'bruja', 'caballero', 'cyborg', 'astronauta', 'skater', 'gamer', 'boxeador', 'bailarina', 'vampiro', 'robotito', 'sirena', 'zorro', 'fenix', 'kraken', 'heroina', 'músico', 'centinela'];
   const p = ps[Math.floor(Math.random() * ps.length)];
   el.src = 'fondos/personajes/' + p + '.svg';
   el.style.objectFit = 'contain';

@@ -20,8 +20,9 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Rejilla de tamaños mixtos:** una noticia grande y dos pequeñas por sección, como un diario, con ancho uniforme y adaptación a móvil.
 - **Tipografía:** Chakra Petch para titulares y Barlow para el cuerpo, con Noto Sans JP para los kanjis.
 - **Fondos y animaciones con personajes míticos originales** (arte vectorial propio, sin copyright):
-  guerrero de energía, espadachina, ninja, maga, mecha, detective, ídolo y jinete de
-  dragones. Los personajes caen y flotan por la pantalla en lugar de flores o lunas,
+  **28 héroes originales** (guerrero, espadachina, ninja, maga, mecha, samurái, pirata,
+  cazador, bruja, cyborg, astronauta, gamer, vampiro, sirena, fénix…). Caen, suben y
+  derivan por la pantalla con 4 peinados y 7 armas distintas, en lugar de flores o lunas,
   sobre un fondo de estrellas y escaneo CRT con logo de efecto glitch.
 - **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
   movimiento insignia con destello, sacudida de pantalla y un grito mítico
@@ -30,9 +31,10 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
   la voz del navegador (con respaldo WAV si no está disponible). Bucle synth opcional
   con ♪. Todo se puede silenciar con 🔊/🔇 y se recuerda la preferencia.
 - **Vibración** en móvil al seleccionar noticias (cuando el dispositivo lo permite).
-- **Todas las noticias llevan foto real**: se obtiene de la `og:image` del artículo
-  (incluidas las de Google News) y, si falla, de la carátula oficial vía AniList;
-  solo se usa una ilustración de personaje como último recurso.
+- **Todas las noticias llevan foto real**: se obtiene de la `og:image` del artículo o
+  de la carátula oficial vía AniList. Se detecta y descarta el logotipo de Google News
+  (que aparece cuando el artículo no tiene imagen) y se sustituye por la carátula del
+  anime, película o juego del que habla la noticia.
 - **Buscador** en portada y en el archivo, filtro por sección y contador de visitas.
 - **SEO completo:** una página HTML real e indexable por noticia, JSON-LD `NewsArticle`,
   metadatos Open Graph y Twitter, `canonical`, `sitemap.xml` y `robots.txt`.

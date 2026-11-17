@@ -4,7 +4,7 @@
    ============================================================ */
 
 const PERSONAJES_ATAQUE = [
-  'guerrero', 'espadachina', 'ninja', 'maga', 'mecha', 'detective', 'idol', 'dragon',
+  'guerrero', 'espadachina', 'ninja', 'maga', 'mecha', 'detective', 'idol', 'dragon', 'samurai', 'pirata', 'cazador', 'bruja', 'caballero', 'cyborg', 'astronauta', 'skater', 'gamer', 'boxeador', 'bailarina', 'vampiro', 'robotito', 'sirena', 'zorro', 'fenix', 'kraken', 'heroina', 'músico', 'centinela',
 ];
 
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -21,15 +21,16 @@ function crearPersonajesFlotantes() {
   const contenedor = document.getElementById('personajes-flotantes');
   if (!contenedor) return;
   let html = '';
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < 26; i++) {
     const p = PERSONAJES_ATAQUE[i % PERSONAJES_ATAQUE.length];
+    const anim = ['caer-personaje', 'subir-personaje', 'deriva-personaje'][i % 3];
     const izq = Math.random() * 100;
-    const tam = 34 + Math.random() * 48;
-    const dur = 14 + Math.random() * 16;
+    const tam = 26 + Math.random() * 70;
+    const dur = 10 + Math.random() * 22;
     const ret = -Math.random() * 26;
     const der = (Math.random() * 260 - 130).toFixed(0);
-    const opa = (0.18 + Math.random() * 0.34).toFixed(2);
-    html += `<img class="personaje-flotante" src="fondos/personajes/${p}.svg" alt=""
+    const opa = (0.14 + Math.random() * 0.38).toFixed(2);
+    html += `<img class="personaje-flotante ${anim}" src="fondos/personajes/${p}.svg" alt=""
       style="left:${izq.toFixed(1)}%;--tam:${tam}px;--dur:${dur}s;--ret:${ret}s;--der:${der}px;--opa:${opa}">`;
   }
   contenedor.innerHTML = html;

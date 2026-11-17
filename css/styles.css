@@ -87,6 +87,20 @@ button { cursor: pointer; }
   50%  { transform: translate3d(calc(var(--der, 120px) / 2), 52vh, 0) rotate(8deg) scale(1); }
   100% { transform: translate3d(var(--der, 120px), 112vh, 0) rotate(-10deg) scale(.85); }
 }
+.personaje-flotante.subir-personaje { animation-name: subir-personaje; }
+.personaje-flotante.deriva-personaje { animation-name: deriva-personaje; }
+@keyframes subir-personaje {
+  0%   { transform: translate3d(var(--der, 120px), 112vh, 0) rotate(14deg) scale(.8); }
+  50%  { transform: translate3d(calc(var(--der, 120px) / -2), 50vh, 0) rotate(-18deg) scale(1.05); }
+  100% { transform: translate3d(0, -12vh, 0) rotate(10deg) scale(.8); }
+}
+@keyframes deriva-personaje {
+  0%   { transform: translate3d(-16vw, 30vh, 0) rotate(-20deg); }
+  25%  { transform: translate3d(20vw, 62vh, 0) rotate(16deg); }
+  50%  { transform: translate3d(72vw, 26vh, 0) rotate(-10deg); }
+  75%  { transform: translate3d(40vw, 74vh, 0) rotate(22deg); }
+  100% { transform: translate3d(-16vw, 30vh, 0) rotate(-20deg); }
+}
 @keyframes deriva { to { background-position: 700px 700px; } }
 
 /* ---------- Progreso de lectura ---------- */

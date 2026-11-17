@@ -249,20 +249,61 @@ def generar_fondos():
 # ------------------------------------------------------------ personajes
 # Arte original: arquetipos de héroes de anime y videojuegos (sin copyright).
 PERSONAJES = [
-    {'id': 'guerrero',    'nombre': 'GUERRERO DE ENERGÍA', 'pelo': '#ff2e88', 'traje': '#2a1b5e', 'acento': '#ff8a3d', 'prop': 'espada'},
-    {'id': 'espadachina', 'nombre': 'ESPDACHINA VELOZ',    'pelo': '#00e5ff', 'traje': '#3b1d6e', 'acento': '#a855f7', 'prop': 'espada'},
-    {'id': 'ninja',       'nombre': 'NINJA DEL SHURIKEN',  'pelo': '#1a2b1a', 'traje': '#1f3d2b', 'acento': '#39ff14', 'prop': 'kunai'},
-    {'id': 'maga',        'nombre': 'MAGA ESTELAR',        'pelo': '#a855f7', 'traje': '#4a1d6b', 'acento': '#ffd23f', 'prop': 'varita'},
-    {'id': 'mecha',       'nombre': 'MECHA TITÁN',         'pelo': '#4d9fff', 'traje': '#1b2a4a', 'acento': '#ff2e88', 'prop': 'escudo'},
-    {'id': 'detective',   'nombre': 'DETECTIVE GENIO',     'pelo': '#3a2a1a', 'traje': '#2b2b45', 'acento': '#ffd23f', 'prop': 'lupa'},
-    {'id': 'idol',        'nombre': 'ÍDOLO DEL ESCENARIO', 'pelo': '#ff6b35', 'traje': '#5a1d5e', 'acento': '#ffffff', 'prop': 'micro'},
-    {'id': 'dragon',      'nombre': 'JINETE DE DRAGONES',  'pelo': '#ffd23f', 'traje': '#5e1b2e', 'acento': '#ff2e88', 'prop': 'dragon'},
+    {'id': 'guerrero',    'nombre': 'GUERRERO DE ENERGÍA', 'pelo': '#ff2e88', 'traje': '#2a1b5e', 'acento': '#ff8a3d', 'prop': 'espada', 'variante': 0},
+    {'id': 'espadachina', 'nombre': 'ESPDACHINA VELOZ',    'pelo': '#00e5ff', 'traje': '#3b1d6e', 'acento': '#a855f7', 'prop': 'espada', 'variante': 1},
+    {'id': 'ninja',       'nombre': 'NINJA DEL SHURIKEN',  'pelo': '#1a2b1a', 'traje': '#1f3d2b', 'acento': '#39ff14', 'prop': 'kunai', 'variante': 2},
+    {'id': 'maga',        'nombre': 'MAGA ESTELAR',        'pelo': '#a855f7', 'traje': '#4a1d6b', 'acento': '#ffd23f', 'prop': 'varita', 'variante': 1},
+    {'id': 'mecha',       'nombre': 'MECHA TITÁN',         'pelo': '#4d9fff', 'traje': '#1b2a4a', 'acento': '#ff2e88', 'prop': 'escudo', 'variante': 3},
+    {'id': 'detective',   'nombre': 'DETECTIVE GENIO',     'pelo': '#3a2a1a', 'traje': '#2b2b45', 'acento': '#ffd23f', 'prop': 'lupa', 'variante': 1},
+    {'id': 'idol',        'nombre': 'ÍDOLO DEL ESCENARIO', 'pelo': '#ff6b35', 'traje': '#5a1d5e', 'acento': '#ffffff', 'prop': 'micro', 'variante': 2},
+    {'id': 'dragon',      'nombre': 'JINETE DE DRAGONES',  'pelo': '#ffd23f', 'traje': '#5e1b2e', 'acento': '#ff2e88', 'prop': 'dragon', 'variante': 0},
+    {'id': 'samurai',     'nombre': 'SAMURAI ERRANTE',     'pelo': '#e11d48', 'traje': '#2a1a2a', 'acento': '#ffd23f', 'prop': 'espada', 'variante': 2},
+    {'id': 'pirata',      'nombre': 'CAPITÁN PIRATA',      'pelo': '#f97316', 'traje': '#3b1d2e', 'acento': '#39ff14', 'prop': 'espada', 'variante': 3},
+    {'id': 'cazador',     'nombre': 'CAZADOR DE MONSTRUOS','pelo': '#7c3aed', 'traje': '#1d2b4a', 'acento': '#f59e0b', 'prop': 'arco', 'variante': 1},
+    {'id': 'bruja',       'nombre': 'BRUJA NOCTURNA',      'pelo': '#22d3ee', 'traje': '#2d1b4e', 'acento': '#a855f7', 'prop': 'varita', 'variante': 3},
+    {'id': 'caballero',   'nombre': 'CABALLERO REAL',      'pelo': '#fbbf24', 'traje': '#1e3a5f', 'acento': '#e2e8f0', 'prop': 'escudo', 'variante': 3},
+    {'id': 'cyborg',      'nombre': 'CYBORG REBELDE',      'pelo': '#38bdf8', 'traje': '#0f2740', 'acento': '#ff2e88', 'prop': 'pistola', 'variante': 0},
+    {'id': 'astronauta',  'nombre': 'VIAJERO ESPACIAL',    'pelo': '#e2e8f0', 'traje': '#1e293b', 'acento': '#00e5ff', 'prop': 'escudo', 'variante': 3},
+    {'id': 'skater',      'nombre': 'SKATER URBANO',       'pelo': '#f472b6', 'traje': '#312e81', 'acento': '#39ff14', 'prop': 'bola', 'variante': 2},
+    {'id': 'gamer',       'nombre': 'GAMER LEGEND',        'pelo': '#4ade80', 'traje': '#1a2e2a', 'acento': '#ffd23f', 'prop': 'mando', 'variante': 0},
+    {'id': 'boxeador',    'nombre': 'BOXEADOR TITÁN',      'pelo': '#dc2626', 'traje': '#3f1d1d', 'acento': '#fbbf24', 'prop': 'guante', 'variante': 0},
+    {'id': 'bailarina',   'nombre': 'BAILARINA NEÓN',      'pelo': '#c084fc', 'traje': '#4a1d4e', 'acento': '#ff2e88', 'prop': 'cinta', 'variante': 2},
+    {'id': 'vampiro',     'nombre': 'VAMPIRO ETERNO',      'pelo': '#111827', 'traje': '#3b0d1e', 'acento': '#ef4444', 'prop': 'dragon', 'variante': 1},
+    {'id': 'robotito',    'nombre': 'ROBOT DE BOLSILLO',   'pelo': '#60a5fa', 'traje': '#1e3a8a', 'acento': '#22d3ee', 'prop': 'escudo', 'variante': 3},
+    {'id': 'sirena',      'nombre': 'SIRENA OCEÁNICA',     'pelo': '#2dd4bf', 'traje': '#134e4a', 'acento': '#38bdf8', 'prop': 'varita', 'variante': 2},
+    {'id': 'zorro',       'nombre': 'GUARDIÁN ZORRO',      'pelo': '#fb923c', 'traje': '#3b2415', 'acento': '#fde047', 'prop': 'kunai', 'variante': 0},
+    {'id': 'fenix',       'nombre': 'FÉNIX INMORTAL',      'pelo': '#f43f5e', 'traje': '#4c1d1d', 'acento': '#fbbf24', 'prop': 'espada', 'variante': 1},
+    {'id': 'kraken',      'nombre': 'TITAN DEL MAR',       'pelo': '#0ea5e9', 'traje': '#0c4a6e', 'acento': '#a78bfa', 'prop': 'escudo', 'variante': 3},
+    {'id': 'heroina',     'nombre': 'HEROÍNA DE ACERO',    'pelo': '#facc15', 'traje': '#3f3f46', 'acento': '#f43f5e', 'prop': 'espada', 'variante': 1},
+    {'id': 'músico',      'nombre': 'MÚSICO CALLEJERO',    'pelo': '#a3e635', 'traje': '#27303f', 'acento': '#f472b6', 'prop': 'guitarra', 'variante': 0},
+    {'id': 'centinela',   'nombre': 'CENTINELA OMEGA',     'pelo': '#94a3b8', 'traje': '#1f2937', 'acento': '#39ff14', 'prop': 'pistola', 'variante': 3},
 ]
 
 SECCION_PERSONAJE = {
     'estrenos': 'guerrero', 'series': 'ninja', 'peliculas': 'espadachina',
     'manga': 'maga', 'videojuegos': 'mecha', 'eventos': 'idol', 'comunidad': 'dragon',
 }
+
+
+def pelo_formas(pelo, variante):
+    """Cuatro peinados distintos para que los personajes no se repitan."""
+    if variante == 1:  # melena larga y lateral
+        return (f'<path d="M126 176 Q110 96 176 84 Q248 76 274 156 L286 300 L254 292 '
+                f'L246 168 Q200 136 154 170 L150 296 L118 290Z" fill="{pelo}" '
+                f'stroke="#160e2e" stroke-width="3"/>')
+    if variante == 2:  # dos coletazos
+        return (f'<path d="M126 176 L116 104 L152 138 L162 74 L196 120 L202 50 L238 120 '
+                f'L254 74 L270 138 L286 104 L274 176 Q200 130 126 176Z" fill="{pelo}" '
+                f'stroke="#160e2e" stroke-width="3"/>'
+                f'<ellipse cx="104" cy="230" rx="22" ry="66" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>'
+                f'<ellipse cx="296" cy="230" rx="22" ry="66" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>')
+    if variante == 3:  # casco / capucha
+        return (f'<path d="M118 178 Q108 72 200 68 Q292 72 282 178 L262 172 Q256 104 200 100 '
+                f'Q144 104 138 172Z" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>'
+                f'<path d="M126 150 Q200 108 274 150" fill="none" stroke="#fff" stroke-width="4" opacity=".5"/>')
+    return (f'<path d="M126 176 L112 108 L146 138 L152 72 L182 122 L200 52 L218 122 '
+            f'L248 72 L254 138 L288 108 L274 176 Q200 128 126 176Z" fill="{pelo}" '
+            f'stroke="#160e2e" stroke-width="3"/>')
 
 
 def formas_personaje(p, escala=1.0):
@@ -284,7 +325,7 @@ def formas_personaje(p, escala=1.0):
         '<circle cx="311" cy="221" r="14" fill="#ffd9b3"/>',
         '<rect x="188" y="248" width="24" height="26" fill="#ffd9b3"/>',
         '<ellipse cx="200" cy="185" rx="68" ry="72" fill="#ffd9b3" stroke="#2a1a3a" stroke-width="3"/>',
-        f'<path d="M126 176 L112 108 L146 138 L152 72 L182 122 L200 52 L218 122 L248 72 L254 138 L288 108 L274 176 Q200 128 126 176Z" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>',
+        pelo_formas(p['pelo'], p.get('variante', 0)),
         '<ellipse cx="175" cy="192" rx="13" ry="17" fill="#fff"/>',
         '<ellipse cx="225" cy="192" rx="13" ry="17" fill="#fff"/>',
         f'<circle cx="177" cy="194" r="7" fill="{acento}"/><circle cx="227" cy="194" r="7" fill="{acento}"/>',
@@ -326,6 +367,45 @@ def formas_personaje(p, escala=1.0):
             '<rect x="304" y="186" width="20" height="64" rx="10" fill="#ff2e88" stroke="#fff" stroke-width="3"/>',
             '<circle cx="314" cy="180" r="18" fill="#e2e8f0" stroke="#111" stroke-width="3"/>',
         ]
+    elif prop == 'arco':
+        partes += [
+            '<path d="M330 150 Q388 230 330 310" fill="none" stroke="#d9a05b" stroke-width="9"/>',
+            '<path d="M330 150 L330 310" stroke="#e2e8f0" stroke-width="3"/>',
+            '<path d="M318 230 L352 206 L346 244Z" fill="#94a3b8" stroke="#111" stroke-width="2"/>',
+        ]
+    elif prop == 'pistola':
+        partes += [
+            '<path d="M300 220 L370 206 L372 236 L316 248Z" fill="#64748b" stroke="#111" stroke-width="3"/>',
+            '<path d="M312 246 L330 274 L346 270 L334 244Z" fill="#334155" stroke="#111" stroke-width="2"/>',
+            f'<circle cx="366" cy="221" r="5" fill="{acento}"/>',
+        ]
+    elif prop == 'bola':
+        partes += [
+            f'<circle cx="344" cy="240" r="34" fill="{acento}" stroke="#fff" stroke-width="4"/>',
+            '<path d="M312 230 Q344 216 376 230 M312 252 Q344 238 376 252" fill="none" stroke="#111" stroke-width="3"/>',
+        ]
+    elif prop == 'mando':
+        partes += [
+            f'<rect x="304" y="214" width="72" height="40" rx="18" fill="{acento}" stroke="#fff" stroke-width="3"/>',
+            '<circle cx="322" cy="234" r="6" fill="#111"/><circle cx="358" cy="226" r="5" fill="#111"/>',
+            '<circle cx="350" cy="242" r="5" fill="#111"/>',
+        ]
+    elif prop == 'guante':
+        partes += [
+            f'<circle cx="340" cy="232" r="32" fill="{acento}" stroke="#fff" stroke-width="4"/>',
+            '<path d="M316 214 Q340 204 364 214" fill="none" stroke="#111" stroke-width="4"/>',
+        ]
+    elif prop == 'cinta':
+        partes += [
+            f'<path d="M310 236 Q356 176 384 220 Q356 208 338 244Z" fill="{acento}" stroke="#fff" stroke-width="3"/>',
+            f'<path d="M306 250 Q348 300 384 258" fill="none" stroke="{acento}" stroke-width="8" stroke-linecap="round"/>',
+        ]
+    elif prop == 'guitarra':
+        partes += [
+            f'<ellipse cx="344" cy="252" rx="30" ry="38" fill="{acento}" stroke="#fff" stroke-width="3"/>',
+            '<rect x="338" y="164" width="12" height="70" fill="#d9a05b" stroke="#111" stroke-width="2"/>',
+            '<circle cx="344" cy="258" r="10" fill="#111"/>',
+        ]
     else:  # dragón
         partes += [
             '<path d="M306 220 Q360 170 382 210 Q360 200 348 224 Q372 246 348 264 Q330 250 306 254Z" fill="#ff2e88" stroke="#ffd23f" stroke-width="3"/>',
@@ -349,9 +429,11 @@ def generar_personajes():
     # Fondo principal: varios héroes en silueta neón
     random.seed(11)
     grupos = []
-    posiciones = [(30, 250, 0.9), (270, 300, 1.0), (540, 230, 0.85),
-                  (790, 300, 1.05), (1060, 250, 0.9), (1240, 330, 0.8)]
-    for (x, y, s), p in zip(posiciones, PERSONAJES[:6]):
+    posiciones = [(10, 260, 0.85), (180, 320, 1.0), (350, 240, 0.8),
+                  (510, 320, 1.05), (680, 250, 0.85), (840, 330, 0.95),
+                  (1000, 250, 0.9), (1170, 320, 1.0), (1320, 240, 0.8),
+                  (1460, 330, 0.9)]
+    for (x, y, s), p in zip(posiciones, PERSONAJES[:10]):
         grupos.append(f'<g transform="translate({x},{y}) scale({s})" opacity=".22">'
                       + formas_personaje(p) + '</g>')
     escribir_svg('personajes-fondo.svg', f'''<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
