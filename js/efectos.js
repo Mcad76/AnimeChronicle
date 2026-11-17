@@ -21,13 +21,13 @@ function crearPersonajesFlotantes() {
   const contenedor = document.getElementById('personajes-flotantes');
   if (!contenedor) return;
   let html = '';
-  for (let i = 0; i < 26; i++) {
+  for (let i = 0; i < 11; i++) {
     const p = PERSONAJES_ATAQUE[i % PERSONAJES_ATAQUE.length];
     const anim = ['caer-personaje', 'subir-personaje', 'deriva-personaje'][i % 3];
-    const izq = Math.random() * 100;
-    const tam = 26 + Math.random() * 70;
-    const dur = 10 + Math.random() * 22;
-    const ret = -Math.random() * 26;
+    const izq = ((i * 37) % 96) + Math.random() * 6;
+    const tam = 32 + Math.random() * 52;
+    const dur = 18 + Math.random() * 18;
+    const ret = i * 2.8 + Math.random() * 2;
     const der = (Math.random() * 260 - 130).toFixed(0);
     const opa = (0.14 + Math.random() * 0.38).toFixed(2);
     html += `<img class="personaje-flotante ${anim}" src="fondos/personajes/${p}.svg" alt=""

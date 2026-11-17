@@ -22,14 +22,19 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Fondos y animaciones con personajes míticos originales** (arte vectorial propio, sin copyright):
   **28 héroes originales** (guerrero, espadachina, ninja, maga, mecha, samurái, pirata,
   cazador, bruja, cyborg, astronauta, gamer, vampiro, sirena, fénix…). Caen, suben y
-  derivan por la pantalla con 4 peinados y 7 armas distintas, en lugar de flores o lunas,
-  sobre un fondo de estrellas y escaneo CRT con logo de efecto glitch.
+  derivan por la pantalla con rostros expresivos, degradados, sombras, 4 peinados y
+  7 armas distintas. Solo 11 a la vez, escalonados para no saturar, en lugar de flores
+  o lunas, sobre un fondo de estrellas y escaneo CRT con logo de efecto glitch.
 - **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
   movimiento insignia con destello, sacudida de pantalla y un grito mítico
   (¡Rasengan!, ¡Bankai!, ¡Kamehameha!, ¡Ataque de los Titanes!…).
 - **Voces otaku en lugar de pitidos:** cada pulsación dice una frase de anime mediante
-  la voz del navegador (con respaldo WAV si no está disponible). Bucle synth opcional
-  con ♪. Todo se puede silenciar con 🔊/🔇 y se recuerda la preferencia.
+  la voz del navegador (con respaldo WAV si no está disponible). Más de 150 frases
+  repartidas en 7 categorías, sin repetir la misma dos veces seguidas. **Desactivadas
+  por defecto**: se activan con el botón 🔇 OFF / 🔊 ON de la barra superior. El bucle
+  musical opcional se controla con ♪ y la preferencia se recuerda.
+- **Menú persistente:** el botón de tres barras y el desplegable están disponibles en
+  las tres páginas (portada, archivo y glosario), también en móvil.
 - **Vibración** en móvil al seleccionar noticias (cuando el dispositivo lo permite).
 - **Todas las noticias llevan foto real**: se obtiene de la `og:image` del artículo o
   de la carátula oficial vía AniList. Se detecta y descarta el logotipo de Google News
@@ -106,10 +111,11 @@ AnimeChronicle/
 │   ├── glosario.js                             225 términos clasificados
 │   ├── sonidos.js                              motor de audio
 │   ├── efectos.js                              personajes flotantes y ataque (páginas secundarias)
+│   ├── menu.js                                 menú desplegable persistente
 │   ├── archivo.js                              lógica del archivo
 │   ├── glosario-page.js                        lógica del glosario
 │   └── app.js                                  lógica de la portada
-├── fondos/                                     estrellas, sakura, personajes y respaldos
+├── fondos/                                     estrellas, personajes y respaldos
 ├── sonidos/                                    efectos y BGL sintetizados
 ├── imagenes/                                   fotos de las noticias
 ├── noticias/                                   una página HTML por noticia

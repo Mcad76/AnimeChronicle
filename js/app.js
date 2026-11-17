@@ -153,7 +153,7 @@ function construirTendencias() {
         <img src="${x.image}" alt="" loading="lazy" onerror="imgFallback(this,'#ff2e88')">
         <span class="tendencia__info">
           <strong>${x.nombre}</strong>
-          <small>${x.noticias} menciones · ${x.titulo.slice(0, 68)}…</small>
+          <small>${x.titulo.slice(0, 78)}…</small>
         </span>
         <span class="tendencia__flecha">↗</span>
       </a>`;
@@ -379,33 +379,6 @@ document.getElementById('buscador-top').addEventListener('keydown', (e) => {
   }
 });
 
-/* ---------- Menú de 3 barras ---------- */
-const menuBtn = document.getElementById('menu-btn');
-const menuDesplegable = document.getElementById('menu-desplegable');
-
-function alternarMenu(forzar) {
-  const abierto = typeof forzar === 'boolean' ? forzar : menuDesplegable.hidden;
-  menuDesplegable.hidden = !abierto;
-  menuBtn.setAttribute('aria-expanded', String(abierto));
-  menuBtn.setAttribute('aria-label', abierto ? 'Cerrar menú de secciones' : 'Abrir menú de secciones');
-  menuBtn.innerHTML = abierto ? '&#10005;' : '&#9776;';
-}
-
-menuBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  Sonido.reproducir('click', 0.45);
-  alternarMenu();
-});
-menuDesplegable.addEventListener('click', (e) => {
-  if (e.target.closest('a')) alternarMenu(false);
-});
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.menu-wrap')) alternarMenu(false);
-});
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && !menuDesplegable.hidden) { alternarMenu(false); menuBtn.focus(); }
-});
-
 /* ---------- Barra de progreso ---------- */
 const barraProgreso = document.getElementById('progreso');
 let desplazamientoPendiente = false;
@@ -427,13 +400,13 @@ function crearPersonajesFlotantes() {
   const contenedor = document.getElementById('personajes-flotantes');
   if (!contenedor) return;
   let html = '';
-  for (let i = 0; i < 26; i++) {
+  for (let i = 0; i < 11; i++) {
     const p = PERSONAJES_ATAQUE[i % PERSONAJES_ATAQUE.length];
     const anim = ['caer-personaje', 'subir-personaje', 'deriva-personaje'][i % 3];
-    const izq = Math.random() * 100;
-    const tam = 26 + Math.random() * 70;
-    const dur = 10 + Math.random() * 22;
-    const ret = -Math.random() * 26;
+    const izq = ((i * 37) % 96) + Math.random() * 6;
+    const tam = 32 + Math.random() * 52;
+    const dur = 18 + Math.random() * 18;
+    const ret = i * 2.8 + Math.random() * 2;
     const der = (Math.random() * 260 - 130).toFixed(0);
     const opa = (0.14 + Math.random() * 0.38).toFixed(2);
     html += `<img class="personaje-flotante ${anim}" src="fondos/personajes/${p}.svg" alt=""

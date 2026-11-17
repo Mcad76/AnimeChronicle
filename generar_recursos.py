@@ -285,104 +285,169 @@ SECCION_PERSONAJE = {
 }
 
 
-def pelo_formas(pelo, variante):
-    """Cuatro peinados distintos para que los personajes no se repitan."""
+def pelo_formas(pelo, variante, ident):
+    """Cuatro peinados detectallados, con mechones de brillo."""
+    grad = f'url(#pelo-{ident})'
     if variante == 1:  # melena larga y lateral
-        return (f'<path d="M126 176 Q110 96 176 84 Q248 76 274 156 L286 300 L254 292 '
-                f'L246 168 Q200 136 154 170 L150 296 L118 290Z" fill="{pelo}" '
-                f'stroke="#160e2e" stroke-width="3"/>')
-    if variante == 2:  # dos coletazos
-        return (f'<path d="M126 176 L116 104 L152 138 L162 74 L196 120 L202 50 L238 120 '
-                f'L254 74 L270 138 L286 104 L274 176 Q200 130 126 176Z" fill="{pelo}" '
-                f'stroke="#160e2e" stroke-width="3"/>'
-                f'<ellipse cx="104" cy="230" rx="22" ry="66" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>'
-                f'<ellipse cx="296" cy="230" rx="22" ry="66" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>')
-    if variante == 3:  # casco / capucha
-        return (f'<path d="M118 178 Q108 72 200 68 Q292 72 282 178 L262 172 Q256 104 200 100 '
-                f'Q144 104 138 172Z" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>'
-                f'<path d="M126 150 Q200 108 274 150" fill="none" stroke="#fff" stroke-width="4" opacity=".5"/>')
-    return (f'<path d="M126 176 L112 108 L146 138 L152 72 L182 122 L200 52 L218 122 '
-            f'L248 72 L254 138 L288 108 L274 176 Q200 128 126 176Z" fill="{pelo}" '
-            f'stroke="#160e2e" stroke-width="3"/>')
+        base = (f'<path d="M126 176 Q108 92 178 80 Q252 70 276 156 L292 312 L256 300 '
+                f'L246 168 Q200 134 152 170 L148 302 L112 312Z" fill="{grad}" '
+                f'stroke="#160e2e" stroke-width="4"/>'
+                f'<path d="M140 150 Q160 104 206 100" fill="none" stroke="#fff" stroke-width="6" opacity=".35" stroke-linecap="round"/>')
+    elif variante == 2:  # dos coletazos con lazos
+        base = (f'<path d="M126 176 L114 102 L152 138 L160 70 L196 120 L202 46 L240 120 '
+                f'L254 70 L272 138 L288 102 L274 176 Q200 128 126 176Z" fill="{grad}" '
+                f'stroke="#160e2e" stroke-width="4"/>'
+                f'<ellipse cx="102" cy="226" rx="24" ry="68" fill="{grad}" stroke="#160e2e" stroke-width="4"/>'
+                f'<ellipse cx="298" cy="226" rx="24" ry="68" fill="{grad}" stroke="#160e2e" stroke-width="4"/>'
+                f'<rect x="88" y="162" width="30" height="14" rx="6" fill="#ff2e88" stroke="#fff" stroke-width="2"/>'
+                f'<rect x="282" y="162" width="30" height="14" rx="6" fill="#ff2e88" stroke="#fff" stroke-width="2"/>')
+    elif variante == 3:  # casco / capucha futurista
+        base = (f'<path d="M116 180 Q104 68 200 64 Q296 68 284 180 L260 174 Q254 102 200 98 '
+                f'Q146 102 140 174Z" fill="{grad}" stroke="#160e2e" stroke-width="4"/>'
+                f'<path d="M124 150 Q200 104 276 150" fill="none" stroke="#fff" stroke-width="5" opacity=".55"/>'
+                f'<rect x="168" y="74" width="64" height="12" rx="6" fill="#00e5ff" opacity=".8"/>')
+    else:  # pelo con puntas
+        base = (f'<path d="M124 178 L110 104 L146 136 L150 68 L182 120 L200 46 L218 120 '
+                f'L250 68 L254 136 L290 104 L276 178 Q200 126 124 178Z" fill="{grad}" '
+                f'stroke="#160e2e" stroke-width="4"/>')
+    brillo = (f'<path d="M138 132 Q164 92 208 88" fill="none" stroke="#fff" '
+              f'stroke-width="6" opacity=".32" stroke-linecap="round"/>')
+    return base + brillo
 
 
 def formas_personaje(p, escala=1.0):
-    """Devuelve las formas SVG de un personaje (sin etiqueta <svg>)."""
+    """Cuerpo detallado: rostro expresivo, armadura, sombras y accesorios."""
+    ident = p['id']
     pelo, traje, acento, prop = p['pelo'], p['traje'], p['acento'], p['prop']
+    v = p.get('variante', 0)
+
+    defs = f'''<defs>
+      <linearGradient id="cuerpo-{ident}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="{traje}"/><stop offset=".6" stop-color="{traje}"/>
+        <stop offset="1" stop-color="#070512"/>
+      </linearGradient>
+      <linearGradient id="pelo-{ident}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity=".45"/>
+        <stop offset=".35" stop-color="{pelo}"/><stop offset="1" stop-color="{pelo}"/>
+      </linearGradient>
+      <radialGradient id="iris-{ident}"><stop offset="0" stop-color="#fff"/>
+        <stop offset=".45" stop-color="{acento}"/><stop offset="1" stop-color="#111827"/>
+      </radialGradient>
+      <linearGradient id="metal-{ident}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f8fafc"/><stop offset=".5" stop-color="#94a3b8"/>
+        <stop offset="1" stop-color="#475569"/>
+      </linearGradient>
+    </defs>'''
+
     partes = [
-        f'<circle cx="200" cy="250" r="152" fill="none" stroke="{acento}" stroke-width="2" opacity=".35"/>',
-        f'<circle cx="200" cy="250" r="182" fill="none" stroke="{acento}" stroke-width="1" opacity=".18"/>',
-        f'<path d="M118 272 Q52 372 88 482 L312 482 Q348 372 282 272Z" fill="{pelo}" opacity=".45"/>',
-        '<rect x="158" y="382" width="32" height="98" rx="10" fill="#15122f" stroke="' + acento + '" stroke-width="2"/>',
-        '<rect x="210" y="382" width="32" height="98" rx="10" fill="#15122f" stroke="' + acento + '" stroke-width="2"/>',
-        f'<rect x="146" y="462" width="56" height="22" rx="7" fill="{acento}"/>',
-        f'<rect x="198" y="462" width="56" height="22" rx="7" fill="{acento}"/>',
-        f'<path d="M140 270 Q200 238 260 270 L278 388 Q200 408 122 388Z" fill="{traje}" stroke="{acento}" stroke-width="3"/>',
-        f'<rect x="126" y="344" width="148" height="15" fill="{acento}"/>',
-        f'<path d="M142 286 L96 362" stroke="{traje}" stroke-width="24" stroke-linecap="round"/>',
-        f'<path d="M258 286 L308 224" stroke="{traje}" stroke-width="24" stroke-linecap="round"/>',
-        '<circle cx="94" cy="366" r="14" fill="#ffd9b3"/>',
-        '<circle cx="311" cy="221" r="14" fill="#ffd9b3"/>',
-        '<rect x="188" y="248" width="24" height="26" fill="#ffd9b3"/>',
-        '<ellipse cx="200" cy="185" rx="68" ry="72" fill="#ffd9b3" stroke="#2a1a3a" stroke-width="3"/>',
-        pelo_formas(p['pelo'], p.get('variante', 0)),
-        '<ellipse cx="175" cy="192" rx="13" ry="17" fill="#fff"/>',
-        '<ellipse cx="225" cy="192" rx="13" ry="17" fill="#fff"/>',
-        f'<circle cx="177" cy="194" r="7" fill="{acento}"/><circle cx="227" cy="194" r="7" fill="{acento}"/>',
-        '<circle cx="180" cy="190" r="2.5" fill="#fff"/><circle cx="230" cy="190" r="2.5" fill="#fff"/>',
-        f'<path d="M160 168 L188 164 M212 164 L240 168" stroke="{pelo}" stroke-width="5" stroke-linecap="round"/>',
-        '<path d="M186 228 Q200 240 214 228" fill="none" stroke="#7a2f4a" stroke-width="4" stroke-linecap="round"/>',
-        f'<circle cx="200" cy="132" r="7" fill="{acento}"/>',
+        defs,
+        # sombra y aura
+        '<ellipse cx="200" cy="494" rx="96" ry="14" fill="#000" opacity=".5"/>',
+        f'<circle cx="200" cy="250" r="150" fill="none" stroke="{acento}" stroke-width="2" opacity=".35" stroke-dasharray="14 8"/>',
+        f'<circle cx="200" cy="250" r="182" fill="none" stroke="{acento}" stroke-width="1" opacity=".2"/>',
+        f'<path d="M42 130 l70 -26 M30 190 l62 -14 M350 120 l-58 22" stroke="{acento}" stroke-width="3" opacity=".4" stroke-linecap="round"/>',
+        # capa con pliegues
+        f'<path d="M116 272 Q40 372 78 486 L322 486 Q360 372 284 272Z" fill="{pelo}" opacity=".5"/>',
+        f'<path d="M120 290 Q92 388 108 470 M280 290 Q308 388 292 470" fill="none" stroke="#000" stroke-width="3" opacity=".25"/>',
+        # piernas, rodilleras y botas
+        '<path d="M156 378 L150 474 L184 474 L188 378Z" fill="#15122f" stroke="' + acento + '" stroke-width="3"/>',
+        '<path d="M212 378 L216 474 L250 474 L244 378Z" fill="#15122f" stroke="' + acento + '" stroke-width="3"/>',
+        f'<path d="M154 418 L186 418 M214 418 L246 418" stroke="{acento}" stroke-width="6" opacity=".8"/>',
+        f'<rect x="140" y="456" width="60" height="28" rx="8" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+        f'<rect x="200" y="456" width="60" height="28" rx="8" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+        f'<path d="M140 476 H200 M200 476 H260" stroke="#111" stroke-width="5"/>',
+        # torso con hombreras y cuello
+        f'<path d="M136 268 Q200 236 264 268 L282 386 Q200 410 118 386Z" fill="url(#cuerpo-{ident})" stroke="{acento}" stroke-width="4"/>',
+        f'<path d="M138 272 Q168 292 200 292 Q232 292 262 272 L254 300 Q200 316 146 300Z" fill="{acento}" opacity=".85"/>',
+        f'<path d="M132 266 Q112 256 108 286 L122 302 L146 282Z" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+        f'<path d="M268 266 Q288 256 292 286 L278 302 L254 282Z" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+        f'<path d="M200 300 L200 388" stroke="{acento}" stroke-width="4" opacity=".7"/>',
+        f'<rect x="122" y="344" width="156" height="18" fill="{acento}" stroke="#111" stroke-width="3"/>',
+        f'<rect x="188" y="342" width="24" height="22" rx="4" fill="url(#metal-{ident})" stroke="#111" stroke-width="2"/>',
+        # brazos y guantes
+        f'<path d="M136 288 L92 360" stroke="url(#cuerpo-{ident})" stroke-width="27" stroke-linecap="round"/>',
+        f'<path d="M264 288 L310 224" stroke="url(#cuerpo-{ident})" stroke-width="27" stroke-linecap="round"/>',
+        f'<circle cx="90" cy="364" r="16" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+        f'<circle cx="312" cy="221" r="16" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+        '<circle cx="84" cy="360" r="3" fill="#fff"/><circle cx="306" cy="217" r="3" fill="#fff"/>',
+        # cuello y rostro
+        '<rect x="186" y="244" width="28" height="30" rx="6" fill="#f0be97" stroke="#7a4a35" stroke-width="2"/>',
+        '<path d="M138 170 Q140 244 200 254 Q260 244 262 170Z" fill="#ffd9b3" stroke="#2a1a3a" stroke-width="4"/>',
+        '<ellipse cx="135" cy="194" rx="11" ry="16" fill="#ffd9b3" stroke="#2a1a3a" stroke-width="3"/>',
+        '<ellipse cx="265" cy="194" rx="11" ry="16" fill="#ffd9b3" stroke="#2a1a3a" stroke-width="3"/>',
+        # ojos grandes con brillo
+        '<path d="M154 190 Q174 172 194 190 Q174 208 154 190Z" fill="#fff" stroke="#2a1a3a" stroke-width="3"/>',
+        '<path d="M206 190 Q226 172 246 190 Q226 208 206 190Z" fill="#fff" stroke="#2a1a3a" stroke-width="3"/>',
+        f'<circle cx="175" cy="190" r="11" fill="url(#iris-{ident})"/>',
+        f'<circle cx="225" cy="190" r="11" fill="url(#iris-{ident})"/>',
+        '<circle cx="175" cy="190" r="5" fill="#0f172a"/><circle cx="225" cy="190" r="5" fill="#0f172a"/>',
+        '<circle cx="179" cy="185" r="4" fill="#fff"/><circle cx="229" cy="185" r="4" fill="#fff"/>',
+        '<circle cx="170" cy="195" r="2" fill="#fff" opacity=".8"/><circle cx="220" cy="195" r="2" fill="#fff" opacity=".8"/>',
+        f'<path d="M152 174 Q174 164 194 174 M206 174 Q226 164 248 174" fill="none" stroke="{pelo}" stroke-width="6" stroke-linecap="round"/>',
+        '<path d="M198 206 L194 220 L202 220" fill="none" stroke="#c98f6e" stroke-width="3" stroke-linecap="round"/>',
+        '<path d="M184 232 Q200 244 216 232" fill="none" stroke="#8a3552" stroke-width="4" stroke-linecap="round"/>',
+        f'<circle cx="200" cy="162" r="6" fill="{acento}" opacity=".9"/>',
+        pelo_formas(pelo, v, ident),
+        # accessory según peinado
+        (f'<rect x="128" y="158" width="144" height="9" rx="4" fill="{acento}" stroke="#fff" stroke-width="2"/>'
+         if v == 2 else
+         f'<path d="M150 150 Q200 130 250 150" fill="none" stroke="{acento}" stroke-width="5" opacity=".8"/>'
+         if v == 1 else ''),
     ]
 
     if prop == 'espada':
         partes += [
-            '<path d="M322 214 L128 34" stroke="#eaf6ff" stroke-width="13" stroke-linecap="round"/>',
-            '<path d="M322 214 L128 34" stroke="#9fd8ff" stroke-width="5" stroke-linecap="round"/>',
-            f'<path d="M304 234 L338 200" stroke="{acento}" stroke-width="12" stroke-linecap="round"/>',
+            f'<path d="M322 214 L128 34" stroke="url(#metal-{ident})" stroke-width="15" stroke-linecap="round"/>',
+            '<path d="M322 214 L128 34" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".75"/>',
+            f'<path d="M300 238 L340 198" stroke="{acento}" stroke-width="13" stroke-linecap="round"/>',
+            '<circle cx="320" cy="218" r="6" fill="#fbbf24"/>',
         ]
     elif prop == 'kunai':
         partes += [
-            '<path d="M312 224 L370 176 L356 234Z" fill="#dbe4f0" stroke="#111" stroke-width="3"/>',
-            '<path d="M346 220 L372 250" stroke="#64748b" stroke-width="9" stroke-linecap="round"/>',
+            '<path d="M312 224 L370 174 L356 234Z" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+            '<path d="M346 220 L372 250" stroke="#64748b" stroke-width="10" stroke-linecap="round"/>',
             f'<circle cx="360" cy="244" r="7" fill="{acento}"/>',
         ]
     elif prop == 'varita':
         partes += [
-            '<path d="M100 384 L82 104" stroke="#ffd23f" stroke-width="9" stroke-linecap="round"/>',
-            '<path d="M82 62 L94 88 L122 92 L101 110 L107 138 L82 123 L57 138 L63 110 L42 92 L70 88Z" fill="#ffd23f" stroke="#fff" stroke-width="3"/>',
+            '<path d="M100 384 L82 104" stroke="#fbbf24" stroke-width="10" stroke-linecap="round"/>',
+            '<path d="M82 58 L96 88 L126 92 L103 111 L109 141 L82 125 L55 141 L61 111 L38 92 L68 88Z" fill="#fde047" stroke="#fff" stroke-width="4"/>',
+            f'<circle cx="82" cy="100" r="7" fill="{acento}"/>',
         ]
     elif prop == 'escudo':
         partes += [
-            f'<circle cx="330" cy="238" r="46" fill="{acento}" opacity=".85" stroke="#fff" stroke-width="5"/>',
-            '<path d="M330 210 L330 266 M304 238 L356 238" stroke="#fff" stroke-width="5"/>',
+            f'<circle cx="330" cy="238" r="48" fill="{acento}" opacity=".9" stroke="#fff" stroke-width="5"/>',
+            f'<circle cx="330" cy="238" r="35" fill="none" stroke="#111" stroke-width="4"/>',
+            '<path d="M330 208 L330 268 M300 238 L360 238" stroke="#fff" stroke-width="5"/>',
         ]
     elif prop == 'lupa':
         partes += [
-            '<circle cx="326" cy="230" r="30" fill="#bff6ff" opacity=".35" stroke="#ffd23f" stroke-width="8"/>',
-            '<path d="M348 252 L376 284" stroke="#8b5a2b" stroke-width="10" stroke-linecap="round"/>',
+            '<circle cx="326" cy="230" r="32" fill="#bff6ff" opacity=".4" stroke="#fbbf24" stroke-width="9"/>',
+            '<path d="M348 254 L376 288" stroke="#8b5a2b" stroke-width="11" stroke-linecap="round"/>',
+            '<path d="M310 216 Q326 206 342 216" fill="none" stroke="#fff" stroke-width="4" opacity=".7"/>',
         ]
     elif prop == 'micro':
         partes += [
-            '<rect x="304" y="186" width="20" height="64" rx="10" fill="#ff2e88" stroke="#fff" stroke-width="3"/>',
-            '<circle cx="314" cy="180" r="18" fill="#e2e8f0" stroke="#111" stroke-width="3"/>',
+            f'<rect x="304" y="186" width="20" height="64" rx="10" fill="{acento}" stroke="#fff" stroke-width="3"/>',
+            '<circle cx="314" cy="178" r="19" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
+            '<path d="M304 174 Q314 168 324 174" fill="none" stroke="#fff" stroke-width="3" opacity=".7"/>',
         ]
     elif prop == 'arco':
         partes += [
-            '<path d="M330 150 Q388 230 330 310" fill="none" stroke="#d9a05b" stroke-width="9"/>',
+            '<path d="M330 150 Q388 230 330 310" fill="none" stroke="#d9a05b" stroke-width="10"/>',
             '<path d="M330 150 L330 310" stroke="#e2e8f0" stroke-width="3"/>',
-            '<path d="M318 230 L352 206 L346 244Z" fill="#94a3b8" stroke="#111" stroke-width="2"/>',
+            '<path d="M316 230 L352 204 L346 246Z" fill="url(#metal-{ident})" stroke="#111" stroke-width="2"/>',
         ]
     elif prop == 'pistola':
         partes += [
-            '<path d="M300 220 L370 206 L372 236 L316 248Z" fill="#64748b" stroke="#111" stroke-width="3"/>',
+            '<path d="M300 220 L370 206 L372 236 L316 248Z" fill="url(#metal-{ident})" stroke="#111" stroke-width="3"/>',
             '<path d="M312 246 L330 274 L346 270 L334 244Z" fill="#334155" stroke="#111" stroke-width="2"/>',
             f'<circle cx="366" cy="221" r="5" fill="{acento}"/>',
         ]
     elif prop == 'bola':
         partes += [
-            f'<circle cx="344" cy="240" r="34" fill="{acento}" stroke="#fff" stroke-width="4"/>',
-            '<path d="M312 230 Q344 216 376 230 M312 252 Q344 238 376 252" fill="none" stroke="#111" stroke-width="3"/>',
+            f'<circle cx="344" cy="240" r="34" fill="{acento}" stroke="#fff" stroke-width="5"/>',
+            '<path d="M312 230 Q344 214 376 230 M312 252 Q344 238 376 252" fill="none" stroke="#111" stroke-width="3"/>',
         ]
     elif prop == 'mando':
         partes += [
@@ -393,27 +458,27 @@ def formas_personaje(p, escala=1.0):
     elif prop == 'guante':
         partes += [
             f'<circle cx="340" cy="232" r="32" fill="{acento}" stroke="#fff" stroke-width="4"/>',
-            '<path d="M316 214 Q340 204 364 214" fill="none" stroke="#111" stroke-width="4"/>',
+            '<path d="M314 214 Q340 202 366 214" fill="none" stroke="#111" stroke-width="4"/>',
         ]
     elif prop == 'cinta':
         partes += [
-            f'<path d="M310 236 Q356 176 384 220 Q356 208 338 244Z" fill="{acento}" stroke="#fff" stroke-width="3"/>',
-            f'<path d="M306 250 Q348 300 384 258" fill="none" stroke="{acento}" stroke-width="8" stroke-linecap="round"/>',
+            f'<path d="M310 236 Q356 174 384 220 Q356 208 338 244Z" fill="{acento}" stroke="#fff" stroke-width="3"/>',
+            f'<path d="M306 250 Q348 302 384 258" fill="none" stroke="{acento}" stroke-width="8" stroke-linecap="round"/>',
         ]
     elif prop == 'guitarra':
         partes += [
-            f'<ellipse cx="344" cy="252" rx="30" ry="38" fill="{acento}" stroke="#fff" stroke-width="3"/>',
-            '<rect x="338" y="164" width="12" height="70" fill="#d9a05b" stroke="#111" stroke-width="2"/>',
+            f'<ellipse cx="344" cy="252" rx="30" ry="38" fill="{acento}" stroke="#fff" stroke-width="4"/>',
+            '<rect x="338" y="160" width="12" height="72" fill="#d9a05b" stroke="#111" stroke-width="2"/>',
             '<circle cx="344" cy="258" r="10" fill="#111"/>',
         ]
     else:  # dragón
         partes += [
-            '<path d="M306 220 Q360 170 382 210 Q360 200 348 224 Q372 246 348 264 Q330 250 306 254Z" fill="#ff2e88" stroke="#ffd23f" stroke-width="3"/>',
-            '<circle cx="362" cy="214" r="4" fill="#fff"/>',
+            '<path d="M304 220 Q360 166 384 210 Q360 198 348 224 Q374 246 348 266 Q330 250 304 254Z" fill="#ff2e88" stroke="#fbbf24" stroke-width="4"/>',
+            '<circle cx="364" cy="214" r="4" fill="#fff"/>',
+            '<path d="M348 224 L362 228 L348 234Z" fill="#111"/>',
         ]
 
     return '<g transform="scale(' + str(escala) + ')">' + ''.join(partes) + '</g>'
-
 
 def generar_personajes():
     print('Generando personajes...')

@@ -14,20 +14,58 @@ const Sonido = (() => {
   };
 
   const FRASES = {
-    click:  ['¡Pika!', '¡Pikachu!', '¡Vamos!', '¡Sí!', '¡Genial!', '¡N!'],
-    select: ['¡Rasengan!', '¡Bankai!', '¡Sharingan!', '¡Kamehameha!',
-             '¡Ultra Instinto!', '¡Ataque de los Titanes!', '¡Chidori!'],
-    whoosh: ['¡RASENGAN!', '¡BANKAI!', '¡KAMEHAMEHA!', '¡GOMU GOMU NO!',
-             '¡ZANGETSU!', '¡ULTRA INSTINTO!', '¡TENSHI NO HA!'],
-    open:   ['¡Aquí vamos!', '¡Empezó el episodio!', '¡Modo ataque activado!',
-             '¡Allá vamos, nakama!'],
-    close:  ['¡Hasta el próximo episodio!', '¡Nos vemos, nakama!', '¡Fin del episodio!'],
-    tab:    ['¡Cambio de estrategia!', '¡Siguiente ronda!', '¡Selecciona, warrior!'],
-    hover:  ['¡Eh!', '¡Oye!', '¡Mira!'],
+    click: [
+      '¡Pika!', '¡Pikachu!', '¡Vamos!', '¡Sí!', '¡Genial!', '¡N!', '¡Yey!',
+      '¡Bien!', '¡Perfecto!', '¡Eh!', '¡Oh!', '¡Guau!', '¡Listo!', '¡Pulsa!',
+      '¡Activa!', '¡Vamos allá!', '¡Sigue!', '¡Toma!', '¡Eso!', '¡Ale!',
+      '¡Hecho!', '¡Genial, nakama!', '¡Go!', '¡Dale!', '¡Pum!',
+    ],
+    select: [
+      '¡Rasengan!', '¡Chidori!', '¡Kamehameha!', '¡Bankai!', '¡Sharingan!',
+      '¡Rinnegan!', '¡Ultra Instinto!', '¡Gear Second!', '¡Gear Fourth!',
+      '¡Haki!', '¡Nen!', '¡Stand!', '¡Ataque de los Titanes!', '¡ZanGetsu!',
+      '¡Getsuga Tenshou!', '¡Gomu Gomu no!', '¡Tenshi no Ha!', '¡Amaterasu!',
+      '¡Susanoo!', '¡Final Flash!', '¡Galick Gun!', '¡Spirit Bomb!',
+      '¡Meteor!', '¡Senjutsu!', '¡Kurama!', '¡Sukuna!', '¡Domain Expansion!',
+      '¡Iaido!', '¡Mugetsu!', '¡Kamehameha!',
+    ],
+    whoosh: [
+      '¡RASENGAN!', '¡BANKAI!', '¡KAMEHAMEHA!', '¡CHIDORI!', '¡ZANGETSU!',
+      '¡ULTRA INSTINTO!', '¡TENSHI NO HA!', '¡GETSUGA TENSHŌ!',
+      '¡GOMU GOMU NO GATLING!', '¡AMATERASU!', '¡SUSANOO!', '¡SENJUTSU!',
+      '¡CIEN VICTORIAS!', '¡FULL COUNTER!', '¡ÚLTIMO RECURSO!', '¡IZAYOI!',
+      '¡KAGUTSUCHI!', '¡BARYON MODE!', '¡EXPANSIÓN DE DOMINIO!', '¡MAHŌ!',
+      '¡PIKA PIKA!', '¡GOD SLICE!', '¡LUNA CRECIENTE!', '¡TITÁN!',
+      '¡RAYO CELESTIAL!', '¡PUÑO DEL DRAGÓN!', '¡ESPADA DE LUZ!', '¡METEORO!',
+    ],
+    open: [
+      '¡Aquí vamos!', '¡Empezó el episodio!', '¡Modo ataque activado!',
+      '¡Allá vamos, nakama!', '¡Que comience el combate!', '¡Atentos!',
+      '¡Listos, acción!', '¡A por todas!', '¡Desplegar equipamiento!',
+      '¡Sistema activado!', '¡Vamos a ver esto!', '¡He decidido!',
+      '¡A ventaja!', '¡Combate iniciado!', '¡Episodio nuevo!',
+    ],
+    close: [
+      '¡Hasta el próximo episodio!', '¡Nos vemos, nakama!', '¡Fin del episodio!',
+      '¡Retirada!', '¡Hasta luego!', '¡Misión cumplida!', '¡Buen combate!',
+      '¡Descanso!', '¡Nos vemos pronto!', '¡Se acabó por hoy!',
+      '¡Guardado!', '¡Gracias por ver!', '¡Hasta la victoria!', '¡Cerrado!',
+    ],
+    tab: [
+      '¡Cambio de estrategia!', '¡Siguiente ronda!', '¡Selecciona, warrior!',
+      '¡Otro objetivo!', '¡Cambio de escenario!', '¡Vamos con esta!',
+      '¡Nueva ruta!', '¡Elegida!', '¡Siguiente!', '¡Cambio de plan!',
+      '¡Aquí vamos!', '¡Modo alternativo!', '¡Otro género!', '¡Adelante!',
+    ],
+    hover: [
+      '¡Eh!', '¡Oye!', '¡Mira!', '¡Mmm!', '¡Uoh!', '¡Hmm!', '¡Hey!',
+      '¡Interesante!', '¡Ahí!', '¡Cuidado!', '¡Míralo!', '¡Listo!',
+    ],
   };
 
   const buffers = {};
-  let activo = localStorage.getItem('ac-sonido') !== 'off';
+  const ultimaFrasePorTipo = {};
+  let activo = localStorage.getItem('ac-sonido') === 'on';
   let musicaActiva = localStorage.getItem('ac-musica') === 'on';
   let nodoMusica = null;
   let ultimoHover = 0;
@@ -68,7 +106,12 @@ const Sonido = (() => {
 
   function frase(tipo) {
     const lista = FRASES[tipo] || FRASES.click;
-    return lista[Math.floor(Math.random() * lista.length)];
+    const anterior = ultimaFrasePorTipo[tipo];
+    // Evita repetir la misma frase dos veces seguidas
+    const opciones = lista.length > 1 ? lista.filter(x => x !== anterior) : lista;
+    const elegida = opciones[Math.floor(Math.random() * opciones.length)];
+    ultimaFrasePorTipo[tipo] = elegida;
+    return elegida;
   }
 
   /** Respaldo: reproduce el WAV antiguo si no hay síntesis de voz. */
@@ -100,10 +143,10 @@ const Sonido = (() => {
     const sfx = document.getElementById('btn-sonido');
     const bgm = document.getElementById('btn-musica');
     if (sfx) {
-      sfx.textContent = activo ? '🔊' : '🔇';
+      sfx.textContent = activo ? '🔊 ON' : '🔇 OFF';
       sfx.setAttribute('aria-pressed', String(activo));
-      sfx.setAttribute('aria-label', activo ? 'Silenciar las voces' : 'Activar las voces');
-      sfx.title = activo ? 'Voces otaku: activadas' : 'Voces otaku: silenciadas';
+      sfx.setAttribute('aria-label', activo ? 'Desactivar las voces' : 'Activar las voces');
+      sfx.title = activo ? 'Voces otaku: activadas (pulsa para silenciar)' : 'Voces otaku: desactivadas (pulsa para activar)';
     }
     if (bgm) {
       bgm.textContent = musicaActiva ? '♫' : '♪';

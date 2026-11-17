@@ -25,13 +25,24 @@
       <span class="topbar__edicion">Archivo completo · actualizado cada día</span>
       <div class="topbar__right">
         <button class="audio-btn" id="btn-musica" type="button" aria-pressed="false" aria-label="Música">♪</button>
-        <button class="audio-btn audio-btn--sfx" id="btn-sonido" type="button" aria-pressed="true" aria-label="Voces">🔊</button>
+        <button class="audio-btn audio-btn--sfx" id="btn-sonido" type="button" aria-pressed="false" aria-label="Activar las voces">🔇 OFF</button>
       </div>
     </div>
   </div>
 
   <header class="masthead">
     <div class="wrap masthead__inner">
+      <div class="menu-wrap">
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú de secciones"
+                aria-haspopup="true" aria-expanded="false" aria-controls="menu-desplegable">&#9776;</button>
+        <nav class="menu-desplegable" id="menu-desplegable" aria-label="Menú de secciones" hidden>
+          <a href="index.html" class="menu-desplegable__item">Inicio</a>
+          <div id="menu-secciones"></div>
+          <a href="index.html#tendencias" class="menu-desplegable__item">Tendencias</a>
+          <a href="archivo.html" class="menu-desplegable__item">Archivo</a>
+          <a href="glosario.html" class="menu-desplegable__item">Glosario otaku</a>
+        </nav>
+      </div>
       <a href="index.html" class="brand" aria-label="AnimeChronicle, inicio">
         <span class="brand__jp" aria-hidden="true">アニメクロニクル</span>
         <h1 class="brand__main" data-text="ANIMECHRONICLE">ANIMECHRONICLE</h1>
@@ -91,6 +102,7 @@
   <script src="js/news-data.js"></script>
   <script src="js/sonidos.js"></script>
   <script src="js/efectos.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/archivo.js"></script>
 </body>
 </html>

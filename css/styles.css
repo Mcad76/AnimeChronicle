@@ -159,11 +159,13 @@ button { cursor: pointer; }
 .visitantes__numero { color: #fff; font-weight: 700; font-variant-numeric: tabular-nums; }
 
 .audio-btn {
-  width: 28px; height: 28px; display: grid; place-items: center;
-  border: 1px solid var(--borde); border-radius: 50%;
-  background: #100d26; color: var(--cyan); font-size: 14px; line-height: 1;
+  min-width: 28px; height: 28px; padding: 0 8px; display: grid; place-items: center;
+  border: 1px solid var(--borde); border-radius: 16px;
+  background: #100d26; color: var(--cyan); font-size: 12px; line-height: 1;
+  font-weight: 700; letter-spacing: .03em;
   transition: transform .15s, box-shadow .15s, color .15s;
 }
+.audio-btn--sfx { min-width: 62px; }
 .audio-btn:hover { transform: scale(1.15); box-shadow: var(--glow-cyan); }
 .audio-btn[aria-pressed="false"] { color: #6b6690; }
 .audio-btn--sfx[aria-pressed="true"] { color: var(--yellow); }
