@@ -20,19 +20,19 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Rejilla de tamaños mixtos:** una noticia grande y dos pequeñas por sección, como un diario, con ancho uniforme y adaptación a móvil.
 - **Tipografía:** Chakra Petch para titulares y Barlow para el cuerpo, con Noto Sans JP para los kanjis.
 - **Fondos y animaciones con personajes míticos originales** (arte vectorial propio, sin copyright):
-  **28 héroes originales** (guerrero, espadachina, ninja, maga, mecha, samurái, pirata,
-  cazador, bruja, cyborg, astronauta, gamer, vampiro, sirena, fénix…). Caen, suben y
-  derivan por la pantalla con rostros expresivos, degradados, sombras, 4 peinados y
-  7 armas distintas. Solo 11 a la vez, escalonados para no saturar, en lugar de flores
-  o lunas, sobre un fondo de estrellas y escaneo CRT con logo de efecto glitch.
+  **40 héroes originales** (guerrero, espadachina, ninja, mecha, samurái, pirata, bruja,
+  cyborg, gamer, vampiro, sirena, fénix, valkiria, gladiador, rōnin, alquimista…).
+  Caen, suben y derivan con rostros expresivos, degradados, sombras, 4 peinados y
+  7 armas. Solo **8 a la vez**, escalonados y rotando cada 7 s para que aparezcan los
+  40 con el tiempo, sin saturar ni mover la pantalla.
 - **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
   movimiento insignia con destello, sacudida de pantalla y un grito mítico
   (¡Rasengan!, ¡Bankai!, ¡Kamehameha!, ¡Ataque de los Titanes!…).
 - **Voces otaku en lugar de pitidos:** cada pulsación dice una frase de anime mediante
   la voz del navegador (con respaldo WAV si no está disponible). Más de 150 frases
   repartidas en 7 categorías, sin repetir la misma dos veces seguidas. **Desactivadas
-  por defecto**: se activan con el botón 🔇 OFF / 🔊 ON de la barra superior. El bucle
-  musical opcional se controla con ♪ y la preferencia se recuerda.
+  por defecto**: se activan con el único botón de sonido 🔇 OFF / 🔊 ON de la barra
+  superior, que recuerda la preferencia. No hay música de fondo.
 - **Menú persistente:** el botón de tres barras y el desplegable están disponibles en
   las tres páginas (portada, archivo y glosario), también en móvil.
 - **Vibración** en móvil al seleccionar noticias (cuando el dispositivo lo permite).
@@ -109,6 +109,7 @@ AnimeChronicle/
 ├── js/
 │   ├── news-data.js                            banco de noticias (generado)
 │   ├── glosario.js                             225 términos clasificados
+│   ├── personajes.js                           lista de los 40 héroes
 │   ├── sonidos.js                              motor de audio
 │   ├── efectos.js                              personajes flotantes y ataque (páginas secundarias)
 │   ├── menu.js                                 menú desplegable persistente

@@ -10,7 +10,7 @@ const Sonido = (() => {
     click: 'sonidos/click.wav', select: 'sonidos/select.wav',
     whoosh: 'sonidos/whoosh.wav', open: 'sonidos/open.wav',
     close: 'sonidos/close.wav', tab: 'sonidos/tab.wav',
-    hover: 'sonidos/hover.wav', bgm: 'sonidos/bgm.wav',
+    hover: 'sonidos/hover.wav',
   };
 
   const FRASES = {
@@ -66,8 +66,6 @@ const Sonido = (() => {
   const buffers = {};
   const ultimaFrasePorTipo = {};
   let activo = localStorage.getItem('ac-sonido') === 'on';
-  let musicaActiva = localStorage.getItem('ac-musica') === 'on';
-  let nodoMusica = null;
   let ultimoHover = 0;
   let vozElegida = null;
 
@@ -141,17 +139,11 @@ const Sonido = (() => {
 
   function sincronizarBotones() {
     const sfx = document.getElementById('btn-sonido');
-    const bgm = document.getElementById('btn-musica');
     if (sfx) {
       sfx.textContent = activo ? '🔊 ON' : '🔇 OFF';
       sfx.setAttribute('aria-pressed', String(activo));
       sfx.setAttribute('aria-label', activo ? 'Desactivar las voces' : 'Activar las voces');
       sfx.title = activo ? 'Voces otaku: activadas (pulsa para silenciar)' : 'Voces otaku: desactivadas (pulsa para activar)';
-    }
-    if (bgm) {
-      bgm.textContent = musicaActiva ? '♫' : '♪';
-      bgm.setAttribute('aria-pressed', String(musicaActiva));
-      bgm.setAttribute('aria-label', musicaActiva ? 'Desactivar música' : 'Activar música');
     }
   }
 
@@ -160,38 +152,10 @@ const Sonido = (() => {
     localStorage.setItem('ac-sonido', activo ? 'on' : 'off');
     if (!activo) {
       if (hayVoz()) speechSynthesis.cancel();
-      pararMusica();
     }
     sincronizarBotones();
     if (activo) decir('¡Modo otaku activado!');
     return activo;
-  }
-
-  function arrancarMusica() {
-    if (nodoMusica) return;
-    try {
-      if (!buffers.bgm) {
-        buffers.bgm = new Audio(CLAVES.bgm);
-        buffers.bgm.preload = 'auto';
-      }
-      const nodo = buffers.bgm;
-      nodo.loop = true;
-      nodo.volume = 0.08;
-      nodo.play().then(() => { nodoMusica = nodo; }).catch(() => {});
-    } catch (_) {}
-  }
-
-  function pararMusica() {
-    if (nodoMusica) { nodoMusica.pause(); nodoMusica = null; }
-  }
-
-  function alternarMusica() {
-    musicaActiva = !musicaActiva;
-    localStorage.setItem('ac-musica', musicaActiva ? 'on' : 'off');
-    if (musicaActiva) arrancarMusica(); else pararMusica();
-    sincronizarBotones();
-    decir(musicaActiva ? '¡Que empiece el combate!' : '¡Pausa!', 'es-ES', 0.8);
-    return musicaActiva;
   }
 
   function hover() {
@@ -202,16 +166,13 @@ const Sonido = (() => {
   }
 
   const btnSfx = document.getElementById('btn-sonido');
-  const btnBgm = document.getElementById('btn-musica');
   if (btnSfx) btnSfx.addEventListener('click', alternarSonido);
-  if (btnBgm) btnBgm.addEventListener('click', alternarMusica);
   if (hayVoz()) speechSynthesis.onvoiceschanged = () => { vozElegida = null; };
   sincronizarBotones();
 
   return {
     get activo() { return activo; },
-    get musicaActiva() { return musicaActiva; },
     reproducir, decir, frase, vibrar, hover,
-    alternarSonido, alternarMusica, arrancarMusica, sincronizarBotones,
+    alternarSonido, sincronizarBotones,
   };
 })();

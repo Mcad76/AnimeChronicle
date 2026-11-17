@@ -225,9 +225,7 @@ function construirSecciones() {
 }
 
 /* ---------- Ataque: personaje + grito al abrir una noticia ---------- */
-const PERSONAJES_ATAQUE = [
-  'guerrero', 'espadachina', 'ninja', 'maga', 'mecha', 'detective', 'idol', 'dragon', 'samurai', 'pirata', 'cazador', 'bruja', 'caballero', 'cyborg', 'astronauta', 'skater', 'gamer', 'boxeador', 'bailarina', 'vampiro', 'robotito', 'sirena', 'zorro', 'fenix', 'kraken', 'heroina', 'músico', 'centinela',
-];
+const PERSONAJES_ATAQUE = PERSONAJES;
 
 const Ataque = {
   activo: false,
@@ -399,20 +397,39 @@ window.addEventListener('scroll', () => {
 function crearPersonajesFlotantes() {
   const contenedor = document.getElementById('personajes-flotantes');
   if (!contenedor) return;
+
+  // Pocos a la vez, pero van rotando para que aparezcan los 40 con el tiempo.
+  const TOTAL = 8;
+  let indice = Math.floor(Math.random() * PERSONAJES.length);
   let html = '';
-  for (let i = 0; i < 11; i++) {
-    const p = PERSONAJES_ATAQUE[i % PERSONAJES_ATAQUE.length];
+  for (let i = 0; i < TOTAL; i++) {
+    const p = PERSONAJES[indice % PERSONAJES.length];
+    indice++;
     const anim = ['caer-personaje', 'subir-personaje', 'deriva-personaje'][i % 3];
-    const izq = ((i * 37) % 96) + Math.random() * 6;
-    const tam = 32 + Math.random() * 52;
-    const dur = 18 + Math.random() * 18;
-    const ret = i * 2.8 + Math.random() * 2;
-    const der = (Math.random() * 260 - 130).toFixed(0);
-    const opa = (0.14 + Math.random() * 0.38).toFixed(2);
+    const izq = ((i * 41) % 92) + Math.random() * 6;
+    const tam = 34 + Math.random() * 46;
+    const dur = 20 + Math.random() * 18;
+    const ret = i * 3.4 + Math.random() * 3;
+    const der = (Math.random() * 120 - 60).toFixed(0);
+    const opa = (0.16 + Math.random() * 0.3).toFixed(2);
     html += `<img class="personaje-flotante ${anim}" src="fondos/personajes/${p}.svg" alt=""
       style="left:${izq.toFixed(1)}%;--tam:${tam}px;--dur:${dur}s;--ret:${ret}s;--der:${der}px;--opa:${opa}">`;
   }
   contenedor.innerHTML = html;
+
+  let vuelta = 0;
+  window.setInterval(() => {
+    const imagenes = contenedor.querySelectorAll('.personaje-flotante');
+    if (!imagenes.length || document.hidden) return;
+    const img = imagenes[vuelta % imagenes.length];
+    const p = PERSONAJES[indice % PERSONAJES.length];
+    indice++;
+    img.src = 'fondos/personajes/' + p + '.svg';
+    img.style.animation = 'none';
+    void img.offsetWidth;
+    img.style.animation = '';
+    vuelta++;
+  }, 7000);
 }
 
 /* ---------- Inicio ---------- */
@@ -461,14 +478,6 @@ if ('IntersectionObserver' in window) {
     });
   }, { threshold: 0.06 });
   document.querySelectorAll('.panel-tendencia').forEach(el => observador.observe(el));
-}
-
-/* Si el usuario dejó la música activada, se arranca tras el primer gesto */
-if (typeof Sonido !== 'undefined' && Sonido.musicaActiva) {
-  window.addEventListener('pointerdown', function arrancar() {
-    Sonido.arrancarMusica();
-    window.removeEventListener('pointerdown', arrancar);
-  }, { once: true });
 }
 
 /* ---------- Contador de visitas ---------- */

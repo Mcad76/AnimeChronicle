@@ -277,6 +277,18 @@ PERSONAJES = [
     {'id': 'heroina',     'nombre': 'HEROÍNA DE ACERO',    'pelo': '#facc15', 'traje': '#3f3f46', 'acento': '#f43f5e', 'prop': 'espada', 'variante': 1},
     {'id': 'músico',      'nombre': 'MÚSICO CALLEJERO',    'pelo': '#a3e635', 'traje': '#27303f', 'acento': '#f472b6', 'prop': 'guitarra', 'variante': 0},
     {'id': 'centinela',   'nombre': 'CENTINELA OMEGA',     'pelo': '#94a3b8', 'traje': '#1f2937', 'acento': '#39ff14', 'prop': 'pistola', 'variante': 3},
+    {'id': 'ciberpunk',   'nombre': 'CIBERPUNK NEÓN',      'pelo': '#f0abfc', 'traje': '#1e1b4b', 'acento': '#22d3ee', 'prop': 'pistola', 'variante': 1},
+    {'id': 'valkiria',    'nombre': 'VALKIRIA DEL CIELO',  'pelo': '#e2e8f0', 'traje': '#312e81', 'acento': '#fbbf24', 'prop': 'escudo', 'variante': 2},
+    {'id': 'gladiador',   'nombre': 'GLADIADOR REAL',      'pelo': '#b45309', 'traje': '#3f1d1d', 'acento': '#f59e0b', 'prop': 'espada', 'variante': 0},
+    {'id': 'templario',   'nombre': 'TEMPLARIO SANTO',     'pelo': '#fcd34d', 'traje': '#1e3a5f', 'acento': '#e2e8f0', 'prop': 'escudo', 'variante': 1},
+    {'id': 'marinero',    'nombre': 'MARINERO VALIENTE',   'pelo': '#38bdf8', 'traje': '#0c4a6e', 'acento': '#fde047', 'prop': 'arco', 'variante': 0},
+    {'id': 'piloto',      'nombre': 'PILOTO DE ASALTO',    'pelo': '#fb7185', 'traje': '#1f2937', 'acento': '#38bdf8', 'prop': 'pistola', 'variante': 3},
+    {'id': 'artista',     'nombre': 'ARTISTA CALLEJERO',   'pelo': '#f472b6', 'traje': '#4c1d95', 'acento': '#a3e635', 'prop': 'cinta', 'variante': 2},
+    {'id': 'alquimista',  'nombre': 'ALQUIMISTA MAESTRO',  'pelo': '#34d399', 'traje': '#064e3b', 'acento': '#fbbf24', 'prop': 'varita', 'variante': 1},
+    {'id': 'ronin',       'nombre': 'RØNIN SIN AMO',       'pelo': '#1f2937', 'traje': '#3b1d2e', 'acento': '#ef4444', 'prop': 'espada', 'variante': 2},
+    {'id': 'sacerdotisa', 'nombre': 'SACERDOTISA LUNA',    'pelo': '#c4b5fd', 'traje': '#2e1065', 'acento': '#fde047', 'prop': 'varita', 'variante': 1},
+    {'id': 'mercenario',  'nombre': 'MERCENARIO OMEGA',    'pelo': '#f97316', 'traje': '#292524', 'acento': '#84cc16', 'prop': 'pistola', 'variante': 0},
+    {'id': 'cazarrecompensas', 'nombre': 'CAZARRECOMPENSAS', 'pelo': '#22d3ee', 'traje': '#0f172a', 'acento': '#f43f5e', 'prop': 'guante', 'variante': 3},
 ]
 
 SECCION_PERSONAJE = {

@@ -23,7 +23,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100vw; }
 
 body {
   margin: 0;
@@ -765,7 +765,7 @@ button { cursor: pointer; }
 }
 .ataque__flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
 .ataque--activo .ataque__flash { animation: golpe-flash .4s .85s ease-out both; }
-.ataque--activo { animation: sacudida-overlay .45s .85s linear; }
+.ataque--activo { animation: none; }
 
 @keyframes golpe-personaje {
   0%   { opacity: 0; transform: translateX(-130%) scale(.7); }
@@ -789,14 +789,6 @@ button { cursor: pointer; }
   100% { opacity: 0; transform: scale(.85) translateY(-20px); }
 }
 @keyframes golpe-flash { 0% { opacity: 0; } 35% { opacity: .9; } 100% { opacity: 0; } }
-@keyframes sacudida-overlay {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(10px, -6px); }
-  40% { transform: translate(-10px, 6px); }
-  60% { transform: translate(6px, 5px); }
-  80% { transform: translate(-4px, -3px); }
-}
-
 /* ---------- Accesibilidad: menos movimiento ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
