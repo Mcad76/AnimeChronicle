@@ -246,7 +246,154 @@ def generar_fondos():
 </svg>''')
 
 
+# ------------------------------------------------------------ personajes
+# Arte original: arquetipos de héroes de anime y videojuegos (sin copyright).
+PERSONAJES = [
+    {'id': 'guerrero',    'nombre': 'GUERRERO DE ENERGÍA', 'pelo': '#ff2e88', 'traje': '#2a1b5e', 'acento': '#ff8a3d', 'prop': 'espada'},
+    {'id': 'espadachina', 'nombre': 'ESPDACHINA VELOZ',    'pelo': '#00e5ff', 'traje': '#3b1d6e', 'acento': '#a855f7', 'prop': 'espada'},
+    {'id': 'ninja',       'nombre': 'NINJA DEL SHURIKEN',  'pelo': '#1a2b1a', 'traje': '#1f3d2b', 'acento': '#39ff14', 'prop': 'kunai'},
+    {'id': 'maga',        'nombre': 'MAGA ESTELAR',        'pelo': '#a855f7', 'traje': '#4a1d6b', 'acento': '#ffd23f', 'prop': 'varita'},
+    {'id': 'mecha',       'nombre': 'MECHA TITÁN',         'pelo': '#4d9fff', 'traje': '#1b2a4a', 'acento': '#ff2e88', 'prop': 'escudo'},
+    {'id': 'detective',   'nombre': 'DETECTIVE GENIO',     'pelo': '#3a2a1a', 'traje': '#2b2b45', 'acento': '#ffd23f', 'prop': 'lupa'},
+    {'id': 'idol',        'nombre': 'ÍDOLO DEL ESCENARIO', 'pelo': '#ff6b35', 'traje': '#5a1d5e', 'acento': '#ffffff', 'prop': 'micro'},
+    {'id': 'dragon',      'nombre': 'JINETE DE DRAGONES',  'pelo': '#ffd23f', 'traje': '#5e1b2e', 'acento': '#ff2e88', 'prop': 'dragon'},
+]
+
+SECCION_PERSONAJE = {
+    'estrenos': 'guerrero', 'series': 'ninja', 'peliculas': 'espadachina',
+    'manga': 'maga', 'videojuegos': 'mecha', 'eventos': 'idol', 'comunidad': 'dragon',
+}
+
+
+def formas_personaje(p, escala=1.0):
+    """Devuelve las formas SVG de un personaje (sin etiqueta <svg>)."""
+    pelo, traje, acento, prop = p['pelo'], p['traje'], p['acento'], p['prop']
+    partes = [
+        f'<circle cx="200" cy="250" r="152" fill="none" stroke="{acento}" stroke-width="2" opacity=".35"/>',
+        f'<circle cx="200" cy="250" r="182" fill="none" stroke="{acento}" stroke-width="1" opacity=".18"/>',
+        f'<path d="M118 272 Q52 372 88 482 L312 482 Q348 372 282 272Z" fill="{pelo}" opacity=".45"/>',
+        '<rect x="158" y="382" width="32" height="98" rx="10" fill="#15122f" stroke="' + acento + '" stroke-width="2"/>',
+        '<rect x="210" y="382" width="32" height="98" rx="10" fill="#15122f" stroke="' + acento + '" stroke-width="2"/>',
+        f'<rect x="146" y="462" width="56" height="22" rx="7" fill="{acento}"/>',
+        f'<rect x="198" y="462" width="56" height="22" rx="7" fill="{acento}"/>',
+        f'<path d="M140 270 Q200 238 260 270 L278 388 Q200 408 122 388Z" fill="{traje}" stroke="{acento}" stroke-width="3"/>',
+        f'<rect x="126" y="344" width="148" height="15" fill="{acento}"/>',
+        f'<path d="M142 286 L96 362" stroke="{traje}" stroke-width="24" stroke-linecap="round"/>',
+        f'<path d="M258 286 L308 224" stroke="{traje}" stroke-width="24" stroke-linecap="round"/>',
+        '<circle cx="94" cy="366" r="14" fill="#ffd9b3"/>',
+        '<circle cx="311" cy="221" r="14" fill="#ffd9b3"/>',
+        '<rect x="188" y="248" width="24" height="26" fill="#ffd9b3"/>',
+        '<ellipse cx="200" cy="185" rx="68" ry="72" fill="#ffd9b3" stroke="#2a1a3a" stroke-width="3"/>',
+        f'<path d="M126 176 L112 108 L146 138 L152 72 L182 122 L200 52 L218 122 L248 72 L254 138 L288 108 L274 176 Q200 128 126 176Z" fill="{pelo}" stroke="#160e2e" stroke-width="3"/>',
+        '<ellipse cx="175" cy="192" rx="13" ry="17" fill="#fff"/>',
+        '<ellipse cx="225" cy="192" rx="13" ry="17" fill="#fff"/>',
+        f'<circle cx="177" cy="194" r="7" fill="{acento}"/><circle cx="227" cy="194" r="7" fill="{acento}"/>',
+        '<circle cx="180" cy="190" r="2.5" fill="#fff"/><circle cx="230" cy="190" r="2.5" fill="#fff"/>',
+        f'<path d="M160 168 L188 164 M212 164 L240 168" stroke="{pelo}" stroke-width="5" stroke-linecap="round"/>',
+        '<path d="M186 228 Q200 240 214 228" fill="none" stroke="#7a2f4a" stroke-width="4" stroke-linecap="round"/>',
+        f'<circle cx="200" cy="132" r="7" fill="{acento}"/>',
+    ]
+
+    if prop == 'espada':
+        partes += [
+            '<path d="M322 214 L128 34" stroke="#eaf6ff" stroke-width="13" stroke-linecap="round"/>',
+            '<path d="M322 214 L128 34" stroke="#9fd8ff" stroke-width="5" stroke-linecap="round"/>',
+            f'<path d="M304 234 L338 200" stroke="{acento}" stroke-width="12" stroke-linecap="round"/>',
+        ]
+    elif prop == 'kunai':
+        partes += [
+            '<path d="M312 224 L370 176 L356 234Z" fill="#dbe4f0" stroke="#111" stroke-width="3"/>',
+            '<path d="M346 220 L372 250" stroke="#64748b" stroke-width="9" stroke-linecap="round"/>',
+            f'<circle cx="360" cy="244" r="7" fill="{acento}"/>',
+        ]
+    elif prop == 'varita':
+        partes += [
+            '<path d="M100 384 L82 104" stroke="#ffd23f" stroke-width="9" stroke-linecap="round"/>',
+            '<path d="M82 62 L94 88 L122 92 L101 110 L107 138 L82 123 L57 138 L63 110 L42 92 L70 88Z" fill="#ffd23f" stroke="#fff" stroke-width="3"/>',
+        ]
+    elif prop == 'escudo':
+        partes += [
+            f'<circle cx="330" cy="238" r="46" fill="{acento}" opacity=".85" stroke="#fff" stroke-width="5"/>',
+            '<path d="M330 210 L330 266 M304 238 L356 238" stroke="#fff" stroke-width="5"/>',
+        ]
+    elif prop == 'lupa':
+        partes += [
+            '<circle cx="326" cy="230" r="30" fill="#bff6ff" opacity=".35" stroke="#ffd23f" stroke-width="8"/>',
+            '<path d="M348 252 L376 284" stroke="#8b5a2b" stroke-width="10" stroke-linecap="round"/>',
+        ]
+    elif prop == 'micro':
+        partes += [
+            '<rect x="304" y="186" width="20" height="64" rx="10" fill="#ff2e88" stroke="#fff" stroke-width="3"/>',
+            '<circle cx="314" cy="180" r="18" fill="#e2e8f0" stroke="#111" stroke-width="3"/>',
+        ]
+    else:  # dragón
+        partes += [
+            '<path d="M306 220 Q360 170 382 210 Q360 200 348 224 Q372 246 348 264 Q330 250 306 254Z" fill="#ff2e88" stroke="#ffd23f" stroke-width="3"/>',
+            '<circle cx="362" cy="214" r="4" fill="#fff"/>',
+        ]
+
+    return '<g transform="scale(' + str(escala) + ')">' + ''.join(partes) + '</g>'
+
+
+def generar_personajes():
+    print('Generando personajes...')
+    destino = FONDOS / 'personajes'
+    destino.mkdir(parents=True, exist_ok=True)
+
+    for p in PERSONAJES:
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="400" height="520" viewBox="0 0 400 520">
+  {formas_personaje(p)}
+</svg>'''
+        escribir_svg('personajes/' + p['id'] + '.svg', svg)
+
+    # Fondo principal: varios héroes en silueta neón
+    random.seed(11)
+    grupos = []
+    posiciones = [(30, 250, 0.9), (270, 300, 1.0), (540, 230, 0.85),
+                  (790, 300, 1.05), (1060, 250, 0.9), (1240, 330, 0.8)]
+    for (x, y, s), p in zip(posiciones, PERSONAJES[:6]):
+        grupos.append(f'<g transform="translate({x},{y}) scale({s})" opacity=".22">'
+                      + formas_personaje(p) + '</g>')
+    escribir_svg('personajes-fondo.svg', f'''<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080616"/><stop offset=".5" stop-color="#1a0f3a"/><stop offset="1" stop-color="#080616"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#b)"/>
+  {''.join(grupos)}
+</svg>''')
+
+    # Respaldo por sección con el personaje protagonista
+    random.seed(3)
+    for ident, nombre, color, kanji, simbolo in SECCIONES:
+        p = next(x for x in PERSONAJES if x['id'] == SECCION_PERSONAJE[ident])
+        velocidad = []
+        for i in range(22):
+            x = random.randint(-200, 1100)
+            y = random.randint(0, 640)
+            w = random.randint(40, 240)
+            velocidad.append(f'<path d="M{x} {y} l{w} -{random.randint(20,90)}" stroke="{color}" stroke-width="{random.choice((1,2,3))}" opacity="{round(random.uniform(.08,.26),2)}"/>')
+        escribir_svg(f'fallback-{ident}.svg', f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
+  <defs>
+    <linearGradient id="f" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080616"/><stop offset=".55" stop-color="#171037"/><stop offset="1" stop-color="#080616"/>
+    </linearGradient>
+    <radialGradient id="g"><stop offset="0" stop-color="{color}" stop-opacity=".55"/><stop offset="1" stop-color="{color}" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1000" height="640" fill="url(#f)"/>
+  <circle cx="720" cy="260" r="330" fill="url(#g)"/>
+  {''.join(velocidad)}
+  <text x="500" y="360" font-size="230" fill="{color}" opacity=".12" text-anchor="middle" font-family="sans-serif">{kanji}</text>
+  <g transform="translate(600,120) scale(1.15)">{formas_personaje(p)}</g>
+  <path d="M0 470 L1000 430 L1000 640 L0 640Z" fill="#080616" opacity=".72"/>
+  <text x="48" y="528" font-size="66" font-weight="900" fill="#fff" font-family="Arial,sans-serif">{nombre}</text>
+  <text x="50" y="572" font-size="22" letter-spacing="7" fill="{color}" font-family="Arial,sans-serif">ANIMECHRONICLE {simbolo} · {p["nombre"]}</text>
+</svg>''')
+
+
 if __name__ == '__main__':
     generar_sonidos()
     generar_fondos()
+    generar_personajes()
     print('Recursos listos.')

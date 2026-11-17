@@ -239,6 +239,53 @@ function construirArchivo() {
   }).join('');
 }
 
+/* ---------- Ataque: personaje + grito al abrir una noticia ---------- */
+const PERSONAJES_ATAQUE = [
+  'guerrero', 'espadachina', 'ninja', 'maga', 'mecha', 'detective', 'idol', 'dragon',
+];
+
+const Ataque = {
+  activo: false,
+
+  mostrar(callback) {
+    if (this.activo) return;
+    this.activo = true;
+
+    const personaje = PERSONAJES_ATAQUE[Math.floor(Math.random() * PERSONAJES_ATAQUE.length)];
+    const grito = Sonido.frase('whoosh');
+    Sonido.decir(grito, 'ja-JP', 1);
+
+    const reduce = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) {
+      setTimeout(() => { this.activo = false; if (callback) callback(); }, 420);
+      return;
+    }
+
+    const capa = document.createElement('div');
+    capa.className = 'ataque';
+    capa.setAttribute('aria-hidden', 'true');
+    capa.innerHTML = `
+      <div class="ataque__rayo"></div>
+      <div class="ataque__personaje">
+        <img src="fondos/personajes/${personaje}.svg" alt="">
+      </div>
+      <div class="ataque__burbuja">${grito}</div>
+      <div class="ataque__flash"></div>`;
+    document.body.appendChild(capa);
+    document.body.classList.add('ataque-activo');
+
+    requestAnimationFrame(() => requestAnimationFrame(() => capa.classList.add('ataque--activo')));
+
+    setTimeout(() => {
+      capa.remove();
+      document.body.classList.remove('ataque-activo');
+      this.activo = false;
+      if (callback) callback();
+    }, 1750);
+  },
+};
+
 /* ---------- Modal ---------- */
 const modal = document.getElementById('modal');
 
@@ -315,9 +362,9 @@ document.addEventListener('click', (e) => {
 
   const noticia = e.target.closest('[data-id]');
   if (noticia) {
-    Sonido.reproducir('select', 0.5);
-    Sonido.vibrar(25);
-    abrirNoticia(noticia.dataset.id);
+    if (Ataque.activo) return;
+    Sonido.vibrar(30);
+    Ataque.mostrar(() => abrirNoticia(noticia.dataset.id));
     return;
   }
 
@@ -328,8 +375,9 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !modal.hidden) { Sonido.reproducir('close', 0.55); cerrarNoticia(); }
   if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[data-id][role="button"]')) {
     e.preventDefault();
-    Sonido.reproducir('select', 0.5);
-    abrirNoticia(e.target.dataset.id);
+    if (Ataque.activo) return;
+    Sonido.vibrar(30);
+    Ataque.mostrar(() => abrirNoticia(e.target.dataset.id));
   }
 });
 

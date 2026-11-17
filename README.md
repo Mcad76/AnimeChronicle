@@ -13,13 +13,19 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Portada visual:** hero con destacadas, rejillas por sección y tarjetas con brillo,
   elevación y entrada escalonada al cargar.
 - **Pestañas por género:** cambia de shōnen a isekai y toda la portada se regenera al instante.
-- **Ticker "Alerta Anime"**, pétalos de sakura, fondo estrellado, rejilla neón,
-  escaneo CRT, barra de progreso de lectura y logo con efecto glitch.
-- **Sonidos de anime sintetizados** (sin copyright): blip de pulsación, "power up" al
-  seleccionar noticia, whoosh, apertura/cierre, cambio de pestaña y un bucle synth
-  opcional (♪ en la barra superior). Todo se puede silenciar con 🔊/🔇 y se recuerda
-  la preferencia.
+- **Fondos con personajes míticos originales** (arte vectorial propio, sin copyright):
+  guerrero de energía, espadachina, ninja, maga, mecha, detective, ídolo y jinete de
+  dragones, más pétalos de sakura, estrellas, escaneo CRT y logo con efecto glitch.
+- **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
+  movimiento insignia con destello, sacudida de pantalla y un grito mítico
+  (¡Rasengan!, ¡Bankai!, ¡Kamehameha!, ¡Ataque de los Titanes!…).
+- **Voces otaku en lugar de pitidos:** cada pulsación dice una frase de anime mediante
+  la voz del navegador (con respaldo WAV si no está disponible). Bucle synth opcional
+  con ♪. Todo se puede silenciar con 🔊/🔇 y se recuerda la preferencia.
 - **Vibración** en móvil al seleccionar noticias (cuando el dispositivo lo permite).
+- **Todas las noticias llevan foto real**: se obtiene de la `og:image` del artículo
+  (incluidas las de Google News) y, si falla, de la carátula oficial vía AniList;
+  solo se usa una ilustración de personaje como último recurso.
 - **Buscador** en portada y en el archivo, filtro por sección y contador de visitas.
 - **SEO completo:** una página HTML real e indexable por noticia, JSON-LD `NewsArticle`,
   metadatos Open Graph y Twitter, `canonical`, `sitemap.xml` y `robots.txt`.
@@ -81,14 +87,14 @@ El archivo `.nojekyll` evita que GitHub ignore carpetas como `js/`.
 AnimeChronicle/
 ├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube
 ├── actualizar_noticias.py                      descarga, clasifica y genera todo
-├── generar_recursos.py                         crea sonidos WAV y fondos SVG
+├── generar_recursos.py                         crea sonidos WAV, fondos y personajes SVG
 ├── index.html                                  portada
 ├── css/styles.css                              tema neón + animaciones
 ├── js/
 │   ├── news-data.js                            banco de noticias (generado)
 │   ├── sonidos.js                              motor de audio
 │   └── app.js                                  lógica de la web
-├── fondos/                                     estrellas, rejilla, sakura y respaldos
+├── fondos/                                     estrellas, sakura, personajes y respaldos
 ├── sonidos/                                    efectos y BGL sintetizados
 ├── imagenes/                                   fotos de las noticias
 ├── noticias/                                   una página HTML por noticia

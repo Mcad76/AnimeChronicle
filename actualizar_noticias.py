@@ -275,7 +275,7 @@ def imagen_de(item):
 
 def og_image(url):
     try:
-        pagina = fetch(url).decode('utf-8', 'ignore')[:400000]
+        pagina = fetch(url).decode('utf-8', 'ignore')
         for patron in (r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',
                        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']'):
             m = re.search(patron, pagina, flags=re.I)
@@ -309,6 +309,43 @@ def descargar_imagen(url, ident):
 def imagen_respaldo(sec):
     """Ilustración local del tema si la fuente no trae foto."""
     return 'fondos/fallback-' + sec + '.svg'
+
+
+def termino_anilist(titulo):
+    """Extrae un nombre de anime/manga razonable del titular de la noticia."""
+    t = re.split(r'\s*[|·—–]\s*', titulo)[0]
+    t = re.sub(r'#\w+', ' ', t)
+    t = re.sub(r'^(exclusivo|estreno|nuevo|anuncio|tráiler|trailer|vía|info|confirmado)\s*:?\s*',
+               '', t, flags=re.I)
+    t = re.sub(r'\([^)]*\)', ' ', t)
+    return limpiar(t, 60)
+
+
+def imagen_anilist(titulo):
+    """Último recurso: carátula oficial desde la API pública de AniList."""
+    buscar = termino_anilist(titulo)
+    if len(buscar) < 4:
+        return ''
+    consulta = ('query ($s: String) { Media(search: $s, type: ANIME) '
+                '{ coverImage { large } } }')
+    for tipo in ('ANIME', 'MANGA'):
+        try:
+            payload = json.dumps({
+                'query': f'query ($s: String) {{ Media(search: $s, type: {tipo}) '
+                         '{ coverImage { large } } }',
+                'variables': {'s': buscar},
+            }).encode('utf-8')
+            req = urllib.request.Request(
+                'https://graphql.anilist.co', data=payload,
+                headers={'User-Agent': UA, 'Content-Type': 'application/json'})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                datos = json.loads(r.read().decode('utf-8'))
+            url = (datos.get('data') or {}).get('Media', {}).get('coverImage', {}).get('large', '')
+            if url:
+                return url
+        except Exception:
+            pass
+    return ''
 
 
 # ------------------------------------------------------------------ RSS
@@ -803,24 +840,6 @@ def main():
         if not n.get('image'):
             n['image'] = imagen_respaldo(n['sec'])
 
-    # Las noticias más visibles intentan conseguir una foto real desde la
-    # página original (og:image). El resto se queda con su ilustración SVG.
-    destacados = [n for n in candidatos
-                  if n['image'].startswith('fondos/')][:120]
-
-    def enriquecer(n):
-        enlace = n.get('link', '')
-        if not enlace.startswith('http') or 'news.google.com' in enlace:
-            return
-        url = og_image(enlace)
-        if url:
-            img = descargar_imagen(url, n['id'])
-            if img:
-                n['image'] = img
-
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        list(executor.map(enriquecer, destacados))
-
     # 4) Fusionar con el histórico
     for n in candidatos:
         idn = n['id']
@@ -839,6 +858,31 @@ def main():
     if len(noticias) > MAX_EN_ARCHIVO:
         log(f'Archivo: se recortaron {len(noticias) - MAX_EN_ARCHIVO} noticias antiguas')
         noticias = noticias[:MAX_EN_ARCHIVO]
+
+    # TODAS las noticias (incluidas las del histórico) deben llevar foto real.
+    # Se busca la og:image del artículo —Google News también la expone— y, si
+    # falla, la carátula oficial en AniList. El SVG queda como último recurso.
+    sin_foto = [n for n in noticias if n.get('image', '').startswith('fondos/')]
+
+    def enriquecer(n):
+        enlace = n.get('link', '')
+        if enlace.startswith('http'):
+            url = og_image(enlace)
+            if url:
+                img = descargar_imagen(url, n['id'])
+                if img:
+                    n['image'] = img
+                    return
+        url = imagen_anilist(n.get('titulo', ''))
+        if url:
+            img = descargar_imagen(url, n['id'])
+            if img:
+                n['image'] = img
+
+    if sin_foto:
+        log(f'Fotos: se intentan enriquecer {len(sin_foto)} noticias sin foto real')
+    with ThreadPoolExecutor(max_workers=12) as executor:
+        list(executor.map(enriquecer, sin_foto))
 
     de_hoy = []
     hoy = ahora.astimezone().date().isoformat()
@@ -870,6 +914,9 @@ def main():
                     continue
                 url = extra['_imgurl']
                 extra['image'] = descargar_imagen(url, extra['id']) if url else ''
+                if not extra['image']:
+                    url = og_image(extra['link']) or imagen_anilist(extra['titulo'])
+                    extra['image'] = descargar_imagen(url, extra['id']) if url else ''
                 if not extra['image']:
                     extra['image'] = imagen_respaldo(sec['id'])
                 extra['viral'] = calcular_viral(extra, menciones, ahora)
