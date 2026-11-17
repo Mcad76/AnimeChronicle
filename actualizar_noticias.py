@@ -286,7 +286,15 @@ def og_image(url):
     return ''
 
 
+def mejorar_url_imagen(url):
+    """Pide a Googleusercontent la versión grande en lugar de la miniatura."""
+    if 'googleusercontent.com' in url:
+        url = re.sub(r'=[sw]\d+[^/]*$', '=w1000', url)
+    return url
+
+
 def descargar_imagen(url, ident):
+    url = mejorar_url_imagen(url)
     try:
         req = urllib.request.Request(url, headers={'User-Agent': UA})
         with urllib.request.urlopen(req, timeout=8) as r:
@@ -501,6 +509,103 @@ def cargar_manuales():
     return salida
 
 
+# Franquicias usadas para el radar de "lo más visto"
+FRANQUICIAS = [
+    ('One Piece', ['one piece', 'luffy', 'zoro', 'nami']),
+    ('Dragon Ball', ['dragon ball', 'goku', 'vegeta', 'gohan']),
+    ('Naruto / Boruto', ['naruto', 'boruto', 'sasuke', 'kakashi']),
+    ('Demon Slayer', ['demon slayer', 'kimetsu', 'tanjiro', 'nezuko', 'zenitsu']),
+    ('Jujutsu Kaisen', ['jujutsu', 'gojo', 'yuji itadori', 'sukuna']),
+    ('Attack on Titan', ['attack on titan', 'shingeki', 'eren jaeger', 'aot']),
+    ('My Hero Academia', ['my hero', 'boku no hero', 'deku', 'all might', 'bakugo']),
+    ('Chainsaw Man', ['chainsaw man', 'denji', 'makima', 'power']),
+    ('Spy x Family', ['spy x family', 'anya', 'loid', 'yor forger']),
+    ('Pokémon', ['pokemon', 'pokémon', 'pikachu', 'ash ketchum']),
+    ('Gundam', ['gundam', 'mobile suit']),
+    ('Neon Genesis Evangelion', ['evangelion', 'evangelion', 'shinji']),
+    ('Sailor Moon', ['sailor moon', 'usagi']),
+    ('Fullmetal Alchemist', ['fullmetal alchemist', 'edward elric', 'alphonse']),
+    ('Bleach', ['bleach', 'ichigo', 'rukia', 'bankai']),
+    ('Hunter x Hunter', ['hunter x hunter', 'gon freecss', 'killua']),
+    ('Death Note', ['death note', 'light yagami', 'ryuk']),
+    ('Code Geass', ['code geass', 'lelouch']),
+    ('Steins;Gate', ['steins gate', 'steins;gate', 'okabe']),
+    ('Fairy Tail', ['fairy tail', 'natsu', 'lucy heartfilia']),
+    ('Black Clover', ['black clover', 'asta', 'yuno']),
+    ('Seven Deadly Sins', ['seven deadly sins', 'meliodas']),
+    ('Solo Leveling', ['solo leveling', 'sung jin woo']),
+    ('That Time I Got Reincarnated as a Slime', ['tensura', 'rimuru']),
+    ('Re:Zero', ['re:zero', 're zero', 'subaru']),
+    ('KonoSuba', ['konosuba', 'kazuma']),
+    ('Mushoku Tensei', ['mushoku', 'rudeus']),
+    ('Frieren', ['frieren', 'sousou no frieren']),
+    ('Oshi no Ko', ['oshi no ko', 'ai hoshino', 'aqua']),
+    ('Blue Lock', ['blue lock', 'isagi']),
+    ('Haikyuu', ['haikyuu', 'hinata shoyo', 'kageyama']),
+    ('JoJo', ['jojo', 'bizarre adventure', 'jotaro']),
+    ('One Punch Man', ['one punch man', 'saitama', 'genos']),
+    ('Mob Psycho 100', ['mob psycho', 'shigeo']),
+    ('Cyberpunk: Edgerunners', ['cyberpunk', 'edgerunners', 'lucy']),
+    ('Berserk', ['berserk', 'guts', 'griffith']),
+    ('Vinland Saga', ['vinland saga', 'thorfinn']),
+    ('Your Name', ['your name', 'kimi no na wa', 'taki']),
+    ('Studio Ghibli', ['ghibli', 'spirited away', 'totoro', 'princess mononoke']),
+    ('Kill la Kill', ['kill la kill', 'ryuko']),
+    ('Dorohedoro', ['dorohedoro']),
+    ('Ranking of Kings', ['ranking of kings', 'bojji']),
+    ('Komatsuna', ['komi san', 'komi-san']),
+]
+
+DOMINIOS_ES = ('.es', 'espinof', 'vidaextra', 'xataka', 'hobbyconsolas',
+               '3djuegos', 'meristation', 'areajugones', 'elmundo', 'abc.',
+               'rtve', 'lavanguardia', '20minutos', 'multianime', 'kudasai',
+               'crunchyroll.com/es', 'animeymanga')
+
+
+def generar_tendencias(noticias):
+    """Radar de franquicias más mencionadas, en España y a nivel mundial."""
+    def es_de_espana(n):
+        medio = (n.get('medio') or '').lower()
+        return any(d in medio for d in DOMINIOS_ES)
+
+    def ranking(lista):
+        conteo = {}
+        for n in lista:
+            texto = normalizar(n['titulo'] + ' ' + n.get('entradilla', ''))
+            for nombre, alias in FRANQUICIAS:
+                if any(a in texto for a in alias):
+                    if nombre not in conteo:
+                        conteo[nombre] = {'nombre': nombre, 'noticias': 0, 'mejor': n}
+                    conteo[nombre]['noticias'] += 1
+                    if (n.get('viral', 0) > conteo[nombre]['mejor'].get('viral', 0)):
+                        conteo[nombre]['mejor'] = n
+        items = sorted(conteo.values(),
+                       key=lambda x: (x['noticias'], x['mejor'].get('viral', 0)),
+                       reverse=True)[:8]
+        # Si faltan entradas, se completan con las noticias más virales
+        usados = {x['nombre'] for x in items}
+        for n in sorted(lista, key=lambda x: x.get('viral', 0), reverse=True):
+            if len(items) >= 8:
+                break
+            nombre = limpiar(n['titulo'], 34)
+            if nombre in usados:
+                continue
+            items.append({'nombre': nombre, 'noticias': 1, 'mejor': n})
+            usados.add(nombre)
+        return [{
+            'nombre': x['nombre'],
+            'noticias': x['noticias'],
+            'titulo': x['mejor']['titulo'],
+            'image': x['mejor'].get('image', ''),
+            'url': url_para(x['mejor']),
+        } for x in items]
+
+    return {
+        'es': ranking([n for n in noticias if es_de_espana(n)]),
+        'mundo': ranking(noticias),
+    }
+
+
 def guardar_historico(datos):
     DATOS.mkdir(parents=True, exist_ok=True)
     tmp = HISTORICO.with_suffix('.tmp')
@@ -529,6 +634,9 @@ def generar_js(historico):
         'const SECCIONES = [', secciones_js, '];',
         '',
         'const GENEROS = [', generos_js, '];',
+        '',
+        'const TENDENCIAS = ' + json.dumps(historico.get('tendencias', {'es': [], 'mundo': []}),
+                                          ensure_ascii=False) + ';',
         '',
         "const A = (id, sec, genero, slot, titulo, entradilla, cuerpo,",
         "          autor = 'Redacción', fecha = '', image = '', link = '',",
@@ -575,21 +683,21 @@ def generar_paginas(historico):
     estilos = '''
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#080616;color:#f2f0ff;font-family:Montserrat,Arial,sans-serif;line-height:1.75}
+body{margin:0;background:#080616;color:#f2f0ff;font-family:Rajdhani,Arial,sans-serif;line-height:1.7}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
   background:radial-gradient(circle at 15% 10%,rgba(255,46,136,.18),transparent 45%),
              radial-gradient(circle at 85% 20%,rgba(0,229,255,.15),transparent 45%),
              radial-gradient(circle at 50% 90%,rgba(168,85,247,.15),transparent 50%)}
 .cabecera{background:rgba(10,8,30,.95);border-bottom:2px solid #ff2e88;padding:18px 5%;
   box-shadow:0 0 24px rgba(255,46,136,.25)}
-.cabecera a{color:#00e5ff;font:900 22px Orbitron,Arial,sans-serif;text-transform:uppercase;
+.cabecera a{color:#00e5ff;font:800 22px Oxanium,Arial,sans-serif;text-transform:uppercase;
   text-decoration:none;text-shadow:0 0 12px rgba(0,229,255,.7)}
 .articulo{max-width:940px;margin:28px auto;background:rgba(18,16,43,.92);
   border:1px solid rgba(0,229,255,.25);border-top:4px solid var(--accent,#ff2e88);
   padding:32px clamp(20px,5vw,56px) 48px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
-.seccion{display:inline-block;color:#fff;font:700 13px Orbitron,Arial,sans-serif;
+.seccion{display:inline-block;color:#fff;font:700 13px Oxanium,Arial,sans-serif;
   text-transform:uppercase;padding:4px 12px;letter-spacing:.05em;background:var(--accent,#ff2e88)}
-h1{font:900 clamp(30px,5vw,52px)/1.08 Orbitron,Arial,sans-serif;margin:16px 0;
+h1{font:800 clamp(30px,5vw,52px)/1.08 Oxanium,Arial,sans-serif;margin:16px 0;
   text-shadow:0 0 18px rgba(255,46,136,.45)}
 .meta{color:#a9a4c8;font-size:13px;text-transform:uppercase;border-top:1px solid #33305a;
   border-bottom:1px solid #33305a;padding:10px 0;margin-bottom:24px}
@@ -600,12 +708,12 @@ img.portada{width:100%;height:auto;display:block;margin:0 0 24px;border:1px soli
 .fuente,.volver{display:inline-block;margin:16px 12px 0 0;color:#00e5ff;font-weight:700}
 .compartir{margin:14px 0 28px;display:flex;flex-wrap:wrap;gap:8px}
 .compartir a{display:inline-block;padding:9px 15px;border-radius:4px;color:#fff;
-  font:700 13px Montserrat,Arial,sans-serif;text-decoration:none;transition:transform .2s}
+  font:700 13px Rajdhani,Arial,sans-serif;text-decoration:none;transition:transform .2s}
 .compartir a:hover{transform:translateY(-3px)}
 .compartir .wa{background:#25d366;color:#08120b}.compartir .tg{background:#229ed9}
 .compartir .x{background:#111}.compartir .fb{background:#1877f2}
 .relacionadas{margin-top:34px;border-top:2px solid var(--accent,#ff2e88);padding-top:16px}
-.relacionadas h2{font:900 22px Orbitron,Arial,sans-serif;text-transform:uppercase;margin:0 0 10px}
+.relacionadas h2{font:800 22px Oxanium,Arial,sans-serif;text-transform:uppercase;margin:0 0 10px}
 .relacionadas a{display:block;padding:9px 0;border-bottom:1px solid #33305a;color:#00e5ff;
   font-weight:700;text-decoration:none}
 .canales{margin-top:26px;padding:16px;background:rgba(255,46,136,.08);border:1px solid rgba(255,46,136,.4)}
@@ -682,7 +790,7 @@ img.portada{width:100%;height:auto;display:block;margin:0 0 24px;border:1px soli
         pagina += [
             '  <script type="application/ld+json">' + ld_json + '</script>',
             '  <link rel="preconnect" href="https://fonts.googleapis.com">',
-            '  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">',
+            '  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;800&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">',
             estilos,
             '</head>', '<body>',
             f'  <div class="cabecera"><a href="../index.html">◀ {NOMBRE} — Volver a la portada</a></div>',
@@ -950,6 +1058,7 @@ def main():
     # 7) Guardar y generar salidas
     hist['noticias'] = noticias
     hist['top'] = top_ids
+    hist['tendencias'] = generar_tendencias(noticias)
     hist['actualizado'] = ahora.isoformat()
     guardar_historico(hist)
     generar_js(hist)

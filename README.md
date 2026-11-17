@@ -13,6 +13,10 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Portada visual:** hero con destacadas, rejillas por sección y tarjetas con brillo,
   elevación y entrada escalonada al cargar.
 - **Pestañas por género:** cambia de shōnen a isekai y toda la portada se regenera al instante.
+- **Radar de tendencias:** dos paneles enfrentados con lo más visto en España y en el mundo, calculado a partir de las menciones a franquicias en las noticias.
+- **Glosario otaku:** pestaña final con **225 términos clasificados en 10 categorías** (géneros, formatos, producción, arquetipos, poderes, jerga, cultura, expresiones, eventos y merchandising), con búsqueda y filtros.
+- **Rejilla de tamaños mixtos:** una noticia grande y dos pequeñas por sección, como un diario, con ancho uniforme y adaptación a móvil.
+- **Tipografía nueva:** Oxanium para titulares y Rajdhani para el cuerpo, con Noto Sans JP para los kanjis.
 - **Fondos con personajes míticos originales** (arte vectorial propio, sin copyright):
   guerrero de energía, espadachina, ninja, maga, mecha, detective, ídolo y jinete de
   dragones, más pétalos de sakura, estrellas, escaneo CRT y logo con efecto glitch.
@@ -92,6 +96,7 @@ AnimeChronicle/
 ├── css/styles.css                              tema neón + animaciones
 ├── js/
 │   ├── news-data.js                            banco de noticias (generado)
+│   ├── glosario.js                             225 términos clasificados
 │   ├── sonidos.js                              motor de audio
 │   └── app.js                                  lógica de la web
 ├── fondos/                                     estrellas, sakura, personajes y respaldos

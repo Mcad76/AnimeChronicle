@@ -15,7 +15,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Montserrat:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -69,7 +69,9 @@
         <nav class="menu-desplegable" id="menu-desplegable" aria-label="Menú de secciones" hidden>
           <a href="#inicio" class="menu-desplegable__item">Inicio</a>
           <div id="menu-secciones"></div>
+          <a href="#tendencias" class="menu-desplegable__item">Tendencias</a>
           <a href="#archivo" class="menu-desplegable__item">Archivo</a>
+          <a href="#glosario" class="menu-desplegable__item">Glosario otaku</a>
         </nav>
       </div>
 
@@ -125,6 +127,19 @@
     <!-- HERO: destacadas del día -->
     <div id="hero"></div>
 
+    <!-- TENDENCIAS: lo más visto en España y en el mundo -->
+    <section class="tendencias" id="tendencias">
+      <div class="wrap">
+        <div class="tendencias__cabecera">
+          <h2 class="tendencias__titulo">🔥 RADAR OTAKU <span>LO MÁS VISTO AHORA MISMO</span></h2>
+        </div>
+        <div class="tendencias__grid">
+          <div class="panel-tendencia" id="panel-es"></div>
+          <div class="panel-tendencia" id="panel-mundo"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECCIONES (generadas por JS) -->
     <div id="secciones"></div>
 
@@ -151,6 +166,27 @@
         <div class="archivo__vacio" id="archivo-vacio" hidden>No se han encontrado noticias con esos criterios. Prueba con otro género.</div>
       </div>
     </section>
+
+    <!-- GLOSARIO OTAKU -->
+    <section class="glosario-seccion" id="glosario">
+      <div class="wrap">
+        <div class="bloque__cabecera">
+          <div class="bloque__titulo"><span class="bloque__barra"></span> GLOSARIO OTAKU</div>
+          <div class="bloque__fecha">225 términos clasificados · el diccionario del fansub</div>
+        </div>
+        <p class="glosario__intro">¿No sabes qué significa <em>tsundere</em>, <em>Bankai</em> o <em>kowai</em>? Aquí tienes el diccionario esencial del anime, repartido en 10 categorías.</p>
+        <div class="glosario__buscar">
+          <label class="archivo__buscar">
+            <span aria-hidden="true">&#128269;</span>
+            <input type="search" id="glosario-buscar" placeholder="Busca un término: shonen, rasengan, senpai..." aria-label="Buscar en el glosario">
+          </label>
+          <span class="glosario__contador" id="glosario-contador"></span>
+        </div>
+        <div class="glosario__categorias" id="glosario-categorias"></div>
+        <div class="glosario__lista" id="glosario-lista"></div>
+        <div class="glosario__vacio" id="glosario-vacio" hidden>No se ha encontrado ese término. Prueba con otra palabra.</div>
+      </div>
+    </section>
   </main>
 
   <!-- Publicidad -->
@@ -170,7 +206,9 @@
       </div>
       <div class="footer__links">
         <a href="#inicio">Inicio</a>
+        <a href="#tendencias">Tendencias</a>
         <a href="#archivo">Archivo</a>
+        <a href="#glosario">Glosario</a>
         <a href="#inicio">Volver arriba ↑</a>
       </div>
       <div class="footer__copy">
@@ -190,6 +228,7 @@
   </div>
 
   <script src="js/news-data.js"></script>
+  <script src="js/glosario.js"></script>
   <script src="js/sonidos.js"></script>
   <script src="js/app.js"></script>
 </body>
