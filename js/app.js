@@ -113,8 +113,6 @@ function tarjetaHTML(noticia, variante = '', i = 0) {
   </article>`;
 }
 
-const AD_HTML = '<aside class="ad ad--inline"><span class="ad__label">PUBLICIDAD</span><strong>PON AQUÍ TU PUBLICIDAD</strong><span class="ad__small">¿Tu marca también es otaku? Escríbenos</span></aside>';
-
 /* ---------- Hero de destacadas ---------- */
 function construirHero() {
   const hueco = document.getElementById('hero');
@@ -167,50 +165,16 @@ function construirTendencias() {
   });
 }
 
-/* ---------- Glosario ---------- */
-let categoriaGlosario = 'todas';
-
-function construirCategoriasGlosario() {
-  const hueco = document.getElementById('glosario-categorias');
-  if (!hueco) return;
-  const botones = [{ id: 'todas', nombre: 'Todo', icono: '✦' }]
-    .concat(CATEGORIAS_GLOSARIO)
-    .map(c => `<button type="button" data-cat="${c.id}"
-      class="glosario__cat ${c.id === categoriaGlosario ? 'activa' : ''}">
-      ${c.icono} ${c.nombre}</button>`).join('');
-  hueco.innerHTML = botones;
-}
-
-function construirGlosario() {
-  const lista = document.getElementById('glosario-lista');
-  if (!lista || typeof GLOSARIO === 'undefined') return;
-  const buscar = document.getElementById('glosario-buscar').value.trim().toLowerCase();
-  const vocab = GLOSARIO.filter(x =>
-    (categoriaGlosario === 'todas' || x.c === categoriaGlosario) &&
-    (!buscar || (x.t + ' ' + x.d).toLowerCase().includes(buscar)));
-  const cat = CATEGORIAS_GLOSARIO.find(c => c.id === categoriaGlosario);
-  document.getElementById('glosario-contador').textContent = `${vocab.length} términos`;
-  document.getElementById('glosario-vacio').hidden = vocab.length > 0;
-  lista.innerHTML = vocab.map((x, i) => `
-    <article class="glosario__termino" style="--i:${i}">
-      <span class="glosario__cat-tag">${cat && categoriaGlosario !== 'todas' ? cat.icono + ' ' + cat.nombre : (CATEGORIAS_GLOSARIO.find(c => c.id === x.c) || {}).icono}</span>
-      <h3>${x.t}</h3>
-      <p>${x.d}</p>
-    </article>`).join('');
-}
-
 /* ---------- Navegación, pestañas y ticker ---------- */
 function construirNavegacion() {
   const tabs = document.getElementById('tabs-generos');
   if (tabs) {
     tabs.innerHTML = GENEROS.map(g =>
       `<button type="button" data-genero="${g.id}" class="${g.id === generoActual ? 'activa' : ''}"
-        aria-pressed="${g.id === generoActual}">${g.nombre}</button>`).join('') +
-      '<button type="button" data-vista="glosario" class="tabs-generos__glosario">📖 Glosario</button>';
+        aria-pressed="${g.id === generoActual}">${g.nombre}</button>`).join('');
   }
   const nav = document.getElementById('nav-secciones');
   const accesos = document.getElementById('accesos-rapidos');
-  const selector = document.getElementById('archivo-seccion');
   const menuSecciones = document.getElementById('menu-secciones');
   if (menuSecciones) menuSecciones.innerHTML = '<div class="menu-desplegable__titulo">Secciones</div>';
   SECCIONES.forEach(s => {
@@ -220,7 +184,6 @@ function construirNavegacion() {
       `<a class="acceso" href="#${s.id}" style="--secc-color:${s.color}">${s.nombre}</a>`);
     if (menuSecciones) menuSecciones.insertAdjacentHTML('beforeend',
       `<a href="#${s.id}" style="--secc-color:${s.color}">${s.nombre}</a>`);
-    selector.insertAdjacentHTML('beforeend', `<option value="${s.id}">${s.nombre}</option>`);
   });
 }
 
@@ -253,52 +216,12 @@ function construirSecciones() {
           <div class="seccion__nombre"><span class="punto"></span>${sec.nombre}
             <span class="seccion__num">${noticias.length} noticias</span>
           </div>
-          <a class="seccion__ver" href="#archivo" data-filtrar="${sec.id}">Ver todas las de ${sec.nombre.toLowerCase()} →</a>
+          <a class="seccion__ver" href="archivo.html?sec=${sec.id}">Ver todas las de ${sec.nombre.toLowerCase()} →</a>
         </div>
         ${contenido}
       </div>`;
     contenedor.appendChild(bloque);
-    if (idx === 3) contenedor.insertAdjacentHTML('beforeend', AD_HTML);
   });
-}
-
-/* ---------- Archivo ---------- */
-function construirArchivo() {
-  const buscar = document.getElementById('archivo-buscar').value.trim().toLowerCase();
-  const seccion = document.getElementById('archivo-seccion').value;
-  const lista = document.getElementById('archivo-lista');
-
-  let noticias = [...NOTICIAS].sort((a, b) => {
-    const dif = FECHAS_PUBLICACION[b.id] - FECHAS_PUBLICACION[a.id];
-    return dif !== 0 ? dif : a.slot - b.slot;
-  });
-  if (generoActual !== 'todos') noticias = noticias.filter(n => (n.genero || 'todos') === generoActual);
-  if (seccion !== 'todas') noticias = noticias.filter(n => n.sec === seccion);
-  if (buscar) noticias = noticias.filter(n =>
-    (n.titulo + ' ' + n.entradilla + ' ' + (n.cuerpo || []).join(' ')).toLowerCase().includes(buscar));
-
-  document.getElementById('archivo-contador').textContent =
-    `${noticias.length} noticia${noticias.length === 1 ? '' : 's'}`;
-  document.getElementById('archivo-vacio').hidden = noticias.length > 0;
-
-  lista.innerHTML = noticias.map(n => {
-    const sec = seccionPorId(n.sec);
-    const f = FECHAS_PUBLICACION[n.id];
-    return `<article class="archivo__item" data-id="${n.id}" style="--secc-color:${sec.color}"
-               tabindex="0" role="button" aria-label="Leer noticia: ${n.titulo}">
-      <img class="archivo__thumb" src="${n.image}" alt="" loading="lazy"
-           onerror="imgFallback(this,'${sec.color}')">
-      <div class="archivo__info">
-        <div class="archivo__item-titulo">${n.titulo}</div>
-        <div class="archivo__item-sub">${sec.nombre} · ${n.autor} · ${minutosLectura(n)} min de lectura</div>
-      </div>
-      <div class="archivo__fecha">
-        <strong>${sec.nombre}</strong>
-        ${fechaCorta.format(f)}
-        ${IDS_HOY.has(n.id) ? '<span class="archivo__hoy">HOY</span>' : ''}
-      </div>
-    </article>`;
-  }).join('');
 }
 
 /* ---------- Ataque: personaje + grito al abrir una noticia ---------- */
@@ -406,16 +329,6 @@ document.addEventListener('click', (e) => {
   const cerrar = e.target.closest('[data-cerrar]');
   if (cerrar) { Sonido.reproducir('close', 0.55); cerrarNoticia(); return; }
 
-  const vista = e.target.closest('[data-vista="glosario"]');
-  if (vista) {
-    Sonido.reproducir('tab', 0.6);
-    Sonido.vibrar(18);
-    document.querySelectorAll('#tabs-generos button').forEach(b =>
-      b.classList.toggle('activa', b === vista));
-    document.getElementById('glosario').scrollIntoView({ behavior: 'smooth' });
-    return;
-  }
-
   const pestaña = e.target.closest('[data-genero]');
   if (pestaña) {
     if (pestaña.dataset.genero === generoActual) return;
@@ -428,15 +341,6 @@ document.addEventListener('click', (e) => {
     construirHero();
     construirTicker();
     construirSecciones();
-    construirArchivo();
-    return;
-  }
-
-  const filtrar = e.target.closest('[data-filtrar]');
-  if (filtrar) {
-    Sonido.reproducir('tab', 0.5);
-    document.getElementById('archivo-seccion').value = filtrar.dataset.filtrar;
-    construirArchivo();
     return;
   }
 
@@ -463,31 +367,16 @@ document.addEventListener('keydown', (e) => {
 
 /* Sonido sutil al pasar el ratón por elementos interactivos */
 document.addEventListener('mouseover', (e) => {
-  if (e.target.closest('.tarjeta, .acceso, .archivo__item, .tabs-generos button, .audio-btn')) {
+  if (e.target.closest('.tarjeta, .acceso, .tabs-generos button, .audio-btn')) {
     Sonido.hover();
   }
 });
 
-document.getElementById('archivo-buscar').addEventListener('input', construirArchivo);
-document.getElementById('archivo-seccion').addEventListener('change', construirArchivo);
-
-document.getElementById('glosario-buscar').addEventListener('input', construirGlosario);
-document.getElementById('glosario-categorias').addEventListener('click', (e) => {
-  const boton = e.target.closest('[data-cat]');
-  if (!boton) return;
-  Sonido.reproducir('tab', 0.5);
-  categoriaGlosario = boton.dataset.cat;
-  document.querySelectorAll('#glosario-categorias .glosario__cat').forEach(b =>
-    b.classList.toggle('activa', b === boton));
-  construirGlosario();
-});
-
-document.getElementById('buscador-top').addEventListener('input', (e) => {
-  document.getElementById('archivo-buscar').value = e.target.value;
-  construirArchivo();
-});
 document.getElementById('buscador-top').addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') document.getElementById('archivo').scrollIntoView({ behavior: 'smooth' });
+  if (e.key === 'Enter') {
+    const q = e.target.value.trim();
+    window.location.href = 'archivo.html' + (q ? '?q=' + encodeURIComponent(q) : '');
+  }
 });
 
 /* ---------- Menú de 3 barras ---------- */
@@ -533,20 +422,21 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-/* ---------- Pétalos de sakura ---------- */
-function crearPetalos() {
-  const contenedor = document.getElementById('petalos');
+/* ---------- Personajes flotantes (en vez de flores y lunas) ---------- */
+function crearPersonajesFlotantes() {
+  const contenedor = document.getElementById('personajes-flotantes');
   if (!contenedor) return;
-  const simbolos = ['🌸', '✦', '✧', '🌙'];
   let html = '';
-  for (let i = 0; i < 18; i++) {
+  for (let i = 0; i < 14; i++) {
+    const p = PERSONAJES_ATAQUE[i % PERSONAJES_ATAQUE.length];
     const izq = Math.random() * 100;
-    const tam = 10 + Math.random() * 14;
-    const dur = 11 + Math.random() * 13;
-    const ret = -Math.random() * 20;
-    const der = (Math.random() * 240 - 120).toFixed(0);
-    const opa = (0.35 + Math.random() * 0.45).toFixed(2);
-    html += `<span class="petalo" style="left:${izq.toFixed(1)}%;--tam:${tam}px;--dur:${dur}s;--ret:${ret}s;--der:${der}px;--opa:${opa}">${simbolos[i % simbolos.length]}</span>`;
+    const tam = 34 + Math.random() * 48;
+    const dur = 14 + Math.random() * 16;
+    const ret = -Math.random() * 26;
+    const der = (Math.random() * 260 - 130).toFixed(0);
+    const opa = (0.18 + Math.random() * 0.34).toFixed(2);
+    html += `<img class="personaje-flotante" src="fondos/personajes/${p}.svg" alt=""
+      style="left:${izq.toFixed(1)}%;--tam:${tam}px;--dur:${dur}s;--ret:${ret}s;--der:${der}px;--opa:${opa}">`;
   }
   contenedor.innerHTML = html;
 }
@@ -578,15 +468,12 @@ window.addEventListener('pageshow', (e) => {
   }
 });
 
-crearPetalos();
+crearPersonajesFlotantes();
 construirNavegacion();
-construirHero();
 construirTendencias();
-construirCategoriasGlosario();
-construirGlosario();
+construirHero();
 construirTicker();
 construirSecciones();
-construirArchivo();
 actualizarProgreso();
 
 /* Revelado suave al entrar en pantalla */
@@ -599,8 +486,7 @@ if ('IntersectionObserver' in window) {
       }
     });
   }, { threshold: 0.06 });
-  document.querySelectorAll('.panel-tendencia, .glosario__termino, .bloque--archivo')
-    .forEach(el => observador.observe(el));
+  document.querySelectorAll('.panel-tendencia').forEach(el => observador.observe(el));
 }
 
 /* Si el usuario dejó la música activada, se arranca tras el primer gesto */

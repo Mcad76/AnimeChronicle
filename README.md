@@ -12,14 +12,17 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 
 - **Portada visual:** hero con destacadas, rejillas por sección y tarjetas con brillo,
   elevación y entrada escalonada al cargar.
+- **Radar de tendencias arriba del todo:** dos paneles enfrentados con lo más visto en España y en el mundo, calculado a partir de las menciones a franquicias en las noticias.
 - **Pestañas por género:** cambia de shōnen a isekai y toda la portada se regenera al instante.
-- **Radar de tendencias:** dos paneles enfrentados con lo más visto en España y en el mundo, calculado a partir de las menciones a franquicias en las noticias.
-- **Glosario otaku:** pestaña final con **225 términos clasificados en 10 categorías** (géneros, formatos, producción, arquetipos, poderes, jerga, cultura, expresiones, eventos y merchandising), con búsqueda y filtros.
+- **Páginas separadas:** el **archivo de noticias** (`archivo.html`) y el **glosario otaku** (`glosario.html`) tienen su propia página, con búsqueda, filtros y navegación propia.
+- **Glosario otaku:** **225 términos clasificados en 10 categorías** (géneros, formatos, producción, arquetipos, poderes, jerga, cultura, expresiones, eventos y merchandising).
+- **Sin publicidad:** los espacios de anuncios se han eliminado y se volverán a añadir cuando haya suficientes lectores.
 - **Rejilla de tamaños mixtos:** una noticia grande y dos pequeñas por sección, como un diario, con ancho uniforme y adaptación a móvil.
-- **Tipografía nueva:** Oxanium para titulares y Rajdhani para el cuerpo, con Noto Sans JP para los kanjis.
-- **Fondos con personajes míticos originales** (arte vectorial propio, sin copyright):
+- **Tipografía:** Chakra Petch para titulares y Barlow para el cuerpo, con Noto Sans JP para los kanjis.
+- **Fondos y animaciones con personajes míticos originales** (arte vectorial propio, sin copyright):
   guerrero de energía, espadachina, ninja, maga, mecha, detective, ídolo y jinete de
-  dragones, más pétalos de sakura, estrellas, escaneo CRT y logo con efecto glitch.
+  dragones. Los personajes caen y flotan por la pantalla en lugar de flores o lunas,
+  sobre un fondo de estrellas y escaneo CRT con logo de efecto glitch.
 - **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
   movimiento insignia con destello, sacudida de pantalla y un grito mítico
   (¡Rasengan!, ¡Bankai!, ¡Kamehameha!, ¡Ataque de los Titanes!…).
@@ -92,13 +95,18 @@ AnimeChronicle/
 ├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube
 ├── actualizar_noticias.py                      descarga, clasifica y genera todo
 ├── generar_recursos.py                         crea sonidos WAV, fondos y personajes SVG
-├── index.html                                  portada
+├── index.html                                  portada (radar, hero y secciones)
+├── archivo.html                                archivo de noticias
+├── glosario.html                               glosario otaku
 ├── css/styles.css                              tema neón + animaciones
 ├── js/
 │   ├── news-data.js                            banco de noticias (generado)
 │   ├── glosario.js                             225 términos clasificados
 │   ├── sonidos.js                              motor de audio
-│   └── app.js                                  lógica de la web
+│   ├── efectos.js                              personajes flotantes y ataque (páginas secundarias)
+│   ├── archivo.js                              lógica del archivo
+│   ├── glosario-page.js                        lógica del glosario
+│   └── app.js                                  lógica de la portada
 ├── fondos/                                     estrellas, sakura, personajes y respaldos
 ├── sonidos/                                    efectos y BGL sintetizados
 ├── imagenes/                                   fotos de las noticias

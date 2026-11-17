@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080616">
+  <meta name="description" content="Glosario otaku: 225 términos de anime clasificados en 10 categorías.">
+  <title>Glosario otaku — AnimeChronicle</title>
+  <link rel="canonical" href="https://mcad76.github.io/AnimeChronicle/glosario.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="progreso" id="progreso" aria-hidden="true"></div>
+  <div class="fondo-estrellas" aria-hidden="true"></div>
+  <div class="fondo-grid" aria-hidden="true"></div>
+  <div class="personajes-flotantes" id="personajes-flotantes" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <span class="topbar__fecha" id="fecha-topbar">—</span>
+      <span class="topbar__edicion">225 términos · 10 categorías</span>
+      <div class="topbar__right">
+        <button class="audio-btn" id="btn-musica" type="button" aria-pressed="false" aria-label="Música">♪</button>
+        <button class="audio-btn audio-btn--sfx" id="btn-sonido" type="button" aria-pressed="true" aria-label="Voces">🔊</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a href="index.html" class="brand" aria-label="AnimeChronicle, inicio">
+        <span class="brand__jp" aria-hidden="true">アニメクロニクル</span>
+        <h1 class="brand__main" data-text="ANIMECHRONICLE">ANIMECHRONICLE</h1>
+        <span class="brand__tag">✦ GLOSARIO OTAKU ✦</span>
+      </a>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Navegación principal">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="nav__link">Inicio</a>
+      <a href="index.html#tendencias" class="nav__link">Tendencias</a>
+      <a href="archivo.html" class="nav__link">Archivo</a>
+      <a href="glosario.html" class="nav__link nav__link--portada">Glosario</a>
+    </div>
+  </nav>
+
+  <main class="pagina-secundaria">
+    <div class="wrap">
+      <div class="bloque__cabecera">
+        <div class="bloque__titulo"><span class="bloque__barra"></span> GLOSARIO OTAKU</div>
+        <div class="bloque__fecha">El diccionario esencial del anime</div>
+      </div>
+      <p class="glosario__intro">¿No sabes qué significa <em>tsundere</em>, <em>Bankai</em> o <em>sakuga</em>? Aquí tienes 225 términos repartidos en 10 categorías.</p>
+      <div class="glosario__buscar">
+        <label class="archivo__buscar">
+          <span aria-hidden="true">&#128269;</span>
+          <input type="search" id="glosario-buscar" placeholder="Busca un término: shonen, rasengan, senpai..." aria-label="Buscar en el glosario">
+        </label>
+        <span class="glosario__contador" id="glosario-contador"></span>
+      </div>
+      <div class="glosario__categorias" id="glosario-categorias"></div>
+      <div class="glosario__lista" id="glosario-lista"></div>
+      <div class="glosario__vacio" id="glosario-vacio" hidden>No se ha encontrado ese término. Prueba con otra palabra.</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <div class="footer__brand">ANIMECHRONICLE</div>
+        <p>Noticias, estrenos y curiosidades del universo anime. ¡Comparte con tu nakama!</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Inicio</a>
+        <a href="archivo.html">Archivo</a>
+        <a href="glosario.html">Glosario</a>
+      </div>
+      <div class="footer__copy">
+        <p>&copy; <span id="anio"></span> AnimeChronicle.</p>
+        <p class="footer__nota">Noticias obtenidas de fuentes públicas RSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/glosario.js"></script>
+  <script src="js/sonidos.js"></script>
+  <script src="js/efectos.js"></script>
+  <script src="js/glosario-page.js"></script>
+</body>
+</html>

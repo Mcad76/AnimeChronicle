@@ -14,8 +14,8 @@
   --purple: #a855f7;
   --yellow: #ffd23f;
   --green: #39ff14;
-  --fuente-tit: 'Oxanium', 'Arial Black', sans-serif;
-  --fuente-cuerpo: 'Rajdhani', 'Segoe UI', sans-serif;
+  --fuente-tit: 'Chakra Petch', 'Arial Black', sans-serif;
+  --fuente-cuerpo: 'Barlow', 'Segoe UI', sans-serif;
   --sombra: 0 6px 26px rgba(0, 0, 0, .55);
   --glow-pink: 0 0 18px rgba(255, 46, 136, .55);
   --glow-cyan: 0 0 18px rgba(0, 229, 255, .45);
@@ -51,7 +51,7 @@ button { cursor: pointer; }
 .wrap { width: min(1220px, 94vw); margin: 0 auto; }
 
 /* ---------- Capas de fondo animadas ---------- */
-.fondo-estrellas, .fondo-grid, .fondo-sakura, .scanlines {
+.fondo-estrellas, .fondo-grid, .scanlines {
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -67,27 +67,25 @@ button { cursor: pointer; }
   background-size: cover;
   opacity: .5;
 }
-.fondo-sakura {
-  background: url('../fondos/sakura.svg') repeat;
-  opacity: .5;
-  animation: deriva 150s linear infinite reverse;
-}
 .scanlines {
   background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .13) 0 1px, transparent 1px 4px);
   opacity: .35;
   z-index: 900;
 }
-.petalos { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 8; }
-.petalo {
+.personajes-flotantes { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 8; }
+.personaje-flotante {
   position: absolute;
-  top: -8vh;
-  font-size: var(--tam, 18px);
-  opacity: var(--opa, .7);
-  animation: caer var(--dur, 14s) linear var(--ret, 0s) infinite;
+  top: -12vh;
+  width: var(--tam, 54px);
+  height: auto;
+  opacity: var(--opa, .35);
+  filter: drop-shadow(0 0 10px rgba(255, 46, 136, .5));
+  animation: caer-personaje var(--dur, 18s) linear var(--ret, 0s) infinite;
 }
-@keyframes caer {
-  0%   { transform: translate3d(0, -10vh, 0) rotate(0deg); }
-  100% { transform: translate3d(var(--der, 120px), 112vh, 0) rotate(720deg); }
+@keyframes caer-personaje {
+  0%   { transform: translate3d(0, -10vh, 0) rotate(-12deg) scale(.85); }
+  50%  { transform: translate3d(calc(var(--der, 120px) / 2), 52vh, 0) rotate(8deg) scale(1); }
+  100% { transform: translate3d(var(--der, 120px), 112vh, 0) rotate(-10deg) scale(.85); }
 }
 @keyframes deriva { to { background-position: 700px 700px; } }
 
@@ -155,27 +153,6 @@ button { cursor: pointer; }
 .audio-btn:hover { transform: scale(1.15); box-shadow: var(--glow-cyan); }
 .audio-btn[aria-pressed="false"] { color: #6b6690; }
 .audio-btn--sfx[aria-pressed="true"] { color: var(--yellow); }
-
-/* ---------- Publicidad ---------- */
-.ad {
-  position: relative;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 2px; text-align: center; padding: 12px;
-  background: repeating-linear-gradient(45deg, #100d26, #100d26 14px, #17123a 14px, #17123a 28px);
-  border: 2px dashed rgba(255, 210, 63, .45);
-  color: #d8b64a;
-}
-.ad__label { font: 700 10px var(--fuente-tit); letter-spacing: .28em; color: #a8862a; }
-.ad strong { font: 900 clamp(14px, 2.3vw, 22px) var(--fuente-tit); letter-spacing: .03em; }
-.ad__small { font-size: 11px; opacity: .8; }
-.ad--banner { margin: 12px auto 0; width: min(1220px, 94vw); min-height: 86px; border-radius: 6px; }
-.ad--inline {
-  grid-column: 1 / -1; min-height: 106px; margin: 26px auto;
-  width: min(1220px, 94vw); border-radius: 6px;
-  border-color: rgba(255, 46, 136, .6); color: #ff8fbe;
-  background: repeating-linear-gradient(45deg, #100d26, #100d26 14px, #2a0f2c 14px, #2a0f2c 28px);
-}
-.ad--footer { margin: 26px auto; width: min(1220px, 94vw); min-height: 96px; border-radius: 6px; }
 
 /* ---------- Cabecera ---------- */
 .masthead {
@@ -551,8 +528,11 @@ button { cursor: pointer; }
   .archivo__fecha { grid-column: 2; text-align: left; }
 }
 
+/* ---------- Páginas secundarias ---------- */
+.pagina-secundaria { padding: 30px 0 24px; min-height: 62vh; }
+
 /* ---------- Radar de tendencias ---------- */
-.tendencias { padding: 32px 0 8px; }
+.tendencias { padding: 22px 0 8px; }
 .tendencias__cabecera { margin-bottom: 14px; }
 .tendencias__titulo {
   font: 800 clamp(22px, 3vw, 30px) var(--fuente-tit);
@@ -809,7 +789,7 @@ button { cursor: pointer; }
     transition-duration: .001ms !important;
     scroll-behavior: auto !important;
   }
-  .petalos, .scanlines, .fondo-grid, .ataque { display: none; }
+  .personajes-flotantes, .scanlines, .fondo-grid, .ataque { display: none; }
   .ataque--activo { animation: none; }
   .panel-tendencia, .glosario__termino { opacity: 1; transform: none; }
 }
