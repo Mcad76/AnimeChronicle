@@ -1,0 +1,127 @@
+# AnimeChronicle
+
+**El universo anime en un solo lugar.** Portal de noticias de anime con estética neón/otaku,
+animaciones y efectos de sonido. Es el hermano de `Web-Noticias`, adaptado por completo
+al contenido otaku: estrenos, series, películas, manga, videojuegos, eventos y comunidad,
+con pestañas por género (shōnen, shōjo, isekai, mecha…).
+
+- **Web:** https://mcad76.github.io/AnimeChronicle/
+- **Repositorio:** https://github.com/Mcad76/AnimeChronicle
+
+## Características
+
+- **Portada visual:** hero con destacadas, rejillas por sección y tarjetas con brillo,
+  elevación y entrada escalonada al cargar.
+- **Pestañas por género:** cambia de shōnen a isekai y toda la portada se regenera al instante.
+- **Ticker "Alerta Anime"**, pétalos de sakura, fondo estrellado, rejilla neón,
+  escaneo CRT, barra de progreso de lectura y logo con efecto glitch.
+- **Sonidos de anime sintetizados** (sin copyright): blip de pulsación, "power up" al
+  seleccionar noticia, whoosh, apertura/cierre, cambio de pestaña y un bucle synth
+  opcional (♪ en la barra superior). Todo se puede silenciar con 🔊/🔇 y se recuerda
+  la preferencia.
+- **Vibración** en móvil al seleccionar noticias (cuando el dispositivo lo permite).
+- **Buscador** en portada y en el archivo, filtro por sección y contador de visitas.
+- **SEO completo:** una página HTML real e indexable por noticia, JSON-LD `NewsArticle`,
+  metadatos Open Graph y Twitter, `canonical`, `sitemap.xml` y `robots.txt`.
+- **Enlazado interno** de 3 artículos relacionados y botones para compartir en
+  WhatsApp, Telegram, X y Facebook.
+- **Señales de respeto:** `prefers-reduced-motion` desactiva las animaciones para
+  usuarios que lo piden, y el audio nunca se reproduce automáticamente.
+
+## Noticias reales, actualizadas cada día
+
+El portal **no depende del móvil**: un GitHub Action ejecuta `actualizar_noticias.py`
+cada día a las 07:30 UTC. El script consulta fuentes RSS públicas:
+
+- Anime News Network
+- MyAnimeList
+- Google News (español) por género y sección
+- Bing News como respaldo con imagen
+
+Clasifica cada noticia en sección y género, calcula una puntuación de relevancia,
+descarga las fotos y regenera el archivo, las páginas estáticas y el sitemap.
+Las noticias antiguas se conservan 45 días en `datos/historico.json`.
+
+### Actualizar a mano
+
+En la pestaña **Actions** → *Actualizar noticias* → **Run workflow**.
+
+Si quieres añadir una noticia propia, edita `datos/noticias-manuales.json` en GitHub:
+
+```json
+{
+  "noticias": [
+    {
+      "titulo": "Título de la noticia",
+      "entradilla": "Resumen corto.",
+      "cuerpo": ["Párrafo 1.", "Párrafo 2."],
+      "sec": "estrenos",
+      "genero": "shonen",
+      "link": "https://...",
+      "medio": "Redacción propia"
+    }
+  ]
+}
+```
+
+Secciones válidas: `estrenos`, `series`, `peliculas`, `manga`, `videojuegos`, `eventos`, `comunidad`.
+Géneros válidos: `todos`, `shonen`, `shojo`, `isekai`, `mecha`, `fantasia`, `accion`,
+`romance`, `comedia`, `terror`.
+
+### Publicar en GitHub Pages
+
+**Settings → Pages → Source: Deploy from a branch → main → /(root) → Save.**
+El archivo `.nojekyll` evita que GitHub ignore carpetas como `js/`.
+
+> El repo debe ser público para usar GitHub Pages en el plan gratis.
+
+## Estructura
+
+```
+AnimeChronicle/
+├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube
+├── actualizar_noticias.py                      descarga, clasifica y genera todo
+├── generar_recursos.py                         crea sonidos WAV y fondos SVG
+├── index.html                                  portada
+├── css/styles.css                              tema neón + animaciones
+├── js/
+│   ├── news-data.js                            banco de noticias (generado)
+│   ├── sonidos.js                              motor de audio
+│   └── app.js                                  lógica de la web
+├── fondos/                                     estrellas, rejilla, sakura y respaldos
+├── sonidos/                                    efectos y BGL sintetizados
+├── imagenes/                                   fotos de las noticias
+├── noticias/                                   una página HTML por noticia
+├── datos/
+│   ├── historico.json                          histórico (generado)
+│   └── noticias-manuales.json                  noticias escritas a mano
+├── sitemap.xml / robots.txt                    SEO (generados)
+└── README.md
+```
+
+Para regenerar los recursos visuales y sonoros:
+
+```bash
+python3 generar_recursos.py
+```
+
+## Pendiente de tu parte
+
+- **Dominio propio**: comprarlo y añadir un `CNAME` en la raíz + configurarlo en
+  Settings → Pages.
+- **Canales de difusión**: crea el servidor de Discord / canal de Telegram y pon
+  los enlaces en el diccionario `CANALES` de `actualizar_noticias.py`; mientras
+  estén vacíos no se muestra el bloque «Únete a la comunidad».
+- **Search Console**: registra la web y envía el `sitemap.xml` para acelerar la
+  indexación.
+
+## Cómo verlo
+
+Publicado en **https://mcad76.github.io/AnimeChronicle/**
+
+Solo para probar en local:
+
+```bash
+python3 -m http.server 8000
+# y abre http://localhost:8000
+```

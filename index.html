@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080616">
+  <meta name="description" content="AnimeChronicle — Noticias de anime, manga, películas, videojuegos y eventos otaku. Estrenos, géneros y toda la actualidad del universo anime.">
+  <title>AnimeChronicle — El universo anime en un solo lugar</title>
+  <link rel="canonical" href="https://mcad76.github.io/AnimeChronicle/">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"AnimeChronicle",
+   "alternateName":"アニメクロニクル",
+   "url":"https://mcad76.github.io/AnimeChronicle/",
+   "description":"Noticias de anime, manga, películas, videojuegos y eventos otaku."}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Montserrat:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra de progreso de lectura -->
+  <div class="progreso" id="progreso" aria-hidden="true"></div>
+
+  <!-- Capas animadas de fondo -->
+  <div class="fondo-estrellas" aria-hidden="true"></div>
+  <div class="fondo-grid" aria-hidden="true"></div>
+  <div class="fondo-sakura" aria-hidden="true"></div>
+  <div class="petalos" id="petalos" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <span class="topbar__fecha" id="fecha-topbar">—</span>
+      <span class="topbar__edicion">Edición de hoy · actualizada cada día</span>
+      <div class="topbar__right">
+        <span class="power" title="Nivel de poder otaku">
+          <span class="power__label">POWER</span>
+          <span class="power__bar"><span class="power__fill"></span></span>
+          <span class="power__num">9000+</span>
+        </span>
+        <span class="visitantes" title="Visitas a AnimeChronicle">
+          <span class="visitantes__icono" aria-hidden="true">&#128065;</span>
+          <span class="visitantes__numero" id="contador-visitas">…</span>
+        </span>
+        <button class="audio-btn" id="btn-musica" type="button" aria-pressed="false"
+                aria-label="Activar música de fondo" title="Música de fondo">♪</button>
+        <button class="audio-btn audio-btn--sfx" id="btn-sonido" type="button" aria-pressed="true"
+                aria-label="Silenciar efectos de sonido" title="Efectos de sonido">🔊</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Publicidad -->
+  <aside class="ad ad--banner">
+    <span class="ad__label">PUBLICIDAD</span>
+    <strong>¿TU MARCA TAMBIÉN ES OTAKU?</strong>
+    <span class="ad__small">Aparece aquí y llega a toda la comunidad</span>
+  </aside>
+
+  <!-- Cabecera -->
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <div class="menu-wrap">
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú de secciones"
+                aria-haspopup="true" aria-expanded="false" aria-controls="menu-desplegable">&#9776;</button>
+        <nav class="menu-desplegable" id="menu-desplegable" aria-label="Menú de secciones" hidden>
+          <a href="#inicio" class="menu-desplegable__item">Inicio</a>
+          <div id="menu-secciones"></div>
+          <a href="#archivo" class="menu-desplegable__item">Archivo</a>
+        </nav>
+      </div>
+
+      <a href="#inicio" class="brand" aria-label="AnimeChronicle, inicio">
+        <span class="brand__jp" aria-hidden="true">アニメクロニクル</span>
+        <h1 class="brand__main" data-text="ANIMECHRONICLE">ANIMECHRONICLE</h1>
+        <span class="brand__tag">✦ EL UNIVERSO ANIME, EN UN SOLO LUGAR ✦</span>
+      </a>
+
+      <div class="masthead__tools">
+        <label class="search-box">
+          <span aria-hidden="true">&#128269;</span>
+          <input type="search" id="buscador-top" placeholder="Busca tu anime favorito..." aria-label="Buscar noticias">
+        </label>
+        <form class="search-box search-box--web" action="https://www.google.com/search" method="get" target="_blank"
+              role="search" aria-label="Buscar en la web">
+          <span aria-hidden="true">&#127760;</span>
+          <input type="search" name="q" placeholder="Buscar en la web..." aria-label="Buscar en Google">
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pestañas por género -->
+  <div class="tabs-generos" id="tabs-generos" aria-label="Noticias por género"></div>
+
+  <!-- Accesos directos -->
+  <div class="accesos" aria-label="Accesos directos a secciones">
+    <div class="wrap accesos__inner">
+      <span class="accesos__label">SECCIONES</span>
+      <div class="accesos__lista" id="accesos-rapidos"></div>
+    </div>
+  </div>
+
+  <!-- Navegación -->
+  <nav class="nav" id="nav" aria-label="Secciones">
+    <div class="wrap nav__inner">
+      <a href="#inicio" class="nav__link nav__link--portada">Inicio</a>
+      <div class="nav__secciones" id="nav-secciones"></div>
+      <a href="#archivo" class="nav__link nav__link--archivo">Archivo</a>
+    </div>
+  </nav>
+
+  <!-- Ticker de última hora -->
+  <div class="ultima-hora">
+    <span class="ultima-hora__badge">⚡ ALERTA ANIME</span>
+    <div class="ultima-hora__marquee">
+      <div class="ultima-hora__track" id="ticker-track"></div>
+    </div>
+  </div>
+
+  <main id="inicio">
+    <!-- HERO: destacadas del día -->
+    <div id="hero"></div>
+
+    <!-- SECCIONES (generadas por JS) -->
+    <div id="secciones"></div>
+
+    <!-- ARCHIVO -->
+    <section class="bloque bloque--archivo" id="archivo">
+      <div class="wrap">
+        <div class="bloque__cabecera">
+          <div class="bloque__titulo"><span class="bloque__barra"></span> ARCHIVO DE NOTICIAS</div>
+          <div class="bloque__fecha">Todos los episodios publicados, listos para maratonear</div>
+        </div>
+
+        <div class="archivo__controles">
+          <label class="archivo__buscar">
+            <span aria-hidden="true">&#128269;</span>
+            <input type="search" id="archivo-buscar" placeholder="Buscar en el archivo..." aria-label="Buscar en el archivo">
+          </label>
+          <select id="archivo-seccion" aria-label="Filtrar archivo por sección">
+            <option value="todas">Todas las secciones</option>
+          </select>
+          <span class="archivo__contador" id="archivo-contador"></span>
+        </div>
+
+        <div class="archivo__lista" id="archivo-lista"></div>
+        <div class="archivo__vacio" id="archivo-vacio" hidden>No se han encontrado noticias con esos criterios. Prueba con otro género.</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Publicidad -->
+  <aside class="ad ad--footer">
+    <span class="ad__label">PUBLICIDAD</span>
+    <strong>PON AQUÍ TU PUBLICIDAD</strong>
+    <span class="ad__small">Tu marca también puede entrar en la portada</span>
+  </aside>
+
+  <!-- Pie -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <div class="footer__brand">ANIMECHRONICLE</div>
+        <p>Noticias, estrenos y curiosidades del universo anime. ¡Comparte con tu nakama!</p>
+        <div class="footer__social" id="footer-canales"></div>
+      </div>
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#archivo">Archivo</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+      <div class="footer__copy">
+        <p>&copy; <span id="anio"></span> AnimeChronicle. Todos los derechos reservados.</p>
+        <p class="footer__nota">Noticias obtenidas de fuentes públicas RSS · cada imagen pertenece a su fuente original</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Ventana ampliada (para noticias sin página propia) -->
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal__overlay" data-cerrar></div>
+    <article class="modal__panel">
+      <button class="modal__close" id="modal-close" type="button" aria-label="Cerrar noticia" data-cerrar>&times;</button>
+      <div id="modal-contenido"></div>
+    </article>
+  </div>
+
+  <script src="js/news-data.js"></script>
+  <script src="js/sonidos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

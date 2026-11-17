@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+actualizar_noticias.log
+cron.log
