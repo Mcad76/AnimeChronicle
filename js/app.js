@@ -358,7 +358,8 @@ function abrirNoticia(id) {
   // Se fuerza el scroll arriba para que la nueva página no "resbale".
   if (n.url) {
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-    window.scrollTo(0, 0);
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     document.documentElement.scrollTop = 0;
     window.location.href = n.url;
     return;
@@ -571,7 +572,10 @@ try {
 
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 window.addEventListener('pageshow', (e) => {
-  if (e.persisted) window.scrollTo(0, 0);
+  if (e.persisted) {
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }
 });
 
 crearPetalos();
