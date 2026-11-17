@@ -321,30 +321,52 @@ def termino_anilist(titulo):
     return limpiar(t, 60)
 
 
+PISTAS_ANIME = {
+    'one piece': 'One Piece', 'dragon ball': 'Dragon Ball', 'naruto': 'Naruto',
+    'mecha': 'Mobile Suit Gundam', 'gundam': 'Mobile Suit Gundam',
+    'isekai': 'Re:Zero kara Hajimeru Isekai Seikatsu',
+    're:zero': 'Re:Zero kara Hajimeru Isekai Seikatsu',
+    'shingeki': 'Shingeki no Kyojin', 'attack on titan': 'Shingeki no Kyojin',
+    'jujutsu': 'Jujutsu Kaisen', 'demon slayer': 'Kimetsu no Yaiba',
+    'sailor moon': 'Sailor Moon', 'pokemon': 'Pokemon',
+    'five star stories': 'The Five Star Stories',
+    'shonen jump': 'Shingeki no Kyojin', 'netflix': 'Kimetsu no Yaiba',
+    'crunchyroll': 'Kimetsu no Yaiba', 'acción real': 'Kimetsu no Yaiba',
+    'accion real': 'Kimetsu no Yaiba', 'fantasía épica': 'Shingeki no Kyojin',
+}
+
+
 def imagen_anilist(titulo):
     """Último recurso: carátula oficial desde la API pública de AniList."""
     buscar = termino_anilist(titulo)
-    if len(buscar) < 4:
+    candidatos = [buscar] if len(buscar) >= 4 else []
+    bajo = titulo.lower()
+    candidatos += [termino for pista, termino in PISTAS_ANIME.items() if pista in bajo]
+
+    def consultar(termino):
+        for tipo in ('ANIME', 'MANGA'):
+            try:
+                payload = json.dumps({
+                    'query': f'query ($s: String) {{ Media(search: $s, type: {tipo}) '
+                             '{ coverImage { large } } }',
+                    'variables': {'s': termino},
+                }).encode('utf-8')
+                req = urllib.request.Request(
+                    'https://graphql.anilist.co', data=payload,
+                    headers={'User-Agent': UA, 'Content-Type': 'application/json'})
+                with urllib.request.urlopen(req, timeout=10) as r:
+                    datos = json.loads(r.read().decode('utf-8'))
+                url = (datos.get('data') or {}).get('Media', {}).get('coverImage', {}).get('large', '')
+                if url:
+                    return url
+            except Exception:
+                pass
         return ''
-    consulta = ('query ($s: String) { Media(search: $s, type: ANIME) '
-                '{ coverImage { large } } }')
-    for tipo in ('ANIME', 'MANGA'):
-        try:
-            payload = json.dumps({
-                'query': f'query ($s: String) {{ Media(search: $s, type: {tipo}) '
-                         '{ coverImage { large } } }',
-                'variables': {'s': buscar},
-            }).encode('utf-8')
-            req = urllib.request.Request(
-                'https://graphql.anilist.co', data=payload,
-                headers={'User-Agent': UA, 'Content-Type': 'application/json'})
-            with urllib.request.urlopen(req, timeout=10) as r:
-                datos = json.loads(r.read().decode('utf-8'))
-            url = (datos.get('data') or {}).get('Media', {}).get('coverImage', {}).get('large', '')
-            if url:
-                return url
-        except Exception:
-            pass
+
+    for termino in candidatos:
+        url = consultar(termino)
+        if url:
+            return url
     return ''
 
 
