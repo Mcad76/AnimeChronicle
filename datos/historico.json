@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T18:40:39.654978+00:00",
+  "actualizado": "2026-11-17T18:45:04.362289+00:00",
   "noticias": [
     {
       "id": "n-c94e9111a31",
@@ -16,7 +16,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOb2g5QWphZnpudlYxczRCZmxoUFJfUWNoeTFFVDgyZHU0TDZNZzNuZGMxQUpHLS13eUFJbDAzbzNjdWFJMGJlTHJiSENEX19zQWI4ZE5GeDNiMWExb0hubkZwWktRZFpnTHlQanFBQ3I3ZTkwZFhBdzZqVjJTeE8yRGtlOTV3XzNCd2Y2d2dwOExMTVZXY1h4UWMzc01DemRVeXU1bVFTbmg0MkcwQVdUOE1SM2VKdkpycjFDTG1OMHo4RWs4anljRU1wTDJQUlR2cmJYbFdOYVdJd3Nq?oc=5",
       "medio": "Expo TNT",
-      "viral": 0.57
+      "viral": 0.5698
     },
     {
       "id": "n-72fdd4b31f9",
@@ -33,7 +33,7 @@
       "image": "fondos/fallback-peliculas.svg",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOY3VNQU1ZMkxsX2pzMFpHbENidjFObDB1eGVXcExueDhrQWF3Q0pSSjd1ZG8yVmNyem5TVFpvSTAtWko4Ty1vaXFuRnQtSmFHQXhQdWUxcFE0OWdQU25tdnpkN0IzUFZxalVib3ZoQlI5T1JLNkhaZy1KMzNRYTRwQVZoTkxnX0R1bEZMR2pUY1V6Zi1ZOWxnVmtYUUpwaEEzTjFaVWtBWWh2bFM0MFlyWmlKYTJHeXYwMGRqVlM5dzcxSUcyWlJUQlZ1ZnVBOG9xUFNVSG43R2XSAd4BQVVfeXFMUFZJc19wQTdvUEFLZVF4SEFRQUtUTlB4NXZjMXBOaDBycVQ0UHhBTkJhMVRDSi1fcUN1aHJ5VzFWVFlrNWduc09fTGNhUVQyWlo0NTdHZ1F4aUtidmx0T2VWdHpuWDFxMXowdkRzeTU4UE41NjZuT3V6NVk4eURTbzdTaDBpaGZSdC1YOGs4cGplTVRoZmEyR1NzaGs5NG9EVDFXS1ZiQk1RYTltV0xRTEg2NEo3bkJ3OHVBUFhNUWVxZWdkY2Zial80eklsTDl1Wm5wQUZuWVV5a0JCaG93?oc=5",
       "medio": "Xataka México",
-      "viral": 0.5673
+      "viral": 0.567
     },
     {
       "id": "n-1618f8b0106",
@@ -50,7 +50,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPT3RpSVlfMl9JeGh5bk80Vi1kdXRINzdmNFh5NDZ3MjJkLVNvbV9NWXJxLUd3RGVPd2tacmlKSERSWThqdVdCNU9NR0dGSnFDWl9vZWJ4U3pVaFlaMTF6UUxYZmw4Wk5xTlBZQUFlUmVvLUYzcUZsdUhCaXZJNzhWZE9NVVFnTEpLdFdmYnJhMzRQUVlvekVaWXZiTzRIc05OY3Z5NHhIVkJic2NzbTFGRDVEUGNUOE0zYkVjV3dxSmlkQmZITnBINlVoVWhBT3B1NzZKVFdGVQ?oc=5",
       "medio": "MultiAnime.com.mx",
-      "viral": 0.5621
+      "viral": 0.5618
     },
     {
       "id": "n-b301ca4e952",
@@ -67,7 +67,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNc2RwakxRb1BNaWVsQ0lNdlRjenNvY283bGgtcUpjQ3hoNVBmY044ZkZ1ZEhKS01jUktwOUhDMTdHZ1QybFZiV0hucmhQdTlqX05oUTB5T2xPZGJCSkZPMTlQMm8wM3RHYnRMbU8xUjdsbFJ4Z2IyZG1IRHVUdGtBWVBrTkQyZ1NUT1JzVnpWcUJaQVNxMk0taUxDVm5EcDNqUDczT2k4NnRrcDd6dEtFaERTdFRlY2l2SGt0Tmo0VHV6UXVBdmtUek82QmhReGl5NVYtdHZIZjIwNjAt?oc=5",
       "medio": "MultiAnime.com.mx",
-      "viral": 0.6003
+      "viral": 0.6
     },
     {
       "id": "n-bebd1b7ca53",
@@ -84,7 +84,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZVFpibnd4UVNaZ2lYb293QXUxN0I4ckVSRUpwNHlGU0dZZ0plMDJwX2FOYTk2VHNZamJfWWw4bUxZTWd6MUV2dWxkZnNrcDZHUkFVaHRLVzZRd3F6MDJub3lGU0ZnYUE?oc=5",
       "medio": "Cultura Geek",
-      "viral": 0.6
+      "viral": 0.5997
     },
     {
       "id": "n-2f9edfb4c59",
@@ -101,7 +101,7 @@
       "image": "fondos/fallback-videojuegos.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/the-game-awards-2026-reveals-nominees/.243915",
       "medio": "animenewsnetwork.com",
-      "viral": 0.5183
+      "viral": 0.518
     },
     {
       "id": "n-307af6b9747",
@@ -118,7 +118,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/maki-terashima-furuta-joins-asifa-hollywood-board-of-directors-ahead-of-54th-annie-awards-new-anime-/.243909",
       "medio": "animenewsnetwork.com",
-      "viral": 0.5156
+      "viral": 0.5153
     },
     {
       "id": "n-a5d3cd39385",
@@ -135,7 +135,7 @@
       "image": "fondos/fallback-videojuegos.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/arika-director-software-development-head-game-programmer-akira-kurabayashi-dies/.243908",
       "medio": "animenewsnetwork.com",
-      "viral": 0.5631
+      "viral": 0.5628
     },
     {
       "id": "n-fc4ebd5643d",
@@ -152,7 +152,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/exclusive-nakama-press-licenses-uoyama-opening-the-door-to-hinata-san-heart-manga/.243853",
       "medio": "animenewsnetwork.com",
-      "viral": 0.5077
+      "viral": 0.5074
     },
     {
       "id": "n-bbff768b89d",
@@ -169,7 +169,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/mission-yozakura-family-hitsuji-gondaira-launches-manga-about-police-officer-in-meiji-era-japan/.243878",
       "medio": "animenewsnetwork.com",
-      "viral": 0.505
+      "viral": 0.5047
     },
     {
       "id": "n-36cd8b61674",
@@ -186,7 +186,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/trinity-blood-artist-kiyo-kyujyo-launches-manga-about-leonardo-da-vinci/.243883",
       "medio": "animenewsnetwork.com",
-      "viral": 0.5039
+      "viral": 0.5036
     },
     {
       "id": "n-f3bae934fee",
@@ -203,7 +203,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPS2tPb2NEN2NsYTZqcDVJUndBQjUxQXVsM0VwbHU0Z0xrWTU2QzFDalVrUkJVRTg4Z3lGUUQzekoyZEhBTWhtRDNSTXlNNi1MekloRmFEUE5oaVNrN1RMcVlpQkhJbWNiaGFqZDFwVlI3OUpDNHVHaXpFQk9ickswVzdKSEV4OG1wWEp1UEZlNFA5Qk5IaDJMY0VsZm52ekNnaXR2UGE5bVFnQXhBcjk4QUZMeTJ0bmR6Y3BYOG5lX2E5YmtCejBFN2t3OF9qVWFWVTJidDZfMXA3ajMzQXI1TlVrZG8tSnJ0TDN4TV9Gam91djRoRThxQ1hIMTI0UQ?oc=5",
       "medio": "MultiAnime.com.mx",
-      "viral": 0.5825
+      "viral": 0.5822
     },
     {
       "id": "n-e354c2c22e5",
@@ -220,7 +220,24 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://multianime.com.mx/2026/11/17/hitsuji-gondaira-lanza-un-nuevo-manga-policial-ambientado-en-la-era-meiji-manga-anime-weeklyshonenjump/",
       "medio": "multianime",
-      "viral": 0.531
+      "viral": 0.5307
+    },
+    {
+      "id": "n-21d440e98e3",
+      "sec": "series",
+      "genero": "mecha",
+      "slot": 0,
+      "titulo": "7 best Cartoon Network mecha anime that still deserve a perfect 10/10",
+      "entradilla": "Anime lovers can indulge in series like IGPX and Mobile Suit Gundam: The 08th MS Team, which reveal the thrilling dynamics of mecha battles. Furthermore, Zoids: Chaotic Century emphasizes the strong ...",
+      "cuerpo": [
+        "Anime lovers can indulge in series like IGPX and Mobile Suit Gundam: The 08th MS Team, which reveal the thrilling dynamics of mecha battles. Furthermore, Zoids: Chaotic Century emphasizes the strong ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-17T07:41:32+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/en-in/news/other/7-best-cartoon-network-mecha-anime-that-still-deserve-a-perfect-1010/ar-AA2hDoKH",
+      "medio": "Newspoint on MSN",
+      "viral": 0.479
     },
     {
       "id": "n-1d5570974f8",
@@ -237,7 +254,7 @@
       "image": "imagenes/n-1d5570974f8.jpg",
       "link": "https://myanimelist.net/news/74950128?_location=rss",
       "medio": "myanimelist.net",
-      "viral": 0.5091
+      "viral": 0.5088
     },
     {
       "id": "n-f027c75f7d8",
@@ -254,7 +271,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/mistress-kanan-is-devilishly-easy-season-2-1st-video-unveils-more-cast-and-staff-2027-debut/.243905",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4918
+      "viral": 0.4915
     },
     {
       "id": "n-bfc89ae0708",
@@ -271,7 +288,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://multianime.com.mx/2026/11/17/kusunokis-flunking-her-high-school-glow-up-ya-tiene-estreno-para-abril-de-2027-anime-romance-primavera2027/",
       "medio": "multianime",
-      "viral": 0.5692
+      "viral": 0.5689
     },
     {
       "id": "n-59dd2601631",
@@ -288,7 +305,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://culturageek.com.ar/witch-watch-temporada-2-2027/",
       "medio": "Cultura Geek",
-      "viral": 0.5689
+      "viral": 0.5686
     },
     {
       "id": "n-1b05d07f22d",
@@ -305,7 +322,24 @@
       "image": "imagenes/n-1b05d07f22d.jpg",
       "link": "https://myanimelist.net/news/74949726?_location=rss",
       "medio": "myanimelist.net",
-      "viral": 0.5006
+      "viral": 0.5003
+    },
+    {
+      "id": "n-bf85f1151af",
+      "sec": "series",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "Shonen Jump Creator Breaks Silence on Ending Their Series After 5 Years & Teases Epilogue",
+      "entradilla": "Witch Watch's Kenta Shinohara broke his silence on ending the series after five years with Shonen Jump magazine ...",
+      "cuerpo": [
+        "Witch Watch's Kenta Shinohara broke his silence on ending the series after five years with Shonen Jump magazine ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-17T04:55:00+00:00",
+      "image": "imagenes/n-bf85f1151af.jpg",
+      "link": "https://comicbook.com/anime/news/shonen-jump-creator-breaks-silence-on-ending-their-series-after-5-years-teases-epilogue/",
+      "medio": "ComicBook.com",
+      "viral": 0.4682
     },
     {
       "id": "n-cbaeb9f435d",
@@ -322,7 +356,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/josemaru-short-anime-3rd-teaser-reveals-more-cast-january-10-debut/.243904",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4877
+      "viral": 0.4874
     },
     {
       "id": "n-0251d427494",
@@ -339,7 +373,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/sonic-the-hedgehog-mclaren-racing-collaborates-on-3-episode-animated-special/.243899",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4855
+      "viral": 0.4853
     },
     {
       "id": "n-2de1d4c7d41",
@@ -356,7 +390,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-17/the-eternal-fool-words-of-wisdom-anime-new-video-unveils-more-cast-theme-songs-january-9-debut/.243889",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4844
+      "viral": 0.4841
     },
     {
       "id": "n-42b5965231d",
@@ -373,7 +407,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQVVBFYzhOZTdMMU1Gc2VlcE5hZThYVnlLa0hWdEJETXg3X1FVbjZ0Q0RxREZGVjE0U09iRllPZ2g2aGJLLWFMV2pScWtKcTNpa0VBRWhGbVVGVUtya1hyOGZTMVljVHFTRkNWdXowa0hPeUs0T3dVTVdWVGNhck9ES1JISGFyS09oSzNPLVU5Y3dUN1ltWmZOY3N6SkY0VnlvaWNYVWozNEJNNFMyem41Vi1ubGJDUkNEMUF0aXJnMHlNcThGVy16S1NseXpMNjZaZXRRVkRlSHB0VVcyT1dfLUVxT004Njk4RmtLeGR4ZFMxd0lyR09rRlBXT0dFN3J0T3ZZWGJZelpDS3BGQXhSZ3hWZkx2cVdsaFFSYkFqaGxPUHpyemU2djZ4bUdJUkZ4bkNxaXhoNDB2ME51ODI5dkxvbnQ0U2liSWVMdkxRVQ?oc=5",
       "medio": "MultiAnime.com.mx",
-      "viral": 0.5102
+      "viral": 0.5099
     },
     {
       "id": "n-646d005bb43",
@@ -390,7 +424,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://multianime.com.mx/2026/11/17/kanan-sama-2-easy-anuncia-su-estreno-en-2027-y-presenta-nuevas-voces-anime-kanansama-kanansama2easy/",
       "medio": "multianime",
-      "viral": 0.5092
+      "viral": 0.509
     },
     {
       "id": "n-dd7c32ced47",
@@ -407,7 +441,7 @@
       "image": "imagenes/n-dd7c32ced47.jpg",
       "link": "https://myanimelist.net/news/74949337?_location=rss",
       "medio": "myanimelist.net",
-      "viral": 0.488
+      "viral": 0.4877
     },
     {
       "id": "n-e5bc03dcdae",
@@ -424,7 +458,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://multianime.com.mx/2026/11/17/the-eternal-fools-words-of-wisdom-confirma-su-estreno-para-el-9-de-enero-y-lanza-su-trailer-principal-anime-fantasia-theeternalfool/",
       "medio": "multianime",
-      "viral": 0.5514
+      "viral": 0.5511
     },
     {
       "id": "n-3834dd99e52",
@@ -441,7 +475,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/live-action-twisted-sisters-series-reveals-more-cast-january-10-debut/.243890",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4678
+      "viral": 0.4675
     },
     {
       "id": "n-f5867d31e1f",
@@ -458,7 +492,7 @@
       "image": "fondos/fallback-peliculas.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/live-action-my-sister-boyfriend-film-new-video-highlights-song-by-timelesz/.243893",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4672
+      "viral": 0.4669
     },
     {
       "id": "n-891b7abbfed",
@@ -475,7 +509,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTlhrYnJwMkJDcDdjNnhhTzZaR2tiOFZhR0F6cjdVbWgwbmMtWktWTTNtQXB4OGoyd2RrRGxqY2NQQ3NIeTRkaFk1MjZVcjV5bDJDM3drcHk1MHd1dkZJdGFxNHVHcHdsSE43LV85R2t6SWl4VHo0bXdqcl9yY3BuN3hmYkVNbkxhVWZQS3pOMzR6TlJPdG1yVnpqRGRNUnRZVUloWXlQVVFfMndFLVhidGQ4OHpxTnFjb05QUXJUc21vbknSAcgBQVVfeXFMUEJKdUc0eE1NbjcyWERWMldScmJBc21xS21pN2drYUlDdkxybTl3X09NcktRcG5BRVAyYm9Xa0hBekxwMzRIOWdYM1hBYTFNc01UNkRDa19nNWZ5YkZxcXRpWEtHN1AtOHZ5WlZHeDNwRlhuTVZ1ZzlqVXg1aFYxS1RGYUoyRm83WGhsRjBaNzRkQjhaQzBlTU1FNXBoT3BHVHVwWUNXU1VvU3Y0V3lENURpcmxfeTNHTlk2TzJSVjRPa3NaOTV1VFY?oc=5",
       "medio": "3DJuegos",
-      "viral": 0.4864
+      "viral": 0.4861
     },
     {
       "id": "n-6fec2908076",
@@ -492,7 +526,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbnpVMC1fMGZnT2NHbGVBZ0VmcG5zcjNkMjB6emhYZy10X3F0eU5KWGZnUlhBaUNtcFpoN2JpaGt4b0IxWHoyUENfSWdIQ2drOXFOSEVWUTBSU3dqNzlRWDQ0d3BhRk1kcnhXZ29abDJIZmRwc0hFbmxTcVVaSHQwd3JoWGR3SnF1ZTRncVY5dzBHbk9ZZi0tOEZPelVPdFNCVXVBMFVnLUVsWjF5d1VleXRVMVVITVI2amtLQTVyLXh4SG9hQUh1eGg2OWpIQXNzeXk4?oc=5",
       "medio": "TierraGamer",
-      "viral": 0.5358
+      "viral": 0.5355
     },
     {
       "id": "n-ca7ad958ef7",
@@ -509,7 +543,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/tetsuya-tsutsui-launches-new-ortrans-manga/.243867",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4455
+      "viral": 0.4452
     },
     {
       "id": "n-9bb3eedd195",
@@ -526,7 +560,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONGIxX0xNdlNXZThiUUs2WGV6SlZ3QlUwem4yNXNCWEFPZ1NUaTZQSjJRXzFiMHEtYTU3cTgwcUc5ZW9xRmtWNjJNdl9uei1UNnE0T1VBb2UzNDhZLWY0WEZJSWhlUExSWjl2UTR5YjB0aUdaQ0RFT19rVHBzMFFYVmpXRkVYWS1pUUZwaFhB?oc=5",
       "medio": "Kudasai",
-      "viral": 0.4227
+      "viral": 0.4225
     },
     {
       "id": "n-75a25d0044f",
@@ -543,7 +577,7 @@
       "image": "fondos/fallback-videojuegos.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/d.i.c.e-awards-honors-nintendo-game-creator-shigeru-miyamoto-with-inaugural-legend-award/.243870",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4416
+      "viral": 0.4413
     },
     {
       "id": "n-eece8db459c",
@@ -560,7 +594,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQcXdTeThqUEo5MXNObFpsRHlOQ0V6Qzc5TlRmRDJpWmtoNmtvZWU5MWRpR2N4bWJTT3M4QkMyLUx1dFNWN3JWeHdVVEs2OXFtTmU4Ukt2Z1ZyLWZoYURlay12SG1XOUF4TmlzUTNXNU0tanJudmNSX0J4bHhjNEp5LWJCa1lPUm1sNl9tdFF1b0JjQUVQYWdYODJHamNoblVXdFBYbGhVQ1o1Z29BZW1oN1Itd3NWYVM0aHYzWVRzZDdWNVNuN2ZLV3dqX1VGTE85?oc=5",
       "medio": "MultiAnime.com.mx",
-      "viral": 0.4703
+      "viral": 0.47
     },
     {
       "id": "n-d49afc41b98",
@@ -577,7 +611,24 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/ultraman-teo-actress-noa-nekada-dies-at-23/.243868",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4377
+      "viral": 0.4374
+    },
+    {
+      "id": "n-02572c69c7f",
+      "sec": "series",
+      "genero": "shojo",
+      "slot": 0,
+      "titulo": "Gushing Over Magical Girls confirma su temporada 2 para 2027",
+      "entradilla": "Gushing Over Magical Girls confirmó su segunda temporada para 2027 con nueva visual y video promocional, aunque sin fecha exacta.",
+      "cuerpo": [
+        "Gushing Over Magical Girls confirmó su segunda temporada para 2027 con nueva visual y video promocional, aunque sin fecha exacta."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-16T15:34:00+00:00",
+      "image": "imagenes/n-02572c69c7f.jpg",
+      "link": "https://www.beahero.gg/gushing-over-magical-girls-confirma-su-temporada-2-para-2027/",
+      "medio": "HERO Network",
+      "viral": 0.4677
     },
     {
       "id": "n-bc244588853",
@@ -594,7 +645,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/singer-yukio-yamagata-dies-at-69/.243866",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4338
+      "viral": 0.4335
     },
     {
       "id": "n-6ebb4759173",
@@ -611,7 +662,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/godzilla-minus-zero-earns-usd8-million-in-73-percent-drop-at-u.s-box-office-passes-usd100-million-/.243859",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4299
+      "viral": 0.4297
     },
     {
       "id": "n-bfbeddfaac9",
@@ -628,7 +679,24 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://www.3djuegos.com/manga-anime/noticias/uno-mejores-isekai-anuncia-su-regreso-presenta-su-quinta-temporada-nueva-imagen",
       "medio": "3DJuegos",
-      "viral": 0.4553
+      "viral": 0.455
+    },
+    {
+      "id": "n-6fd87b712ce",
+      "sec": "series",
+      "genero": "mecha",
+      "slot": 0,
+      "titulo": "7 best Cartoon Network mecha anime that are 10/10 masterpieces",
+      "entradilla": "Cartoon Network knew just how to put a teenager inside a building-sized machine to make an afternoon louder.",
+      "cuerpo": [
+        "Cartoon Network knew just how to put a teenager inside a building-sized machine to make an afternoon louder."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-16T13:15:12+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/en-us/news/other/7-best-cartoon-network-mecha-anime-that-are-1010-masterpieces/ar-AA2hBw0C",
+      "medio": "Comic Book Resources on MSN",
+      "viral": 0.4073
     },
     {
       "id": "n-7b76115e3db",
@@ -645,7 +713,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://multianime.com.mx/2026/11/16/fallece-yukio-yamagata-a-los-69-anos-voz-de-temas-de-anime-y-super-sentai-anime-musica-supersentai/",
       "medio": "multianime",
-      "viral": 0.4581
+      "viral": 0.4578
     },
     {
       "id": "n-8913609a782",
@@ -662,7 +730,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/lisa-babymetal-earn-nominations-for-2027-grammy-awards-new-best-asian-pop-music-performance-category/.243861",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4261
+      "viral": 0.4258
     },
     {
       "id": "n-f5bed5d2222",
@@ -679,7 +747,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://tierragamer.com/noticias/anime/anime/como-ver-y-leer-solo-leveling-guia-definitiva-de-la-novela-el-webtoon-el-anime-y-su-secuela/",
       "medio": "TierraGamer",
-      "viral": 0.5047
+      "viral": 0.5044
     },
     {
       "id": "n-92e1452a31c",
@@ -696,7 +764,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/french-manga-comic-creator-frederic-boilet-dies-at-66/.243766",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4202
+      "viral": 0.4199
     },
     {
       "id": "n-b05490d498a",
@@ -713,7 +781,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/the-days-of-diamond-manga-gets-tv-anime/.243858",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4171
+      "viral": 0.4168
     },
     {
       "id": "n-09180e9f175",
@@ -730,7 +798,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/oceanveil-streams-english-dub-for-hands-off-sawaranaide-koteashi-kun-anime/.243855",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4154
+      "viral": 0.4151
     },
     {
       "id": "n-ea91c7031ed",
@@ -747,7 +815,7 @@
       "image": "fondos/fallback-videojuegos.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/34-percent-of-developers-in-2026-gdc-survey-were-laid-off-in-last-2-years/.243840",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4115
+      "viral": 0.4112
     },
     {
       "id": "n-8fb0b584f82",
@@ -764,7 +832,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/the-summer-hikaru-died-novels-end-with-3rd-volume/.243843",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4076
+      "viral": 0.4073
     },
     {
       "id": "n-5ba85ef1be2",
@@ -781,7 +849,7 @@
       "image": "imagenes/n-5ba85ef1be2.jpg",
       "link": "https://myanimelist.net/news/74946798?_location=rss",
       "medio": "myanimelist.net",
-      "viral": 0.4156
+      "viral": 0.4153
     },
     {
       "id": "n-02ec42ab8c1",
@@ -798,7 +866,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/marchen-crown-manga-ends-in-next-chapter/.243838",
       "medio": "animenewsnetwork.com",
-      "viral": 0.4037
+      "viral": 0.4034
     },
     {
       "id": "n-a3f1b948b97",
@@ -815,7 +883,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.espinof.com/listas/jujutsu-kaisen-orden-visionado-todo-explosivo-anime-fantasia-oscura-donde-se-puede-ver-streaming",
       "medio": "espinof",
-      "viral": 0.4761
+      "viral": 0.4758
     },
     {
       "id": "n-e3fbf348524",
@@ -832,7 +900,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/skip-and-loafer-anime-2nd-season-reveals-more-cast-in-1st-promo-video/.243852",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3936
+      "viral": 0.3933
     },
     {
       "id": "n-eb413d5f970",
@@ -849,7 +917,24 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://areajugones.sport.es/anime/la-temporada-5-de-rezero-ya-es-oficial-y-esta-es-su-ventana-de-estreno-mas-probable/",
       "medio": "Areajugones",
-      "viral": 0.4212
+      "viral": 0.4209
+    },
+    {
+      "id": "n-04a14b976c5",
+      "sec": "estrenos",
+      "genero": "fantasia",
+      "slot": 0,
+      "titulo": "'Kimetsu no Yaiba podría durar “10, 20, o incluso 100 años más”. Tras ‘La fortaleza infinita’, Sony está lista para explotar al máximo el anime de fantasía",
+      "entradilla": "Ya con el estreno de 'Kimetsu no Yaiba: Tren infinito', el anime de cazadores de demonios cambió por completo las reglas del juego. La historia de ...",
+      "cuerpo": [
+        "Ya con el estreno de 'Kimetsu no Yaiba: Tren infinito', el anime de cazadores de demonios cambió por completo las reglas del juego. La historia de ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-16T03:01:00+00:00",
+      "image": "imagenes/n-04a14b976c5.jpg",
+      "link": "https://www.espinof.com/anime/kimetsu-no-yaiba-podria-durar-10-20-incluso-100-anos-fortaleza-infinita-sony-esta-lista-para-explotar-al-maximo-anime-fantasia",
+      "medio": "Espinof",
+      "viral": 0.3675
     },
     {
       "id": "n-8653d6fe64b",
@@ -866,7 +951,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-16/wanpaku-touken-ranbu-tv-anime-debuts-on-january-6/.243850",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3848
+      "viral": 0.3845
     },
     {
       "id": "n-5c70f81dfc6",
@@ -883,7 +968,24 @@
       "image": "imagenes/n-5c70f81dfc6.jpg",
       "link": "https://myanimelist.net/news/74945973?_location=rss",
       "medio": "myanimelist.net",
-      "viral": 0.3941
+      "viral": 0.3938
+    },
+    {
+      "id": "n-4a074b77413",
+      "sec": "comunidad",
+      "genero": "shojo",
+      "slot": 0,
+      "titulo": "Anime News Network's Shojosei Anime Wishlist",
+      "entradilla": "Shojo and josei fans aren't always well served by the anime industry. Too often, stories in those demographics are overlooked in favor of the next big shonen or narou-kei title. B ...",
+      "cuerpo": [
+        "Shojo and josei fans aren't always well served by the anime industry. Too often, stories in those demographics are overlooked in favor of the next big shonen or narou-kei title. B ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-16T01:00:00+00:00",
+      "image": "imagenes/n-4a074b77413.jpg",
+      "link": "https://www.animenewsnetwork.com/feature/2026-11-16/anime-news-network-shojosei-anime-wishlist/.243453",
+      "medio": "Anime News Network",
+      "viral": 0.3597
     },
     {
       "id": "n-df03e480ddb",
@@ -900,7 +1002,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://somoskudasai.com/noticias/isekai-douraku-ni-akitara-anime-estreno-enero-2027/",
       "medio": "SomosKudasai",
-      "viral": 0.3526
+      "viral": 0.3523
     },
     {
       "id": "n-f1414d77467",
@@ -917,7 +1019,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/black-witch-mirror-manga-to-end-in-4th-volume/.243819",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3716
+      "viral": 0.3713
     },
     {
       "id": "n-0c1ca033e1c",
@@ -934,7 +1036,7 @@
       "image": "imagenes/n-0c1ca033e1c.jpg",
       "link": "https://myanimelist.net/news/74945506?_location=rss",
       "medio": "myanimelist.net",
-      "viral": 0.3772
+      "viral": 0.377
     },
     {
       "id": "n-1e30e37b83d",
@@ -951,7 +1053,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/spitz-band-drummer-tatsuo-sakiyama-seriously-injured-in-traffic-accident/.243836",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3517
+      "viral": 0.3514
     },
     {
       "id": "n-407b77db4d0",
@@ -968,7 +1070,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://multianime.com.mx/2026/11/16/ryo-nakama-lanza-su-nueva-comedia-de-accion-%e3%80%8c%e3%82%b8%e3%83%a3%e3%83%b3%e3%81%8c%e3%81%82%e3%81%b6%e3%81%aa%e3%81%84%ef%bc%81%e3%80%8d-en-weekly-shonen-jump-manga-shonenjump-ryonakama/",
       "medio": "multianime",
-      "viral": 0.3716
+      "viral": 0.3713
     },
     {
       "id": "n-ced87e828e0",
@@ -985,7 +1087,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV0c1Y1VDbWo1M1FrSlRxaGZqS0V1ZmVJWDRrYmo3ZjU3SEhmYWNYMEhEeEtqRjdEbFpRSUVIVWFDZ1RpOW42bUZRZlV2MnNBUFF4SW1RUDItMF9oS2dUcFlMQmNkQklSRUVwMnllR0lPel9PUjJad05RLTk4U1dNVHIxSFFGaGs?oc=5",
       "medio": "Ramen Para Dos",
-      "viral": 0.3727
+      "viral": 0.3725
     },
     {
       "id": "n-bf3bc96b26b",
@@ -1002,7 +1104,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/witch-watch-manga-ends-with-anime-season-2-to-air-in-2027/.243834",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3219
+      "viral": 0.3216
     },
     {
       "id": "n-3280342749c",
@@ -1019,7 +1121,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://multianime.com.mx/2026/11/15/witch-watch-confirma-temporada-2-para-2027-y-comparte-visual-teaser-anime-witchwatch-noticiasanime/",
       "medio": "multianime",
-      "viral": 0.3523
+      "viral": 0.352
     },
     {
       "id": "n-f84a6c7dff3",
@@ -1036,7 +1138,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/uzono-shiniko-hokoku-manga-ends-in-4th-volume/.243817",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3181
+      "viral": 0.3179
     },
     {
       "id": "n-c01bd6bfa97",
@@ -1053,7 +1155,7 @@
       "image": "fondos/fallback-peliculas.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/odekake-kozame-anime-gets-2nd-film/.243832",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3149
+      "viral": 0.3146
     },
     {
       "id": "n-15c5b6d98c2",
@@ -1070,7 +1172,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/webtoon-ceo-junkoo-kim-receives-outstanding-contribution-award-at-korea-26th-cartoon-day-ceremony/.243642",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3142
+      "viral": 0.314
     },
     {
       "id": "n-1ab8a14c28f",
@@ -1087,7 +1189,7 @@
       "image": "imagenes/n-1ab8a14c28f.jpg",
       "link": "https://myanimelist.net/news/74943102?_location=rss",
       "medio": "myanimelist.net",
-      "viral": 0.3226
+      "viral": 0.3223
     },
     {
       "id": "n-3d266e93ce8",
@@ -1104,7 +1206,7 @@
       "image": "fondos/fallback-videojuegos.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/stranger-than-heaven-game-streams-story-trailer-for-2nd-act-kure/.243829",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3618
+      "viral": 0.3615
     },
     {
       "id": "n-76730e3fd1c",
@@ -1121,7 +1223,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://es.kotaku.com/black-clover-temporada-2-fecha-horario-y-donde-ver-el-episodio-8-del-anime-2000057286",
       "medio": "Kotaku en Español",
-      "viral": 0.2896
+      "viral": 0.2893
     },
     {
       "id": "n-d10f91bf624",
@@ -1138,7 +1240,7 @@
       "image": "fondos/fallback-peliculas.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/retrocrush-streams-sugar-sugar-rune-genocyber-anime/.243828",
       "medio": "animenewsnetwork.com",
-      "viral": 0.3026
+      "viral": 0.3023
     },
     {
       "id": "n-433d5cc0f22",
@@ -1155,7 +1257,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/bride-of-the-barrier-master-anime-streams-video-for-hana-twin-hazuki-ichise/.243831",
       "medio": "animenewsnetwork.com",
-      "viral": 0.2994
+      "viral": 0.2992
     },
     {
       "id": "n-c220ef85ddd",
@@ -1172,7 +1274,7 @@
       "image": "fondos/fallback-comunidad.svg",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOWZSNjI4M0NXWXlRX3BHQ2N4Z0k0YjJlQlczUEVxdVl3d2kzTUJmVndGWVFYSGlzUFpMUFZMUEJIaEtIMFF5VkJsNXFDWkJJV0ktcWJITGhNdWRPa2d1WkppTlBhbV9SZU1vVGd4ZWNUQU1MZm9nU0J3bUhqYi1WMnhsaFhQSDFFbl9scnoyUQ?oc=5",
       "medio": "Viva Nicaragua Canal 13",
-      "viral": 0.2796
+      "viral": 0.2793
     },
     {
       "id": "n-823726e6407",
@@ -1189,7 +1291,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://multianime.com.mx/2026/11/15/retrocrush-suma-sugar-sugar-rune-y-genocyber-a-su-catalogo-anime-streaming-animeclasico/",
       "medio": "multianime",
-      "viral": 0.2775
+      "viral": 0.2772
     },
     {
       "id": "n-03a92b4d1af",
@@ -1206,7 +1308,7 @@
       "image": "fondos/fallback-videojuegos.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-15/mages-develops-girls-und-panzer-mahjong-game-for-ps5-switch-2/.243827",
       "medio": "animenewsnetwork.com",
-      "viral": 0.2904
+      "viral": 0.2901
     },
     {
       "id": "n-0dddc1a2fb2",
@@ -1223,7 +1325,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://freakelitex.com/blue-box-temporada-2-episodio-7-horario-fecha-y-donde-ver-online-el-anime-ao-no-hako/",
       "medio": "freakelitex.com",
-      "viral": 0.2627
+      "viral": 0.2624
     },
     {
       "id": "n-c505ea70169",
@@ -1240,7 +1342,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://www.animenewsnetwork.com/news/2026-11-14/even-the-student-council-has-its-holes-anime-casts-yoko-hikasa/.243815",
       "medio": "animenewsnetwork.com",
-      "viral": 0.2617
+      "viral": 0.2614
     },
     {
       "id": "n-5e28b43996e",
@@ -1753,6 +1855,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-bb84ff4e75c",
+      "sec": "manga",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "After 40 Years, It's The End Of An Era For Shonen Anime",
+      "entradilla": "When it comes to anime and manga, shonen series have always dominated at the very top, and that has been the case for the last 40 or so years. With the official release of Dragon Ball on November 20, ...",
+      "cuerpo": [
+        "When it comes to anime and manga, shonen series have always dominated at the very top, and that has been the case for the last 40 or so years. With the official release of Dragon Ball on November 20, ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-12T00:30:00+00:00",
+      "image": "imagenes/n-bb84ff4e75c.jpg",
+      "link": "https://gamerant.com/shonen-anime-end-era-40-years/",
+      "medio": "Game Rant",
+      "viral": 0.242
+    },
+    {
       "id": "n-94abf35ab75",
       "sec": "manga",
       "genero": "comedia",
@@ -1768,6 +1887,40 @@
       "link": "https://elcomercio.pe/respuestas/a-que-hora/los-diarios-de-la-boticaria-temporada-3-capitulo-7-hora-confirmada-de-estreno-anime-crunchyroll-tdpe-noticia/",
       "medio": "El Comercio",
       "viral": 0.2935
+    },
+    {
+      "id": "n-7481e9370c0",
+      "sec": "manga",
+      "genero": "mecha",
+      "slot": 0,
+      "titulo": "‘The Five Star Stories’ Manga Volume 1 Review: A Mecha Epic Mightier Than ‘Dune’",
+      "entradilla": "One of the longest-running mecha manga ever created, 'The Five Star Stories' is finally available in English, and it’s wondrous.",
+      "cuerpo": [
+        "One of the longest-running mecha manga ever created, 'The Five Star Stories' is finally available in English, and it’s wondrous."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-11T21:00:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://www.forbes.com/sites/olliebarder/2026/11/12/the-five-star-stories-manga-volume-1-review-a-mecha-epic-mightier-than-dune/",
+      "medio": "Forbes",
+      "viral": 0.242
+    },
+    {
+      "id": "n-dfc19b3b1d9",
+      "sec": "estrenos",
+      "genero": "accion",
+      "slot": 0,
+      "titulo": "Mashle alista su temporada 3 en Crunchyroll: tráiler, nuevo villano y ventana de estreno",
+      "entradilla": "Mashle revela avance de su temporada 3 para enero de 2027. Conoce los arcos restantes y detalles de su llegada a Crunchyroll.",
+      "cuerpo": [
+        "Mashle revela avance de su temporada 3 para enero de 2027. Conoce los arcos restantes y detalles de su llegada a Crunchyroll."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-11T16:00:00+00:00",
+      "image": "imagenes/n-dfc19b3b1d9.jpg",
+      "link": "https://tierragamer.com/noticias/anime/anime/mashle-alista-su-temporada-3-en-crunchyroll-trailer-nuevo-villano-y-ventana-de-estreno/",
+      "medio": "TierraGamer",
+      "viral": 0.3449
     },
     {
       "id": "n-6d782b988ef",
@@ -1855,6 +2008,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-533dc3943ce",
+      "sec": "series",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "Dragon Ball Super: Beerus Officially Loses to Crunchyroll’s Best Shonen Anime of 2026",
+      "entradilla": "Black Clover takes No. 1 on Crunchyroll's global charts, overtaking Dragon Ball Super: Beerus. Is is due to Magna or Asta?",
+      "cuerpo": [
+        "Black Clover takes No. 1 on Crunchyroll's global charts, overtaking Dragon Ball Super: Beerus. Is is due to Magna or Asta?"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-10T03:50:00+00:00",
+      "image": "imagenes/n-533dc3943ce.jpg",
+      "link": "https://fandomwire.com/black-clover-beats-dragon-ball-super-beerus-crunchyroll/",
+      "medio": "FandomWire",
+      "viral": 0.2935
+    },
+    {
       "id": "n-e0531509b20",
       "sec": "manga",
       "genero": "isekai",
@@ -1887,6 +2057,23 @@
       "link": "https://myanimelist.net/news/74922872?_location=rss",
       "medio": "myanimelist.net",
       "viral": 0.2935
+    },
+    {
+      "id": "n-453e8efa543",
+      "sec": "series",
+      "genero": "shojo",
+      "slot": 0,
+      "titulo": "After the Anime’s Success, A Classic Shojo Confirms Live-Action Series Is Coming Next",
+      "entradilla": "A classic 1990s Shojo series is getting a new live-action adaptation after the anime's success. Read on to find out more.",
+      "cuerpo": [
+        "A classic 1990s Shojo series is getting a new live-action adaptation after the anime's success. Read on to find out more."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-09T13:20:00+00:00",
+      "image": "imagenes/n-453e8efa543.jpg",
+      "link": "https://comicbook.com/anime/news/after-the-animes-success-a-classic-shojo-confirms-live-action-series-is-coming-next/",
+      "medio": "ComicBook.com",
+      "viral": 0.242
     },
     {
       "id": "n-05b740dc56e",
@@ -2076,6 +2263,40 @@
       "viral": 0.242
     },
     {
+      "id": "n-fc5c8097c0f",
+      "sec": "series",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her recibirá una segunda temporada",
+      "entradilla": "El equipo del anime There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her anunció este sábado (7) que se ha dado luz verde a la producción de una segunda temporada. El elenco ...",
+      "cuerpo": [
+        "El equipo del anime There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her anunció este sábado (7) que se ha dado luz verde a la producción de una segunda temporada. El elenco ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-06T23:11:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.anmtvla.com/2026/11/there-was-cute-girl-in-heros-party-so-i.html",
+      "medio": "anmtvla",
+      "viral": 0.242
+    },
+    {
+      "id": "n-5f792eae44b",
+      "sec": "manga",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "Shonen Jump Shop Opens in New York City This Weekend",
+      "entradilla": "The new Shonen Jump Shop pop-up store in New York City will sell merchandise based on different anime and manga and exclusives.",
+      "cuerpo": [
+        "The new Shonen Jump Shop pop-up store in New York City will sell merchandise based on different anime and manga and exclusives."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-06T15:00:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://www.msn.com/en-us/news/other/shonen-jump-shop-opens-in-new-york-city-this-weekend/ar-AA2gVgof",
+      "medio": "Siliconera on MSN",
+      "viral": 0.242
+    },
+    {
       "id": "n-649934507da",
       "sec": "comunidad",
       "genero": "fantasia",
@@ -2144,6 +2365,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-0125cc60e0a",
+      "sec": "series",
+      "genero": "fantasia",
+      "slot": 0,
+      "titulo": "Netflix pone fecha a la temporada 2 de su mejor serie, desafía al anime y busca arrasar la fantasía épica",
+      "entradilla": "La temporada 2 de 'Samurái de ojos azules' llega el 19 de enero de 2027 y Netflix comparte un nuevo tráiler de los esperados nuevos episodios.",
+      "cuerpo": [
+        "La temporada 2 de 'Samurái de ojos azules' llega el 19 de enero de 2027 y Netflix comparte un nuevo tráiler de los esperados nuevos episodios."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-11-04T06:00:02+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/es-es/entretenimiento/streaming-de-pel%C3%ADculas-y-tv/netflix-pone-fecha-a-la-temporada-2-de-su-mejor-serie-desaf%C3%ADa-al-anime-y-busca-arrasar-la-fantas%C3%ADa-%C3%A9pica/ar-AA2gKBbR",
+      "medio": "Vandal on MSN",
+      "viral": 0.3449
+    },
+    {
       "id": "n-34f0a7d73a5",
       "sec": "series",
       "genero": "terror",
@@ -2176,6 +2414,23 @@
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9malFXdGVuN2RFTTd2RWRhcUQya3czWWJlUU00OXJUQl9DdDB3bHNQcEFHaVpIeVpuTDBFMTNMSjZ2U0hHMk9wTGdTTWNqQ0xmY29ubHBuMzVHTUNJWjh0TnJOR1lKX0JVcE9MaVNrSUF6aDY2c2Qw?oc=5",
       "medio": "Disney Plus",
       "viral": 0.3449
+    },
+    {
+      "id": "n-6a9abe8d0dc",
+      "sec": "series",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "5 best new isekai anime of fall 2026",
+      "entradilla": "Fall 2026 brings a fresh wave of isekai anime, but these five new series are already turning heads with their exciting premises and early hype.",
+      "cuerpo": [
+        "Fall 2026 brings a fresh wave of isekai anime, but these five new series are already turning heads with their exciting premises and early hype."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-30T10:15:11+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/en-us/news/other/5-best-new-isekai-anime-of-fall-2026/ar-AA2gsBiJ",
+      "medio": "Comic Book Resources on MSN",
+      "viral": 0.242
     },
     {
       "id": "n-2be6f02c4e0",
@@ -2244,6 +2499,23 @@
       "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNUmJNeDNLN1dwSnE4dklfYUNQM19BZG94MWhxUFMxcE1oY3c4Nm1aWFNyOWdySmlvZUVUbkhnc1pzLXJ3b1Nick5saTdFWTAxanNoWFJyX0JxdXItRkNRcF9WZjhBdGlyZi1KcGhJbjEtRDdObW0xMW9ReXdhQmxVQ1pEQWk5NDgwSUxqNmlReHFKb3NPUk90RTVYYVZWWnZrYlZCcnZYTTh6Z3NlSFlEaUlpNkVTd1BFeVVSVFhIQXR5bG11M2ZpQUlZSjVxdzctRVhOdlZSTFBYa1lvQWxIVl9JNUlGbmFlYmZfQ09JdDVVaXZPWjVjRjZ30gGOAkFVX3lxTE5xNDd2MlVNUUNjYkhPbjVWTElTWWxZRVBGejRNWVhCSFoxUTNmd3R0Z3A4OG0tS2FadWpQWHRFSnlmRUxEYjNubjVseWpsYjh5WUcyam9jeHczOXZYd1pSbU15bjdqT3FSLWFGRENyUm1COE9RLUp5eDNRZVBpT1JDdUtpNWRPYklJTEg1Y2RuT1BYbENtQmZTN09OWkE0aDRlNEc3V3FjWFFUT2piOWlkU2t6R1ozNlA0TFppbWJzRWRDd0VYemlmYWRzSmJSWlRVQ0o2dHFNbGZXazhYQ2RIdU5Ha3UyYXZqMmgxWFk2Y0h6N2xvU2h5UDBfYzc1Mk1HY3FVNlRnbE8wQ1pWZw?oc=5",
       "medio": "Diario AS",
       "viral": 0.3449
+    },
+    {
+      "id": "n-0b99c17cb40",
+      "sec": "series",
+      "genero": "accion",
+      "slot": 0,
+      "titulo": "Prime Video estrena el último gran live-action y busca su éxito en streaming: adapta uno de los mejores animes de acción",
+      "entradilla": "Prime Video estrena el último gran live-action y busca su éxito en streaming: adapta uno de los mejores animes de acción Vandal",
+      "cuerpo": [
+        "Prime Video estrena el último gran live-action y busca su éxito en streaming: adapta uno de los mejores animes de acción Vandal"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-30T07:00:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPYlNSYlJrLVM1OUxvT21IQjB0ZkVEd3dYU3JOb044SGYyVWIxTzA5ZEp2MlJpLWlyVU1XS2ROSTVMVGZ3UGF1VDVGWGE3SzVvblJ1bllsalZsanhLOG9FV003WG1wTGRfVElrU2dUUGc3aFZQaENZTUl2U1V1d2dhZk1FUUhpeFpGTkRsQ0JzYXNNa0QtQnp5THJ6ZTNES1h3ei1iQUZ2ZUtjekl5c3lIaHJVSFVmTm5hVnhOaXoxLXNjTmpOeVI2VVB5MDZxVndhT2V4YWlCc3lJWlJRbjVsSXd5QTFjdG5ab0FtTnhkRXpmMTNSMXJvM9IB_gFBVV95cUxPMmRxZHdFbmNNQXlNQ3lLX0lrZGE2ZFo5Wk1GR2p4LThWSU80UUh6SHBGRzF4TWxHMlVWWnZFclBfcFFMZ3R4Xzc0Rmt1STBvRU1QYmpLM1drb3VxRzVEOEc1STZlV3dpLVhtZ0pyWEFNY0g5djJic1JYSXM0MFpzRTlycWZVS3ctclN1Ykt4TEdaalU4cmE0bVhVMFpRNndEYTJ6b0d6RHZ3bUl3djhDQkpTZ3RLNTZyTllQbjg2aWE4YXhleTZwYlNNT19LQ3lkOXVkdmtURFdzRmVMUzRsNVZxalJsQ2ZSLXR4TnZBQnQxRVdIOHlnWlRJdUVQUQ?oc=5",
+      "medio": "Vandal",
+      "viral": 0.242
     },
     {
       "id": "n-6cd87b260e7",
@@ -2382,6 +2654,23 @@
       "viral": 0.2935
     },
     {
+      "id": "n-98d1833d9ef",
+      "sec": "series",
+      "genero": "mecha",
+      "slot": 0,
+      "titulo": "Cómo entrar al universo Gundam sin haber visto anime de mechas",
+      "entradilla": "Cómo entrar al universo Gundam sin haber visto anime de mechas Nintenderos",
+      "cuerpo": [
+        "Cómo entrar al universo Gundam sin haber visto anime de mechas Nintenderos"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-27T07:00:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNd2w1Q0t0dzZCaWsxU3BCeXZkc0pRdF8yLV8yOW5XY3hqYV9GemxqOGNVLWN0bm1rN0JfQjdrbUdJNjdxQS1tSWJJZzFyQ1ZvOUpDejZCbzloVEZ3WnJHSEdxU2czLTJ6aW9TVGhxS2l6UGJGQ1JDbk1xMmZzRkRPSmtKMXJRRURkTVlidEZlT3p2VXRCWnlvdVVleXZoUUpB?oc=5",
+      "medio": "Nintenderos",
+      "viral": 0.242
+    },
+    {
       "id": "n-9669b2f61da",
       "sec": "videojuegos",
       "genero": "terror",
@@ -2414,6 +2703,23 @@
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVWgzTnktaVJTMFNxWnNrTGxTNDlZTC0tLWRVbXlkbm5pTlFZUU02R2NrVDRWVS13c3VNUkpNQ0FDRldsbTl4V2tkbGQzWXMxOWNWNHo5YXdZVHJteEJDdHhQQnc1UTB0MDZ1V2phcEFXVmZzd1JlMEJHem5BdmJJdm94dFRzV04wNXlXTWptcE9MMUdiUWIxbG1JX0xQSkFnekZoRmhzN2VLa2dkakg1b0h0S25IdW56U241V0RFRElCbGlTVXNNcG5RZHRVNTVreDhYQWZidy16QUNGR2REdGtOUzI?oc=5",
       "medio": "Artículo 14",
       "viral": 0.3449
+    },
+    {
+      "id": "n-090ca55cd56",
+      "sec": "series",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "My Hero Academia Gets New Original Anime Episode Streaming on August 16",
+      "entradilla": "The anime's first 13-episode season premiered in April 2016. The 25-episode second season premiered in April 2017, and the third season premiered in April 2018 and ran for 25 episodes. The fourth ...",
+      "cuerpo": [
+        "The anime's first 13-episode season premiered in April 2016. The 25-episode second season premiered in April 2017, and the third season premiered in April 2018 and ran for 25 episodes. The fourth ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-25T17:00:00+00:00",
+      "image": "imagenes/n-090ca55cd56.jpg",
+      "link": "https://www.animenewsnetwork.com/news/2020-08-02/my-hero-academia-gets-new-original-anime-episode-streaming-on-august-16/.162485",
+      "medio": "Anime News Network",
+      "viral": 0.242
     },
     {
       "id": "n-4432c3c92cb",
@@ -2450,6 +2756,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-97fee18760a",
+      "sec": "manga",
+      "genero": "accion",
+      "slot": 0,
+      "titulo": "La cinta que Mikey escondió: fecha de estreno, hora y link para ver el Episodio 4 de “Tokyo Revengers” - Temporada 4",
+      "entradilla": "En este capítulo del anime “Tokyo Revengers”, Takemichi revisa una grabación que lo acerca a Mikey, mientras el conflicto entre las tres pandillas entra en una etapa decisiva.",
+      "cuerpo": [
+        "En este capítulo del anime “Tokyo Revengers”, Takemichi revisa una grabación que lo acerca a Mikey, mientras el conflicto entre las tres pandillas entra en una etapa decisiva."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-22T08:30:00+00:00",
+      "image": "imagenes/n-97fee18760a.jpg",
+      "link": "https://elcomercio.pe/mag/fama/que-ver/tokyo-revengers-temporada-4-episodio-4-fecha-hora-y-link-para-ver-el-anime-de-disney-plus-y-hulu-nnda-nnlt-noticia/",
+      "medio": "El Comercio",
+      "viral": 0.3449
+    },
+    {
       "id": "n-45fcc58a81a",
       "sec": "series",
       "genero": "terror",
@@ -2464,6 +2787,23 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeUNuYzU2cXVHVnZPdnBzYlNlcUhOS2ViR0xUNmlGVEJfZ2VUZnFydmROZjRtQzRmWGVCa0szNERzdUdtM1p1Q2xmTXZ6WDByS3R1M0ozT2xiSlJlMEtXLThlekQ4aHVfSXhqOGVuaVE1VEJIZXo2RDM5bG5KRC1vUFU4ZGxuQmFwRDhBRUpjOE8xQVhjbTA4bEktTVlUd0V6SVRyMklSWVp5VzlzbWVDMG9FVFBjQQ?oc=5",
       "medio": "TV Azteca",
+      "viral": 0.242
+    },
+    {
+      "id": "n-306a1a42640",
+      "sec": "series",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "5 Best Shonen Anime Masterpieces Better Than Dragon Ball Super, Ranked",
+      "entradilla": "Think Dragon Ball Super reigns supreme? These 5 shonen masterpieces deliver unforgettable battles and stories worth fighting over.",
+      "cuerpo": [
+        "Think Dragon Ball Super reigns supreme? These 5 shonen masterpieces deliver unforgettable battles and stories worth fighting over."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-22T05:22:00+00:00",
+      "image": "imagenes/n-306a1a42640.jpg",
+      "link": "https://fandomwire.com/best-shonen-anime-masterpieces-better-than-dragon-ball-super-ranked/",
+      "medio": "FandomWire",
       "viral": 0.242
     },
     {
@@ -2518,6 +2858,57 @@
       "viral": 0.242
     },
     {
+      "id": "n-6f2b0e7fa5a",
+      "sec": "manga",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "10 isekai anime without a single flaw",
+      "entradilla": "Anime is becoming more and more popular every year, with series such as One Piece and Frieren: Beyond Journey’s End pushing the bounds of creativity and animation. However, one of the most ...",
+      "cuerpo": [
+        "Anime is becoming more and more popular every year, with series such as One Piece and Frieren: Beyond Journey’s End pushing the bounds of creativity and animation. However, one of the most ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-19T13:05:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://www.msn.com/en-us/entertainment/anime/10-isekai-anime-without-a-single-flaw/ar-AA2fDn6N",
+      "medio": "MSN",
+      "viral": 0.2887
+    },
+    {
+      "id": "n-e36f1ca64f4",
+      "sec": "series",
+      "genero": "accion",
+      "slot": 0,
+      "titulo": "Un anime impactante podría dar el salto a la acción real",
+      "entradilla": "Hollywood parece decidido a encontrar su próxima gran franquicia entre las historias del anime japonés. Y esta vez podría haber puesto sus ojos en una que tiene todos los ingredientes para convertirse ...",
+      "cuerpo": [
+        "Hollywood parece decidido a encontrar su próxima gran franquicia entre las historias del anime japonés. Y esta vez podría haber puesto sus ojos en una que tiene todos los ingredientes para convertirse ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-19T13:02:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/es-es/entretenimiento/cine/un-anime-impactante-podr%C3%ADa-dar-el-salto-a-la-acci%C3%B3n-real/ar-AA2fBhga",
+      "medio": "MSN",
+      "viral": 0.242
+    },
+    {
+      "id": "n-639213c34bb",
+      "sec": "series",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "10 Isekai Anime Without a Single Flaw",
+      "entradilla": "Isekai might be a divisive genre, but it has produced its fair share of virtually perfect anime series, including Magic Knight Rayearth and Sonny Boy.",
+      "cuerpo": [
+        "Isekai might be a divisive genre, but it has produced its fair share of virtually perfect anime series, including Magic Knight Rayearth and Sonny Boy."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-19T01:05:00+00:00",
+      "image": "imagenes/n-639213c34bb.jpg",
+      "link": "https://collider.com/isekai-anime-without-flaws/",
+      "medio": "Collider",
+      "viral": 0.2887
+    },
+    {
       "id": "n-10f932a8c51",
       "sec": "series",
       "genero": "isekai",
@@ -2567,6 +2958,23 @@
       "link": "https://elcomercio.pe/respuestas/a-que-hora/black-clover-temporada-2-capitulo-3-hora-confirmada-de-estreno-anime-crunchyroll-tdpe-noticia/",
       "medio": "El Comercio",
       "viral": 0.3449
+    },
+    {
+      "id": "n-648fec020c3",
+      "sec": "manga",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "Love Through a Prism tendrá una adaptación en novela de dos volúmenes | #Anime #Manga #Novelas",
+      "entradilla": "Love Through a Prism tendrá una adaptación en novela de dos volúmenes | #Anime #Manga #Novelas MultiAnime.com.mx",
+      "cuerpo": [
+        "Love Through a Prism tendrá una adaptación en novela de dos volúmenes | #Anime #Manga #Novelas MultiAnime.com.mx"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-10-15T07:00:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbDVqUUJGT3h3R1JtYmFSeWZIc1dYNVJ5SjNCX2phUElabTRNam5wWGJVQUFOY0tLYzFQMWp2Y2g4Nno3VUE4eWxMRVp5Z1Vlc2Y3MWR6NUlQSk1CQXVrRkpXQnBXNTNBbFJZRGFVM3AyS2pCQ0xhQTJ2R2h0NGtGeFRWYk9xSDRaX2RLSkxma3pqc09nOEZ1MUdRbFFoSUZFNHhtSXpLckRJbjdnME1ia2U0VjFrVEdlSDc1N1M2S29STHE5elE?oc=5",
+      "medio": "MultiAnime.com.mx",
+      "viral": 0.2935
     },
     {
       "id": "n-c78d9c3425d",
@@ -2943,23 +3351,6 @@
       "viral": 0.3449
     },
     {
-      "id": "n-dd32889a22d",
-      "sec": "manga",
-      "genero": "romance",
-      "slot": 0,
-      "titulo": "Guía de episodios de “Rompiendo el hielo” - Temporada 2: fecha y hora de estreno de cada capítulo del anime de Netflix",
-      "entradilla": "Debido a las manipulaciones de Momoka, Koyuki decide distanciarse de Minato para no salir lastimada, lo que provoca que él se sienta confundido y con el corazón roto. En medio de ese terrible ...",
-      "cuerpo": [
-        "Debido a las manipulaciones de Momoka, Koyuki decide distanciarse de Minato para no salir lastimada, lo que provoca que él se sienta confundido y con el corazón roto. En medio de ese terrible ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-10-03T09:59:00+00:00",
-      "image": "fondos/fallback-manga.svg",
-      "link": "https://elcomercio.pe/mag/fama/que-ver/rompiendo-el-hielo-temporada-2-guia-de-episodios-fecha-y-hora-de-estreno-de-cada-capitulo-del-anime-de-netflix-the-ramparts-of-ice-video-nnda-nnlt-noticia/",
-      "medio": "El Comercio",
-      "viral": 0.3963
-    },
-    {
       "id": "n-fbcae5f60f8",
       "sec": "manga",
       "genero": "fantasia",
@@ -3008,23 +3399,6 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQYmxFNlo0UkdxZjV2ZzNtbWIzSDlORlNGUWZCaUFXX0VoUVlnSzBvd3lxSGFGWk8zSVN6QkpVUlZmVllwU0Z2cVVnZmF5RTdIdlhoWFluTjk1eFAzR19rTGx0M2phQzU2al9zSjZqbWpWcnV1aUpUQWU3ei1tWHdNc211X2JGYXBiWTlDT3hzTFBDYTk4a29memV3cmdMNXBsNUlTYUsyc1o2ZjJsSU5lUnlsS1dUb2NmWkJxYy1lZFBBR1pGWnRrOWgwNlBNaHpmNlJzRVJqT2dNUDJXRHJFbG9oSjljWkkwOVp3ZUxwdDZQS0Jn?oc=5",
       "medio": "El Comercio Perú",
-      "viral": 0.3449
-    },
-    {
-      "id": "n-8da26fcd626",
-      "sec": "manga",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "Jujutsu Kaisen revelaría pronto la fecha de estreno de la Temporada 4 del anime y otras sorpresas para los fanáticos de Gege Akutami",
-      "entradilla": "La franquicia de MAPPA estará presente en uno de los eventos de manga y anime más importantes del mundo Dragon Ball y One Piece son los pilares de los animes de acción y aventura, pero en años ...",
-      "cuerpo": [
-        "La franquicia de MAPPA estará presente en uno de los eventos de manga y anime más importantes del mundo Dragon Ball y One Piece son los pilares de los animes de acción y aventura, pero en años ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-10-01T14:26:00+00:00",
-      "image": "fondos/fallback-manga.svg",
-      "link": "https://www.levelup.com/noticias/jujutsu-kaisen-revelaria-pronto-la-fecha-de-estreno-de-la-temporada-4-del-anime-y-otras-sorpresas-para-los-fanaticos-de-gege-akutami/",
-      "medio": "levelup",
       "viral": 0.3449
     },
     {
@@ -3132,7 +3506,7 @@
     {
       "id": "n-09413151335",
       "sec": "series",
-      "genero": "mecha",
+      "genero": "isekai",
       "slot": 0,
       "titulo": "Lista de estrenos anime en el mes de octubre 2026",
       "entradilla": "El otoño suele ser la temporada más destacada para los fanáticos de la animación japonesa, y octubre de 2026 llega cargado de grandes producciones. Desde el regreso de secuelas sumamente esperadas ...",
@@ -3162,23 +3536,6 @@
       "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxObFdRNTQ5ZVIxQ3BPVndnTzI5SVV2R2d5QXNmZF9BSVQ0ZFpIY3BtOHphdzNnekhWRXRiSWNwYzg2M1dHSDhod3FjcEZ4V2RQc1lUNC1FeHREZjlrVGgyc1pyelZYN0hwOUt6X3NVUHUzU2NTdmwzT2M5XzV0VGRobWY1aTcxcGlhZXBicUZiMjAtOFVNbXlzU1dyYWg2NFdoV1dZNnNramVMc1NhOXlicXlWVGpiLWxCblV1SEYzUzV2YTlHbWpTS3ZEWGxNeXlOaG8ydHB1WE44Q21LQ1Y5NEEyeUhmSXZySWF2NGlYLUh6SkZDZUEtelRoN0VlY3c?oc=5",
       "medio": "VidaExtra",
       "viral": 0.242
-    },
-    {
-      "id": "n-934c006de3f",
-      "sec": "manga",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "Un hito para el manga: “Black Clover” alcanzó esta impresionante cifra de ventas antes de la temporada 2 del anime",
-      "entradilla": "Cabe resaltar que la obra concluyó oficialmente con sus últimos capítulos (390, 391 y 392), publicados en la revista Jump GIGA, cerrando su historia en el volumen 38 y con un capítulo especial final ...",
-      "cuerpo": [
-        "Cabe resaltar que la obra concluyó oficialmente con sus últimos capítulos (390, 391 y 392), publicados en la revista Jump GIGA, cerrando su historia en el volumen 38 y con un capítulo especial final ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-29T13:48:00+00:00",
-      "image": "fondos/fallback-manga.svg",
-      "link": "https://elcomercio.pe/mag/fama/que-ver/black-clover-la-cifra-de-ventas-que-alcanzo-el-manga-antes-del-estreno-de-la-temporada-2-del-anime-crunchyroll-nnda-nnlt-noticia/",
-      "medio": "El Comercio",
-      "viral": 0.2935
     },
     {
       "id": "n-6f5a7aa7443",
@@ -3266,25 +3623,42 @@
       "viral": 0.242
     },
     {
-      "id": "n-7d5c0b8fd2d",
-      "sec": "eventos",
+      "id": "n-f82c470e3b3",
+      "sec": "peliculas",
       "genero": "shonen",
       "slot": 0,
       "titulo": "La Shonen Jump anuncia su evento más importante del año: los mangas y animes que protagonizarán la Jump Festa 2027",
-      "entradilla": "Tal y como se puede ver en cada escenario, el Super Stage es el lugar en el que ocurrirá la mayoría de la magia, ya que las series más conocidas de la actualidad se dejarán ver, ya sea para un ...",
+      "entradilla": "La Shonen Jump anuncia su evento más importante del año: los mangas y animes que protagonizarán la Jump Festa 2027 VidaExtra",
       "cuerpo": [
-        "Tal y como se puede ver en cada escenario, el Super Stage es el lugar en el que ocurrirá la mayoría de la magia, ya que las series más conocidas de la actualidad se dejarán ver, ya sea para un ..."
+        "La Shonen Jump anuncia su evento más importante del año: los mangas y animes que protagonizarán la Jump Festa 2027 VidaExtra"
       ],
       "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-28T01:29:00+00:00",
-      "image": "fondos/fallback-eventos.svg",
-      "link": "https://www.vidaextra.com/series/shonen-jump-anuncia-su-evento-importante-ano-mangas-animes-que-protagonizaran-jump-festa-2027",
-      "medio": "vidaextra.com",
+      "fecha": "2026-09-28T07:00:00+00:00",
+      "image": "fondos/fallback-peliculas.svg",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSkFCSHl0UzlmaUVpUUpxVUdsbzdkcDZMTFdMOUpTQnEwT2Fjd2pKNmNmRjVPdEthNjkta1F4dUk2WWtZaVg2QVlZZzMzVTc4VGt3VkRUbUV4eU9veEhINkpqWWl5VE1ZaDE3NVl4RENKcEd2VUJZOGhPOWNPWmlhZ2g5M0k4dzV6azZwbWZ0b0pSamEtT1Zibnp3cEF4RW9yb2pEVmczMFUxUXRVWTcxZzBHQmZtdENjM1VHLUNzWGxKRXpC?oc=5",
+      "medio": "VidaExtra",
       "viral": 0.242
     },
     {
+      "id": "n-bc3736c9aab",
+      "sec": "series",
+      "genero": "terror",
+      "slot": 0,
+      "titulo": "Estrenos Netflix octubre: 13 películas y series que ver esta semana, de Florence Pugh al terror",
+      "entradilla": "Netflix abre octubre con 13 estrenos entre el 28 de septiembre y el 4 de octubre, de Florence Pugh al mejor anime. La plataforma ya ha colgado la parrilla completa de la semana. Y llega cargada: todo ...",
+      "cuerpo": [
+        "Netflix abre octubre con 13 estrenos entre el 28 de septiembre y el 4 de octubre, de Florence Pugh al mejor anime. La plataforma ya ha colgado la parrilla completa de la semana. Y llega cargada: todo ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-09-27T07:22:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/es-es/entretenimiento/streaming-de-pel%C3%ADculas-y-tv/estrenos-netflix-octubre-13-pel%C3%ADculas-y-series-que-ver-esta-semana-de-florence-pugh-al-terror/ar-AA2d3wJg",
+      "medio": "MSN",
+      "viral": 0.3449
+    },
+    {
       "id": "n-3706e056c7e",
-      "sec": "peliculas",
+      "sec": "estrenos",
       "genero": "comedia",
       "slot": 0,
       "titulo": "8 estrenos en Prime Video, Disney+, HBO Max, Movistar Plus y Filmin: Esta semana la comedia con puntuación perfecta y la mejor película anime de 2025",
@@ -3294,7 +3668,7 @@
       ],
       "autor": "Redacción AnimeChronicle",
       "fecha": "2026-09-27T07:00:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
+      "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE40azE1T1dLSGprNHR1YllteWlteFNpMi14ejNsaHlIeV9XSlZ6VlV4YkdLRDI3NFhDTWx3VS1ja3BqZEFkWXZhTUthUWxYRTM2MVN2UkJtWjNJOGl1ZlI1SDVKeDdqdmtuZzd30gFwQVVfeXFMTnlEanRMUW1hbWF5Qks0MThPVDNub2ZBdko5bHhTNzJrRUpBNHVfNERYNmhSTnVIZmFfT3lXWUpPZ2VMNHp1NTY1b1JnY19zQ29fMDlxekFGRW1tRmxRQWRiOVo5YmVJUzNNelRScXBBVg?oc=5",
       "medio": "SensaCine",
       "viral": 0.3963
@@ -3334,38 +3708,21 @@
       "viral": 0.3449
     },
     {
-      "id": "n-7df92f42cb1",
+      "id": "n-510a9892af6",
       "sec": "series",
-      "genero": "isekai",
-      "slot": 0,
-      "titulo": "La temporada 4 de Mushoku Tensei todavía esta lejos: la temporada 3 aún no ha terminado",
-      "entradilla": "'Mushoku Tensei' ha finalizado su emisión, pero la temporada 3 todavía no ha terminado. La razón es bien sencilla: lo que hemos visto este verano ha sido solo su parte 1, mientras que nos queda una ...",
-      "cuerpo": [
-        "'Mushoku Tensei' ha finalizado su emisión, pero la temporada 3 todavía no ha terminado. La razón es bien sencilla: lo que hemos visto este verano ha sido solo su parte 1, mientras que nos queda una ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-27T03:46:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://areajugones.sport.es/anime/la-temporada-4-de-mushoku-tensei-todavia-esta-lejos-la-temporada-3-aun-no-ha-terminado/",
-      "medio": "Areajugones",
-      "viral": 0.242
-    },
-    {
-      "id": "n-b0dbbd636ba",
-      "sec": "estrenos",
       "genero": "shonen",
       "slot": 0,
-      "titulo": "Fecha confirmada: uno de los mayores shonen de la historia muestra su temporada 2, confirma un cambio y anuncia su estreno",
-      "entradilla": "'Black Clover' regresa finalmente al streaming tras una larga espera. La temporada 2, que arranca el 3 de octubre, se extenderá en dos partes con un total de 26 episodios para continuar con la ...",
+      "titulo": "8 Must-Watch Shonen Anime of Fall 2026",
+      "entradilla": "Cathlyn is an anime writer with years of experience covering some of the biggest and most popular series of all time. She loves writing listicles, features, and query-based articles about all things ...",
       "cuerpo": [
-        "'Black Clover' regresa finalmente al streaming tras una larga espera. La temporada 2, que arranca el 3 de octubre, se extenderá en dos partes con un total de 26 episodios para continuar con la ..."
+        "Cathlyn is an anime writer with years of experience covering some of the biggest and most popular series of all time. She loves writing listicles, features, and query-based articles about all things ..."
       ],
       "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-25T07:02:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://vandal.elespanol.com/random/fecha-confirmada-uno-de-los-mayores-shonen-de-la-historia-muestra-su-temporada-2-confirma-un-cambio-y-anuncia-su-estreno/44210.html",
-      "medio": "vandal.elespanol",
-      "viral": 0.3915
+      "fecha": "2026-09-26T05:31:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://gamerant.com/best-shonen-anime-fall-2026-recommendations/",
+      "medio": "Game Rant",
+      "viral": 0.242
     },
     {
       "id": "n-8246f444a04",
@@ -3382,7 +3739,24 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQeGFKUzdQZnptVG5GS1NEam8wYkVkYVkyZ0hCSTZEcnA3VXRkbngzeGZUeVVfT05qUWJQZ2Zlb1JFYS1hdDUxaWdqS3EtanlKeDF0bG9rSXVQVWEwX2JJeHphbklDbzhKVnZZUEtWdGx0cWduVzVfcjljQTZLcnlwVWFQZjlsd1ctZnJMdzJwXzV1NXc3ZDRaaGZncDdvVDVhRUR3STFRTUtsX09EQndsV2wzTmVBZXRsUkRTSFlEUWpxaTRMUHNMOXlGNjBvbmxqRWpKczVBNG5tTElSYWw4Ymg1S0k3bHRwVWtqelJJejUtNFZXYTBxRnR1NNIBgAJBVV95cUxPbHZfV2pXMGxpMXpJcE9lczhEbmJ0bENmbDhsTDRzeUpaWlR6MUF4Y2w3MVhKSWpTemxzY1RnR0J3QTVwMTBhZ3J5aFduQVAxS3kwSVpleHRHaWlTaEQ0R014bm5QeXc0Wk45UlJiam1nVy1oX2xwd3Nma3NFcEZpcTEzeDFkWUR2NnZCV0dxZ1IxYkxQTUVWaWRiVTkyOXpDM1lnSkhiOVMzNkNlY1lBc2lEbEQ2S3Y2S0VPcnhDbVFMeFljOG4xbTZzQVZVZE9ocDI0UXhyU0VwRmRGRFRBRXd2RjV6a2xjYW5FbDBBU1ItejVscWhFWUxZcm8zQXFs?oc=5",
       "medio": "Vandal",
-      "viral": 0.3915
+      "viral": 0.3449
+    },
+    {
+      "id": "n-32a89730181",
+      "sec": "comunidad",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "Adiós al anime de Black Clover: la temporada 2 será la última y se dividirá en dos partes",
+      "entradilla": "Los fans de 'Black Clover' llevan años esperando el regreso del anime, y ahora que tan solo faltan unos días para el estreno de los nuevos episodios, se ha ...",
+      "cuerpo": [
+        "Los fans de 'Black Clover' llevan años esperando el regreso del anime, y ahora que tan solo faltan unos días para el estreno de los nuevos episodios, se ha ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-09-24T17:54:00+00:00",
+      "image": "fondos/fallback-comunidad.svg",
+      "link": "https://areajugones.sport.es/anime/adios-al-anime-de-black-clover-la-temporada-2-sera-la-ultima-y-se-dividira-en-dos-partes/",
+      "medio": "Areajugones",
+      "viral": 0.2935
     },
     {
       "id": "n-7a046949c03",
@@ -3521,37 +3895,20 @@
       "viral": 0.3449
     },
     {
-      "id": "n-a7aab1bdcf6",
-      "sec": "estrenos",
-      "genero": "terror",
+      "id": "n-1da2dd0e5ec",
+      "sec": "series",
+      "genero": "romance",
       "slot": 0,
-      "titulo": "Espíritus del Inframundo confirma la temporada 2 de su anime: ¿cuándo podría estrenarse?",
-      "entradilla": "'Espíritus del Inframundo', también conocido como Yomi no Tsugai o Daemons of the Shadow Realm, está de enhorabuena. Y es que el anime ha confirmado oficialmente su temporada 2, según ha recogido AIR.",
+      "titulo": "La temporada 3 de “The Apothecary Diaries” y otras esperadas secuelas de anime que se estrenan en octubre de 2026",
+      "entradilla": "La temporada de anime de otoño de 2026 empieza a finales de septiembre con novedades que prometen conquistar a los espectadores. “Firefly Wedding” (“Hotaru no Yomeiri”), “The Vermilion Mask” (“Shuiro ...",
       "cuerpo": [
-        "'Espíritus del Inframundo', también conocido como Yomi no Tsugai o Daemons of the Shadow Realm, está de enhorabuena. Y es que el anime ha confirmado oficialmente su temporada 2, según ha recogido AIR."
+        "La temporada de anime de otoño de 2026 empieza a finales de septiembre con novedades que prometen conquistar a los espectadores. “Firefly Wedding” (“Hotaru no Yomeiri”), “The Vermilion Mask” (“Shuiro ..."
       ],
       "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-20T06:57:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://areajugones.sport.es/anime/espiritus-del-inframundo-confirma-la-temporada-2-de-su-anime-cuando-podria-estrenarse/",
-      "medio": "Areajugones",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-bfee46a0c73",
-      "sec": "videojuegos",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "Solo Leveling: KARMA nos da un nuevo vistazo en dos nuevos avances",
-      "entradilla": "Solo Leveling: KARMA nos da un nuevo vistazo en dos nuevos avances Crunchyroll",
-      "cuerpo": [
-        "Solo Leveling: KARMA nos da un nuevo vistazo en dos nuevos avances Crunchyroll"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-17T07:00:00+00:00",
-      "image": "fondos/fallback-videojuegos.svg",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdWdieGU2MmdkRXQtR1V1OHB1Zlppc29EZ0pLSVl3UVMxb1BXeDZiRHEydllLRnRKb3NucXFwUjlSaGdja18tZ2RJamMwTTI3eVg5R0IxNUFSNXgzWlRTVjg5OFZtQ3piMkxPbnM1SXM5RUVNMk1YYm1jUFZTZi1uZHdvQnpPVHJON2V5OTJNWlVsN255ZEpFTkJ2UktVOHk4UnRCTjZTazRBOFNkR3BjTEhiR2g?oc=5",
-      "medio": "Crunchyroll",
+      "fecha": "2026-09-18T11:47:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://elcomercio.pe/mag/fama/que-ver/la-temporada-3-de-the-apothecary-diaries-y-otras-esperadas-secuelas-de-anime-que-se-estrenan-en-octubre-de-2026-video-nnda-nnlt-noticia/",
+      "medio": "El Comercio",
       "viral": 0.242
     },
     {
@@ -3572,21 +3929,21 @@
       "viral": 0.242
     },
     {
-      "id": "n-15eccf40fce",
-      "sec": "estrenos",
-      "genero": "accion",
+      "id": "n-77ed1ad63ba",
+      "sec": "eventos",
+      "genero": "fantasia",
       "slot": 0,
-      "titulo": "La temporada 3 de Shangri-La Frontier ya tiene fecha de estreno: llegará a comienzos de 2027",
-      "entradilla": "'Shangri-La Frontier' está listo para volver a la acción. Aún habrá que esperar un poco, pero la temporada 3 ya tiene fijado su estreno para el domingo 10 de junio. Dentro de los animes que llevan ...",
+      "titulo": "Kurayukaba Full-Length Anime Film Wins at Fantasia Int'l Film Festival",
+      "entradilla": "Film wins gold for Best Animated Feature in Audience Awards category Twin Engine's official Motion Gallery crowdfunding campaign for the film launched in April 2020, and it aimed to raise 20 million ...",
       "cuerpo": [
-        "'Shangri-La Frontier' está listo para volver a la acción. Aún habrá que esperar un poco, pero la temporada 3 ya tiene fijado su estreno para el domingo 10 de junio. Dentro de los animes que llevan ..."
+        "Film wins gold for Best Animated Feature in Audience Awards category Twin Engine's official Motion Gallery crowdfunding campaign for the film launched in April 2020, and it aimed to raise 20 million ..."
       ],
       "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-17T03:49:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://areajugones.sport.es/anime/la-temporada-3-de-shangri-la-frontier-ya-tiene-fecha-de-estreno-llegara-a-comienzos-de-2027/",
-      "medio": "Areajugones",
-      "viral": 0.3449
+      "fecha": "2026-09-16T17:00:00+00:00",
+      "image": "fondos/fallback-eventos.svg",
+      "link": "https://www.animenewsnetwork.com/news/2023-08-15/kurayukaba-full-length-anime-film-wins-at-fantasia-intl-film-festival/.201289",
+      "medio": "Anime News Network",
+      "viral": 0.242
     },
     {
       "id": "n-a6a754a3346",
@@ -3674,38 +4031,21 @@
       "viral": 0.2935
     },
     {
-      "id": "n-09d5703d131",
-      "sec": "series",
+      "id": "n-0baff1c9ed8",
+      "sec": "manga",
       "genero": "shonen",
       "slot": 0,
-      "titulo": "Black Clover (Temporada 2): Guía de episodios y número de capítulos del anime",
-      "entradilla": "No todos los días vuelve uno de los animes shonen más famosos de todos los tiempos, y eso es lo que sucede esta temporada de otoño con 'Black Clover'. La serie será una de las más relevantes durante ...",
+      "titulo": "Black Clover temporada 2 anuncia su fecha de estreno y aspira a ser el gran anime del año",
+      "entradilla": "Black Clover temporada 2 ya tiene fecha oficial de estreno. El regreso de Asta llega el 3 de octubre y, con el manga cerrado, el hype no puede estar más justificado. La serie se pausó en 2021 tras 170 ...",
       "cuerpo": [
-        "No todos los días vuelve uno de los animes shonen más famosos de todos los tiempos, y eso es lo que sucede esta temporada de otoño con 'Black Clover'. La serie será una de las más relevantes durante ..."
+        "Black Clover temporada 2 ya tiene fecha oficial de estreno. El regreso de Asta llega el 3 de octubre y, con el manga cerrado, el hype no puede estar más justificado. La serie se pausó en 2021 tras 170 ..."
       ],
       "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-08T04:31:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://areajugones.sport.es/anime/black-clover-temporada-2-guia-de-episodios-y-numero-de-capitulos-del-anime/",
-      "medio": "Areajugones",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-c8fc1d41d19",
-      "sec": "peliculas",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "Ya es oficial: la temporada 2 de 'Black Clover' anuncia la fecha de su estreno. El regreso de Asta se presente como uno de los animes imprescindibles del año",
-      "entradilla": "En 2023 tuvimos un breve respiro con 'Black Clover: La espada del rey mago', una película original que se pudo ver directamente en Netflix. Pero la historia principal de 'Black Clover' llevaba en ...",
-      "cuerpo": [
-        "En 2023 tuvimos un breve respiro con 'Black Clover: La espada del rey mago', una película original que se pudo ver directamente en Netflix. Pero la historia principal de 'Black Clover' llevaba en ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-07T09:22:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
-      "link": "https://www.espinof.com/anime/este-rey-mago-no-tiene-oro-incienso-mirra-promete-darnos-uno-animes-ano-temporada-2-black-clover-tiene-fecha-estreno-para-comerse-mundo",
-      "medio": "espinof",
-      "viral": 0.3915
+      "fecha": "2026-09-07T23:50:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://www.msn.com/es-es/noticias/otras/black-clover-temporada-2-anuncia-su-fecha-de-estreno-y-aspira-a-ser-el-gran-anime-del-a%C3%B1o/ar-AA2bN9B4",
+      "medio": "MSN",
+      "viral": 0.3963
     },
     {
       "id": "n-c76744c999e",
@@ -3722,24 +4062,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQSldEX3pIMHdBUnVrQU5Gd3N3bWUzRW40T3JYVy1CeXE5R2FZa0hwRC01U2tzc1FCSUpxZnF0SVljMkNJa0JsR0FEaGI4V3FPc3M2OGQ1OWh2STVtQ3hFZGRtSHJ1aXc0ek1BMG5XTWlQNXRQUVRmenR2a3FVRFdnRmJ4dnF2ZmVIc0QwWEpxWUdGYTd4emlfSWdSRTZsSlNKdWFuOUJLS1M3RmV3aF9CNWhiY1RBOGRTbHlISGsteXRIUU12ajJsU1BnaVBsY0NZY29PS0hVUEtqWjNsTXNZVGp3TEV6Vks1VGtnX0FDaE9LWEhqUUtJSdIB_gFBVV95cUxNUUZVcnAwWF9scmU0VDRlZURJSWRCYmlzY0NZRFptT3hKekJOQ3hJSW5kcnk4bWpOaDZiemhoWTRPQU1URVd4MzRxMmZFcmJZcjlrVUVzZ1QxNzR1WnJxdlZqSkhPcGNnWi1lRG52TXpQaWlIZUstcTFRQ0QyLW94Q3F3dzFfUlJ6VmpIbkpjbGQ0Wm9ZNE5LbUIzT1FTRFhidjVxYlE1TG5EeFpNU0V6T1I3RW1ZUWRJMFZ6cl9kblJ4UmJQQUJIenY2bUlmeWt0VkNNaGZhMTJyTlE4QTRjaENFaFRSekdVQnZHY2hBaEVBcU85a0tVZGtfcW0yZw?oc=5",
       "medio": "Espinof",
-      "viral": 0.3915
-    },
-    {
-      "id": "n-545a5f06ad5",
-      "sec": "manga",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "Tiene la acción de 'Jujutsu Kaisen' y la locura de 'Chainsaw Man': el mejor anime de 2026 que nadie esperaba",
-      "entradilla": "Nadie tiene ninguna duda de que Jujutsu Kaisen y Chainsaw Man se han convertido en las series de anime más seguidas en mucho tiempo. Es por eso que muchos intentan encontrar propuestas similares que ...",
-      "cuerpo": [
-        "Nadie tiene ninguna duda de que Jujutsu Kaisen y Chainsaw Man se han convertido en las series de anime más seguidas en mucho tiempo. Es por eso que muchos intentan encontrar propuestas similares que ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-09-04T23:50:00+00:00",
-      "image": "fondos/fallback-manga.svg",
-      "link": "https://www.larazon.es/videojuegos/series/tiene-accion-jujutsu-kaisen-locura-chainsaw-man-mejor-anime-2026-nadie-esperaba_202609056a957c423bfe5d1eff3dd74a.html",
-      "medio": "La Razón Digital",
-      "viral": 0.242
+      "viral": 0.3449
     },
     {
       "id": "n-23de7bbccb1",
@@ -3807,6 +4130,23 @@
       "image": "fondos/fallback-videojuegos.svg",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdWZBUFI0cmctUkJtQlNjM0tob1hNUHFUN0VCeGhfUHk0UHpaV1c1b1k3RXBObmVHNXlNRWlHem5MMW4xVEIzdGZ3RUprVU1uU3dTWDl2ZV9KcW1CLWNzZ2tCTEVCeHNYbnc5TWpSckdGNDdjYkY5OV95a0xVSzA1VDJRM1c0VU1UYm1fdWZsRTN1eF9Qa0RpanBrMTk1R2ZReDhsdHJZazI1VWR4N0tXaXRRVHRkZW54emNUU3JzYXVQUDJYUlljbTduUmxlSlV6akhnY016WFgzSFFwcUFuSDJPSU4tQi16TmRiT0NDYzIzTEhVT0HSAfsBQVVfeXFMTTI4Tl96bDFSM0ZfbGtkVmNVZTBrVXgwR3pZdGphNjVSZkNFZHF0d3pyM3RMNVczVTBLMkxJV3hYT3A5M2t1aTg0MFZjMWdMOEJBczNZcUtpckZLT0FLRTh5TldqTEo1YUQ0THFhcGRCUjFOS1JpRzJrekF0eVBPdzJiSVYxLUZoS09NZzFLSG8xc2FhdU94RVVVMmFQSGdFanRnVDAxZEp2M1pzLWtGRVM2VFJOeHVVb2tUa05sbEtmR2xVOXBvUjhOV2ZoRjViWXJpWHJtSExpeEVVVDcwcjN0RnNFbmFpdTU5U21tNmdjRENfd0FHeEJEQ3c?oc=5",
       "medio": "3DJuegos",
+      "viral": 0.2935
+    },
+    {
+      "id": "n-aeb8e2d348c",
+      "sec": "manga",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "One Piece llega a Disney+ con sus tres primeras temporadas",
+      "entradilla": "El anime de One Piece aterriza en Disney+ el 3 de septiembre con sus tres primeras temporadas. Descubre qué arcos abarcará y si habrá doblaje en castellano.",
+      "cuerpo": [
+        "El anime de One Piece aterriza en Disney+ el 3 de septiembre con sus tres primeras temporadas. Descubre qué arcos abarcará y si habrá doblaje en castellano."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-08-31T20:05:28+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://www.msn.com/es-es/entretenimiento/streaming-de-pel%C3%ADculas-y-tv/one-piece-llega-a-disney-con-sus-tres-primeras-temporadas/ar-AA2bjq5k",
+      "medio": "El Output on MSN",
       "viral": 0.2935
     },
     {
@@ -3878,6 +4218,23 @@
       "viral": 0.2935
     },
     {
+      "id": "n-78c16db398d",
+      "sec": "series",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "5 shonen anime that are 10/10 perfect masterpieces, no notes",
+      "entradilla": "Although some of these heavy-hitters are expected candidates for perfect shonen you could rate as 10/10, there are plenty of overlooked stories out there that are just as good. As ongoing adaptations ...",
+      "cuerpo": [
+        "Although some of these heavy-hitters are expected candidates for perfect shonen you could rate as 10/10, there are plenty of overlooked stories out there that are just as good. As ongoing adaptations ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-08-29T01:00:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.polygon.com/best-shonen-anime-perfect-no-notes/",
+      "medio": "Polygon",
+      "viral": 0.242
+    },
+    {
       "id": "n-f0e952e8358",
       "sec": "eventos",
       "genero": "shonen",
@@ -3943,6 +4300,23 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQTl3WnJmSm0ycmlrbWpoTExzR3JJbkg4bkxlX0VqeDhjMm5DaW5WWmpoZkhzSHluVTgzN2luNWNNVkFvaUxzNEdQRVRpVkFnSDV0UjVYbUhOVS12OFVMSTVISGZqZVMzOTc5R0p0YVkyNXpENUwwRGVYSzZjRHhuMW1PRGZRWnRmZVZXRmRkWm8zRkttc3hFT0VvRldBRGtRMkJDWGtaSWlvLXhQXzFZZndQT0w1d2ZPcjNJQnBaQ0tpcm5tSVJDUFNBbGprRGk4R3ljT2lPYXHSAewBQVVfeXFMTldyMm1QRGxMa0RkZUU2bmpCUlVRamFWblZKWGtFU0JZZERrdVdwbXhRbk5iQlZGM0tKczBGWnlBdUJDWE1YZVZ1SVBFU1hFVE8wWXNVQjJYREJQXzd2eUlPSVAzdnczaTdWQUEyQ1E2RHhiR3Rwc1NuNzVhRkJUUk1HalRRVE9qUDZzNTA5TkNEelhBRkpVS1phdTJSdjhMaW1nbE9VakQtbjE1bmhwOXc2OHI0aWlLdXNIeTE5MXpPRnFoU1BEN3hOQmgyVmtmeXVtZ2xjWWczWXJlbHE1Ym8ybXBtalRwbFk3dUg?oc=5",
       "medio": "Diario AS",
+      "viral": 0.242
+    },
+    {
+      "id": "n-e03dedcb093",
+      "sec": "manga",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "More Shonen Anime Should Have Their Own ‘One Piece Heroines’ Style Spin-Offs",
+      "entradilla": "Toei Animation's 'One Piece' spin-off lets Nico Robin and Nami set sail on a delightfully fun adventure full of fashion and sisterhood. Reading time 4 minutes Watching shonen anime is similar to ...",
+      "cuerpo": [
+        "Toei Animation's 'One Piece' spin-off lets Nico Robin and Nami set sail on a delightfully fun adventure full of fashion and sisterhood. Reading time 4 minutes Watching shonen anime is similar to ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-08-27T16:30:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://gizmodo.com/one-piece-heroines-anime-nami-nico-robin-eiichiro-oda-toei-animation-2000804110",
+      "medio": "gizmodo",
       "viral": 0.242
     },
     {
@@ -4014,21 +4388,38 @@
       "viral": 0.242
     },
     {
-      "id": "n-38d520d7628",
-      "sec": "estrenos",
-      "genero": "accion",
+      "id": "n-3e3602b0684",
+      "sec": "series",
+      "genero": "shojo",
       "slot": 0,
-      "titulo": "Fecha de estreno confirmada, tráiler y más de “Cyberpunk: Edgerunners” - Temporada 2",
-      "entradilla": "Cuatro años después de los eventos de la primera temporada de “Cyberpunk: Edgerunners”, que incluyen la muerte de David Martínez a manos de Adam Smasher luego de sucumbir a la ciberpsicosis por ...",
+      "titulo": "Anime News Network's Classic Shojosei Anime Wishlist",
+      "entradilla": "Unlike the villainesses or Cinderellas we tend to see in fantasy anime today, Finnie feels like a whole person, and any tropes she's beholden to are literary classics rather than Narou-of-the-Moment ...",
       "cuerpo": [
-        "Cuatro años después de los eventos de la primera temporada de “Cyberpunk: Edgerunners”, que incluyen la muerte de David Martínez a manos de Adam Smasher luego de sucumbir a la ciberpsicosis por ..."
+        "Unlike the villainesses or Cinderellas we tend to see in fantasy anime today, Finnie feels like a whole person, and any tropes she's beholden to are literary classics rather than Narou-of-the-Moment ..."
       ],
       "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-08-22T10:59:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://elcomercio.pe/mag/fama/que-ver/cyberpunk-edgerunners-temporada-2-fecha-de-estreno-trailer-trama-y-mas-de-los-nuevos-episodios-del-anime-de-netflix-video-nnda-nnlt-noticia/",
-      "medio": "El Comercio",
-      "viral": 0.3963
+      "fecha": "2026-08-21T17:00:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.animenewsnetwork.com/feature/2026-11-16/anime-news-network-classic-shojosei-anime-wishlist/.243453",
+      "medio": "Anime News Network",
+      "viral": 0.242
+    },
+    {
+      "id": "n-7578102c5b9",
+      "sec": "manga",
+      "genero": "shonen",
+      "slot": 0,
+      "titulo": "10 shonen anime arcs that are 10/10, no notes",
+      "entradilla": "Shonen anime is known for its many memorable arcs, but series like Jujutsu Kaisen and Naruto have standout arcs fans won't ever forget.",
+      "cuerpo": [
+        "Shonen anime is known for its many memorable arcs, but series like Jujutsu Kaisen and Naruto have standout arcs fans won't ever forget."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-08-20T16:15:11+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://www.msn.com/en-us/entertainment/anime/10-shonen-anime-arcs-that-are-10-10-no-notes/ar-AA2aDSkK",
+      "medio": "Comic Book Resources on MSN",
+      "viral": 0.242
     },
     {
       "id": "n-f166e7d0965",
@@ -4082,6 +4473,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-eb82f34bf6d",
+      "sec": "series",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "There's never been a better time to be an isekai anime fan",
+      "entradilla": "In 2026, the three isekai in question are That Time I Got Reincarnated as a Slime, Mushoku Tensei: Jobless Reincarnation, and Re:Zero - Starting Life in Another World. Re:Zero is the latest to join ...",
+      "cuerpo": [
+        "In 2026, the three isekai in question are That Time I Got Reincarnated as a Slime, Mushoku Tensei: Jobless Reincarnation, and Re:Zero - Starting Life in Another World. Re:Zero is the latest to join ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-08-15T03:00:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.polygon.com/2026-best-isekai-anime-re-zero-mushoku-tensei-reincarnated-as-a-slime/",
+      "medio": "Polygon",
+      "viral": 0.242
+    },
+    {
       "id": "n-6975515f747",
       "sec": "estrenos",
       "genero": "terror",
@@ -4097,6 +4505,23 @@
       "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOTHFPRDBHc1UyWjlxWElld0ZfanR5UDZYQjQ5WmtZa1lERDVjLW9iQnhXb3Vua3hhQV9QR2o5Qm9EYnBQeVQyX1hhUHFLcjN4a3BmczJqTGhLZkFETTJaUDk5WHhzSk9nOTZ0dmNSR1hXRzA1cW1WaFp5bEMxaVd3SmRCTm9MZFF6bXBOTUZRUnluRGRKWFhGYmR2WlQ0YWwxYnJZNzVsVDlmTVd5Rlk1UnNOV3BkQXNqdml6Nk5jRVVpNmhYYVdxZWJ0SjNhYVY4dV9yTmZPVjk5T3hwOHNIdEJnYTlrTEZBZXZNaksxRdIBgwJBVV95cUxQUmEzeno3Z0ducGh3alVjMjFGUGJuYXdSUk5OdkRnczJYVWUwZEJURjNmOXJ0bzB3VXBTRmpOLVJLWTJmMGJNZ1I0ajFVeUtDUVhQQUFfTXRtdDJGMlV6Uzd6aHFDU2VvalZJTFYzd0FVZnpSN3loUm5hbWpSLUFuWWhBN2kxZzNqckIzMGs5ODlqdmcyRWtuX2o3STdnM1g1a0ktYWtyUzdISVQ1UVI0MUtxaVpDUVhVQlBuTkgwR2tSQUtVN3BTVm40VGNWZDM1RzlubDVjcTd0bGNQTWVqa2EzRmpCOG5YcWhvSVgyaTFZS2VTcUpqbklBRldJbWNQa2JR?oc=5",
       "medio": "Diario AS",
       "viral": 0.3963
+    },
+    {
+      "id": "n-e758309d275",
+      "sec": "series",
+      "genero": "shojo",
+      "slot": 0,
+      "titulo": "HIDIVE destaca la segunda temporada de 'Reincarnated as a Sword' y sus estrenos mundiales en Anime NYC.",
+      "entradilla": "La próxima semana, HIDIVE, de AMC Global Media, estará presente en Anime NYC 2026 para mostrar los nuevos títulos japoneses disponibles exclusivamente para sus suscriptores. La plataforma de streaming ...",
+      "cuerpo": [
+        "La próxima semana, HIDIVE, de AMC Global Media, estará presente en Anime NYC 2026 para mostrar los nuevos títulos japoneses disponibles exclusivamente para sus suscriptores. La plataforma de streaming ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-08-13T15:53:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://animationmagazine.net/es/2026/08/hidive-spotlights-reincarnated-as-a-sword-s2-world-premieres-at-anime-nyc/",
+      "medio": "Animation Magazine",
+      "viral": 0.2935
     },
     {
       "id": "n-a20f17a77fc",
@@ -4167,40 +4592,6 @@
       "viral": 0.242
     },
     {
-      "id": "n-aa31d9a4410",
-      "sec": "estrenos",
-      "genero": "comedia",
-      "slot": 0,
-      "titulo": "Glasses with a Chance of Delinquent confirma estreno para 2027 con dos imágenes contrastantes",
-      "entradilla": "Glasses with a Chance of Delinquent confirma estreno para 2027 con dos imágenes contrastantes Crunchyroll",
-      "cuerpo": [
-        "Glasses with a Chance of Delinquent confirma estreno para 2027 con dos imágenes contrastantes Crunchyroll"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-08-10T07:00:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdFdJUUdVSDlDQVVqNTRTOEI3QV9aNTlCUGQxa0NFNV9yVzlqbkE4dElJT3RQUkdmbG8zSXk1emYzWVd4Mk5ydnl3LU9aeVkyWkk2NTJLejQxaGxiTFFPMzY1WmFkRUFESjZQTmF5eThiYzFaVTVTQXRpY0o3dGVpVkYxbFlHOF9sZFdSNVZ0YU9QbjltV2UyNUNNYnpFZEx5RFJqd0VtbWxXUXBVZ1NuQQ?oc=5",
-      "medio": "Crunchyroll",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-be75fd0cf7c",
-      "sec": "series",
-      "genero": "comedia",
-      "slot": 0,
-      "titulo": "Llevo 6 semanas viendo el anime más repugnante de Netflix, y lo más épico que ha pasado es que la protagonista vomite un arcoíris. No pienso dejarlo",
-      "entradilla": "Llevo 6 semanas viendo el anime más repugnante de Netflix, y lo más épico que ha pasado es que la protagonista vomite un arcoíris. No pienso dejarlo 3DJuegos",
-      "cuerpo": [
-        "Llevo 6 semanas viendo el anime más repugnante de Netflix, y lo más épico que ha pasado es que la protagonista vomite un arcoíris. No pienso dejarlo 3DJuegos"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-08-10T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPb2xEZlpFdXRUd0p4aVRQWHBFZm8zS3FkZko1N1kwZHd3MmVrZktGZ3FlR3l4ekdXSFlRZFNKdmFUS3pxYURqOTlQS3RTMDBXNF8zWGh4TzNabEh6MXc5ZTYwQ3duZTNZX2FoVHpPUnVETnlhaFZSRFdENG5MVUdodWRoV05SYW93S0Q0VVRVSDRZWkpSYkh1dGJTbjFrT3NvRUl4VndYZEJ4aldJTnhIcUJOQ0FJVFhiRGR3OC05VS0wdXBxRkdKWG9UYnFZdmZwa2ZBYUFHcWVCWnhyUUZwZkdYb0N2anNES2k0U0JHdm5uMFVpRUlj0gH8AUFVX3lxTFB4TGlMQ2ppQVM3Z2hacnNJRDF2bkJZMDhhd284QzZRQTVBd2Z0YVdiM1hhc1IyaU9JaGU3Y2RxdkVxeTNobG5TQ3BmU3FkZWJwYkhVcjJwZFQxLUs5UUtVX25adUhPUm42X3ZjMGpLeDVmQXdPaFBVTDViVEE3WXctNFlGc195NTJ0UzFHR0xBTkxzaVRMaW1MWWIxQm4wajFzVzFxLVhpU0pGbEdmc0tTOXZUS0xYa3d4TVc0RG1BTXNNTURaNVI0RTJMMGhkV3dOajBpYmJKRS1xMGMtd2J5bjdvU1NJUXJ2RDZaZWQwMmE5aHNJTlpRNEQ3dQ?oc=5",
-      "medio": "3DJuegos",
-      "viral": 0.2935
-    },
-    {
       "id": "n-c0de6a5d603",
       "sec": "series",
       "genero": "mecha",
@@ -4235,6 +4626,23 @@
       "viral": 0.2887
     },
     {
+      "id": "n-c928562ef0e",
+      "sec": "series",
+      "genero": "mecha",
+      "slot": 0,
+      "titulo": "33 years ago, this mecha anime was ahead of its time in one disturbing way",
+      "entradilla": "Then there is Mobile Police Patlabor, Masami Yūki’s iconic mecha franchise, which has spawned a beloved anime, two OVAs, three memorable films, and a dedicated line of merchandise (among other things) ...",
+      "cuerpo": [
+        "Then there is Mobile Police Patlabor, Masami Yūki’s iconic mecha franchise, which has spawned a beloved anime, two OVAs, three memorable films, and a dedicated line of merchandise (among other things) ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-08-07T09:01:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.polygon.com/patlabor-2-mecha-anime-political-thriller/",
+      "medio": "Polygon",
+      "viral": 0.242
+    },
+    {
       "id": "n-f8c9131563f",
       "sec": "series",
       "genero": "fantasia",
@@ -4250,23 +4658,6 @@
       "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQOEwtTjUxNm1PNFhKRU45aXJvV0hKWFJLMThTbTFlUERhQTAxdUpZanp6bGtobEFqVkVGSFNpVURwNF9ZZ1F2bXdpY25jS2QyYjRHLVJENk9PVS1XTFdDNHlQZ3ZRWTNfRE1TdkRVUkw5WnFxZmhlcEJsbUVOZXRoOHdMc0RMXzR2WEpwdFBJb3dlU0k3eWZsZzcyV1ZKLXM4RW9DTFBMWVBzUFNSLTJUZEh3OVVZX3FLQXBkQWFLOW45YWZFWXpuTDM5YjZuT1ZtaHJJXy02OEVQbnRwQk9Wck1YNGJtaE9JblY0REFta2xYd9IB9wFBVV95cUxOamQ3Q280eFRpMThVOGVBa3YyY1VCcFJGQVo1R09YYmdoTlNXMzVvSWRhY1hKT1lIUlBPZ012ZWZSUzlNTExYYUtBYTh3ekFpU2g0NTZJYlhPTUo2S1A2QXVWbzliRGVIU3ZjRENvbnVqdDRESDlraThHX25NXzFhV3k4RWlsNVlWek1PQVNUNHFaUnJFR3dLbFFaVFoxS0x3MWZPUU9ZU2RGSGZQY3o0NTVvSFJ2RjhxdVFtZjN1YjJXbjdUWWw1OGwyS3VaNTd6cjN1UTVhY25PTGR1Y2tTYS0xb1duaW8tdG9VUUR4RVJxZWNTZ1ZB?oc=5",
       "medio": "Vandal",
       "viral": 0.3449
-    },
-    {
-      "id": "n-4b2778bb112",
-      "sec": "manga",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "Destiny Unchain Online tendrá adaptación anime",
-      "entradilla": "Destiny Unchain Online tendrá adaptación anime Crunchyroll",
-      "cuerpo": [
-        "Destiny Unchain Online tendrá adaptación anime Crunchyroll"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-08-06T07:00:00+00:00",
-      "image": "fondos/fallback-manga.svg",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZVFTMlc5OUNrY0lzbHdKVGNNN0V3YWVvaExGNGozbmo5cUdVcWpQVm13b0t3TjRoZjVQazVweU94WVQ5ZjFzWHBMWmJ2T2dlME9rVmM5amV4TVFFY3Z1ZE8xb2JaY1JSUnM4TlBJNlRNcWpBY2VuZHZMdlZYbmlOQWJTQVFBVFNiOHA4?oc=5",
-      "medio": "Crunchyroll",
-      "viral": 0.2935
     },
     {
       "id": "n-2bcd05a0c2d",
@@ -4558,6 +4949,23 @@
       "viral": 0.2935
     },
     {
+      "id": "n-7ba5599278e",
+      "sec": "comunidad",
+      "genero": "fantasia",
+      "slot": 0,
+      "titulo": "¿Qué ver después de Shingeki no Kyojin? 15 joyas de la fantasía oscura",
+      "entradilla": "¿Qué ver después de Shingeki no Kyojin? 15 joyas de la fantasía oscura Código Espagueti",
+      "cuerpo": [
+        "¿Qué ver después de Shingeki no Kyojin? 15 joyas de la fantasía oscura Código Espagueti"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-07-22T07:00:00+00:00",
+      "image": "fondos/fallback-comunidad.svg",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbG9jUDB6ZnpIZUN4dnVRQkQ5b29YcEZRTTJlVjctVjMzR215ZFJxc0FQbXdyX2lpMUNwU1RmV3VtYk82Rk93OE1Fcl9WamJsQ0NCa1VnN0FneE12ZzZQc19HQTl2aVNodF8xb2NvZGxrd3FnWHVVUGpFbHppZjk0NVBTZWVnLU9LbXo0TW05TkZPejJhOTdYS0ZYZi00Vjd4Q3ZPYWUtSzZ5amRYSXVubtIBtgFBVV95cUxQaG5zSjB3Sk1XWU5fMVU4Y2ctQnEwTTl4VXJyZzNxSE9INGFqVmF0STJpSlkyWUl5UFJjSDl0VWRMc0pJdUZ4aEoxeVlYT25kWmQwZDdCQ1NCTDRXTkJ4U0NWVnhIQzVRMUNmNzcwZGdtMHBTV2ZWeEp2Wkh2MWY0elhaSGwtTUxyNkZuaEE5UllHRnVLcjh4ZHRMZC1aMWJFcTJOTWRyUmhKX2Y5Y2Uza19QMTNldw?oc=5",
+      "medio": "Código Espagueti",
+      "viral": 0.242
+    },
+    {
       "id": "n-65d0626c3aa",
       "sec": "peliculas",
       "genero": "accion",
@@ -4626,6 +5034,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-9213b326ff0",
+      "sec": "series",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "A 'Mushoku Tensei' no dejan de caerle palos. La temporada 3 del anime isekai se hunde tras sufrir uno de sus peores episodios de review bombing",
+      "entradilla": "La tercera temporada de 'Mushoku Tensei: Jobless Reincarnation' sin duda era uno de los animes más esperados de esta temporada de anime de verano, e incluso de todo 2026. El isekai de fantasía ...",
+      "cuerpo": [
+        "La tercera temporada de 'Mushoku Tensei: Jobless Reincarnation' sin duda era uno de los animes más esperados de esta temporada de anime de verano, e incluso de todo 2026. El isekai de fantasía ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-07-20T11:07:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/es-xl/entretenimiento/anime/a-mushoku-tensei-no-dejan-de-caerle-palos-la-temporada-3-del-anime-isekai-se-hunde-tras-sufrir-uno-de-sus-peores-episodios-de-review-bombing/ar-AA28jC8p",
+      "medio": "MSN",
+      "viral": 0.2887
+    },
+    {
       "id": "n-19ed6dfbb0f",
       "sec": "series",
       "genero": "isekai",
@@ -4640,7 +5065,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX0Z3MkdHNmMzdmxaNVV0TDJ0SkdhMi1hNnRDWFZxc2MwRGVMa3g4eHR2U3ZEMkNZdDBsWjhSTWxJckh0NFJrZnZucHg5cExVdHZVRFlGX25zTTE2TmpZYjRVSHNaQjM3TXp6UGYzX2llcHBvczQtb09kMDEwSlF4U0o4dzVpRThlOXNyLU53Y1NUOHd5M2F4WE9ya1VOVXQxaWZ0SFVXak02cWx0VlhoRlVrQ2VYdGNhb3hRVkJCNjRmNHluWFFBdXRhdEg2ektYdlNGUlVsZUU2YTZnbXh6MDJDa9IB6AFBVV95cUxNWWtDWW5sa1hzOS1wTk1yZXJXQnVVZE9nWDNkVGtWTXJleU5BbUFIWEJwaWE3SFQtYXh3NUE3ZTRYNjBJSi1VRnJRdHhqajVHVE92NE9LdDlweVB1T19HZU9WMXVWV1RzVWxGYjZmdW0yR2tsUkdlMVlKbnI1emFta2Y3aVplVjVRS05KaGN2Y1dMMW9HSWw1LXNjX3BWblZ5Y1FWTlBLM2hIMjYta2YyWFJvMENYcUd3VTE2V2V2VGlSQ01XcEdHbUZ6SzRKNjBRQmpSaGFFOWNBSXBhLU9jMUJ5aV9zTlAt?oc=5",
       "medio": "Espinof",
-      "viral": 0.242
+      "viral": 0.2887
     },
     {
       "id": "n-0462a96cee6",
@@ -4658,23 +5083,6 @@
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUmhJV19QcHhpbGliTWNKOWJsWGdWS1dsSnIwLVVEVjNISzZwTGxISHpNVC1HcHNodVJLYmN0Vkl3UmdlRXhfLURkLXJaaU1Eb3pZTTBvM0xtTkdzanE0VG50QkxuWDk0Z285UHF3QmpwR0RuV1liWXdvaktQTXE3anQ5STZOU05LTmI3RzY0dHVqR0tSU1o2aG1uYUI0YlVXbUhvT3RLNUE3WkdTVG1UcA?oc=5",
       "medio": "IGN España",
       "viral": 0.242
-    },
-    {
-      "id": "n-1caa7f7abcb",
-      "sec": "estrenos",
-      "genero": "romance",
-      "slot": 0,
-      "titulo": "Netflix revela cuándo se podrá ver la segunda temporada de este anime que mezcla romance con drama",
-      "entradilla": "Ya es oficial. Netflix ha confirmado a través de su cuenta en X que la segunda temporada de La caja azul llegará el próximo mes de octubre. De momento, la plataforma de streaming no ha revelado el día ...",
-      "cuerpo": [
-        "Ya es oficial. Netflix ha confirmado a través de su cuenta en X que la segunda temporada de La caja azul llegará el próximo mes de octubre. De momento, la plataforma de streaming no ha revelado el día ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-07-18T01:30:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://www.larazon.es/videojuegos/series/netflix-revela-cuando-se-podra-ver-segunda-temporada-este-anime-mezcla-romance-drama_202607186a564c7cc0b5fb431c55bd97.html",
-      "medio": "La Razón Digital",
-      "viral": 0.2935
     },
     {
       "id": "n-24a9dc84d90",
@@ -4725,6 +5133,40 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTEoxTDlsNVRBRVdFNzBGX0FWSDB0ZXpVSmt1Mm05VlBJRUFRWDJad1RsaUxJSTQ4RkVPWkhnTDBuMFlJbkJHUkJYQVAxRGNmMzQ4NVhBQmRRSmlua1I5LWdJWnpjdTlXZGMyRFYtc2d4ZHFyOHNBMkNqOXl0aDhGS2EwNER1LTVfU0lpQVNWazdjMVF4Um1tTVB1bjdBOFNjUFZYN2VSNXBWMmRFeFQtR0FaVHlVd2t3YWltWUpFMWdOeWJiYlgxdWFrNnZ3Wm1wMlRV?oc=5",
       "medio": "Los Andes",
+      "viral": 0.242
+    },
+    {
+      "id": "n-17344963f42",
+      "sec": "series",
+      "genero": "shojo",
+      "slot": 0,
+      "titulo": "Mejores animes shoujo disponibles en Crunchyroll para maratonear",
+      "entradilla": "El anime shōjo ha conquistado a millones de espectadores gracias a sus historias de romance, amistad, crecimiento personal y fantasía. Aunque originalmente estaba dirigido a un público femenino ...",
+      "cuerpo": [
+        "El anime shōjo ha conquistado a millones de espectadores gracias a sus historias de romance, amistad, crecimiento personal y fantasía. Aunque originalmente estaba dirigido a un público femenino ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-07-15T14:56:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/es-mx/entretenimiento/anime/mejores-animes-shoujo-disponibles-en-crunchyroll-para-maratonear/ar-AA27Z88g",
+      "medio": "MSN",
+      "viral": 0.2935
+    },
+    {
+      "id": "n-16e80af7890",
+      "sec": "comunidad",
+      "genero": "accion",
+      "slot": 0,
+      "titulo": "Top 6 live-action de anime que llegarán muy pronto y ya emocionan a millones de fans",
+      "entradilla": "Top 6 live-action de anime que llegarán muy pronto y ya emocionan a millones de fans TV Azteca",
+      "cuerpo": [
+        "Top 6 live-action de anime que llegarán muy pronto y ya emocionan a millones de fans TV Azteca"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-07-15T07:00:00+00:00",
+      "image": "fondos/fallback-comunidad.svg",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWGhoZWZmSGdTZWVic0pPTTVMYkZ3VUo5c3VtWmx5bVlPdG14TXBlVWJRLXRzaVVMeEl5aGxxZFBFRUdoTFNFVnJpRnRsWl9SanJpRWRGUk1hTmR1a1RlRWJHUy01VVhleEo5RlAxcDBsZXBMb3M5SUkzSXF0SU5jMXVmNHpKNk9LbEE4dk52ZXJsVUVSdGlvU0I0ZGs2ODkzeHZpOURlVmZmMzZEalNhTmtPNEo2aU9ES3ZacQ?oc=5",
+      "medio": "TV Azteca",
       "viral": 0.242
     },
     {
@@ -4847,23 +5289,6 @@
       "viral": 0.2935
     },
     {
-      "id": "n-6a9a3e44bd4",
-      "sec": "series",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "La tercera temporada de este anime de fantasía se estrena mañana en Crunchyroll",
-      "entradilla": "Crunchyroll es un referente para los amantes del anime, y es que esta plataforma de streaming tiene contenido para dar y tomar. Además, gracias a la modalidad de simulcast, podemos disfrutar de ...",
-      "cuerpo": [
-        "Crunchyroll es un referente para los amantes del anime, y es que esta plataforma de streaming tiene contenido para dar y tomar. Además, gracias a la modalidad de simulcast, podemos disfrutar de ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-07-04T15:30:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://www.larazon.es/videojuegos/series/tercera-temporada-este-anime-fantasia-se-estrena-manana-crunchyroll_202607046a4654c3dcb2092ca8c31371.html",
-      "medio": "La Razón Digital",
-      "viral": 0.3401
-    },
-    {
       "id": "n-ceb7308fbab",
       "sec": "series",
       "genero": "fantasia",
@@ -4878,7 +5303,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQQkJrMWlpSnRUTkJHR01mX3B5bEdWeE5jTFNWdEpNX2N5WVZFWmhpS19pZXlYUmJMcnlWZkdoeUViV0lOak9ReGRYUEtTVHMxMmpPa0lKTjNWZ1R2dlhSNlZMTjFIZlB2Y3NzNk9QekVLaC1MUTAzVVY2dlgzUXhFSGJLSWVDUG9NOXdxX2pTMTJwMGhrekJDUkpyaGM3a0hsTTd6LXdacnNhU1E4QXJIY05ZSTJEMnNISmRRTmMyWWx1N3k3M0RaS2NfR0JPUTUxdzBXUTg5OEdEb0Z5QXVWVA?oc=5",
       "medio": "La Razón",
-      "viral": 0.3401
+      "viral": 0.2935
     },
     {
       "id": "n-fbafdbf8935",
@@ -4929,7 +5354,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNT1lnQVBhNFhENndaYmk0bFcyYU1TOHFqTUhCSWx6NVRDZXJEaUVZX0RGbm45T29VUXF2N2pMMVhIRlo1MElmV2ROUGVRZXd2ZUJyamtPTlR5M3Z4VHJhNFMtVnNDdTlxSF8ybDNSZ3R1SVZvYTRWY3lBVW80WVlzWm1vZFJyMmFSSTZQQ2E3dEdJb2lzMG8tVHRnZGRiMnhKbjVBeld5N0N4bGpFRFdwM1k5OTZ5WTZlSUN0NENucXVZMDR5UUd6clh2cjA1R2x4bDJVdkZ5QWNtSm1yMW1QMkMtbzUtM05jR0pVTzFtd2g0NERfWkE?oc=5",
       "medio": "La Razón",
-      "viral": 0.3401
+      "viral": 0.2935
     },
     {
       "id": "n-3859b4ab8ee",
@@ -4947,23 +5372,6 @@
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWWVPR1UyWk1iU0JQa3ZqU1llTDJvT0ZZb2NEN3JHRVZUUHktajFQdDJyT2wwWDhwSElrX1VIb0J1TWFnLVJLWEhNTWFIaUhmeEwteUg5eXhlV1NjRnZXVXh5RzhVdWZ1Tk45NVhhaEN3ZVNBeU5SV2lZQTJDeXJrNnNkV1hrWWtEUVFNNUZFajFBUVNKZ25aTzBB?oc=5",
       "medio": "El Sol de México",
       "viral": 0.242
-    },
-    {
-      "id": "n-5c70441e655",
-      "sec": "estrenos",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "El mejor anime de fantasía de los últimos años regresa: nuevo tráiler y ventana de estreno de la temporada 3",
-      "entradilla": "Lo cierto es que Mashle: Magic and Muscles es uno de los mejores animes de fantasía que más seguimiento ha tenido en los últimos años. Ahora, después de un tiempo sin muchas noticias, por fin se ha ...",
-      "cuerpo": [
-        "Lo cierto es que Mashle: Magic and Muscles es uno de los mejores animes de fantasía que más seguimiento ha tenido en los últimos años. Ahora, después de un tiempo sin muchas noticias, por fin se ha ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-07-03T03:31:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://www.larazon.es/videojuegos/series/mejor-anime-fantasia-ultimos-anos-regresa-nuevo-trailer-ventana-estreno-temporada-3_202607036a47713ea8768a6aee3f8a68.html",
-      "medio": "La Razón Digital",
-      "viral": 0.3401
     },
     {
       "id": "n-f13accbcf8c",
@@ -5065,24 +5473,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdUxqTVdyYlRIeXEyWHRVVHRLVGR1VTFwM1RDUE0zQmlfNW5UTEQxSEpKYWlHLVI3b1B3akZhZF9qRXNvVFFiMl92LW1TcU9GbmNEallrcmNxaDVjcS1SVnNabERWSkdkTUREcW5sNUgyRUFSTXhYUDl6Z0ZVZDY4ZWl2T3BZNmVEWHRnNDYzNGhiVmtNVHd0UWNPM2xBNklJWFZQaVdQTEU4OEhaemFSejEtT2U0RWZTVGczZVJfWVpxX1pGVU1GV3JHUFluZGVZM0xHdUNhd1dqdnJoS2l2RzJTWU8?oc=5",
       "medio": "La Razón",
-      "viral": 0.3915
-    },
-    {
-      "id": "n-f88b30fdffb",
-      "sec": "manga",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "Netflix estrenará el nuevo anime de Shonen Jump a cargo del estudio de Jujutsu Kaisen",
-      "entradilla": "Si estás al día del mundo del anime, seguro que el nombre de MAPPA te resulta familiar. Desde que se fundó en 2011, este estudio japonés ha crecido a pasos agigantados gracias a su empeño por cuidar ...",
-      "cuerpo": [
-        "Si estás al día del mundo del anime, seguro que el nombre de MAPPA te resulta familiar. Desde que se fundó en 2011, este estudio japonés ha crecido a pasos agigantados gracias a su empeño por cuidar ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-06-28T01:30:00+00:00",
-      "image": "fondos/fallback-manga.svg",
-      "link": "https://www.larazon.es/videojuegos/series/netflix-estrenara-nuevo-anime-shonen-jump-cargo-estudio-jujutsu-kaisen_202606286a3a93faabcaef0cd122e7b3.html",
-      "medio": "La Razón Digital",
-      "viral": 0.3915
+      "viral": 0.3449
     },
     {
       "id": "n-58d66ddcae6",
@@ -5120,7 +5511,7 @@
     },
     {
       "id": "n-97b9e07513f",
-      "sec": "estrenos",
+      "sec": "comunidad",
       "genero": "shonen",
       "slot": 0,
       "titulo": "Kagurabachi ya tiene fecha estreno: Crunchyroll confirma su anime",
@@ -5130,7 +5521,7 @@
       ],
       "autor": "Redacción AnimeChronicle",
       "fecha": "2026-06-26T07:00:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
+      "image": "fondos/fallback-comunidad.svg",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdWFnUTZEMnRWZXpnNV9LV0ctcWJ0bzZiMnlwWXl1Z3AyY0hydG9QbTlpOGVib0hnMkFleWh6bHpIdi1kVDRrSnh6a3N5NVpFN0o3Uk5RS2VEbEFaRjNEOFF3MGJKMi1xTWpTUURIWFNvSXpMZXU4RlJNbjk1ckJpNEFXOEtHandLM3lma21TMWQxamd3cEZHVVVqY0k?oc=5",
       "medio": "Los Lunes Seriéfilos",
       "viral": 0.3449
@@ -5167,41 +5558,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOEFsMF94RUc0OEZMdERnWlVRUTJBT0tfMFQ1dlZSSllDaWMwOFF3MmhVVDQ4bDkwMHdub2NmQUtDNk8xaTAyZUxJem1fRmRMbnZJajVERi1xNGRJVWdtLWtaS21oUWZ0M25vajRROXkza0c5bWstQTl2bUVhVEh1UVdJc3NNQjUySkNIbW1DaUpURDd0?oc=5",
       "medio": "ADSLZone",
-      "viral": 0.3401
-    },
-    {
-      "id": "n-5f3bf9366cc",
-      "sec": "series",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "Ya es oficial: Crunchyroll estrenará el anime de acción más esperado de 2027",
-      "entradilla": "Las cookies, los identificadores de dispositivos o los identificadores online de similares características (p. ej., los identificadores basados en inicio de sesión, los identificadores asignados ...",
-      "cuerpo": [
-        "Las cookies, los identificadores de dispositivos o los identificadores online de similares características (p. ej., los identificadores basados en inicio de sesión, los identificadores asignados ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-06-25T22:03:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://www.adslzone.net/noticias/streaming-tv/crunchyroll-estreno-anime-kagurabachi-2027/",
-      "medio": "Adslzone.net",
-      "viral": 0.3401
-    },
-    {
-      "id": "n-2d7a05f2243",
-      "sec": "series",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "Este anime de fantasía a lo Frieren llegará en 2027. Es igual de bonito, pero desde el punto de vista de los demonios",
-      "entradilla": "El género de fantasía dentro del anime sigue con su hegemonía y ya prepara los próximo lanzamientos para el año 2027. Si bien parece que va a haber una bajada de isekais, animes como Frieren han ...",
-      "cuerpo": [
-        "El género de fantasía dentro del anime sigue con su hegemonía y ya prepara los próximo lanzamientos para el año 2027. Si bien parece que va a haber una bajada de isekais, animes como Frieren han ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-06-25T16:31:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://www.3djuegos.com/manga-anime/noticias/este-anime-fantasia-a-frieren-llegara-2027-igual-bonito-punto-vista-demonios",
-      "medio": "3D Juegos",
-      "viral": 0.242
+      "viral": 0.2935
     },
     {
       "id": "n-dad9ad09671",
@@ -5323,6 +5680,23 @@
       "viral": 0.2935
     },
     {
+      "id": "n-d6e5e2f8ce2",
+      "sec": "comunidad",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "La temporada 4 de Re:Zero bate récords y abre el debate: ¿es el mejor anime de 2026?",
+      "entradilla": "Cuando se estrenó la temporada 4 de \"Re:Zero\" era obvio que iba a ser uno de los debuts más esperados del año. Pero lo que muchos no esperaban es que el ...",
+      "cuerpo": [
+        "Cuando se estrenó la temporada 4 de \"Re:Zero\" era obvio que iba a ser uno de los debuts más esperados del año. Pero lo que muchos no esperaban es que el ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-06-18T08:13:00+00:00",
+      "image": "fondos/fallback-comunidad.svg",
+      "link": "https://areajugones.sport.es/anime/la-temporada-4-de-rezero-bate-records-y-abre-el-debate-es-el-mejor-anime-de-2026/",
+      "medio": "Areajugones",
+      "viral": 0.242
+    },
+    {
       "id": "n-50f3262d39c",
       "sec": "manga",
       "genero": "shonen",
@@ -5340,7 +5714,7 @@
       "viral": 0.242
     },
     {
-      "id": "n-a77e9fe0b7e",
+      "id": "n-dccf9656342",
       "sec": "estrenos",
       "genero": "shojo",
       "slot": 0,
@@ -5352,7 +5726,7 @@
       "autor": "Redacción AnimeChronicle",
       "fecha": "2026-06-18T07:00:00+00:00",
       "image": "fondos/fallback-estrenos.svg",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOGwzUWFiUm1TYkNFejA1dHlvRnJJZjYwSk8tYzh4NFNVMGdjcjFoQ2htZUtoSGw1YmlYaGttc2pucVR1b3VxQkQ4R1JmbTFKS1JweDVyOUhCamZ2S1l6YjFaSGdqNlVOT2lFSHhWYkFaMmJqSkhuU2MwQXphOXp1YlN3?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVTl2OW5Vb2VpRzJySExnYlZtZ2I1Qk5JeEczbkdMNEczeE9ZWk5WN0ZOM3JHS2tiM21LRWptUVNvV2djUUVQc1k2VXhxa2drQnJjVmdvcnhJYi1VaXRtcENMTFM2alIwYUZzS0Q4OUJaenpYVzFmVjIzY2pjNndGa25ZSEU3Zw?oc=5",
       "medio": "Crunchyroll",
       "viral": 0.242
     },
@@ -5459,6 +5833,23 @@
       "viral": 0.3449
     },
     {
+      "id": "n-d2649031ab5",
+      "sec": "series",
+      "genero": "shojo",
+      "slot": 0,
+      "titulo": "New to anime? Here's the difference between shonen, seinen, shojo, and josei",
+      "entradilla": "If you're new to anime, you've likely come across terms such as shonen, seinen, shojo, and josei. These labels are often mistaken for genres, but they actually refer to the target demographics of ...",
+      "cuerpo": [
+        "If you're new to anime, you've likely come across terms such as shonen, seinen, shojo, and josei. These labels are often mistaken for genres, but they actually refer to the target demographics of ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-06-17T03:25:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://www.msn.com/en-in/entertainment/hollywood/new-to-anime-here-s-the-difference-between-shonen-seinen-shojo-and-josei/ar-AA25Qnqs",
+      "medio": "MSN",
+      "viral": 0.242
+    },
+    {
       "id": "n-f3106c6a7f4",
       "sec": "series",
       "genero": "fantasia",
@@ -5527,21 +5918,21 @@
       "viral": 0.2935
     },
     {
-      "id": "n-267451ac729",
-      "sec": "estrenos",
-      "genero": "shojo",
+      "id": "n-dec16e5cd43",
+      "sec": "peliculas",
+      "genero": "fantasia",
       "slot": 0,
-      "titulo": "Guía anime temporada verano 2026: todas las series, OVA y películas, fecha de estreno, dónde ver…",
-      "entradilla": "En esta guía de anime repasamos la temporada de verano de 2026 completa, con especial ahínco en series, pero también películas y más. Tiempo de despedida: buena parte de las series que nos han ...",
+      "titulo": "La temporada 2 de 'Black Clover' confirma su estreno para este mismo año y el anime de fantasía viene con novedades muy prometedoras",
+      "entradilla": "Aunque en 2023 se estrenó en Netflix la película 'Black Clover: La espada del rey mago', en realidad la historia de Asta estaba pausada de manera indefinida hasta que volviese la serie de anime.",
       "cuerpo": [
-        "En esta guía de anime repasamos la temporada de verano de 2026 completa, con especial ahínco en series, pero también películas y más. Tiempo de despedida: buena parte de las series que nos han ..."
+        "Aunque en 2023 se estrenó en Netflix la película 'Black Clover: La espada del rey mago', en realidad la historia de Asta estaba pausada de manera indefinida hasta que volviese la serie de anime."
       ],
       "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-06-16T03:23:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://freakelitex.com/guia-anime-temporada-verano-2026-series-ova-peliculas-especiales/",
-      "medio": "freakelitex",
-      "viral": 0.2935
+      "fecha": "2026-06-15T07:10:00+00:00",
+      "image": "fondos/fallback-peliculas.svg",
+      "link": "https://www.msn.com/es-xl/entretenimiento/anime/la-temporada-2-de-black-clover-confirma-su-estreno-para-este-mismo-a%C3%B1o-y-el-anime-de-fantas%C3%ADa-viene-con-novedades-muy-prometedoras/ar-AA25H57V",
+      "medio": "MSN",
+      "viral": 0.3915
     },
     {
       "id": "n-201a55dc2dc",
@@ -5575,7 +5966,7 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQUc5RXJyeV9vRVAtYzVoaEhPYlF3a0luZmgyQWpBVEQ5ZEQ0cTNOLVZJMC1EcTJvdXdOZ3N5ZHJjU1JoXzc3THZzTzlsdUpUVndJSWZfQUI5SEhlVDZTRXNiWUd1NmpQV3VTNU94NmxtRENCN29wNHllMElGQ1ZUbl85T3pEZHF5aDBfRWd3WEVjVS11b0RtSTROZWEzX3c3V0RMZ3dBdWpoVW1DRHNjME9PX2ZYYVctRGRHdEItQjR6QkgyTlN2MDhYbTlCcHcxY0HSAdcBQVVfeXFMTkZjcW1RNGdPaWJKNmV1NW9iUk9aNlRsaTkyUHhyZkJpbnBzemExZXpFZ2dXUFVETFNpSUJReGlkUE9uVmRqRmh4Q3NYVzdZZXRLVE96NGdaRVI4c3MwVjBYZjlWZkowOXRvcDhFREllV2N3eGpWaGstSWFDM1lzODdObVh0a1BLdlg1dXFURExPZGY4WDZNQ2c2UW9KQVNReHBuVnRpMkNrd1RPRFh1S1d4U1pvTWhEMGF0TW1sVEFSN1VuN3B6anVMRzlGN3dSTTY1ZXctQTQ?oc=5",
       "medio": "Espinof",
-      "viral": 0.3449
+      "viral": 0.3915
     },
     {
       "id": "n-5b68494a773",
@@ -5593,6 +5984,23 @@
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDhZNzVaOEVwV2RSemNZUnduUno0WGh1T1loTk5Ta0k5ckF3SUdic2JfeUsyOUVFNVg4NGJZUHJuNVplYS02S0d2bGNTMUJpZWRnNnBhYXJqS3NQdE5uSnBibkRNNEtVSHZ0b0tjWWFDTWxjeEhlajBTMlZYWi0tZEpLSkFiRjlYeGUzQmpjOTFMMzh2dEFLbzNlbVJkUzFhRzFPMWFsTEVydDBEeGl5cF9OTlEwbEZpbWQzTk8xSVRucWxXcjhGbGU3VVZYM25aQV9rdFh3QUjSAd4BQVVfeXFMT2VIYWt2Uk9IYlZ0d241aUM5X3oyUzhqNVZiTWxVNWxHZHlrVjBZT1o4NF8tMVRiUzdqWUZTNGFLMW5tNTlQdkRVVGZfbS1rLWFqc0RiNElIUmd0T2RibVZUQWxSWDZnVUltNUhQMEJxRFUxLW5qMm53TU81UHlSYzJnWk9GTFNtUVZfdHNIYlh0SUI2UVQzeXlWUENVZWRUYVJaMjVOSDhRM28wTlpEOXBaMmVFcDNZWDdyWE14NUN4TENnQzZKOENCX25ZN3Y5bnpLSVFvSWdWQ2hOMEtR?oc=5",
       "medio": "Espinof",
       "viral": 0.2935
+    },
+    {
+      "id": "n-0e67381d4d4",
+      "sec": "comunidad",
+      "genero": "mecha",
+      "slot": 0,
+      "titulo": "La temporada 3 de 'Solo Leveling' ya tiene fecha de estreno en Crunchyroll",
+      "entradilla": "Solo Leveling tiene una legión de fans que llevaban meses preguntándose cuándo volvería Sung Jinwoo. La respuesta ya está sobre la mesa: la tercera temporada llegará a Crunchyroll, pero habrá que ...",
+      "cuerpo": [
+        "Solo Leveling tiene una legión de fans que llevaban meses preguntándose cuándo volvería Sung Jinwoo. La respuesta ya está sobre la mesa: la tercera temporada llegará a Crunchyroll, pero habrá que ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-06-14T11:47:00+00:00",
+      "image": "fondos/fallback-comunidad.svg",
+      "link": "https://www.msn.com/es-es/entretenimiento/cine/la-temporada-3-de-solo-leveling-ya-tiene-fecha-de-estreno-en-crunchyroll/ar-AA25CLfF",
+      "medio": "MSN",
+      "viral": 0.3963
     },
     {
       "id": "n-9cd8ea119ea",
@@ -5629,23 +6037,6 @@
       "viral": 0.2935
     },
     {
-      "id": "n-92f600d01b4",
-      "sec": "series",
-      "genero": "terror",
-      "slot": 0,
-      "titulo": "La temporada 2 de ‘La maldición de Widow’s Bay’ es oficial: la mejor serie de terror de 2026 ha llegado para q",
-      "entradilla": "La temporada 2 de ‘La maldición de Widow’s Bay’ es oficial: la mejor serie de terror de 2026 ha llegado para q Diario AS",
-      "cuerpo": [
-        "La temporada 2 de ‘La maldición de Widow’s Bay’ es oficial: la mejor serie de terror de 2026 ha llegado para q Diario AS"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-06-12T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOdGJ0OFIyUEpXTzZnTHFYNGtkNFIxNy1uamNaWTlPOHlQckRFd1JsYnJHR0pvRzdRY01NVVlnLWRQZVBSb1hSdjM1UzJkQk1OSXFGb0VUMERFTHYyNEt0aEFHbDZFeHhxWnVVejB5dFZzLU53dXN0ZmhLQk10a21rY0xFdHdpRjdEc3FrTXVxb3ROYjBlOG9ocjRFSWU5ME5RNXJkMVV2eGc0ZDU3VkFkUWVZOWY0ak9lNGtZYWdRRmd6YUpybF8zOUQ1R1N4SkVETkgzRzlQVXM0VjNYenh3RTVXbDdmMkRla3l3OWxiQdIBgwJBVV95cUxNaC1zNFVRMkdLM2hMVWtzcHR0TWkzTGpScTBDVjlFR2ZfRnZlalYzaUpLV2hJcVNvWWNGUVJuVEJIa0Jjbm1xWU91TFdmUGFybm84ZkYwLVA4ZkxMUUh4OWpoVU1na2V0bjBsTU5jcmxJNTYxYzlLeFdWSGVPUHFjeEs1Wm5jT2pvaDhuN1hWb0w1eFRORTNoa3NGZlBqb2ZtTk9oQmJmblh1V1p0N21xT0tkc2lucTFnZGFFbmRYa1lORXpJb3RGajk2R2o3NmxNajVrMjJYMkt3bjI0c2ZVR3NTUnZBWjFBX05TOXRJUEUtUHJUcVEwUmxmMzhYVHhEZzdF?oc=5",
-      "medio": "Diario AS",
-      "viral": 0.2935
-    },
-    {
       "id": "n-a06320306c1",
       "sec": "series",
       "genero": "terror",
@@ -5660,6 +6051,23 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94Y3lhSS1LbjZlLXh2RTRZZHFKS1lfT0sxQkFrd2RBV09WcDNleDBFZEk1UUg1Ri1EbS1pTHBCOTBxV2NscEx4cEtVSlcxbjBmV1dXdGFrVVROd0NiREFseG9DT281LXR4dXpVbGNB?oc=5",
       "medio": "SensaCine",
+      "viral": 0.2935
+    },
+    {
+      "id": "n-92f600d01b4",
+      "sec": "series",
+      "genero": "terror",
+      "slot": 0,
+      "titulo": "La temporada 2 de ‘La maldición de Widow’s Bay’ es oficial: la mejor serie de terror de 2026 ha llegado para q",
+      "entradilla": "La temporada 2 de ‘La maldición de Widow’s Bay’ es oficial: la mejor serie de terror de 2026 ha llegado para q Diario AS",
+      "cuerpo": [
+        "La temporada 2 de ‘La maldición de Widow’s Bay’ es oficial: la mejor serie de terror de 2026 ha llegado para q Diario AS"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-06-12T07:00:00+00:00",
+      "image": "fondos/fallback-series.svg",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOdGJ0OFIyUEpXTzZnTHFYNGtkNFIxNy1uamNaWTlPOHlQckRFd1JsYnJHR0pvRzdRY01NVVlnLWRQZVBSb1hSdjM1UzJkQk1OSXFGb0VUMERFTHYyNEt0aEFHbDZFeHhxWnVVejB5dFZzLU53dXN0ZmhLQk10a21rY0xFdHdpRjdEc3FrTXVxb3ROYjBlOG9ocjRFSWU5ME5RNXJkMVV2eGc0ZDU3VkFkUWVZOWY0ak9lNGtZYWdRRmd6YUpybF8zOUQ1R1N4SkVETkgzRzlQVXM0VjNYenh3RTVXbDdmMkRla3l3OWxiQdIBgwJBVV95cUxNaC1zNFVRMkdLM2hMVWtzcHR0TWkzTGpScTBDVjlFR2ZfRnZlalYzaUpLV2hJcVNvWWNGUVJuVEJIa0Jjbm1xWU91TFdmUGFybm84ZkYwLVA4ZkxMUUh4OWpoVU1na2V0bjBsTU5jcmxJNTYxYzlLeFdWSGVPUHFjeEs1Wm5jT2pvaDhuN1hWb0w1eFRORTNoa3NGZlBqb2ZtTk9oQmJmblh1V1p0N21xT0tkc2lucTFnZGFFbmRYa1lORXpJb3RGajk2R2o3NmxNajVrMjJYMkt3bjI0c2ZVR3NTUnZBWjFBX05TOXRJUEUtUHJUcVEwUmxmMzhYVHhEZzdF?oc=5",
+      "medio": "Diario AS",
       "viral": 0.2935
     },
     {
@@ -5779,23 +6187,6 @@
       "image": "fondos/fallback-estrenos.svg",
       "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRVFGNmprSUpUaHlQREtOU1BsRjFmbHJFZXhBUEFxSGtCYmVRM2JUeEtoeU5NVzBKUThEdDRjUlZ0RVM1bElfMHpiZVNMMXFsNVVkdmRFYmFzZjhLWTFheVZIVGI3VkVmRHRxSVY1TzRtdEdmaWtvMVdsNlBmOE15QzR0NGRHandQaHc0cDBfMEtkX05EemFVM1Z4LVdIbWU2dnZHLVVXTVd0cEltR1BKVVdqQTV5T1h2Vlk0Vk04VFQwOEVJZzJjVWZvQl95V1l0QW1KSEZ5UjlScWJMaG44S2VUSF9RSkVCZDhfcWdKVzJZd9IBhgJBVV95cUxPS1NlajMzYnV1VXBYXzh5ci1wZmFRcjBMVVprcEVUb1B0NjF4aFVJMU41b2tmVG9nRGtrb0ZIOU13VjQwT1dLTDVkYUhfQTQ2Vk5STUYtWnhYaXl5RnZZQUVPOGZCaGNKeWplSzVMLU45Rm5MWHY4WDFZX1gxbGVCY0xKOEVtVkJQM2xSSXBYaFhIeHZMT3M2bFNlNVpiNDJVTzdfNFBZdmVTSzFRY3JsQ0dTeGpRYXM0eTJTdmV3UDNGNTl1bGNnVGRYa0tRckcwNzhIV1FIVWVUSHlTTk5WbE4wc3FRMVV3X3lxUDhraWFuNjZDRkhVSG5DWjhVckpOcFhlNlpR?oc=5",
       "medio": "Diario AS",
-      "viral": 0.242
-    },
-    {
-      "id": "n-2e0a73fa6c6",
-      "sec": "videojuegos",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "A.O.T. 3 es oficial: Omega Force anuncia el juego que adaptará toda la historia de Attack on Titan, del",
-      "entradilla": "A.O.T. 3 es oficial: Omega Force anuncia el juego que adaptará toda la historia de Attack on Titan, del Areajugones",
-      "cuerpo": [
-        "A.O.T. 3 es oficial: Omega Force anuncia el juego que adaptará toda la historia de Attack on Titan, del Areajugones"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-06-06T07:00:00+00:00",
-      "image": "fondos/fallback-videojuegos.svg",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQMlpkZjZTTlNoYXc5SEhRaUoyNXk3Tkd4ZjF5a3BqRVdpQU1RLUJodmszd1BpODllNzV6b3VOYUItdWNnSDhzTFdETW5KdnUyMTdHZTByeENMazBBN2Zlb1VMdW1IYTVZU0Z3dlBLVkxOdzJJTWN6dHJmZ0xuMHdkcW41WFl4Nk00aXdIVEpFWHExODcxWVZwVmt1SnpZbHFaS1NTMk1UbERabW56N2gwSmFxV0RWNWFnRUhmVzRZLTViMzFEOWp4V1hUUEhjQU0zRzczd2NLOXRRb1VBcU91N19pc2lqem5reC1JbzVIcXZQVzdXLUsyT0RwN0x4RWJFN0daVkhB0gGLAkFVX3lxTE9ySnhRcmsyVFhjMHh1Snl4blRKUzc2QzEyWUlBNmFJZVdDeWtuV0dKQTRpYkd0bFNBVXB3b3RzZkxQNVlNY3FlNV9oZnVZMVJXRWJ5ZHdqSWRkQ3NNckJzbTRwQXZ2SjRxaHp0MXVGaTNSUXFtNnhneXp0cl9CSjIxa1ZUa2dFR2NGQVg1ZkNZb3RtNVVjVlczTGUzbkwzUENxRVl3Z0l4MHYyOGR5dWlhU0M1LUdmeGhDNXBvSkg0a2p6TzMzamR2d3Z5anRBem5Ib0tzUjJfaFNmWkFQQ2hrSm9fRUZ6RWtDT1ZCYkgyTG5wZzRvampyNFN3bl9pXzJndU9oT3hSeVhXOA?oc=5",
-      "medio": "Areajugones",
       "viral": 0.242
     },
     {
@@ -6003,23 +6394,6 @@
       "viral": 0.242
     },
     {
-      "id": "n-bc3b28e70dd",
-      "sec": "series",
-      "genero": "terror",
-      "slot": 0,
-      "titulo": "Guillermo del Toro se enamora de la serie de terror del momento: “La mejor en mucho tiempo”",
-      "entradilla": "Guillermo del Toro se enamora de la serie de terror del momento: “La mejor en mucho tiempo” Diario AS",
-      "cuerpo": [
-        "Guillermo del Toro se enamora de la serie de terror del momento: “La mejor en mucho tiempo” Diario AS"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-06-01T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOc21nanhla3BNYkNwSzNaQ3BoQVd1YUJKNlJWUlplVnVVLW8yVWV3WW1SUEFGeXktY0FSTlo3WDhOQjZGOVdfWS1lVkpGbUZBbVE4eVc1SlRsLWdkTXBSWjVoR1NWOWtKUmNicnBYYWg0VWZBWk1aalVmaGFxZGxGOTEzR0hfTkZBaDlXaWFpMHluV0hvckV2WGdFamJ1MG05d1NPQ0lPOGExdmpUU3dKdk8xS28zZkdzUER1ZGFTU2NmSG0tNzBnVU4tZ2NDUdIB4gFBVV95cUxNX3lsS0xGMF9pdDJzOFV2Y1BlcE1tcXpJU0VIMmRQRmxCcmdfOWdCOHZwVEpiSDl2R0FhOFVpTXFWZ2RwWFVyN3ZPM3lBUzV3SjBFeWphXy1lWGNMOXNwd2N3OU91VzVxZE82SlFRRjd2cEwxNUlzUmg4VW1iMXU4TjRMa1p3bm1ORk5paTR1SDNQTEVCZ19NbndvNTRtSTdPaHVEZ2hFR0YtNXR1SjFOVWo1eWFTV3RDTGZPS0xGenpsX0NyaktkQUV6b2pzdVV6RTQtQUR3UnNHOWNNdnFOOUtR?oc=5",
-      "medio": "Diario AS",
-      "viral": 0.242
-    },
-    {
       "id": "n-cb525994b0b",
       "sec": "estrenos",
       "genero": "fantasia",
@@ -6071,6 +6445,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-a574490b539",
+      "sec": "manga",
+      "genero": "accion",
+      "slot": 0,
+      "titulo": "La novela secuela de Mobile Police Patlabor de Kazunori Ito se lanza en junio",
+      "entradilla": "La novela secuela de Mobile Police Patlabor de Kazunori Ito se lanza en junio Crunchyroll",
+      "cuerpo": [
+        "La novela secuela de Mobile Police Patlabor de Kazunori Ito se lanza en junio Crunchyroll"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-05-29T07:00:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQV1hYZHVnLXE2LTFIeGtSTjYyNVNVbG1DYW5abEVqQ2RsYzBmbGdqQ1JUSmFaMFFFaGdzNFZYS2pNaHpIVE9IM0tLQ01CcVFWaWRCNm53LXdzNVZZX3p2UURZVlU1MlV4U2ZPY2RSSFNlNWhPZXBtZW03N2w2Y0JsSkcwQmhOdTVjRzlKQkUwcTF3U2NKREJwenU4aENxNTFmc1p1dlh3dTd2dEVSeVV0WGdKZWpkQ0Vj?oc=5",
+      "medio": "Crunchyroll",
+      "viral": 0.2935
+    },
+    {
       "id": "n-39517faaef2",
       "sec": "estrenos",
       "genero": "terror",
@@ -6088,23 +6479,6 @@
       "viral": 0.242
     },
     {
-      "id": "n-d7075ec0fe9",
-      "sec": "series",
-      "genero": "isekai",
-      "slot": 0,
-      "titulo": "15 series anime isekai que DEBES ver en Crunchyroll",
-      "entradilla": "¡The Twelve Kingdoms (NO disponible en todo el mundo) puede ser un clásico, pero sin duda es una joya imperdible! El año 2002 vio el lanzamiento de una de las primeras novelas ligeras isekai adaptadas ...",
-      "cuerpo": [
-        "¡The Twelve Kingdoms (NO disponible en todo el mundo) puede ser un clásico, pero sin duda es una joya imperdible! El año 2002 vio el lanzamiento de una de las primeras novelas ligeras isekai adaptadas ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-05-28T09:10:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://www.crunchyroll.com/es/news/guides/2026/5/28/15-isekai-anime-en-crunchyroll",
-      "medio": "crunchyroll.com",
-      "viral": 0.3868
-    },
-    {
       "id": "n-5856a1fe0a6",
       "sec": "series",
       "genero": "isekai",
@@ -6119,7 +6493,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRVJJWThMamdvcTF6Ujc0N2pfM0hTSjdUbHR0c0lRSjJhelh5Q1lhcU9FY3E0YjVrUTczVS1Qb0JXV1NpVTF5VFJTNTRoR3hSM3B0eTdlNWx3bG1tVGRWQW5CZlVTQkFYMHRjMTFleUhBRzd5SWtJSVZmdl9aMGZhTWRydS1UX25UWDRn?oc=5",
       "medio": "Crunchyroll",
-      "viral": 0.3868
+      "viral": 0.3401
     },
     {
       "id": "n-1ad0eba9e8a",
@@ -6136,24 +6510,7 @@
       "image": "fondos/fallback-series.svg",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZm5IX0VqdDZsV1VMdEpEc3RndnFBeThjZzJYMGV3UmpSU2ZnM0RCSEpDOXlPamgweWN6dllpUU92dU8yWG1CRmhGNE5takNyT0llazIwa1RFUXExaTNPTHFHbW5qZTVEY2hfekJpMnVpM3ozQzR6SlBicE5MUmdUblNsY2FiZTVPRktfVXcwZw?oc=5",
       "medio": "Crunchyroll",
-      "viral": 0.3868
-    },
-    {
-      "id": "n-56f363ee043",
-      "sec": "comunidad",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "Netflix renueva uno de sus mejores animes de fantasía. Nos toca despedirnos de Caimán y Nikaido pero la temporada 3 de 'Dorohedoro' ya está en marcha",
-      "entradilla": "Netflix renueva uno de sus mejores animes de fantasía. Nos toca despedirnos de Caimán y Nikaido pero la temporada 3 de 'Dorohedoro' ya está en marcha Espinof",
-      "cuerpo": [
-        "Netflix renueva uno de sus mejores animes de fantasía. Nos toca despedirnos de Caimán y Nikaido pero la temporada 3 de 'Dorohedoro' ya está en marcha Espinof"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-05-28T07:00:00+00:00",
-      "image": "fondos/fallback-comunidad.svg",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNM0dOY2s3ZFVjTk8wR1pFRGVuYkMtWlJYMmtBWXplblNpMVFydDNFcmVMVU9DWXhwRWUwQlZZOW9iaEtTRjBBS1Y5OHh5WWUwdU1TcF82RFAtVVNrTHhyQ1huYjN4eUhPV0xTemhXSVdWVmh4b1h4eG56QU9vS1Vtd1YyVnUxVFJjbnYySklTMk9zTlowZXBPTkRrUkNrMmFCN3lCU251UkRFSWJfYkgyMWVwZzlyVHgwbkd3S2hpUzVWQ1A4ZVZIek5fSEo4aDRuZlV6dU5SaldyVERQeU5HLUdn0gHnAUFVX3lxTFBrdHRpckhkX0k4RTlNQkNrRkZMRFRZVVFtYlJOa1QtSHg4dzloc0cyTF9zNzJQYjV5OXZGbmZYd09CaVVyLVZEWFgwaXNfYzVXT3VXN0J1TUg2VFdjcVNzLUdJVXd3NVRlekdDMmxRZ25oRHJiYkxOZlFIbEZPZjY5OExXbHlzcmgtaDJiUVNGWW1nVVNTbV90MW5PeHFxUGdzT1RibkxxcUloS0FST0hQTDM5bzBLNEJUZWZpZ08wcHc2RVpUZzN1Um4xb3FRaHl2SVNRZVg1U2lvdVpFMlJ2UDh4S2ZuWQ?oc=5",
-      "medio": "Espinof",
-      "viral": 0.2935
+      "viral": 0.3401
     },
     {
       "id": "n-287f7e161fa",
@@ -6292,6 +6649,23 @@
       "viral": 0.2935
     },
     {
+      "id": "n-de79e84bb8a",
+      "sec": "comunidad",
+      "genero": "comedia",
+      "slot": 0,
+      "titulo": "“Hana-Kimi” y los otros animes que podrás ver gratis del 23 al 30 de mayo",
+      "entradilla": "“Hana-Kimi” y los otros animes que podrás ver gratis del 23 al 30 de mayo El Comercio Perú",
+      "cuerpo": [
+        "“Hana-Kimi” y los otros animes que podrás ver gratis del 23 al 30 de mayo El Comercio Perú"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-05-21T07:00:00+00:00",
+      "image": "fondos/fallback-comunidad.svg",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSVpHb2czX2E5UjBrd2Jvb3NtS3dXMFdUUUJPMnNIMGh2ZWxkTUNRRnR6X1gxVVpaTEtpVmJGR1NBNHdsU3c0SjFmdHFQa1g5WWZqREpUZnI4TXkyZXVIVTNUVnZJSVUtVXJpQmFGQkR6VjBsYkZMSlRmZDJiZVNiX3VtU3dYaDNBNHB2cmhzUDZXZjBMWXRGMk9UbE9mSmx0bmE0SE9zY2J1a1I5all4VGlpdVRDanVFZjFiRVRDVWt1ZFlSR0ZqdWZqbzRBT0wyNFotZmlTYUFFaXNPbndHLUt3?oc=5",
+      "medio": "El Comercio Perú",
+      "viral": 0.242
+    },
+    {
       "id": "n-3ce35188626",
       "sec": "series",
       "genero": "isekai",
@@ -6394,6 +6768,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-6c44bc07bd2",
+      "sec": "manga",
+      "genero": "isekai",
+      "slot": 0,
+      "titulo": "Isekai Is Basically The Live-Service Gaming Of Manga And Anime As Publisher Blames It For Swallowing Up Profits",
+      "entradilla": "The publisher saw a massive plummet in its operating profits, and it attributes that to an overreliance on the isekai genre Anime Live-Service Manga 2026 feels like the year that every video game ...",
+      "cuerpo": [
+        "The publisher saw a massive plummet in its operating profits, and it attributes that to an overreliance on the isekai genre Anime Live-Service Manga 2026 feels like the year that every video game ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-05-19T06:05:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://kotaku.com/isekai-manga-anime-kadokawa-sword-art-online-2000697349",
+      "medio": "Kotaku",
+      "viral": 0.242
+    },
+    {
       "id": "n-44a13ef165b",
       "sec": "comunidad",
       "genero": "isekai",
@@ -6409,6 +6800,23 @@
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZF9yc2pDTEFhTFY3bXFmdTVnOUMxYWQ4MWpEb2ZiMU9rclpRUGhMNUVSOGt3ZklZTUU5em51MmZxQkxzYksxeVhoWGtaNW1MOTRuY21MaWp0QXFSNzhEd3dZbVphZWgtQ0VpaXNPTXNUM3Z5TTE2UnNGRHdjWFh6cFNJUXZUdkZLWGtfNzdzeGJTNk1uenRreg?oc=5",
       "medio": "Kudasai",
       "viral": 0.242
+    },
+    {
+      "id": "n-aecf40093b0",
+      "sec": "comunidad",
+      "genero": "fantasia",
+      "slot": 0,
+      "titulo": "Hoy en Netflix: La película de 'El Señor de los Anillos' que hace dos años devolvió la saga de fantasía a los cines",
+      "entradilla": "Hoy en Netflix: La película de 'El Señor de los Anillos' que hace dos años devolvió la saga de fantasía a los cines SensaCine",
+      "cuerpo": [
+        "Hoy en Netflix: La película de 'El Señor de los Anillos' que hace dos años devolvió la saga de fantasía a los cines SensaCine"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-05-18T07:00:00+00:00",
+      "image": "fondos/fallback-comunidad.svg",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5tY3ZJWXN2dlNqX2toZHpSb2pUUlZEalFBcUNuT25aekR4NjRfakd3VUh3VzJUd0N1N2NFRWt2VXJrZTVDcFczemNHM3ZwNlZMQkFVQ1Vsb2VldTBiaUUyT05YRE42LXZTaXIw?oc=5",
+      "medio": "SensaCine",
+      "viral": 0.3449
     },
     {
       "id": "n-14eb55ff5ea",
@@ -6428,40 +6836,6 @@
       "viral": 0.242
     },
     {
-      "id": "n-87f1157f2eb",
-      "sec": "peliculas",
-      "genero": "mecha",
-      "slot": 0,
-      "titulo": "Tiene 43 años pero casi nadie en España lo conoce. Ahora este anime de ciencia ficción prepara su regreso con una película a cargo de una leyenda del anime",
-      "entradilla": "Hay algo extraño en el primer tráiler de Armored Trooper Votoms: Die Graue Hexe que cuesta explicar si vienes de Gundam, de Evangelion o de Code Geass. No hay un chaval gritando dentro de una cabina, ...",
-      "cuerpo": [
-        "Hay algo extraño en el primer tráiler de Armored Trooper Votoms: Die Graue Hexe que cuesta explicar si vienes de Gundam, de Evangelion o de Code Geass. No hay un chaval gritando dentro de una cabina, ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-05-14T02:01:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
-      "link": "https://www.3djuegos.com/manga-anime/noticias/espana-desconocido-votoms-anime-mechas-que-vas-a-querer-ver-porque-diferente-a-que-conoces",
-      "medio": "3D Juegos",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-a6c21405a30",
-      "sec": "manga",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "El nuevo candidato a mejor anime de acción de 2026: la mejor mezcla de 'Solo Leveling' y 'Jujutsu Kaisen'",
-      "entradilla": "Si bien es cierto que existe una amplia selección de series de anime que se estrenarán a lo largo de los próximos meses, el hecho de esperar que las nuevas producciones alcancen la popularidad o la ...",
-      "cuerpo": [
-        "Si bien es cierto que existe una amplia selección de series de anime que se estrenarán a lo largo de los próximos meses, el hecho de esperar que las nuevas producciones alcancen la popularidad o la ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-05-13T09:29:00+00:00",
-      "image": "fondos/fallback-manga.svg",
-      "link": "https://www.larazon.es/videojuegos/series/nuevo-candidato-mejor-anime-accion-2026-mejor-mezcla-solo-leveling-jujutsu-kaisen_202605136a045d33b5b06629960e9af6.html",
-      "medio": "La Razón Digital",
-      "viral": 0.2887
-    },
-    {
       "id": "n-c519078e7ea",
       "sec": "manga",
       "genero": "accion",
@@ -6476,7 +6850,7 @@
       "image": "fondos/fallback-manga.svg",
       "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeFRRUlpybG9fN2k5LWhNUTlKVC0wNzhncVVybi1WRUtONHV5aktPNklIbThUZVRpcnN4clA1WFVQR2pWcEdSNDRxWkMxS0VzZS1SQnZOUlY5U3NkRnJaQTB0aE8xR3ltQ2loRlcyVW1rV19fSkhFaHhMblVENzNHcmYtcHZ2OW9kbTJ5MkduUzc3NmZUbE1CeTFma2QyNHBYR1ZYRDhkRW1Bc3lkVm5vTlRQakxUa25yemVwNjBFbzFlNWlkYmpPbUVwMnhqVVlvUk5TWXhYWGhleDBSbFM5S1FrSGZaS1ZOYTNiaDM0Y213RzA?oc=5",
       "medio": "La Razón",
-      "viral": 0.2887
+      "viral": 0.242
     },
     {
       "id": "n-2722570fd92",
@@ -6513,6 +6887,23 @@
       "viral": 0.242
     },
     {
+      "id": "n-1301cd8c8f2",
+      "sec": "manga",
+      "genero": "shojo",
+      "slot": 0,
+      "titulo": "10 shojo anime that shaped pop culture fashion trends, for better or worse",
+      "entradilla": "Shojo anime and fashion have been intertwined for decades. Long before \"anime-inspired\" street wear became a popular style among fans, shojo manga shaped how their audiences viewed femininity, glamour ...",
+      "cuerpo": [
+        "Shojo anime and fashion have been intertwined for decades. Long before \"anime-inspired\" street wear became a popular style among fans, shojo manga shaped how their audiences viewed femininity, glamour ..."
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-05-11T20:45:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://www.msn.com/en-us/lifestyle/lifestyle-buzz/10-shojo-anime-that-shaped-pop-culture-fashion-trends-for-better-or-worse/ar-AA230Vxg",
+      "medio": "MSN",
+      "viral": 0.242
+    },
+    {
       "id": "n-a4f1f4efc1c",
       "sec": "comunidad",
       "genero": "mecha",
@@ -6527,6 +6918,23 @@
       "image": "fondos/fallback-comunidad.svg",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPb1g0ekNHWG4wR0xfOTB1Vkl6dnRrOWc0VGFhSFJYZFIyOTlfbDlzLWRCbVRnTW80SnpuOHotZE5nUFIzZ1pSNjZSMGM0b2JQcUhDS2pxXzVhaGtGaVYxaHVaZmoxN3c1Vy1mNmlUNl9HVVpBV0pTNENnc3FRZ2xSZFZ0SGxyRWptVVhoc0UwLV85T2tLYnJodzJUS3F1dGFwRDZ3d3QtbUlKcVBJMmUtOUpwWlJCejRaX2xPYkVfbUhoejBE?oc=5",
       "medio": "Epic Games",
+      "viral": 0.242
+    },
+    {
+      "id": "n-ee12ea96d1f",
+      "sec": "manga",
+      "genero": "terror",
+      "slot": 0,
+      "titulo": "El anime de Horror Collector se estrenará en octubre de 2026, justo a tiempo para Halloween",
+      "entradilla": "El anime de Horror Collector se estrenará en octubre de 2026, justo a tiempo para Halloween Crunchyroll",
+      "cuerpo": [
+        "El anime de Horror Collector se estrenará en octubre de 2026, justo a tiempo para Halloween Crunchyroll"
+      ],
+      "autor": "Redacción AnimeChronicle",
+      "fecha": "2026-05-11T07:00:00+00:00",
+      "image": "fondos/fallback-manga.svg",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTndtQjgwa2U4LTFSVUx5enFYeVk3WHZKeS1Lek1qTTkxYmxhLWZmRzU2NEl5OHBrWURhT000bThwZ1d1X2xuTExCdFdsR295THIyU2w4T09OeHZxeUN5R2xIRDNCX2U3VUR3Vk1IWmlSaTA0SkVmMTdGQmVVNDZSb3JpRDVITEg3YzVsZlJqUERsTENtMkpsVUc3cWJTUFdO?oc=5",
+      "medio": "Crunchyroll",
       "viral": 0.242
     },
     {
@@ -6564,23 +6972,6 @@
       "viral": 0.242
     },
     {
-      "id": "n-ede34fa6bfc",
-      "sec": "peliculas",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "El anime es un valor seguro para la taquilla: ésta es la nueva película de acción real que arrasa en Japón",
-      "entradilla": "El anime sigue brillando en la taquilla. Esta vez el turno le ha tocado al live action de 'Sakamoto Days': la serie de Netflix se convierte en película.",
-      "cuerpo": [
-        "El anime sigue brillando en la taquilla. Esta vez el turno le ha tocado al live action de 'Sakamoto Days': la serie de Netflix se convierte en película."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-05-07T14:17:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
-      "link": "https://okdiario.com/cool/television/anime-valor-seguro-taquilla-esta-nueva-pelicula-accion-real-que-arrasa-japon-sakamoto-days-16754144",
-      "medio": "Okdiario",
-      "viral": 0.2935
-    },
-    {
       "id": "n-7cd4b661578",
       "sec": "series",
       "genero": "shonen",
@@ -6613,23 +7004,6 @@
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOakVnNWgyVi1RNnk3VDJLUjhuVjRmNEtNdENWMjI0UWJ0UGhIS1NjWmNUV09nV29CZnlCMDRVWjN3RFFSdkZfNnNiVEU3aVBqWGlJdXNUYmNpUUtteTZuZWZmc3lHNldLY0tqckFDaUxPNzJfR1FPTi1oLXA0R1hqZmdnYnM2ZDMzMWc?oc=5",
       "medio": "Municipalidad de Berazategui",
       "viral": 0.242
-    },
-    {
-      "id": "n-49bc5276233",
-      "sec": "comunidad",
-      "genero": "isekai",
-      "slot": 0,
-      "titulo": "Witch Hat Atelier pierde su trono. Este popular isekai compite por la popularidad de los fans y eclipsa su estreno",
-      "entradilla": "La temporada de primavera está siendo excelente para los seguidores del anime de fantasía. \"Frieren\", \"Sentenced to Be a Hero\" o \"Witch Hat Atelier\" han sido los grandes estrenos del momento, siendo ...",
-      "cuerpo": [
-        "La temporada de primavera está siendo excelente para los seguidores del anime de fantasía. \"Frieren\", \"Sentenced to Be a Hero\" o \"Witch Hat Atelier\" han sido los grandes estrenos del momento, siendo ..."
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-05-06T11:42:00+00:00",
-      "image": "fondos/fallback-comunidad.svg",
-      "link": "https://www.3djuegos.com/manga-anime/noticias/a-witch-hat-ateleier-le-sale-competencia-este-isekai-emblematico-ha-eclipsado-su-estreno-completo",
-      "medio": "3D Juegos",
-      "viral": 0.2935
     },
     {
       "id": "n-cb298a3c30d",
@@ -6785,380 +7159,6 @@
       "viral": 0.242
     },
     {
-      "id": "n-6796100adcf",
-      "sec": "series",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "El anime de Kagurabachi POR FIN es oficial: el shonen tiene nuevo rey para 2027",
-      "entradilla": "El anime de Kagurabachi POR FIN es oficial: el shonen tiene nuevo rey para 2027 Areajugones",
-      "cuerpo": [
-        "El anime de Kagurabachi POR FIN es oficial: el shonen tiene nuevo rey para 2027 Areajugones"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-28T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQWRMMm81X21kRnhZSlFoVUoyOERuNTNwRk5WX2dULVFnN3VXXzRjdGdHZEtrcnd5UFlqMUNqZGJZNXdqLVpYb2J5UkhZbTBtbjBHRlpNV0JtZnpNQklCeXZORjhtY3dYVnYtYkxqV3ZFYkFfZ0JRTnA0UXpwMWJKQk11T2pVNkh5MVBYX05wVDM0a2xRQ0kxa3V1YXVtS1VRYXhOX0puSmZBY2FsREpldkxGbG_SAboBQVVfeXFMUExPajNuc2dKdFdEYnlOclpoQzU3ZXEtNmRRY3dYS1FGeG9hMUpKV21SYXFNOGNtMXhzNEE0R1FnaHotRE44OXZQZzZLakdGS0FFZGZYWHJIUmd4dEw4VF9Qc3htdGZkcUpCQWQtLWdFRC1zT19IM0oxOGNIRHBoYW1vMWtDSDN0bkw2X2NQSmtybi13WG1lQWEwc0hwNFoxRjB0RDlyOHRhV2JIbDI3ZGNMVUplQS1ldGJR?oc=5",
-      "medio": "Areajugones",
-      "viral": 0.242
-    },
-    {
-      "id": "n-50e190b11c4",
-      "sec": "comunidad",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "Malas noticias para los fans del anime: este mítico shonen de fantasía llega a su fin",
-      "entradilla": "Malas noticias para los fans del anime: este mítico shonen de fantasía llega a su fin SensaCine",
-      "cuerpo": [
-        "Malas noticias para los fans del anime: este mítico shonen de fantasía llega a su fin SensaCine"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-28T07:00:00+00:00",
-      "image": "fondos/fallback-comunidad.svg",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DQ0MyQ1UtcFBoNEMyVGlSQndHSlRhZ2dEa3g5NTY0WlBBblpwWFowWnZ5Mk5zNHRzV2MzYkotQ19jVVBMSGNhWEM2SU5sdDlkd1RZMjRGU2E4aWg1MkR5TnhYbDRBTm1TNjNjUkZn?oc=5",
-      "medio": "SensaCine",
-      "viral": 0.242
-    },
-    {
-      "id": "n-f3ca24ccde7",
-      "sec": "estrenos",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "‘Kagurabachi’, el próximo fenómeno del anime tras ‘Kimetsu no Yaiba’ y ‘Jujutsu Kaisen’, estrena tráiler y fec",
-      "entradilla": "‘Kagurabachi’, el próximo fenómeno del anime tras ‘Kimetsu no Yaiba’ y ‘Jujutsu Kaisen’, estrena tráiler y fec Diario AS",
-      "cuerpo": [
-        "‘Kagurabachi’, el próximo fenómeno del anime tras ‘Kimetsu no Yaiba’ y ‘Jujutsu Kaisen’, estrena tráiler y fec Diario AS"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-27T07:00:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPaEdqWlI2Q09pUmFVd3oyZHJHZ2FzVjA2QU54dmY1ZzBtMmJXM0dVUWFreUFCY1ExX1JpNHJXWGRJbVh4S29jVVRsdUdYa3R0YjFPdTBIX3BINGhuZkNkd2gxX1cyZUFfUnB3T1NuWk9NQWgwNUxOZ2Nqa0NxSFJVYUxBdEhnS0tsRGNKZ25QbFpjMmg3UHdOQ3cwMnRYYmtSckZqQTUzMkplQ2hTeVZTQWJBR1lhaWkxdVYwT1R3ZUVXdU04bGs5aUNlNGlVUU5Pd1U5ZS03SEtnQUtvWjFHd3VjMzZaMGVMN2Z4QTNHV1pNOWVlQnV4Z20zY9IBjwJBVV95cUxQRVc1RmszeUlGM0ZwVmVMVHVuQkhIOURqTW41aVI5UnJFX1dNOWdMcjhPQjZTWjhFcGlKYVRWcnFlSW93ODhCUG5Yc3YyeE10akpHOVVmOXo1TzhWVUZYT2V2ZHZnVUFEMzc0cU8zSGxUcjRXWTItUlppUE9kNGZzUmlDT3FQZlRDNnZ1MFNERU1lUkt2X0RTaWZ4QVNYcDVlcm9DWTRKSHRURmcwcEVPWnFZb1RIbEYxUzJMVzQtM18yMmlLZ2d0V2kxU3NoLTRibUJzTEIyWlFxeUNNQjdLZXluYThXM0lLUkZMb1ZkWUZXRFZIMnV2VEZGRWxPMW9iaWJNcWNmT1h1UzlyRk9F?oc=5",
-      "medio": "Diario AS",
-      "viral": 0.242
-    },
-    {
-      "id": "n-bd44b8aa97b",
-      "sec": "estrenos",
-      "genero": "shonen",
-      "slot": 0,
-      "titulo": "Anuncian la adaptación al anime de Kagurabachi para abril 2027",
-      "entradilla": "Anuncian la adaptación al anime de Kagurabachi para abril 2027 Crunchyroll",
-      "cuerpo": [
-        "Anuncian la adaptación al anime de Kagurabachi para abril 2027 Crunchyroll"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-27T07:00:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUzloUzl2TDFpQ3dJY3huQkVqcExzSHdCVV9QVm5tN2xpRW5sYjN3aVNsaXJNQzdXT1pFd0k1YVYwcHNLYWNGaFd2YUM2NjlrdV9NRkFhb2NZQ3pSalFGRVhRNnBtZFJPYTdtVlJDQUpUbGMwY1pRRkRrWlZ5djI1eWt0WWJ6RE1manFrbjZ3VG03QkJTQmluLW80WTFPVHlNVjNhNk9NWE1jd28?oc=5",
-      "medio": "Crunchyroll",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-25d413fb530",
-      "sec": "series",
-      "genero": "isekai",
-      "slot": 0,
-      "titulo": "6 años después, uno de los isekai más únicos vuelve con una temporada 2",
-      "entradilla": "6 años después, uno de los isekai más únicos vuelve con una temporada 2 SensaCine",
-      "cuerpo": [
-        "6 años después, uno de los isekai más únicos vuelve con una temporada 2 SensaCine"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-27T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RRTBQdG90RFN0ZVR6VUdlZGZTM3NpbE56cnQ2emd0eHdaeERRUnJPdlYteGhNZmp4aWRkQm9peGJLN3ZveFBKamFyLXpaLVVHc05rNEJlMnlrdTJvNHI2enBWOTJraEQtRjNkd3VR?oc=5",
-      "medio": "SensaCine",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-fb9c6e0c42b",
-      "sec": "comunidad",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "El manga que nadie tomó en serio ahora se convierte en anime y busca jugar en la liga de 'Jujutsu Kaisen' y 'Demon Slayer: Kimetsu no Yaiba': conoce 'Kagurabachi'",
-      "entradilla": "El manga que nadie tomó en serio ahora se convierte en anime y busca jugar en la liga de 'Jujutsu Kaisen' y 'Demon Slayer: Kimetsu no Yaiba': conoce 'Kagurabachi' SensaCine.com.mx",
-      "cuerpo": [
-        "El manga que nadie tomó en serio ahora se convierte en anime y busca jugar en la liga de 'Jujutsu Kaisen' y 'Demon Slayer: Kimetsu no Yaiba': conoce 'Kagurabachi' SensaCine.com.mx"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-27T07:00:00+00:00",
-      "image": "fondos/fallback-comunidad.svg",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zclp1NWlya29PLVhGTWhwejNSWmo2dmh6LU80ZWZHR29lQVlzMDloMGJOTE1PVWt3bmJKSW1MeGlQV3RyWU1hN0FfQm54ZDNZVkROaW9QU0ZlMWxLaFpHQWRhc0FPOTJ1?oc=5",
-      "medio": "SensaCine.com.mx",
-      "viral": 0.242
-    },
-    {
-      "id": "n-ab18b3c31cd",
-      "sec": "series",
-      "genero": "isekai",
-      "slot": 0,
-      "titulo": "Netflix estrena Mushoku Tensei Jobless Reincarnation y cambia el anime isekai para siempre",
-      "entradilla": "Netflix estrena Mushoku Tensei Jobless Reincarnation y cambia el anime isekai para siempre Confidencial Digital",
-      "cuerpo": [
-        "Netflix estrena Mushoku Tensei Jobless Reincarnation y cambia el anime isekai para siempre Confidencial Digital"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-26T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRjljOXRhd3NTS2xzclpWTDlaa2Y4VWhsdUFGMDZsdHdhdTVzNU9uY19Fb25CZG9uc2VzZGxCbnNpcmpmbmVpOUNGcUd5Mk85TVZweVY1eWw2RmRNT0VrSV9BblZScWJpUVFBWEsyLUJxbTd4MUVNcVBRMmxteFhIeEhEMlQwdlZqNUZjdFh3WnNrNFdLSHp4R1AwbW41TXRnQ3FMb0I1WVlkcFVSNkwtLW5SVWFMdVIyenBNMlJwYUVaV2JVZHkwRXRXbGVYV0U1bmpEUS1SaUlidmM1bGlUbjRZYXFDV3VrTVJPRVFnWWRudWPSAfgBQVVfeXFMUGhvVXU4cVM4MUdOX01sdmI3R213TndnTVlLclFibE1TZmNScW9hYWgyX2hKUlhLV3M0dHZTZlUxZnNMd0dHajhzQU0tNFFYYTU5VkpjU3YzMDBRQ2dSejNBYjJ2NmM3TXJiV2FzOENReFJKYUtRVWlmTWp2UWNkTk5hR05YbUdLelVZT2JvZFlBWFN1aHJUQW5hLUxCTmNrdXRxRVUzQVZ0VlVqRmIwc0o5TkdzS0dWTFNUM2lfdmM4RkRoUGdSc2IwZHo1SFQxQUlPQXctV2VBWm44WVNXZ0dQaWQxYjA4dmNBVjI5elNkMUFadVFid1I?oc=5",
-      "medio": "Confidencial Digital",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-6526fe338c5",
-      "sec": "estrenos",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "Netflix apuesta por este nuevo anime de fantasía, y las expectativas nunca han estado tan altas",
-      "entradilla": "Netflix apuesta por este nuevo anime de fantasía, y las expectativas nunca han estado tan altas IGN España",
-      "cuerpo": [
-        "Netflix apuesta por este nuevo anime de fantasía, y las expectativas nunca han estado tan altas IGN España"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-24T07:00:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPS3VSR2VRcms5UXFFYkR5VS1zMmRJeGk4UHByNHlzZGlQQkNRVlpOX2hpVm9Jclhsa05UVUQ0WGpjYzU5LTEwc0swZFN1YldTZ3dpQVBuS1ZZcnZZcUVISUVETUUwT2pyanJfNGFxdXZ1N2VvdEhPTmIyS0NOT2Y0eG96ZHoycVFfekJaWFhPMExfR3lqTDBhX0JlaHlpTGVpQ01NcXZtQUx4SmkzSlR6Um5vOFE3VUpuMm5iOVFBemNMc3pHQmlR?oc=5",
-      "medio": "IGN España",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-8c43dcfa11b",
-      "sec": "peliculas",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "La nueva serie de fantasía que entierra a los mejores animes de 2026: acaba de empezar y es un éxito en streaming",
-      "entradilla": "La nueva serie de fantasía que entierra a los mejores animes de 2026: acaba de empezar y es un éxito en streaming Vandal",
-      "cuerpo": [
-        "La nueva serie de fantasía que entierra a los mejores animes de 2026: acaba de empezar y es un éxito en streaming Vandal"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-24T07:00:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPUlVTU2hFYmVPUFdDRGVpYjM0bl83MUhCVkJOMFFtamxzd2NobkFBYkYzODBjQVlFbTFwb19rOXVTRjU3VkxHTWR2bkZ2MmFUUFlQa0V6U2Zwc2ZqYmtPZUw4QWIwSVRndHk4NmI3ZEVERFV0UlR4UlJIYjlpQ1BtdWkxM182eDh6N1FsMEJIZWNSWDJ2U0RqU05LYmxBYjNvOUh1WUFWUWJWUGtPbnhrcVlpVno5TzMxckhJZEJIQ09YZmJlZGl5SlRud2QxR0JGOUZPdUcyTllMT09pOHFta1k1NGpQU3B5TF9Ba29wV0fSAfYBQVVfeXFMTnZXc05zTVlMU2N0bGN4TFNhdlIwUkp4Y1ZhNUFUNHQ4Q0ZxYTdUTUZZMVFNeElPZjhZMUJjdlVUUEktQU5RblN1SEM2NW4wR0ZUa1FneUgzOXJZYnRvdHZVTWVIc0k2ekVUQURHVHZ1NU5Cd0p3cW1MdkhwdlloNFhUTTF0elpvR1ZLc3Uwd2stSkw4cU9oV3EzZGJ4Qzl6dGluTlByTnE4eEN6YnptZE1ZaUd5a3ZFNFo3cEdqYkh5M2FCSk1lSFlWQTM2RDJYUm94Mkd6TUQzWFJndFVXREswSlBKNEw5eXlPc2lDOWhBN1FBRTZn?oc=5",
-      "medio": "Vandal",
-      "viral": 0.242
-    },
-    {
-      "id": "n-adfd27af255",
-      "sec": "series",
-      "genero": "isekai",
-      "slot": 0,
-      "titulo": "En 2 días llega a Netflix uno de los anime isekai más populares de la década. Una aventura en otro mundo con una segunda oportunidad para un nini",
-      "entradilla": "En 2 días llega a Netflix uno de los anime isekai más populares de la década. Una aventura en otro mundo con una segunda oportunidad para un nini Espinof",
-      "cuerpo": [
-        "En 2 días llega a Netflix uno de los anime isekai más populares de la década. Una aventura en otro mundo con una segunda oportunidad para un nini Espinof"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-23T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWDhVVW84Ny0yeVRwb2tjXzRhTHhSTk83ZXhXMHpkMGRsd01SX2wtUDRTWm1rS25FLWFJcG9aSDFsSGkzM1dCbEdpQTF3Y2diWkplV2V1VXR4VTYxLXBpX19BOVFXZ3V3bk9oellBemRZNW54RDZrdDBuU2VRQWFIT1FtNFRETlZtSzdSb1R4aW5KWGk3a2RyVExzU0ttbkFPZW9WaTRyX3VFRnpGMmxpTFkzeFVkUGdPXzVsVWwxY0ZqWFpRUHlxMjNvd2xON09pMWfSAdcBQVVfeXFMTlhmVUc2UEJCZXRNRGtrUTZLc2ZuY3pRcWpKYk5BVnJrR2xaZzRsMXQyb01fMnk0VWp0ZkFhSVd6OV9Pd2JRQUhkR2cwQm16VWFFUlVRR1FmNFFET2dYTkdabFoxWHQ4UWp2ajBINUVVOGFwMlM5d2xFdFlZdW5MX3p0MUxIMnFsTHg0TkIzX3ExcWQ0Wm1JUTVXbU1EbkRaR1llYnVrRnBqaEczRUxRb09GVGR3OVRxSXg5WXVGR0NiNmxvc0NoaFIzTUpCckFzbG1UY04td1k?oc=5",
-      "medio": "Espinof",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-054272c6468",
-      "sec": "estrenos",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "El live-action de 'Blue Lock' muestra un nuevo tráiler cargado de acción y confirma su estreno para 2026",
-      "entradilla": "El live-action de 'Blue Lock' muestra un nuevo tráiler cargado de acción y confirma su estreno para 2026 Vandal",
-      "cuerpo": [
-        "El live-action de 'Blue Lock' muestra un nuevo tráiler cargado de acción y confirma su estreno para 2026 Vandal"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-23T07:00:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOR29fd1l0bzRGZi10UUFTQlZ4alpzV0JjWk9IczhkcUU1RDhpTGVmNlgtQS10aEJFRGtialZTVnlGUUxVSktuX3ZGbF9Gd3ZsOHh3NUt1MXZYaHlab3owSGMzUUpVdEQ5bTZOWWM1TEhUcGRqZ1J1NnhnV255Qzhxby1QRkR3aGhweXdRZGZvWVFibzFtRVFHTVRlSjVIVjJsNFM5U1F0dWxaSkU1MEg2WmItT3ZaUU0wLTN5WG90YXZTOVZJZ3dreGVKZUVtMWNiU0VIZ21qdG11alBTY2RKWFVB0gHnAUFVX3lxTE9veEVFbmx6cGtWZmZqc3hiVS04aGhMV09USlNTYWVISXpWc0djXzBLUGFoRGdpRlNBRGc5VzNtbkFlaW9teWctemJGQ1BDUGw5M25IM1ZiUG5PMGZ3VjJ2NFlKamViN1NESzJMOWdTdEEtbDVFeFZWTXV0aFliS25VUUZTV1AtMWd1blNQVGd1Tk9ES2J0RmpsMWIyN1I5WmJmTlBUcldPZlVzZE05TEc1cjVlNnNXXzRUOUhueWlBN3pwYW55NW4xMW9zVV8zY09pS1NmOGljZFpLbVI3a0VSSUpaTHhOcw?oc=5",
-      "medio": "Vandal",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-ea7b2e4a38b",
-      "sec": "series",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "El anime de fútbol más espectacular se pasa al live action mostrándose en un intenso tráiler: “Vivo o muerto”",
-      "entradilla": "El anime de fútbol más espectacular se pasa al live action mostrándose en un intenso tráiler: “Vivo o muerto” Diario AS",
-      "cuerpo": [
-        "El anime de fútbol más espectacular se pasa al live action mostrándose en un intenso tráiler: “Vivo o muerto” Diario AS"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-20T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNY1hZMk1ZN21FSzJRREpiVGdQMHZ2MkxWRmNKT0RWcElYWlVvYjUtZmZsY251UUxYNlNmSi15RXJpWWVJbnpnR3pwMXZBdVEtZm84OWlnSndOOUxIVWJ0ajd5TDljNmh6bVlRZWhHMmhxOGpqVFBQTnpUN2tNY000Wjc1U003VXpXbnZTT1hDWG5RcE14aFBZRWFndm8ycFNkR09ITUxnT2ZSY3l2MzBwQmdjekxfSVdSRV9lc3g3NGw2SzhLSEFOU3prc3hxRFdaekZNMmhKaktOWENDWmltSXdXc2Rxa3ROUklYQ2IxSdIBgwJBVV95cUxNTVQxbHNtYkMtdG5YTUNtbVdYb19LSVhvMlZ2RTA1UkstamxXT0hxWWRxZW9HZHFFOHJXRDI3Um9Ub0Y4XzhiNVhiZS05X2VmRzFURkJDZzh3U0pSNG9YbGFRZ2dXMlBYUWVYVHJiUnlfakJ4a1VIbXJ3ZWViU3ctVHgyclFQSWd4VjhqU3VTYklQMGNRYkFqc0FIYVh3R1hGdFM3OWstRWlSNjg1UW55VFdvWkR1X2t6ZkUyYUo5b0hBY1BpR2ppZTQ0bk56U2FWeWhQWmtPYjM1cUhHYkJPU2VrMHZERnp0akpoRFd3OERxMzQtT20yajQ3SUNyVHdTeWJr?oc=5",
-      "medio": "Diario AS",
-      "viral": 0.242
-    },
-    {
-      "id": "n-cf7cdb01c04",
-      "sec": "series",
-      "genero": "mecha",
-      "slot": 0,
-      "titulo": "Hatsune Miku Makes History With All-New Mecha Makeover",
-      "entradilla": "Hatsune Miku Makes History With All-New Mecha Makeover IMDb",
-      "cuerpo": [
-        "Hatsune Miku Makes History With All-New Mecha Makeover IMDb"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-19T07:30:05+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1sd3VDRG92dklCVnV3bzlqblRYcDV3V2l5OFBwT3hoVzY5UnY5aHNKLVdCdm1UTWVIdGhVM2E0TFZRQ05UNW1hRXl2Q1BOYUc5UVFmTWlR?oc=5",
-      "medio": "IMDb",
-      "viral": 0.242
-    },
-    {
-      "id": "n-e749b3526d0",
-      "sec": "peliculas",
-      "genero": "terror",
-      "slot": 0,
-      "titulo": "Las 5 peores adaptaciones live action en la historia del anime",
-      "entradilla": "Las 5 peores adaptaciones live action en la historia del anime SensaCine.com.mx",
-      "cuerpo": [
-        "Las 5 peores adaptaciones live action en la historia del anime SensaCine.com.mx"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-17T07:00:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FNGRaWEpYX0ItYl9RMElGWGNtVnRZZTZuQUpfdm9KbnhwUk1fNFBkNEl1ckdBZXMwM2MwemZDdGJDZnp2QXNWdFFhdU9VdGJwOEs5djdNZVJNQl9GSHNRaXRIYnluZXJM?oc=5",
-      "medio": "SensaCine.com.mx",
-      "viral": 0.242
-    },
-    {
-      "id": "n-74b659695cd",
-      "sec": "peliculas",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "Esta joya del anime influyó todo el mundo de la animación: 40 años después, regresa a los cines",
-      "entradilla": "Esta joya del anime influyó todo el mundo de la animación: 40 años después, regresa a los cines SensaCine",
-      "cuerpo": [
-        "Esta joya del anime influyó todo el mundo de la animación: 40 años después, regresa a los cines SensaCine"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-15T07:00:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CbFpNRmV1WkZnMElXRUl6WFBLRWlPbWtkNFU3Q3Jua19ETXV1ck8xLWZlYVlRd3FqQnVVZHhza1AtdHJaN1k3c2NHZ2RmbWpsdllnZmRLY093OGV2TUEyN000TWs2N1NOOTlN?oc=5",
-      "medio": "SensaCine",
-      "viral": 0.242
-    },
-    {
-      "id": "n-9b9917abcd0",
-      "sec": "series",
-      "genero": "isekai",
-      "slot": 0,
-      "titulo": "Crunchyroll’s Biggest Isekai Anime Officially Reveals Season 4 Release Date",
-      "entradilla": "Crunchyroll’s Biggest Isekai Anime Officially Reveals Season 4 Release Date IMDb",
-      "cuerpo": [
-        "Crunchyroll’s Biggest Isekai Anime Officially Reveals Season 4 Release Date IMDb"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-15T05:46:50+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13cnFrXzBHQmZSOU9IckJCYkZnZTJTTThxdmFzR1Ytdmh4OXJ6c19JZEs0U2EzRlA2enFGZ1ZiaVNjSG1ISTFYZzZQdENiUXdLTkE?oc=5",
-      "medio": "IMDb",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-199971b97f4",
-      "sec": "comunidad",
-      "genero": "terror",
-      "slot": 0,
-      "titulo": "New Manhwa Terror Man Is A Fun Take on a Controversial Topic",
-      "entradilla": "New Manhwa Terror Man Is A Fun Take on a Controversial Topic IMDb",
-      "cuerpo": [
-        "New Manhwa Terror Man Is A Fun Take on a Controversial Topic IMDb"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-14T16:48:28+00:00",
-      "image": "fondos/fallback-comunidad.svg",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LejFrQXI4S1R3bEp6MXVEMS0wZzhidElwU0wyTGJrTHhURmNSZjRsbFlIb1FxS0w3QkcxWngtUUVzeGtBVmMzengtY1oteDFWeUdoWk1B?oc=5",
-      "medio": "IMDb",
-      "viral": 0.242
-    },
-    {
-      "id": "n-42e4c544878",
-      "sec": "series",
-      "genero": "fantasia",
-      "slot": 0,
-      "titulo": "Dos años después, vuelve uno de los animes de fantasía y acción más fascinantes con una temporada 2",
-      "entradilla": "Dos años después, vuelve uno de los animes de fantasía y acción más fascinantes con una temporada 2 SensaCine",
-      "cuerpo": [
-        "Dos años después, vuelve uno de los animes de fantasía y acción más fascinantes con una temporada 2 SensaCine"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-14T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12cHFUT2M4Q3ZvSnRCRFJBWHRCV0oybnB0RWtTb1IzT3liMHlnY1VrbkpNZUxHNGxDNU9nVXRBM1JqNUlaWVZOUmRWOWd5U256a1lqRTl3V3hzVUs1aW5kUlRyMnkyQVhiUm9uQnJB?oc=5",
-      "medio": "SensaCine",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-57a694eb469",
-      "sec": "series",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "Prime Video acaba de estrenar este anime donde acción y violencia van de la mano",
-      "entradilla": "Prime Video acaba de estrenar este anime donde acción y violencia van de la mano La Razón",
-      "cuerpo": [
-        "Prime Video acaba de estrenar este anime donde acción y violencia van de la mano La Razón"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-12T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdkg1d1lKeFFPeEpmOURkRnF6aUZMXzlIWXV4Z1V0Ul9kTEp1andXTFpfYWwyQUNjUUI5dTZZanEtdVJkTW5rS2FPQy1yQ1hlOEd0QlplUUxVeTJCeHhhYjB3ZFFJVldlRVNKLWpZeFhRSUdjQWd2ZUI1ZHdFTUxwOFRpUmtWVzNPNmNaS3FjX0xwWDhzcUg0RXNlZlc4aFJkYUxzMzR6ajBlRjlZRFFiZ3VVSXg2bnJ4Q2FPS0Ztai0tVVF6eVctMm9Xd3J5bF81YThzb1hEemhXZWxhakxuZTZ3dw?oc=5",
-      "medio": "La Razón",
-      "viral": 0.242
-    },
-    {
-      "id": "n-b432c442afc",
-      "sec": "peliculas",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "El mejor anime de terror surrealista llega a su fin: Tráiler de la tercera entrega de 'Mononoke' titulada 'The Serpent God'",
-      "entradilla": "El mejor anime de terror surrealista llega a su fin: Tráiler de la tercera entrega de 'Mononoke' titulada 'The Serpent God' SensaCine",
-      "cuerpo": [
-        "El mejor anime de terror surrealista llega a su fin: Tráiler de la tercera entrega de 'Mononoke' titulada 'The Serpent God' SensaCine"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-10T07:00:00+00:00",
-      "image": "fondos/fallback-peliculas.svg",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1abWRjRDJBV0JwRzF6ek5uNWxGdEYwaTJ1RjdvSjJKTHVPb1ZOd2tfZlBta1p3WVVTUEU1SXRBc3l5a0lMSlh6STloVGlqR2xmNkhuQ0lPY1VNbEV4VWt3SXpFRUpXNk95bkw4?oc=5",
-      "medio": "SensaCine",
-      "viral": 0.242
-    },
-    {
-      "id": "n-ca0b80ddce6",
-      "sec": "estrenos",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "Nominados a Película del año en los Anime Awards 2026",
-      "entradilla": "Nominados a Película del año en los Anime Awards 2026 Crunchyroll",
-      "cuerpo": [
-        "Nominados a Película del año en los Anime Awards 2026 Crunchyroll"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-09T07:00:00+00:00",
-      "image": "fondos/fallback-estrenos.svg",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdVZRRmNUVEN1d18wcVZaMVg3NmVCcGpwTndXZGdNWVFXVmJUMF9wM2RrbUo2RXlBV1J6QkNmd3dHS3h2OEZyYlhtMF9yVVZia2NoU2lwalhPWXFhNVpHWldUR3AwbGxwSmRWbWFyRHZuNUx5QWdkejdlRUo4WExYMVpQUnFIZjhiemRYR0VBM1BqVzBjb05aSS1ndmFYOFdo?oc=5",
-      "medio": "Crunchyroll",
-      "viral": 0.2935
-    },
-    {
-      "id": "n-f09e93914a0",
-      "sec": "series",
-      "genero": "accion",
-      "slot": 0,
-      "titulo": "Prime Video estrena mañana el anime exclusivo con el que quiere destronar a Crunchyroll",
-      "entradilla": "Prime Video estrena mañana el anime exclusivo con el que quiere destronar a Crunchyroll ADSLZone",
-      "cuerpo": [
-        "Prime Video estrena mañana el anime exclusivo con el que quiere destronar a Crunchyroll ADSLZone"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2026-04-09T07:00:00+00:00",
-      "image": "fondos/fallback-series.svg",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbS1HbWo3THhaMW1ma29JSWN3Q0Y5WDlhR0R4TWJJeDI2dmRsTkx2RnAxd0tKU0g1V3RDZkE3aDI4Q0tvX2wtcUZqN1BhQjVLZ2xEMjYwcnpNaC1aeTJEYW5CeTZOb0UwZVhEbWxrd3djaEFTSDRNS21lNldGN0JMSzNtZHlTQXZhVzBWWEFfMllqOEJHRnlvVjlubFJIS04tVVB3OFNvamh3ODRVelBKZnln?oc=5",
-      "medio": "ADSLZone",
-      "viral": 0.2935
-    },
-    {
       "id": "n-0c1e0e5486d",
       "sec": "peliculas",
       "genero": "isekai",
@@ -7172,23 +7172,6 @@
       "fecha": "2026-02-23T01:07:15+00:00",
       "image": "fondos/fallback-peliculas.svg",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE00ckZUWmx3WjBYLTVXWlI5ajQxakpwQlAtU0FxMmR4RDg0NGU3Q1Z0SVFJN3R2RXdzSlE2MWUwLXEzSVRuT2hkal9oa1NnREtRUkR4TENGZDBqUQ?oc=5",
-      "medio": "IMDb",
-      "viral": 0.242
-    },
-    {
-      "id": "n-f21e90bd9fe",
-      "sec": "comunidad",
-      "genero": "shojo",
-      "slot": 0,
-      "titulo": "Iconic Shojo Anime Romances That Defined the Genre",
-      "entradilla": "Iconic Shojo Anime Romances That Defined the Genre IMDb",
-      "cuerpo": [
-        "Iconic Shojo Anime Romances That Defined the Genre IMDb"
-      ],
-      "autor": "Redacción AnimeChronicle",
-      "fecha": "2025-08-24T20:08:47+00:00",
-      "image": "fondos/fallback-comunidad.svg",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8tWHNfNnVxOGVBY3ZBTzNoTHFwejFFM1hLVzJaaTlDbW0zZWQ1WEY0TEJRQlBIUzkzbTZkLUlPdU41aTFYY1pZR3dNQnRnRDBudHc?oc=5",
       "medio": "IMDb",
       "viral": 0.242
     },
