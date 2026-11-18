@@ -1,11 +1,9 @@
 name: Actualizar noticias
 
-# Se ejecuta solo en GitHub (nada de cron en el móvil).
+# Se ejecuta SOLO en GitHub, todos los días a las 07:00 UTC. Sin preguntar.
 on:
   schedule:
-    # Todos los días a las 07:30 UTC. GitHub puede retrasar un poco la ejecución;
-    # para forzarla usa el botón "Run workflow".
-    - cron: '30 7 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,6 +36,68 @@ jobs:
       - name: Descargar noticias y generar archivos
         run: python actualizar_noticias.py
 
+      # Comprobación diaria: si algo falla, el workflow falla y queda registrado.
+      - name: Verificar que la actualización se ha realizado correctamente
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+
+          base = Path('.')
+          errores = []
+
+          historico = base / 'datos' / 'historico.json'
+          if not historico.exists():
+              errores.append('falta datos/historico.json')
+              noticias = []
+          else:
+              datos = json.loads(historico.read_text(encoding='utf-8'))
+              noticias = datos.get('noticias', [])
+              actualizado = datos.get('actualizado', '')
+              hoy = __import__('datetime').datetime.now(__import__('datetime').timezone.utc).date().isoformat()
+              if not actualizado.startswith(hoy):
+                  errores.append(f'actualizado es {actualizado!r}, no de hoy {hoy}')
+              if len(noticias) < 100:
+                  errores.append(f'solo {len(noticias)} noticias')
+
+          faltan = [n['image'] for n in noticias
+                    if n.get('image', '').startswith('imagenes/')
+                    and not (base / n['image']).exists()]
+          if faltan:
+              errores.append(f'{len(faltan)} imagenes ausentes')
+
+          js = base / 'js' / 'news-data.js'
+          if not js.exists():
+              errores.append('falta js/news-data.js')
+          else:
+              texto = js.read_text(encoding='utf-8')
+              for clave in ('const NOTICIAS', 'const TENDENCIAS', 'const GENEROS'):
+                  if clave not in texto:
+                      errores.append(f'falta {clave} en news-data.js')
+              if texto.count('  A("') < 100:
+                  errores.append('menos de 100 noticias en news-data.js')
+
+          paginas = list((base / 'noticias').glob('*.html'))
+          if len(paginas) < 100:
+              errores.append(f'solo {len(paginas)} paginas de noticia')
+
+          for archivo in ('sitemap.xml', 'robots.txt', 'index.html',
+                          'archivo.html', 'glosario.html'):
+              ruta = base / archivo
+              if not ruta.exists() or ruta.stat().st_size < 40:
+                  errores.append(f'{archivo} ausente o vacio')
+
+          if errores:
+              print('VERIFICACION FALLIDA:')
+              for e in errores:
+                  print('  -', e)
+              sys.exit(1)
+
+          print(f'VERIFICACION OK: {len(noticias)} noticias, '
+                f'{len(paginas)} paginas, '
+                f'{sum(1 for n in noticias if n.get("image", "").startswith("imagenes/"))} fotos')
+          PY
+
       - name: Guardar los cambios en el repositorio
         run: |
           git config user.name "github-actions[bot]"
@@ -49,3 +109,12 @@ jobs:
             git commit -m "Actualizar noticias $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      - name: Resumen final
+        if: always()
+        run: |
+          echo "==========================================="
+          echo "Resultado del job: ${{ job.status }}"
+          echo "Fecha UTC: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          echo "Noticias en el archivo: $(python3 -c "import json;print(len(json.load(open('datos/historico.json'))['noticias']))" 2>/dev/null || echo '?')"
+          echo "==========================================="
