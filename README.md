@@ -20,12 +20,13 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Sin publicidad:** los espacios de anuncios se han eliminado y se volverán a añadir cuando haya suficientes lectores.
 - **Rejilla de tamaños mixtos:** una noticia grande y dos pequeñas por sección, como un diario, con ancho uniforme y adaptación a móvil.
 - **Tipografía:** Chakra Petch para titulares y Barlow para el cuerpo, con Noto Sans JP para los kanjis.
-- **Fondos y animaciones con personajes anime detallados** (arte vectorial propio, sin copyright):
-  **16 héroes de estilo anime realista** (Kaito, Sakura, Ryū, Mei, Tarō, Yuki, Haruto,
-  Aoi, Ren, Mika, Shiro, Kuro, Hana, Gou, Luna y Alex), con proporciones anime, rostros
-  expresivos con iris y pestañas, pelo por capas, ropa con detalles, sombras y armas.
-  Caen, suben y derivan. Solo **8 a la vez**, rotando cada 7 s para que vayan apareciendo
-  todos, sin saturar ni mover la pantalla.
+- **Fondos y animaciones con personajes homenaje reconocibles** (fan art original, sin
+  imágenes ni logotipos oficiales): **12 héroes inspirados en franquicias clásicas** —
+  ninja naranja, guerrero de ki, capitán de paja, espadachín verde, flor rosa, príncipe
+  saiyan, detective lupa, guerrera lunar, cazador naranja, tigre de ki, marinero goma y
+  sombra del terror. Rostros anime detallados, rasgos distintivos (cintas, sombreros,
+  bigotes, auroras) y armas. Solo **8 a la vez**, rotando cada 7 s para que aparezcan
+  todos sin saturar.
 - **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
   movimiento insignia con destello, sacudida de pantalla y un grito mítico
   (¡Rasengan!, ¡Bankai!, ¡Kamehameha!, ¡Ataque de los Titanes!…).
@@ -103,7 +104,8 @@ AnimeChronicle/
 ├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube
 ├── actualizar_noticias.py                      descarga, clasifica y genera todo
 ├── generar_recursos.py                         crea sonidos WAV y fondos SVG
-├── generar_personajes_reales.py                crea los 16 personajes anime detallados
+├── generar_personajes_reales.py                base de dibujo anime detallado
+├── generar_personajes_famosos.py               crea los 12 homenajes reconocibles
 ├── index.html                                  portada (radar, hero y secciones)
 ├── archivo.html                                archivo de noticias
 ├── glosario.html                               glosario otaku
@@ -111,14 +113,14 @@ AnimeChronicle/
 ├── js/
 │   ├── news-data.js                            banco de noticias (generado)
 │   ├── glosario.js                             225 términos clasificados
-│   ├── personajes.js                           lista de los 16 héroes anime
+│   ├── personajes.js                           lista de los 12 homenajes
 │   ├── sonidos.js                              motor de audio
 │   ├── efectos.js                              personajes flotantes y ataque (páginas secundarias)
 │   ├── menu.js                                 menú desplegable persistente
 │   ├── archivo.js                              lógica del archivo
 │   ├── glosario-page.js                        lógica del glosario
 │   └── app.js                                  lógica de la portada
-├── fondos/                                     estrellas, personajes-reales y respaldos
+├── fondos/                                     estrellas, personajes-famosos y respaldos
 ├── sonidos/                                    efectos y BGL sintetizados
 ├── imagenes/                                   fotos de las noticias
 ├── noticias/                                   una página HTML por noticia

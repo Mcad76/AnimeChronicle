@@ -43,7 +43,7 @@ function imgFallback(el, color) {
   el.onerror = null;
   const ps = PERSONAJES;
   const p = ps[Math.floor(Math.random() * ps.length)];
-  el.src = 'fondos/personajes-reales/' + p + '.svg';
+  el.src = 'fondos/personajes-famosos/' + p + '.svg';
   el.style.objectFit = 'contain';
   el.style.background = 'radial-gradient(circle,' + color + '55,#080616)';
 }

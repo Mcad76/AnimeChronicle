@@ -74,7 +74,7 @@ const PERSONAJES_FALLBACK = PERSONAJES;
 function imgFallback(el, color) {
   el.onerror = null;
   const personaje = PERSONAJES_FALLBACK[Math.floor(Math.random() * PERSONAJES_FALLBACK.length)];
-  el.src = 'fondos/personajes-reales/' + personaje + '.svg';
+  el.src = 'fondos/personajes-famosos/' + personaje + '.svg';
   el.style.objectFit = 'contain';
   el.style.background = 'radial-gradient(circle at 50% 40%, ' + color + '55, #080616)';
 }
@@ -249,7 +249,7 @@ const Ataque = {
     capa.innerHTML = `
       <div class="ataque__rayo"></div>
       <div class="ataque__personaje">
-        <img src="fondos/personajes-reales/${personaje}.svg" alt="">
+        <img src="fondos/personajes-famosos/${personaje}.svg" alt="">
       </div>
       <div class="ataque__burbuja">${grito}</div>
       <div class="ataque__flash"></div>`;
@@ -410,7 +410,7 @@ function crearPersonajesFlotantes() {
     const ret = i * 3.4 + Math.random() * 3;
     const der = (Math.random() * 120 - 60).toFixed(0);
     const opa = (0.16 + Math.random() * 0.3).toFixed(2);
-    html += `<img class="personaje-flotante ${anim}" src="fondos/personajes-reales/${p}.svg" alt=""
+    html += `<img class="personaje-flotante ${anim}" src="fondos/personajes-famosos/${p}.svg" alt=""
       style="left:${izq.toFixed(1)}%;--tam:${tam}px;--dur:${dur}s;--ret:${ret}s;--der:${der}px;--opa:${opa}">`;
   }
   contenedor.innerHTML = html;
@@ -422,7 +422,7 @@ function crearPersonajesFlotantes() {
     const img = imagenes[vuelta % imagenes.length];
     const p = PERSONAJES[indice % PERSONAJES.length];
     indice++;
-    img.src = 'fondos/personajes-reales/' + p + '.svg';
+    img.src = 'fondos/personajes-famosos/' + p + '.svg';
     img.style.animation = 'none';
     void img.offsetWidth;
     img.style.animation = '';

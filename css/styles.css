@@ -64,7 +64,7 @@ button { cursor: pointer; }
   animation: deriva 90s linear infinite;
 }
 .fondo-grid {
-  background: url('../fondos/personajes-fondo-real.svg') no-repeat center bottom;
+  background: url('../fondos/personajes-fondo-famosos.svg') no-repeat center bottom;
   background-size: cover;
   opacity: .5;
 }
