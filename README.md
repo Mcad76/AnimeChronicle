@@ -53,7 +53,10 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 ## Noticias reales, actualizadas cada día
 
 El portal **no depende del móvil**: un GitHub Action ejecuta `actualizar_noticias.py`
-cada día a las 07:30 UTC. El script consulta fuentes RSS públicas:
+**todos los días a las 07:00 UTC, automáticamente y sin intervención**. Después el propio
+workflow ejecuta una **verificación diaria** (fecha de actualización, número de noticias,
+imágenes, páginas y archivos generados); si algo falla, el job falla y queda registrado.
+El script consulta fuentes RSS públicas:
 
 - Anime News Network
 - MyAnimeList
