@@ -23,7 +23,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100vw; }
+html { scroll-behavior: smooth; overflow-x: clip; max-width: 100vw; }
 
 body {
   margin: 0;
@@ -37,7 +37,7 @@ body {
   font-family: var(--fuente-cuerpo);
   font-size: 17px;
   line-height: 1.45;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body.modal-abierto { overflow: hidden; }
