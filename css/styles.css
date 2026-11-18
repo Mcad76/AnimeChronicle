@@ -184,7 +184,7 @@ button { cursor: pointer; }
   position: relative;
   z-index: 60;
   margin-top: 0;
-  padding: 8px 0 6px;
+  padding: 6px 0 5px;
   background: linear-gradient(180deg, rgba(20, 14, 46, .92), rgba(8, 6, 22, .75));
   border-top: 2px solid var(--pink);
   border-bottom: 2px solid var(--cyan);
@@ -220,17 +220,13 @@ button { cursor: pointer; }
 }
 
 .brand { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.brand__jp {
-  font-family: 'Noto Sans JP', sans-serif; font-size: 10px; letter-spacing: .4em;
-  color: var(--cyan); text-shadow: var(--glow-cyan); margin-bottom: 0;
-}
 .brand__main {
   position: relative;
   margin: 0;
   font-family: var(--fuente-tit);
   font-weight: 900;
-  font-size: clamp(28px, 5.4vw, 54px);
-  line-height: .88;
+  font-size: clamp(24px, 4.6vw, 44px);
+  line-height: .82;
   letter-spacing: -.02em;
   text-transform: uppercase;
   color: #fff;
@@ -352,9 +348,8 @@ button { cursor: pointer; }
 
 @media (max-width: 700px) {
   .menu-btn { display: block; }
-  .brand__main { font-size: clamp(24px, 8vw, 40px); }
+  .brand__main { font-size: clamp(22px, 7vw, 36px); }
   .brand__tag { font-size: 8px; letter-spacing: .12em; }
-  .brand__jp { font-size: 10px; letter-spacing: .3em; }
   .search-box { padding: 7px 9px; font-size: 12px; }
   .nav { display: none; }
   .topbar__edicion, .power { display: none; }
@@ -364,20 +359,20 @@ button { cursor: pointer; }
 /* ---------- Ticker ---------- */
 .ultima-hora {
   margin-top: var(--alto-cabecera);
-  display: flex; align-items: center; height: 38px; overflow: hidden;
+  display: flex; align-items: center; height: 32px; overflow: hidden;
   background: linear-gradient(90deg, var(--pink), #b3136a);
   color: #fff; box-shadow: 0 0 22px rgba(255, 46, 136, .4);
 }
 .ultima-hora__badge {
   flex: 0 0 auto; height: 100%; display: flex; align-items: center; padding: 0 16px;
   background: rgba(0, 0, 0, .35);
-  font: 900 13px var(--fuente-tit); letter-spacing: .06em; white-space: nowrap;
+  font: 900 11px var(--fuente-tit); letter-spacing: .06em; white-space: nowrap;
   animation: latido 2s ease-in-out infinite;
 }
 .ultima-hora__marquee { flex: 1; overflow: hidden; }
 .ultima-hora__track {
   display: inline-flex; gap: 42px; white-space: nowrap;
-  animation: marquee 42s linear infinite; font-size: 13px; font-weight: 700;
+  animation: marquee 42s linear infinite; font-size: 11px; font-weight: 700;
 }
 .ultima-hora__track span { cursor: pointer; }
 .ultima-hora__track span:hover { color: var(--yellow); }
