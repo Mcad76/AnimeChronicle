@@ -555,6 +555,16 @@ button { cursor: pointer; }
   padding: 1px 6px; margin-top: 4px; font-weight: 700;
 }
 .archivo__vacio { padding: 40px; text-align: center; color: var(--texto-suave); background: var(--panel); }
+.archivo__mas { display: flex; justify-content: center; padding: 18px 0 4px; }
+.archivo__mas button {
+  padding: 11px 22px; border: 1px solid var(--cyan); border-radius: 4px;
+  background: rgba(0, 229, 255, .08); color: var(--cyan);
+  font: 700 13px var(--fuente-tit); text-transform: uppercase; letter-spacing: .04em;
+  transition: background .18s, box-shadow .18s, transform .18s;
+}
+.archivo__mas button:hover {
+  background: var(--cyan); color: #080616; box-shadow: var(--glow-cyan); transform: translateY(-2px);
+}
 @media (max-width: 620px) {
   .archivo__item { grid-template-columns: 72px 1fr; }
   .archivo__thumb { width: 72px; height: 54px; }

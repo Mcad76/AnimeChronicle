@@ -47,6 +47,7 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
   comprueba que la actualización de hoy se ejecutó bien, que todas las noticias tienen
   imagen, que los archivos existen y que **no queda ningún logo de Google News**. Si algo
   falla, el job se pone rojo.
+- **Web ligera**: el archivo muestra 30 noticias y carga más bajo demanda (no renderiza las 427 de golpe), las fuentes se han reducido y las imágenes van en `loading="lazy"`.
 - **Buscador** en portada y en el archivo, filtro por sección y contador de visitas.
 - **SEO completo:** una página HTML real e indexable por noticia, JSON-LD `NewsArticle`,
   metadatos Open Graph y Twitter, `canonical`, `sitemap.xml` y `robots.txt`.
@@ -58,7 +59,10 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 ## Noticias reales, actualizadas cada día
 
 El portal **no depende del móvil**: un GitHub Action ejecuta `actualizar_noticias.py`
-**todos los días a las 07:00 UTC, automáticamente y sin intervención**. Después el propio
+**todos los días a las 07:00 UTC, automáticamente y sin intervención**. La actualización es
+**incremental**: añade las noticias nuevas y recalcula el radar, pero **no reescribe** las
+páginas ni el JS si no han cambiado (escritura condicional), y reduce las búsquedas por
+sección. Después el propio
 workflow ejecuta una **verificación diaria** (fecha de actualización, número de noticias,
 imágenes, páginas y archivos generados); si algo falla, el job falla y queda registrado.
 El script consulta fuentes RSS públicas:

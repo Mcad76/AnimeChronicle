@@ -717,6 +717,17 @@ def generar_tendencias(noticias):
     }
 
 
+def escribir_si_cambia(ruta, contenido):
+    """Escribe solo si el contenido cambió: evita reescribir cientos de archivos."""
+    try:
+        if ruta.exists() and ruta.read_text(encoding='utf-8') == contenido:
+            return False
+    except Exception:
+        pass
+    ruta.write_text(contenido, encoding='utf-8')
+    return True
+
+
 def guardar_historico(datos):
     DATOS.mkdir(parents=True, exist_ok=True)
     tmp = HISTORICO.with_suffix('.tmp')
@@ -772,7 +783,7 @@ def generar_js(historico):
                 f"{jstr(n.get('medio'))}, {n.get('viral', 0)}, {jstr(url_para(n))}),"
             )
     lineas += ['];', '']
-    JS.write_text('\n'.join(lineas), encoding='utf-8')
+    escribir_si_cambia(JS, '\n'.join(lineas))
 
 
 def slug_para(n):
@@ -957,7 +968,7 @@ img.portada{width:100%;height:auto;display:block;margin:0 0 24px;border:1px soli
             f'  <div class="pie">{NOMBRE} · Noticias de fuentes públicas RSS · ¡Comparte con tu nakama!</div>',
             '</body>', '</html>',
         ]
-        (carpeta / nombre).write_text('\n'.join(pagina), encoding='utf-8')
+        escribir_si_cambia(carpeta / nombre, '\n'.join(pagina))
 
     borradas = 0
     for f in carpeta.glob('*.html'):
@@ -979,10 +990,10 @@ def generar_sitemap(historico):
         lineas.append('  <url><loc>' + url_para(n) + '</loc><lastmod>' + fecha +
                       '</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>')
     lineas.append('</urlset>')
-    (BASE / 'sitemap.xml').write_text('\n'.join(lineas), encoding='utf-8')
-    (BASE / 'robots.txt').write_text(
-        'User-agent: *\nAllow: /\n\nSitemap: ' + BASE_URL + 'sitemap.xml\n',
-        encoding='utf-8')
+    escribir_si_cambia(BASE / 'sitemap.xml', '\n'.join(lineas))
+    escribir_si_cambia(
+        BASE / 'robots.txt',
+        'User-agent: *\nAllow: /\n\nSitemap: ' + BASE_URL + 'sitemap.xml\n')
 
 
 def limpiar_imagenes(noticias):
@@ -1045,7 +1056,9 @@ def main():
             q = plantilla.format(g=nombre_g)
             anadir(parsear_feed(GOOGLE.format(q=quote(q)), forzar_gen=gen['id'], origen='google'), q)
             anadir(parsear_feed(BING.format(q=quote(q)), forzar_gen=gen['id'], origen='bing'), q)
-        for sec in SECCIONES:
+        # Solo tres búsquedas por sección (las más visibles): menos peticiones
+        # y la misma cobertura, porque las búsquedas generales ya traen de todo.
+        for sec in SECCIONES[:3]:
             q = f'anime {nombre_g} {sec["nombre"]} noticias'
             anadir(parsear_feed(GOOGLE.format(q=quote(q)), forzar_sec=sec['id'],
                                 forzar_gen=gen['id'], origen='google'), q)

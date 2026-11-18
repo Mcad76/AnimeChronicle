@@ -11,6 +11,38 @@ function minutosLectura(n) {
   return Math.max(1, Math.round(palabras / 200));
 }
 
+const POR_PAGINA = 30;
+let listaActual = [];
+let paginaActual = 0;
+
+function itemHTML(n) {
+  const sec = seccionPorId(n.sec);
+  return `<article class="archivo__item" data-id="${n.id}" data-url="${n.url}"
+             style="--secc-color:${sec.color}" tabindex="0" role="button"
+             aria-label="Leer noticia: ${n.titulo}">
+    <img class="archivo__thumb" src="${n.image}" alt="" loading="lazy"
+         onerror="imgFallback(this,'${sec.color}')">
+    <div class="archivo__info">
+      <div class="archivo__item-titulo">${n.titulo}</div>
+      <div class="archivo__item-sub">${sec.nombre} · ${n.autor} · ${minutosLectura(n)} min de lectura</div>
+    </div>
+    <div class="archivo__fecha"><strong>${sec.nombre}</strong>${fechaCorta.format(FECHAS[n.id])}</div>
+  </article>`;
+}
+
+function renderizarPagina(anadir = false) {
+  const lista = document.getElementById('archivo-lista');
+  const trozo = listaActual.slice(paginaActual * POR_PAGINA, (paginaActual + 1) * POR_PAGINA);
+  const html = trozo.map(itemHTML).join('');
+  if (anadir) lista.insertAdjacentHTML('beforeend', html);
+  else lista.innerHTML = html;
+
+  const restantes = listaActual.length - (paginaActual + 1) * POR_PAGINA;
+  document.getElementById('archivo-mas').innerHTML = restantes > 0
+    ? `<button type="button" id="cargar-mas">Cargar ${Math.min(restantes, POR_PAGINA)} noticias más (${restantes} restantes) ↓</button>`
+    : '';
+}
+
 function construirArchivo() {
   const buscar = document.getElementById('archivo-buscar').value.trim().toLowerCase();
   const seccion = document.getElementById('archivo-seccion').value;
@@ -19,24 +51,12 @@ function construirArchivo() {
   if (buscar) noticias = noticias.filter(n =>
     (n.titulo + ' ' + n.entradilla + ' ' + (n.cuerpo || []).join(' ')).toLowerCase().includes(buscar));
 
+  listaActual = noticias;
+  paginaActual = 0;
   document.getElementById('archivo-contador').textContent =
     `${noticias.length} noticia${noticias.length === 1 ? '' : 's'}`;
   document.getElementById('archivo-vacio').hidden = noticias.length > 0;
-
-  document.getElementById('archivo-lista').innerHTML = noticias.map(n => {
-    const sec = seccionPorId(n.sec);
-    return `<article class="archivo__item" data-id="${n.id}" data-url="${n.url}"
-               style="--secc-color:${sec.color}" tabindex="0" role="button"
-               aria-label="Leer noticia: ${n.titulo}">
-      <img class="archivo__thumb" src="${n.image}" alt="" loading="lazy"
-           onerror="imgFallback(this,'${sec.color}')">
-      <div class="archivo__info">
-        <div class="archivo__item-titulo">${n.titulo}</div>
-        <div class="archivo__item-sub">${sec.nombre} · ${n.autor} · ${minutosLectura(n)} min de lectura</div>
-      </div>
-      <div class="archivo__fecha"><strong>${sec.nombre}</strong>${fechaCorta.format(FECHAS[n.id])}</div>
-    </article>`;
-  }).join('');
+  renderizarPagina();
 }
 
 function imgFallback(el, color) {
@@ -57,6 +77,12 @@ document.getElementById('archivo-buscar').addEventListener('input', construirArc
 document.getElementById('archivo-seccion').addEventListener('change', construirArchivo);
 
 document.addEventListener('click', (e) => {
+  if (e.target.closest('#cargar-mas')) {
+    paginaActual++;
+    renderizarPagina(true);
+    if (typeof Sonido !== 'undefined') Sonido.reproducir('click', 0.4);
+    return;
+  }
   const item = e.target.closest('[data-url]');
   if (item) { abrirConAtaque(item.dataset.url); return; }
   if (e.target.closest('button, a, input, select') && typeof Sonido !== 'undefined') {
