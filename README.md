@@ -13,19 +13,19 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Portada visual:** hero con destacadas, rejillas por sección y tarjetas con brillo,
   elevación y entrada escalonada al cargar.
 - **Radar de tendencias arriba del todo:** dos paneles enfrentados con lo más visto en España y en el mundo, calculado a partir de las menciones a franquicias en las noticias.
-- **Cabecera fija y compacta:** desde la fecha hasta justo encima de «Alerta Anime» (barra superior, título, pestañas, accesos y navegación) permanece fija al desplazarse, con el título más bajo y la línea roja pegada a la fecha. Los buscadores quedan debajo del ticker y sí se desplazan.
+- **Cabecera fija y compacta:** desde la fecha hasta justo encima de «Alerta Anime» (barra superior, título, pestañas, accesos y navegación) va en `position: fixed` y **no desaparece al desplazarse**; su alto se mide con JS para dejar el hueco justo al contenido. El título ocupa menos y la línea roja queda pegada a la fecha. Los buscadores siguen bajo el ticker y sí se desplazan.
 - **Pestañas por género:** cambia de shōnen a isekai y toda la portada se regenera al instante.
 - **Páginas separadas:** el **archivo de noticias** (`archivo.html`) y el **glosario otaku** (`glosario.html`) tienen su propia página, con búsqueda, filtros y navegación propia.
 - **Glosario otaku:** **225 términos clasificados en 10 categorías** (géneros, formatos, producción, arquetipos, poderes, jerga, cultura, expresiones, eventos y merchandising).
 - **Sin publicidad:** los espacios de anuncios se han eliminado y se volverán a añadir cuando haya suficientes lectores.
 - **Rejilla de tamaños mixtos:** una noticia grande y dos pequeñas por sección, como un diario, con ancho uniforme y adaptación a móvil.
 - **Tipografía:** Chakra Petch para titulares y Barlow para el cuerpo, con Noto Sans JP para los kanjis.
-- **Fondos y animaciones con personajes míticos originales** (arte vectorial propio, sin copyright):
-  **40 héroes originales** (guerrero, espadachina, ninja, mecha, samurái, pirata, bruja,
-  cyborg, gamer, vampiro, sirena, fénix, valkiria, gladiador, rōnin, alquimista…).
-  Caen, suben y derivan con rostros expresivos, degradados, sombras, 4 peinados y
-  7 armas. Solo **8 a la vez**, escalonados y rotando cada 7 s para que aparezcan los
-  40 con el tiempo, sin saturar ni mover la pantalla.
+- **Fondos y animaciones con personajes anime detallados** (arte vectorial propio, sin copyright):
+  **16 héroes de estilo anime realista** (Kaito, Sakura, Ryū, Mei, Tarō, Yuki, Haruto,
+  Aoi, Ren, Mika, Shiro, Kuro, Hana, Gou, Luna y Alex), con proporciones anime, rostros
+  expresivos con iris y pestañas, pelo por capas, ropa con detalles, sombras y armas.
+  Caen, suben y derivan. Solo **8 a la vez**, rotando cada 7 s para que vayan apareciendo
+  todos, sin saturar ni mover la pantalla.
 - **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
   movimiento insignia con destello, sacudida de pantalla y un grito mítico
   (¡Rasengan!, ¡Bankai!, ¡Kamehameha!, ¡Ataque de los Titanes!…).
@@ -102,7 +102,8 @@ El archivo `.nojekyll` evita que GitHub ignore carpetas como `js/`.
 AnimeChronicle/
 ├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube
 ├── actualizar_noticias.py                      descarga, clasifica y genera todo
-├── generar_recursos.py                         crea sonidos WAV, fondos y personajes SVG
+├── generar_recursos.py                         crea sonidos WAV y fondos SVG
+├── generar_personajes_reales.py                crea los 16 personajes anime detallados
 ├── index.html                                  portada (radar, hero y secciones)
 ├── archivo.html                                archivo de noticias
 ├── glosario.html                               glosario otaku
@@ -110,14 +111,14 @@ AnimeChronicle/
 ├── js/
 │   ├── news-data.js                            banco de noticias (generado)
 │   ├── glosario.js                             225 términos clasificados
-│   ├── personajes.js                           lista de los 40 héroes
+│   ├── personajes.js                           lista de los 16 héroes anime
 │   ├── sonidos.js                              motor de audio
 │   ├── efectos.js                              personajes flotantes y ataque (páginas secundarias)
 │   ├── menu.js                                 menú desplegable persistente
 │   ├── archivo.js                              lógica del archivo
 │   ├── glosario-page.js                        lógica del glosario
 │   └── app.js                                  lógica de la portada
-├── fondos/                                     estrellas, personajes y respaldos
+├── fondos/                                     estrellas, personajes-reales y respaldos
 ├── sonidos/                                    efectos y BGL sintetizados
 ├── imagenes/                                   fotos de las noticias
 ├── noticias/                                   una página HTML por noticia

@@ -69,14 +69,12 @@ function minutosLectura(articulo) {
 }
 
 /* ---------- Imágenes ---------- */
-const PERSONAJES_FALLBACK = [
-  'guerrero', 'espadachina', 'ninja', 'maga', 'mecha', 'detective', 'idol', 'dragon', 'samurai', 'pirata', 'cazador', 'bruja', 'caballero', 'cyborg', 'astronauta', 'skater', 'gamer', 'boxeador', 'bailarina', 'vampiro', 'robotito', 'sirena', 'zorro', 'fenix', 'kraken', 'heroina', 'músico', 'centinela',
-];
+const PERSONAJES_FALLBACK = PERSONAJES;
 
 function imgFallback(el, color) {
   el.onerror = null;
   const personaje = PERSONAJES_FALLBACK[Math.floor(Math.random() * PERSONAJES_FALLBACK.length)];
-  el.src = 'fondos/personajes/' + personaje + '.svg';
+  el.src = 'fondos/personajes-reales/' + personaje + '.svg';
   el.style.objectFit = 'contain';
   el.style.background = 'radial-gradient(circle at 50% 40%, ' + color + '55, #080616)';
 }
@@ -251,7 +249,7 @@ const Ataque = {
     capa.innerHTML = `
       <div class="ataque__rayo"></div>
       <div class="ataque__personaje">
-        <img src="fondos/personajes/${personaje}.svg" alt="">
+        <img src="fondos/personajes-reales/${personaje}.svg" alt="">
       </div>
       <div class="ataque__burbuja">${grito}</div>
       <div class="ataque__flash"></div>`;
@@ -412,7 +410,7 @@ function crearPersonajesFlotantes() {
     const ret = i * 3.4 + Math.random() * 3;
     const der = (Math.random() * 120 - 60).toFixed(0);
     const opa = (0.16 + Math.random() * 0.3).toFixed(2);
-    html += `<img class="personaje-flotante ${anim}" src="fondos/personajes/${p}.svg" alt=""
+    html += `<img class="personaje-flotante ${anim}" src="fondos/personajes-reales/${p}.svg" alt=""
       style="left:${izq.toFixed(1)}%;--tam:${tam}px;--dur:${dur}s;--ret:${ret}s;--der:${der}px;--opa:${opa}">`;
   }
   contenedor.innerHTML = html;
@@ -424,7 +422,7 @@ function crearPersonajesFlotantes() {
     const img = imagenes[vuelta % imagenes.length];
     const p = PERSONAJES[indice % PERSONAJES.length];
     indice++;
-    img.src = 'fondos/personajes/' + p + '.svg';
+    img.src = 'fondos/personajes-reales/' + p + '.svg';
     img.style.animation = 'none';
     void img.offsetWidth;
     img.style.animation = '';
@@ -458,6 +456,18 @@ window.addEventListener('pageshow', (e) => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }
 });
+
+/* La cabecera va en position:fixed; se mide su alto para dejar hueco al contenido */
+function medirCabecera() {
+  const cab = document.querySelector('.cabecera-fija');
+  if (!cab) return;
+  const alto = Math.ceil(cab.offsetHeight);
+  if (alto > 80) document.documentElement.style.setProperty('--alto-cabecera', alto + 'px');
+}
+window.addEventListener('resize', medirCabecera);
+window.addEventListener('load', medirCabecera);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(medirCabecera);
+medirCabecera();
 
 crearPersonajesFlotantes();
 construirNavegacion();

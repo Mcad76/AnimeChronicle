@@ -3,6 +3,7 @@
    ============================================================ */
 
 :root {
+  --alto-cabecera: 196px;
   --bg: #080616;
   --panel: #12102b;
   --panel-2: #191537;
@@ -63,7 +64,7 @@ button { cursor: pointer; }
   animation: deriva 90s linear infinite;
 }
 .fondo-grid {
-  background: url('../fondos/personajes-fondo.svg') no-repeat center bottom;
+  background: url('../fondos/personajes-fondo-real.svg') no-repeat center bottom;
   background-size: cover;
   opacity: .5;
 }
@@ -172,9 +173,10 @@ button { cursor: pointer; }
 
 /* ---------- Franja superior fija ---------- */
 .cabecera-fija {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0; left: 0; right: 0;
   z-index: 70;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .55);
 }
 
 /* ---------- Cabecera compacta ---------- */
@@ -361,6 +363,7 @@ button { cursor: pointer; }
 
 /* ---------- Ticker ---------- */
 .ultima-hora {
+  margin-top: var(--alto-cabecera);
   display: flex; align-items: center; height: 38px; overflow: hidden;
   background: linear-gradient(90deg, var(--pink), #b3136a);
   color: #fff; box-shadow: 0 0 22px rgba(255, 46, 136, .4);
