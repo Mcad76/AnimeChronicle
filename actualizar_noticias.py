@@ -41,6 +41,7 @@ FONDOS = BASE / 'fondos'
 JS = BASE / 'js' / 'news-data.js'
 HISTORICO = DATOS / 'historico.json'
 MANUALES = DATOS / 'noticias-manuales.json'
+PORTADAS = DATOS / 'portadas.json'   # carátulas por franquicia (caché)
 LOG = BASE / 'actualizar_noticias.log'
 
 NOMBRE = 'AnimeChronicle'
@@ -294,6 +295,27 @@ def mejorar_url_imagen(url):
 
 
 LOGO_GOOGLE_MD5 = 'b3e93f52c4ce6741b7a2379269d075c5'
+DHASH_LOGO = 0x160f0f573717330b   # huella visual del logo de Google News
+
+
+def dhash_de(imagen):
+    """Huella perceptual de 64 bits, resistente a cambios de tamaño/formato."""
+    try:
+        gris = imagen.convert('L').resize((9, 8))
+        pixeles = list(gris.getdata())
+        valor = 0
+        for fila in range(8):
+            for col in range(8):
+                valor = (valor << 1) | (1 if pixeles[fila * 9 + col] > pixeles[fila * 9 + col + 1] else 0)
+        return valor
+    except Exception:
+        return -1
+
+
+def es_logo_google(imagen):
+    """True si la imagen es el logo de Google News (aunque esté reescalada)."""
+    huella = dhash_de(imagen)
+    return huella >= 0 and bin(huella ^ DHASH_LOGO).count('1') <= 10
 
 
 def descargar_imagen(url, ident):
@@ -308,6 +330,8 @@ def descargar_imagen(url, ident):
         if hashlib.md5(datos).hexdigest() == LOGO_GOOGLE_MD5:
             return ''  # Google News no trae foto: se buscará otra fuente
         imagen = Image.open(BytesIO(datos)).convert('RGB')
+        if es_logo_google(imagen):
+            return ''  # detectado por aspecto, aunque cambie de resolución
         imagen.thumbnail((1000, 640), Image.LANCZOS)
         salida = BytesIO()
         imagen.save(salida, 'JPEG', quality=80, optimize=True)
@@ -381,6 +405,88 @@ def imagen_anilist(titulo):
         if url:
             return url
     return ''
+
+
+# ------------------------------------------------------- imágenes fiables
+def detectar_franquicia(texto):
+    """Devuelve la franquicia de anime de la que habla el titular."""
+    t = normalizar(texto)
+    for nombre, alias in FRANQUICIAS:
+        if any(a in t for a in alias):
+            return nombre
+    for pista, termino in PISTAS_ANIME.items():
+        if pista in t:
+            return termino
+    return ''
+
+
+def cargar_portadas():
+    """Descarga (una sola vez) una carátula real por franquicia y la guarda en caché."""
+    portadas = {}
+    if PORTADAS.exists():
+        try:
+            portadas = json.loads(PORTADAS.read_text(encoding='utf-8'))
+        except Exception:
+            portadas = {}
+    faltan = [nombre for nombre, _ in FRANQUICIAS if nombre not in portadas]
+    for ini in range(0, len(faltan), 8):
+        chunk = faltan[ini:ini + 8]
+        campos = [
+            f'f{i}: Media(search: {json.dumps(n)}, type: ANIME) {{ coverImage {{ large }} }}'
+            for i, n in enumerate(chunk)
+        ]
+        try:
+            req = urllib.request.Request(
+                'https://graphql.anilist.co',
+                data=json.dumps({'query': 'query { ' + ' '.join(campos) + ' }'}).encode('utf-8'),
+                headers={'User-Agent': UA, 'Content-Type': 'application/json'})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                datos = json.loads(r.read().decode('utf-8'))['data']
+            for i, nombre in enumerate(chunk):
+                url = ((datos.get(f'f{i}') or {}).get('coverImage') or {}).get('large', '')
+                if url:
+                    slug = re.sub(r'[^a-z0-9]+', '-', nombre.lower()).strip('-')[:36]
+                    img = descargar_imagen(url, 'portada-' + slug)
+                    if img:
+                        portadas[nombre] = img
+            time.sleep(1.2)
+        except Exception as e:
+            log(f'  ! caché de portadas: {str(e)[:70]}')
+    if faltan:
+        PORTADAS.write_text(json.dumps(portadas, ensure_ascii=False, indent=2), encoding='utf-8')
+    return portadas
+
+
+def imagen_es_logo(ruta):
+    try:
+        ruta = Path(ruta)
+        if not ruta.is_absolute():
+            ruta = BASE / ruta
+        return es_logo_google(Image.open(ruta))
+    except Exception:
+        return True
+
+
+def sanitizar_imagenes(noticias):
+    """Sustituye el logo de Google News por una carátula acorde a la noticia."""
+    portadas = cargar_portadas()
+    valores = list(portadas.values())
+    arregladas = 0
+    for n in noticias:
+        actual = n.get('image', '')
+        if actual and (BASE / actual).exists() and not imagen_es_logo(actual):
+            continue
+        franquicia = detectar_franquicia(n['titulo'] + ' ' + n.get('entradilla', ''))
+        nueva = portadas.get(franquicia, '')
+        if not nueva and valores:
+            idx = int(hashlib.md5(n['titulo'].encode('utf-8')).hexdigest(), 16) % len(valores)
+            nueva = valores[idx]
+        if nueva and not imagen_es_logo(nueva):
+            n['image'] = nueva
+            arregladas += 1
+    if arregladas:
+        log(f'Imágenes: se sustituyeron {arregladas} fotos no válidas (logo de Google/ausentes)')
+    return arregladas
 
 
 # ------------------------------------------------------------------ RSS
@@ -1060,7 +1166,10 @@ def main():
                 break
     noticias.sort(key=lambda n: n['fecha'], reverse=True)
 
-    # 7) Guardar y generar salidas
+    # 7) Última pasada: ningún logo de Google News y todas con foto válida
+    sanitizar_imagenes(noticias)
+
+    # 8) Guardar y generar salidas
     hist['noticias'] = noticias
     hist['top'] = top_ids
     hist['tendencias'] = generar_tendencias(noticias)

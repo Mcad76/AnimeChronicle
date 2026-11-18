@@ -38,10 +38,15 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 - **Menú persistente:** el botón de tres barras y el desplegable están disponibles en
   las tres páginas (portada, archivo y glosario), también en móvil.
 - **Vibración** en móvil al seleccionar noticias (cuando el dispositivo lo permite).
-- **Todas las noticias llevan foto real**: se obtiene de la `og:image` del artículo o
-  de la carátula oficial vía AniList. Se detecta y descarta el logotipo de Google News
-  (que aparece cuando el artículo no tiene imagen) y se sustituye por la carátula del
-  anime, película o juego del que habla la noticia.
+- **Todas las noticias llevan foto real y relacionada**: se usa la `og:image` del artículo
+  cuando es válida y, si no, la carátula del anime/franquicia detectada en el titular
+  (caché en `datos/portadas.json`).
+- **Cero logos de Google News**: se detectan por **huella perceptual** (no solo por hash,
+  thus funciona aunque cambien el tamaño) y se sustituyen automáticamente en cada ejecución.
+- **Supervisor diario** (`supervisar.py` + `.github/workflows/supervisar.yml`, 09:00 UTC):
+  comprueba que la actualización de hoy se ejecutó bien, que todas las noticias tienen
+  imagen, que los archivos existen y que **no queda ningún logo de Google News**. Si algo
+  falla, el job se pone rojo.
 - **Buscador** en portada y en el archivo, filtro por sección y contador de visitas.
 - **SEO completo:** una página HTML real e indexable por noticia, JSON-LD `NewsArticle`,
   metadatos Open Graph y Twitter, `canonical`, `sitemap.xml` y `robots.txt`.
@@ -104,8 +109,10 @@ El archivo `.nojekyll` evita que GitHub ignore carpetas como `js/`.
 
 ```
 AnimeChronicle/
-├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube
+├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube (07:00 UTC)
+├── .github/workflows/supervisar.yml            supervisor diario (09:00 UTC)
 ├── actualizar_noticias.py                      descarga, clasifica y genera todo
+├── supervisar.py                               comprobación diaria de noticias y fotos
 ├── generar_recursos.py                         crea sonidos WAV y fondos SVG
 ├── generar_personajes_reales.py                base de dibujo anime detallado
 ├── generar_personajes_famosos.py               crea los 12 homenajes reconocibles
