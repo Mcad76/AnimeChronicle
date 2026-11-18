@@ -228,12 +228,12 @@ const PERSONAJES_ATAQUE = PERSONAJES;
 const Ataque = {
   activo: false,
 
-  mostrar(callback) {
+  mostrar(callback, gritoPersonalizado) {
     if (this.activo) return;
     this.activo = true;
 
     const personaje = PERSONAJES_ATAQUE[Math.floor(Math.random() * PERSONAJES_ATAQUE.length)];
-    const grito = Sonido.frase('whoosh');
+    const grito = gritoPersonalizado || Sonido.frase('whoosh');
     Sonido.decir(grito, 'ja-JP', 1);
 
     const reduce = window.matchMedia &&
@@ -344,7 +344,9 @@ document.addEventListener('click', (e) => {
   if (noticia) {
     if (Ataque.activo) return;
     Sonido.vibrar(30);
-    Ataque.mostrar(() => abrirNoticia(noticia.dataset.id));
+    const n = NOTICIAS.find(x => x.id === noticia.dataset.id);
+    const grito = n ? Sonido.frasePara(n.titulo + ' ' + n.entradilla) : undefined;
+    Ataque.mostrar(() => abrirNoticia(noticia.dataset.id), grito);
     return;
   }
 
@@ -357,7 +359,9 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault();
     if (Ataque.activo) return;
     Sonido.vibrar(30);
-    Ataque.mostrar(() => abrirNoticia(e.target.dataset.id));
+    const n = NOTICIAS.find(x => x.id === e.target.dataset.id);
+    const grito = n ? Sonido.frasePara(n.titulo + ' ' + n.entradilla) : undefined;
+    Ataque.mostrar(() => abrirNoticia(e.target.dataset.id), grito);
   }
 });
 

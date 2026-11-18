@@ -63,6 +63,45 @@ const Sonido = (() => {
     ],
   };
 
+  // Frases ligadas a la franquicia de la que habla cada noticia
+  const FRASES_FRANQUICIA = [
+    { k: ['one piece', 'luffy', 'zoro', 'nami'], f: '¡GOMU GOMU NO!' },
+    { k: ['dragon ball', 'goku', 'vegeta', 'gohan'], f: '¡KAMEHAMEHA!' },
+    { k: ['naruto', 'boruto', 'sasuke', 'kakashi'], f: '¡RASENGAN!' },
+    { k: ['demon slayer', 'kimetsu', 'tanjiro', 'nezuko'], f: '¡TENSHI NO HA!' },
+    { k: ['jujutsu', 'gojo', 'yuji', 'sukuna'], f: '¡EXPANSION DE DOMINIO!' },
+    { k: ['attack on titan', 'shingeki', 'eren'], f: '¡ATAQUE DE LOS TITANES!' },
+    { k: ['my hero', 'boku no hero', 'deku', 'bakugo'], f: '¡SMASH!' },
+    { k: ['chainsaw man', 'denji', 'makima'], f: '¡CHAINSAW MAN!' },
+    { k: ['spy x family', 'anya', 'loid', 'yor'], f: '¡WAKU WAKU!' },
+    { k: ['pokemon', 'pikachu', 'ash ketchum'], f: '¡PIKACHU!' },
+    { k: ['gundam', 'mecha', 'evangelion'], f: '¡SABER LAUNCH!' },
+    { k: ['sailor moon', 'usagi'], f: '¡MOON PRISM POWER!' },
+    { k: ['bleach', 'ichigo', 'rukia'], f: '¡BANKAI!' },
+    { k: ['hunter x hunter', 'gon', 'killua'], f: '¡NEN!' },
+    { k: ['death note', 'light yagami', 'ryuk'], f: '¡DEATH NOTE!' },
+    { k: ['jojo', 'jotaro'], f: '¡ZA WARUDO!' },
+    { k: ['one punch', 'saitama'], f: '¡UN SOLO GOLPE!' },
+    { k: ['black clover', 'asta', 'yuno'], f: '¡MAGIA NEGRA!' },
+    { k: ['solo leveling', 'jin woo'], f: '¡ARISE!' },
+    { k: ['frieren'], f: '¡ZOLTRAAK!' },
+    { k: ['oshi no ko', 'ai hoshino'], f: '¡BRILLA, ESTRELLA!' },
+    { k: ['re:zero', 'subaru'], f: '¡RETORNO POR LA MUERTE!' },
+    { k: ['tensura', 'rimuru'], f: '¡SLIME SUPREMO!' },
+    { k: ['konosuba', 'kazuma'], f: '¡EXPLOSION!' },
+    { k: ['jujutsu kaisen'], f: '¡DOMINIO EXPANSION!' },
+    { k: ['anime', 'serie', 'estreno', 'manga', 'pelicula', 'temporada'], f: '¡A POR ESTA NOTICIA!' },
+  ];
+
+  /** Elige un grito según la noticia pulsada. */
+  function frasePara(texto) {
+    const t = (texto || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    for (const item of FRASES_FRANQUICIA) {
+      if (item.k.some(clave => t.includes(clave))) return item.f;
+    }
+    return frase('whoosh');
+  }
+
   const buffers = {};
   const ultimaFrasePorTipo = {};
   let activo = localStorage.getItem('ac-sonido') === 'on';
@@ -172,7 +211,7 @@ const Sonido = (() => {
 
   return {
     get activo() { return activo; },
-    reproducir, decir, frase, vibrar, hover,
+    reproducir, decir, frase, frasePara, vibrar, hover,
     alternarSonido, sincronizarBotones,
   };
 })();

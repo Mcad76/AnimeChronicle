@@ -84,7 +84,12 @@ document.addEventListener('click', (e) => {
     return;
   }
   const item = e.target.closest('[data-url]');
-  if (item) { abrirConAtaque(item.dataset.url); return; }
+  if (item) {
+    const n = NOTICIAS.find(x => x.url === item.dataset.url);
+    const grito = n ? Sonido.frasePara(n.titulo + ' ' + n.entradilla) : undefined;
+    abrirConAtaque(item.dataset.url, grito);
+    return;
+  }
   if (e.target.closest('button, a, input, select') && typeof Sonido !== 'undefined') {
     Sonido.reproducir('click', 0.4);
   }
@@ -93,7 +98,9 @@ document.addEventListener('keydown', (e) => {
   const item = e.target.closest('[data-url][role="button"]');
   if (item && (e.key === 'Enter' || e.key === ' ')) {
     e.preventDefault();
-    abrirConAtaque(item.dataset.url);
+    const n = NOTICIAS.find(x => x.url === item.dataset.url);
+    const grito = n ? Sonido.frasePara(n.titulo + ' ' + n.entradilla) : undefined;
+    abrirConAtaque(item.dataset.url, grito);
   }
 });
 

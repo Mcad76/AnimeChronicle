@@ -55,11 +55,11 @@ function crearPersonajesFlotantes() {
 
 const Ataque = {
   activo: false,
-  mostrar(callback) {
+  mostrar(callback, gritoPersonalizado) {
     if (this.activo) return;
     this.activo = true;
     const personaje = PERSONAJES_ATAQUE[Math.floor(Math.random() * PERSONAJES_ATAQUE.length)];
-    const grito = (typeof Sonido !== 'undefined') ? Sonido.frase('whoosh') : '¡ATAQUE!';
+    const grito = gritoPersonalizado || ((typeof Sonido !== 'undefined') ? Sonido.frase('whoosh') : '¡ATAQUE!');
     if (typeof Sonido !== 'undefined') Sonido.decir(grito, 'ja-JP', 1);
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) { setTimeout(() => { this.activo = false; if (callback) callback(); }, 400); return; }
@@ -83,10 +83,10 @@ const Ataque = {
   },
 };
 
-function abrirConAtaque(url) {
+function abrirConAtaque(url, grito) {
   if (Ataque.activo) return;
   if (typeof Sonido !== 'undefined') Sonido.vibrar(30);
-  Ataque.mostrar(() => { irArriba(); window.location.href = url; });
+  Ataque.mostrar(() => { irArriba(); window.location.href = url; }, grito);
 }
 
 crearPersonajesFlotantes();

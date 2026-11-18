@@ -263,7 +263,7 @@ button { cursor: pointer; }
   position: relative; z-index: 40;
   background: rgba(9, 7, 24, .96);
   border-bottom: 1px solid var(--borde);
-  padding: 12px 0;
+  padding: 6px 0;
 }
 .buscadores__inner {
   display: flex; flex-wrap: nowrap; justify-content: center;
@@ -570,7 +570,7 @@ button { cursor: pointer; }
 .pagina-secundaria { padding: 30px 0 24px; min-height: 62vh; }
 
 /* ---------- Radar de tendencias ---------- */
-.tendencias { padding: 22px 0 8px; }
+.tendencias { padding: 10px 0 6px; }
 .tendencias__cabecera { margin-bottom: 14px; }
 .tendencias__titulo {
   font: 800 clamp(22px, 3vw, 30px) var(--fuente-tit);

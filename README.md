@@ -28,8 +28,10 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
   bigotes, auroras) y armas. Solo **8 a la vez**, rotando cada 7 s para que aparezcan
   todos sin saturar.
 - **Golpe de ataque al abrir noticia:** aparece un personaje al azar que ejecuta su
-  movimiento insignia con destello, sacudida de pantalla y un grito mítico
-  (¡Rasengan!, ¡Bankai!, ¡Kamehameha!, ¡Ataque de los Titanes!…).
+  movimiento insignia con destello y sacudida, y **grita una frase acorde a la noticia**:
+  si el titular menciona Dragon Ball dice «¡Kamehameha!», si es Naruto «¡Rasengan!»,
+  One Piece «¡Gomu Gomu no!», Bleach «¡Bankai!», etc. Si no se detecta franquicia,
+  se usa una frase otaku genérica.
 - **Voces otaku en lugar de pitidos:** cada pulsación dice una frase de anime mediante
   la voz del navegador (con respaldo WAV si no está disponible). Más de 150 frases
   repartidas en 7 categorías, sin repetir la misma dos veces seguidas. **Desactivadas
