@@ -420,7 +420,7 @@ button { cursor: pointer; }
 .ultima-hora:hover .ultima-hora__track { animation-play-state: paused; }
 
 /* ---------- Bloques ---------- */
-.bloque { padding: 26px 0 10px; }
+.bloque { padding: 12px 0 6px; }
 .bloque--archivo { padding-top: 34px; }
 .bloque__cabecera {
   display: flex; align-items: flex-end; justify-content: space-between; gap: 16px;
@@ -435,12 +435,13 @@ button { cursor: pointer; }
 .bloque__fecha { font-size: 12px; color: var(--texto-suave); text-transform: capitalize; }
 
 /* ---------- HERO ---------- */
+/* Hero compacto (se muestra bajo el radar) */
 .hero {
   display: grid;
   grid-template-columns: 1.55fr 1fr;
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  padding-top: 26px;
+  padding-top: 14px;
 }
 .hero__principal { grid-row: span 2; }
 .hero__titulo {
@@ -518,7 +519,7 @@ button { cursor: pointer; }
 }
 
 /* ---------- Secciones ---------- */
-.seccion { padding-top: 34px; }
+.seccion { padding-top: 20px; }
 .seccion__cabecera {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   margin-bottom: 16px; border-bottom: 2px solid var(--secc-color); padding-bottom: 7px;
@@ -608,8 +609,8 @@ button { cursor: pointer; }
 .pagina-secundaria { padding: 30px 0 24px; min-height: 62vh; }
 
 /* ---------- Radar de tendencias ---------- */
-.tendencias { padding: 10px 0 6px; }
-.tendencias__cabecera { margin-bottom: 14px; }
+.tendencias { padding: 0 0 2px; }
+.tendencias__cabecera { margin-bottom: 6px; }
 .tendencias__titulo {
   font: 800 clamp(22px, 3vw, 30px) var(--fuente-tit);
   text-transform: uppercase; color: #fff;
@@ -622,7 +623,7 @@ button { cursor: pointer; }
 .tendencias__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .panel-tendencia {
   background: color-mix(in srgb, var(--panel) 90%, transparent); border: 1px solid var(--borde);
-  border-top: 3px solid var(--pink); padding: 18px; box-shadow: var(--sombra);
+  border-top: 3px solid var(--pink); padding: 12px 16px; box-shadow: var(--sombra);
   opacity: 0; transform: translateY(20px);
   transition: opacity .55s ease, transform .55s ease;
 }
@@ -633,8 +634,8 @@ button { cursor: pointer; }
   color: var(--pink); margin: 0; text-shadow: var(--glow-pink);
 }
 #panel-mundo .panel-tendencia__titulo { color: var(--cyan); text-shadow: var(--glow-cyan); }
-.panel-tendencia__sub { color: var(--texto-suave); font-size: 13px; margin: 2px 0 14px; }
-.panel-tendencia__lista { display: flex; flex-direction: column; gap: 7px; }
+.panel-tendencia__sub { color: var(--texto-suave); font-size: 13px; margin: 2px 0 8px; }
+.panel-tendencia__lista { display: flex; flex-direction: column; gap: 4px; }
 .tendencia {
   display: grid; grid-template-columns: 34px 56px 1fr auto; gap: 10px;
   align-items: center; padding: 6px 8px;
