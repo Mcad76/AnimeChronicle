@@ -2,7 +2,7 @@
    ANIMECHRONICLE — Cambio de tema con tres clics en el título
    ============================================================ */
 (() => {
-  const CLAVE = 'ac-tema';
+  const CLAVE = 'ac-tema-v2';
   if (localStorage.getItem(CLAVE) === 'neon') {
     document.documentElement.classList.add('tema-neon');
   }
