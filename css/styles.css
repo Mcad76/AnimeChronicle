@@ -4,6 +4,42 @@
 
 :root {
   --alto-cabecera: 196px;
+
+  /* Paleta principal (nueva) */
+  --bg-principal: #1a1c23;
+  --bg-contenedor: #242731;
+  --bg-boton-inactivo: #1e2129;
+  --texto-blanco: #e2e8f0;
+  --texto-gris: #94a3b8;
+  --acento-cian: #22d3ee;
+  --acento-rosa: #ff4b8b;
+  --acento-amarillo: #fbbf24;
+  --acento-rojo: #f87171;
+  --acento-teal: #2dd4bf;
+  --borde-sutil: #3a3f4b;
+
+  /* Variables usadas por los estilos */
+  --bg: var(--bg-principal);
+  --panel: var(--bg-contenedor);
+  --panel-2: var(--bg-boton-inactivo);
+  --borde: var(--borde-sutil);
+  --texto: var(--texto-blanco);
+  --texto-suave: var(--texto-gris);
+  --pink: var(--acento-rosa);
+  --cyan: var(--acento-cian);
+  --purple: var(--acento-teal);
+  --yellow: var(--acento-amarillo);
+  --green: var(--acento-teal);
+  --rojo: var(--acento-rojo);
+  --fuente-tit: 'Chakra Petch', 'Arial Black', sans-serif;
+  --fuente-cuerpo: 'Barlow', 'Segoe UI', sans-serif;
+  --sombra: 0 6px 26px rgba(0, 0, 0, .45);
+  --glow-pink: 0 0 18px color-mix(in srgb, var(--pink) 55%, transparent);
+  --glow-cyan: 0 0 18px color-mix(in srgb, var(--cyan) 45%, transparent);
+}
+
+/* Tema neón alternativo: se activa con tres clics en el título */
+html.tema-neon {
   --bg: #080616;
   --panel: #12102b;
   --panel-2: #191537;
@@ -15,9 +51,7 @@
   --purple: #a855f7;
   --yellow: #ffd23f;
   --green: #39ff14;
-  --fuente-tit: 'Chakra Petch', 'Arial Black', sans-serif;
-  --fuente-cuerpo: 'Barlow', 'Segoe UI', sans-serif;
-  --sombra: 0 6px 26px rgba(0, 0, 0, .55);
+  --rojo: #f87171;
   --glow-pink: 0 0 18px rgba(255, 46, 136, .55);
   --glow-cyan: 0 0 18px rgba(0, 229, 255, .45);
 }
@@ -31,9 +65,9 @@ body {
   min-height: 100vh;
   background-color: var(--bg);
   background-image:
-    radial-gradient(ellipse at 12% 8%, rgba(255, 46, 136, .16), transparent 48%),
-    radial-gradient(ellipse at 88% 18%, rgba(0, 229, 255, .14), transparent 46%),
-    radial-gradient(ellipse at 50% 95%, rgba(168, 85, 247, .16), transparent 55%);
+    radial-gradient(ellipse at 12% 8%, color-mix(in srgb, var(--pink) 14%, transparent), transparent 48%),
+    radial-gradient(ellipse at 88% 18%, color-mix(in srgb, var(--cyan) 12%, transparent), transparent 46%),
+    radial-gradient(ellipse at 50% 95%, color-mix(in srgb, var(--purple) 14%, transparent), transparent 55%);
   color: var(--texto);
   font-family: var(--fuente-cuerpo);
   font-size: 17px;
@@ -360,7 +394,7 @@ button { cursor: pointer; }
 .ultima-hora {
   margin-top: var(--alto-cabecera);
   display: flex; align-items: center; height: 32px; overflow: hidden;
-  background: linear-gradient(90deg, var(--pink), #b3136a);
+  background: linear-gradient(90deg, var(--pink), color-mix(in srgb, var(--pink) 60%, #000));
   color: #fff; box-shadow: 0 0 22px rgba(255, 46, 136, .4);
 }
 .ultima-hora__badge {
