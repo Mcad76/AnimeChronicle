@@ -15,43 +15,6 @@ function irArriba() {
 
 window.addEventListener('pageshow', (e) => { if (e.persisted) irArriba(); });
 
-function crearPersonajesFlotantes() {
-  const contenedor = document.getElementById('personajes-flotantes');
-  if (!contenedor) return;
-
-  // Pocos a la vez, pero van rotando para que aparezcan los 40 con el tiempo.
-  const TOTAL = 8;
-  let indice = Math.floor(Math.random() * PERSONAJES.length);
-  let html = '';
-  for (let i = 0; i < TOTAL; i++) {
-    const p = PERSONAJES[indice % PERSONAJES.length];
-    indice++;
-    const anim = ['caer-personaje', 'subir-personaje', 'deriva-personaje'][i % 3];
-    const izq = ((i * 41) % 92) + Math.random() * 6;
-    const tam = 34 + Math.random() * 46;
-    const dur = 20 + Math.random() * 18;
-    const ret = i * 3.4 + Math.random() * 3;
-    const der = (Math.random() * 120 - 60).toFixed(0);
-    const opa = (0.16 + Math.random() * 0.3).toFixed(2);
-    html += `<img class="personaje-flotante ${anim}" src="fondos/personajes-famosos/${p}.svg" alt=""
-      style="left:${izq.toFixed(1)}%;--tam:${tam}px;--dur:${dur}s;--ret:${ret}s;--der:${der}px;--opa:${opa}">`;
-  }
-  contenedor.innerHTML = html;
-
-  let vuelta = 0;
-  window.setInterval(() => {
-    const imagenes = contenedor.querySelectorAll('.personaje-flotante');
-    if (!imagenes.length || document.hidden) return;
-    const img = imagenes[vuelta % imagenes.length];
-    const p = PERSONAJES[indice % PERSONAJES.length];
-    indice++;
-    img.src = 'fondos/personajes-famosos/' + p + '.svg';
-    img.style.animation = 'none';
-    void img.offsetWidth;
-    img.style.animation = '';
-    vuelta++;
-  }, 7000);
-}
 
 const Ataque = {
   activo: false,
@@ -89,4 +52,3 @@ function abrirConAtaque(url, grito) {
   Ataque.mostrar(() => { irArriba(); window.location.href = url; }, grito);
 }
 
-crearPersonajesFlotantes();
