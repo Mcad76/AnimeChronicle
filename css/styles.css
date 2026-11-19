@@ -16,18 +16,19 @@
   --acento-amarillo: #fbbf24;
   --acento-rojo: #f87171;
   --acento-teal: #2dd4bf;
+  --acento-violeta: #a855f7;
   --borde-sutil: #3a3f4b;
 
   /* Variables usadas por los estilos */
   --bg: var(--bg-principal);
   --panel: var(--bg-contenedor);
-  --panel-2: var(--bg-boton-inactivo);
+  --panel-2: #2d3a45;
   --borde: var(--borde-sutil);
   --texto: var(--texto-blanco);
   --texto-suave: var(--texto-gris);
   --pink: var(--acento-rosa);
   --cyan: var(--acento-cian);
-  --purple: var(--acento-teal);
+  --purple: var(--acento-violeta);
   --yellow: var(--acento-amarillo);
   --green: var(--acento-teal);
   --rojo: var(--acento-rojo);
