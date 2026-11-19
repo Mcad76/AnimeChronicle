@@ -64,13 +64,13 @@ TOP_N = 10
 
 # -------- secciones de la portada --------
 SECCIONES = [
-    {'id': 'estrenos',     'nombre': 'Estrenos',        'color': '#ff2e88', 'kanji': '新作'},
-    {'id': 'series',       'nombre': 'Series TV',       'color': '#00e5ff', 'kanji': 'アニメ'},
-    {'id': 'peliculas',    'nombre': 'Películas',       'color': '#ffd23f', 'kanji': '映画'},
-    {'id': 'manga',        'nombre': 'Manga y Novelas', 'color': '#a855f7', 'kanji': '漫画'},
-    {'id': 'videojuegos',  'nombre': 'Videojuegos',     'color': '#39ff14', 'kanji': 'ゲーム'},
-    {'id': 'eventos',      'nombre': 'Eventos y Cosplay','color': '#ff6b35', 'kanji': 'イベント'},
-    {'id': 'comunidad',    'nombre': 'Comunidad',       'color': '#4d9fff', 'kanji': '仲間'},
+    {'id': 'estrenos',     'nombre': 'Estrenos',        'color': '#94a3b8', 'kanji': '新作'},
+    {'id': 'series',       'nombre': 'Series TV',       'color': '#2dd4bf', 'kanji': 'アニメ'},
+    {'id': 'peliculas',    'nombre': 'Películas',       'color': '#fbbf24', 'kanji': '映画'},
+    {'id': 'manga',        'nombre': 'Manga y Novelas', 'color': '#f87171', 'kanji': '漫画'},
+    {'id': 'videojuegos',  'nombre': 'Videojuegos',     'color': '#22d3ee', 'kanji': 'ゲーム'},
+    {'id': 'eventos',      'nombre': 'Eventos y Cosplay','color': '#a855f7', 'kanji': 'イベント'},
+    {'id': 'comunidad',    'nombre': 'Comunidad',       'color': '#7dd3fc', 'kanji': '仲間'},
 ]
 
 # -------- pestañas (géneros). La primera es "todo" --------
