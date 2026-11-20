@@ -107,6 +107,7 @@ const Sonido = (() => {
   let activo = localStorage.getItem('ac-sonido') === 'on';
   let ultimoHover = 0;
   let vozElegida = null;
+  let vocesCache = null;
 
   function hayVoz() {
     return typeof window !== 'undefined' && 'speechSynthesis' in window;
@@ -115,19 +116,20 @@ const Sonido = (() => {
   function elegirVoz(lang) {
     if (!hayVoz()) return null;
     if (!vozElegida || vozElegida.lang !== lang) {
-      const voces = speechSynthesis.getVoices() || [];
-      vozElegida = voces.find(v => v.lang === lang) ||
-                   voces.find(v => v.lang && v.lang.startsWith(lang.slice(0, 2)));
+      // getVoices() puede ser costoso la primera vez: se consulta una sola vez.
+      if (!vocesCache) vocesCache = speechSynthesis.getVoices() || [];
+      vozElegida = vocesCache.find(v => v.lang === lang) ||
+                   vocesCache.find(v => v.lang && v.lang.startsWith(lang.slice(0, 2)));
     }
     return vozElegida;
   }
 
-  /** Pronuncia una frase. `lang` permite usar voz japonesa en some gritos. */
-  function decir(texto, lang = 'es-ES', volumen = 0.95) {
+  /** Pronuncia una frase. `interrumpir=false` evita cortar otras voces (hover). */
+  function decir(texto, lang = 'es-ES', volumen = 0.95, interrumpir = true) {
     if (!activo || !texto) return;
     if (!hayVoz()) { reproducirAudio('select', volumen * 0.6); return; }
     try {
-      speechSynthesis.cancel();
+      if (interrumpir) speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(texto);
       u.lang = lang;
       u.rate = 1.16;
@@ -199,14 +201,19 @@ const Sonido = (() => {
 
   function hover() {
     const ahora = Date.now();
-    if (ahora - ultimoHover < 1100) return;
+    if (ahora - ultimoHover < 2400) return;
     ultimoHover = ahora;
-    decir(frase('hover'), 'es-ES', 0.55);
+    decir(frase('hover'), 'es-ES', 0.55, false);
   }
 
   const btnSfx = document.getElementById('btn-sonido');
   if (btnSfx) btnSfx.addEventListener('click', alternarSonido);
-  if (hayVoz()) speechSynthesis.onvoiceschanged = () => { vozElegida = null; };
+  if (hayVoz()) {
+    speechSynthesis.onvoiceschanged = () => { vocesCache = null; vozElegida = null; };
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) speechSynthesis.cancel();
+    });
+  }
   sincronizarBotones();
 
   return {

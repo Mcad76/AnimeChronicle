@@ -3,17 +3,22 @@
 """
 AnimeChronicle — Supervisor diario.
 
-Comprueba que las noticias se han actualizado hoy, que TODAS tienen foto real
-y que ninguna imagen es el logotipo de Google News (detección perceptual).
+Comprueba que las noticias se han actualizado hoy, que TODAS tienen foto real,
+que ninguna imagen es el logotipo de Google News (detección perceptual) y que
+TODOS los enlaces a las páginas de noticias responden correctamente.
 
 Sale con código 1 si algo falla, para que el workflow quede en rojo.
 """
 
 import json
 import sys
+import urllib.error
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
+import actualizar_noticias as gen
 from PIL import Image
 
 BASE = Path(__file__).resolve().parent
@@ -22,7 +27,7 @@ DHASH_LOGO = 0x160f0f573717330b
 
 def dhash(imagen):
     gris = imagen.convert('L').resize((9, 8))
-    pix = list(gris.getdata())
+    pix = list(gris.get_flattened_data() if hasattr(gris, 'get_flattened_data') else gris.getdata())
     valor = 0
     for fila in range(8):
         for col in range(8):
@@ -35,6 +40,40 @@ def es_logo(ruta):
         return bin(dhash(Image.open(ruta)) ^ DHASH_LOGO).count('1') <= 10
     except Exception:
         return False
+
+
+def estado_enlace(url):
+    """Devuelve None si responde, o un texto con el error."""
+    for intento in range(2):
+        try:
+            req = urllib.request.Request(
+                url, method='HEAD', headers={'User-Agent': 'AnimeChronicle-Supervisor/1.0'})
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                if 200 <= resp.status < 400:
+                    return None
+                return f'HTTP {resp.status}'
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return 'HTTP 404'
+            if intento == 1:
+                return f'HTTP {e.code}'
+        except Exception as e:
+            if intento == 1:
+                return str(e)[:80]
+    return None
+
+
+def comprobar_enlaces(noticias):
+    """Comprueba por HTTP que todas las páginas estáticas siguen vivas."""
+    urls = sorted({gen.url_para(n) for n in noticias})
+    if not urls:
+        return [], 0
+    fallos = []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for url, error in zip(urls, pool.map(estado_enlace, urls)):
+            if error:
+                fallos.append(f'{url}: {error}')
+    return fallos, len(urls)
 
 
 def main():
@@ -91,6 +130,16 @@ def main():
     paginas = list((BASE / 'noticias').glob('*.html'))
     if len(paginas) != len(noticias):
         avisos.append(f'{len(paginas)} páginas estáticas para {len(noticias)} noticias')
+    for n in noticias:
+        nombre = gen.slug_para(n) + '.html'
+        if not (BASE / 'noticias' / nombre).exists():
+            errores.append(f'falta la página local de {n.get("id", "?")}: {nombre}')
+            break
+
+    fallos_enlaces, total_enlaces = comprobar_enlaces(noticias)
+    if fallos_enlaces:
+        errores.append(
+            f'{len(fallos_enlaces)} de {total_enlaces} enlaces fallan: {fallos_enlaces[:3]}')
 
     for archivo in ('index.html', 'archivo.html', 'glosario.html', 'sitemap.xml', 'robots.txt'):
         ruta = BASE / archivo
@@ -103,6 +152,7 @@ def main():
     print(f'Noticias: {len(noticias)}')
     print(f'Con imagen: {sum(1 for n in noticias if n.get("image"))}')
     print(f'Páginas estáticas: {len(paginas)}')
+    print(f'Enlaces comprobados: {total_enlaces} ({len(fallos_enlaces)} fallidos)')
     print(f'Logos de Google News detectados: {len(logos)}')
     for aviso in avisos:
         print('AVISO:', aviso)

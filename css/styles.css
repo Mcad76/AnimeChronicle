@@ -519,7 +519,11 @@ button { cursor: pointer; }
 }
 
 /* ---------- Secciones ---------- */
-.seccion { padding-top: 12px; }
+.seccion {
+  padding-top: 12px;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
 .seccion__cabecera {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   margin-bottom: 16px; border-bottom: 2px solid var(--secc-color); padding-bottom: 7px;
@@ -796,11 +800,11 @@ button { cursor: pointer; }
 .ataque__personaje {
   position: absolute; left: 0; bottom: -2%; width: min(400px, 52vw);
   opacity: 0; transform: translateX(-130%);
-  filter: drop-shadow(0 0 26px color-mix(in srgb, var(--pink) 85%, transparent));
+  will-change: transform, opacity;
 }
 .ataque__personaje img { width: 100%; height: auto; }
 .ataque--activo .ataque__personaje {
-  animation: golpe-personaje 1.75s cubic-bezier(.22, .9, .3, 1) both;
+  animation: golpe-personaje .9s cubic-bezier(.22, .9, .3, 1) both;
 }
 .ataque__rayo {
   position: absolute; top: 48%; left: 26%; height: 14px; width: 0;
@@ -809,23 +813,24 @@ button { cursor: pointer; }
   box-shadow: 0 0 30px var(--pink), 0 0 70px var(--cyan);
   opacity: 0;
 }
-.ataque--activo .ataque__rayo { animation: golpe-rayo .55s .62s ease-out both; }
+.ataque--activo .ataque__rayo { animation: golpe-rayo .38s .28s ease-out both; }
 .ataque__burbuja {
   position: absolute; top: 12%; right: 6%; max-width: 72vw;
   padding: 14px 26px; background: #fff; color: var(--bg);
   border: 4px solid var(--pink); border-radius: 18px;
   font: 900 clamp(20px, 4vw, 42px) var(--fuente-tit); text-transform: uppercase;
   box-shadow: 0 0 42px var(--pink); opacity: 0; transform: scale(.4) rotate(-8deg);
+  will-change: transform, opacity;
 }
 .ataque__burbuja::after {
   content: ''; position: absolute; bottom: -26px; left: 38px;
   border: 12px solid transparent; border-top-color: #fff;
 }
 .ataque--activo .ataque__burbuja {
-  animation: golpe-burbuja 1.4s .15s cubic-bezier(.2, 1.6, .4, 1) both;
+  animation: golpe-burbuja .75s .06s cubic-bezier(.2, 1.6, .4, 1) both;
 }
 .ataque__flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
-.ataque--activo .ataque__flash { animation: golpe-flash .4s .85s ease-out both; }
+.ataque--activo .ataque__flash { animation: golpe-flash .28s .45s ease-out both; }
 .ataque--activo { animation: none; }
 
 @keyframes golpe-personaje {
@@ -850,6 +855,13 @@ button { cursor: pointer; }
   100% { opacity: 0; transform: scale(.85) translateY(-20px); }
 }
 @keyframes golpe-flash { 0% { opacity: 0; } 35% { opacity: .9; } 100% { opacity: 0; } }
+/* ---------- Móvil: menos filtros caros ---------- */
+@media (max-width: 620px) {
+  .topbar, .nav { backdrop-filter: none; }
+  .ataque__personaje { filter: none; }
+  .scanlines { display: none; }
+}
+
 /* ---------- Accesibilidad: menos movimiento ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

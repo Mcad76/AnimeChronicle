@@ -63,6 +63,29 @@ function actualizarIdsHoy() {
 }
 actualizarIdsHoy();
 
+/* Caché por género: cambiar de pestaña ya no vuelve a generar cientos de
+   tarjetas; solo se intercambia el HTML ya renderizado. */
+const cacheGeneros = new Map();
+function aplicarGenero(genero) {
+  generoActual = genero;
+  actualizarIdsHoy();
+  const guardado = cacheGeneros.get(genero);
+  if (guardado) {
+    document.getElementById('hero').innerHTML = guardado.hero;
+    document.getElementById('ticker-track').innerHTML = guardado.ticker;
+    document.getElementById('secciones').innerHTML = guardado.secciones;
+    return;
+  }
+  construirHero();
+  construirTicker();
+  construirSecciones();
+  cacheGeneros.set(genero, {
+    hero: document.getElementById('hero').innerHTML,
+    ticker: document.getElementById('ticker-track').innerHTML,
+    secciones: document.getElementById('secciones').innerHTML,
+  });
+}
+
 function minutosLectura(articulo) {
   const palabras = (articulo.entradilla + ' ' + (articulo.cuerpo || []).join(' ')).split(/\s+/).length;
   return Math.max(1, Math.round(palabras / 200));
@@ -82,6 +105,7 @@ function imgFallback(el, color) {
 function imagenHTML(noticia, clase, color) {
   return `<div class="${clase}">
     <img src="${noticia.image}" alt="${noticia.titulo}" loading="lazy"
+         width="1000" height="640" decoding="async"
          onerror="imgFallback(this,'${color}')">
   </div>`;
 }
@@ -148,7 +172,8 @@ function construirTendencias() {
       return `<a class="tendencia ${i === 0 ? 'tendencia--top' : ''}" ${ident ? `data-id="${ident}"` : `href="${x.url}"`}
                  style="--i:${i}" tabindex="0" role="button">
         <span class="tendencia__num">${String(i + 1).padStart(2, '0')}</span>
-        <img src="${x.image}" alt="" loading="lazy" onerror="imgFallback(this,'#ff2e88')">
+        <img src="${x.image}" alt="" loading="lazy" width="1000" height="640" decoding="async"
+             onerror="imgFallback(this,'#ff2e88')">
         <span class="tendencia__info">
           <strong>${x.nombre}</strong>
           <small>${x.titulo.slice(0, 78)}…</small>
@@ -227,21 +252,31 @@ const PERSONAJES_ATAQUE = PERSONAJES;
 
 const Ataque = {
   activo: false,
+  capa: null,
+  timer: null,
+  callback: null,
+  duracion: 900,
 
   mostrar(callback, gritoPersonalizado) {
-    if (this.activo) return;
+    // Un segundo clic mientras está activo no se pierde: sustituye la noticia
+    // pendiente y abre directamente la que acaba de elegir el usuario.
+    if (this.activo) {
+      this.callback = callback;
+      this.finalizar();
+      return;
+    }
+
+    const reduce = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.duracion = reduce ? 0 : 900;
     this.activo = true;
+    this.callback = callback;
 
     const personaje = PERSONAJES_ATAQUE[Math.floor(Math.random() * PERSONAJES_ATAQUE.length)];
     const grito = gritoPersonalizado || Sonido.frase('whoosh');
     Sonido.decir(grito, 'ja-JP', 1);
 
-    const reduce = window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) {
-      setTimeout(() => { this.activo = false; if (callback) callback(); }, 420);
-      return;
-    }
+    if (!this.duracion) { this.finalizar(); return; }
 
     const capa = document.createElement('div');
     capa.className = 'ataque';
@@ -249,23 +284,53 @@ const Ataque = {
     capa.innerHTML = `
       <div class="ataque__rayo"></div>
       <div class="ataque__personaje">
-        <img src="fondos/personajes-famosos/${personaje}.svg" alt="">
+        <img src="fondos/personajes-famosos/${personaje}.svg" alt="" width="400" height="400">
       </div>
       <div class="ataque__burbuja">${grito}</div>
       <div class="ataque__flash"></div>`;
+    this.capa = capa;
     document.body.appendChild(capa);
     document.body.classList.add('ataque-activo');
 
     requestAnimationFrame(() => requestAnimationFrame(() => capa.classList.add('ataque--activo')));
+    this.timer = setTimeout(() => this.finalizar(), this.duracion);
+  },
 
-    setTimeout(() => {
-      capa.remove();
-      document.body.classList.remove('ataque-activo');
-      this.activo = false;
-      if (callback) callback();
-    }, 1750);
+  finalizar() {
+    if (!this.activo) return;
+    this.activo = false;
+    clearTimeout(this.timer);
+    this.timer = null;
+    if (this.capa) { this.capa.remove(); this.capa = null; }
+    document.body.classList.remove('ataque-activo');
+    const cb = this.callback;
+    this.callback = null;
+    if (cb) cb();
   },
 };
+
+/* Precarga la página de la noticia mientras el usuario todavía está leyendo
+   la tarjeta. Así la animación tapa la carga en vez de añadirla. */
+const prefetchHecho = new Set();
+function prefetchNoticia(id) {
+  if (prefetchHecho.size >= 12 || prefetchHecho.has(id)) return;
+  const n = NOTICIAS.find(x => x.id === id);
+  if (!n || !n.url) return;
+  prefetchHecho.add(id);
+  const enlace = document.createElement('link');
+  enlace.rel = 'prefetch';
+  enlace.as = 'document';
+  enlace.href = n.url;
+  document.head.appendChild(enlace);
+}
+document.addEventListener('pointerover', (e) => {
+  const tarjeta = e.target.closest('[data-id]');
+  if (tarjeta) prefetchNoticia(tarjeta.dataset.id);
+});
+document.addEventListener('focusin', (e) => {
+  const tarjeta = e.target.closest('[data-id]');
+  if (tarjeta) prefetchNoticia(tarjeta.dataset.id);
+});
 
 /* ---------- Modal ---------- */
 const modal = document.getElementById('modal');
@@ -330,19 +395,14 @@ document.addEventListener('click', (e) => {
     if (pestaña.dataset.genero === generoActual) return;
     Sonido.reproducir('tab', 0.6);
     Sonido.vibrar(18);
-    generoActual = pestaña.dataset.genero;
     document.querySelectorAll('#tabs-generos button').forEach(b =>
       b.classList.toggle('activa', b === pestaña));
-    actualizarIdsHoy();
-    construirHero();
-    construirTicker();
-    construirSecciones();
+    aplicarGenero(pestaña.dataset.genero);
     return;
   }
 
   const noticia = e.target.closest('[data-id]');
   if (noticia) {
-    if (Ataque.activo) return;
     Sonido.vibrar(30);
     const n = NOTICIAS.find(x => x.id === noticia.dataset.id);
     const grito = n ? Sonido.frasePara(n.titulo + ' ' + n.entradilla) : undefined;
@@ -354,10 +414,10 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && Ataque.activo) { e.preventDefault(); Ataque.finalizar(); return; }
   if (e.key === 'Escape' && !modal.hidden) { Sonido.reproducir('close', 0.55); cerrarNoticia(); }
   if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[data-id][role="button"]')) {
     e.preventDefault();
-    if (Ataque.activo) return;
     Sonido.vibrar(30);
     const n = NOTICIAS.find(x => x.id === e.target.dataset.id);
     const grito = n ? Sonido.frasePara(n.titulo + ' ' + n.entradilla) : undefined;
@@ -437,9 +497,7 @@ medirCabecera();
 
 construirNavegacion();
 construirTendencias();
-construirHero();
-construirTicker();
-construirSecciones();
+aplicarGenero(generoActual);
 actualizarProgreso();
 
 /* Revelado suave al entrar en pantalla */
