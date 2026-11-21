@@ -45,10 +45,10 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
   (caché en `datos/portadas.json`).
 - **Cero logos de Google News**: se detectan por **huella perceptual** (no solo por hash,
   thus funciona aunque cambien el tamaño) y se sustituyen automáticamente en cada ejecución.
-- **Supervisor diario** (`supervisar.py` + `.github/workflows/supervisar.yml`, 09:00 UTC):
+- **Supervisor diario** (`supervisar.py` + `.github/workflows/supervisar.yml`, 07:00 y 16:00 UTC):
   comprueba que la actualización de hoy se ejecutó bien, que todas las noticias tienen
-  imagen, que los archivos existen y que **no queda ningún logo de Google News**. Si algo
-  falla, el job se pone rojo.
+  imagen, que los archivos y **todas las páginas responden por HTTP**, y que **no queda
+  ningún logo de Google News**. Si algo falla, el job se pone rojo.
 - **Web ligera**: el archivo muestra 30 noticias y carga más bajo demanda (no renderiza las 427 de golpe), las fuentes se han reducido y las imágenes van en `loading="lazy"`.
 - **Buscador** en portada y en el archivo, filtro por sección y contador de visitas.
 - **SEO completo:** una página HTML real e indexable por noticia, JSON-LD `NewsArticle`,
@@ -61,11 +61,11 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
 ## Noticias reales, actualizadas cada día
 
 El portal **no depende del móvil**: un GitHub Action ejecuta `actualizar_noticias.py`
-**todos los días a las 07:00 UTC, automáticamente y sin intervención**. La actualización es
+**todos los días a las 06:00 y 15:00 UTC, automáticamente y sin intervención**. La actualización es
 **incremental**: añade las noticias nuevas y recalcula el radar, pero **no reescribe** las
 páginas ni el JS si no han cambiado (escritura condicional), y reduce las búsquedas por
 sección. Después el propio
-workflow ejecuta una **verificación diaria** (fecha de actualización, número de noticias,
+workflow ejecuta una **verificación tras cada ejecución** (fecha de actualización, número de noticias,
 imágenes, páginas y archivos generados); si algo falla, el job falla y queda registrado.
 El script consulta fuentes RSS públicas:
 
@@ -115,8 +115,8 @@ El archivo `.nojekyll` evita que GitHub ignore carpetas como `js/`.
 
 ```
 AnimeChronicle/
-├── .github/workflows/actualizar-noticias.yml   actualización diaria en la nube (07:00 UTC)
-├── .github/workflows/supervisar.yml            supervisor diario (09:00 UTC)
+├── .github/workflows/actualizar-noticias.yml   actualización en la nube (06:00 y 15:00 UTC)
+├── .github/workflows/supervisar.yml            supervisor (07:00 y 16:00 UTC)
 ├── actualizar_noticias.py                      descarga, clasifica y genera todo
 ├── supervisar.py                               comprobación diaria de noticias y fotos
 ├── generar_recursos.py                         crea sonidos WAV y fondos SVG

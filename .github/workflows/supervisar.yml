@@ -1,9 +1,9 @@
 name: Supervisor de noticias
 
-# Revisa cada día, poco después de la actualización, que todo esté correcto.
+# Revisa cada día tras las actualizaciones de las 06:00 y 15:00 UTC (07:00 y 16:00 UTC).
 on:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '0 7,16 * * *'
   workflow_dispatch:
 
 permissions:
