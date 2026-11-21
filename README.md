@@ -45,7 +45,7 @@ con pestañas por género (shōnen, shōjo, isekai, mecha…).
   (caché en `datos/portadas.json`).
 - **Cero logos de Google News**: se detectan por **huella perceptual** (no solo por hash,
   thus funciona aunque cambien el tamaño) y se sustituyen automáticamente en cada ejecución.
-- **Supervisor diario** (`supervisar.py` + `.github/workflows/supervisar.yml`, 07:00 y 16:00 hora de España):
+- **Supervisor diario** (`supervisar.py` + `.github/workflows/supervisar.yml`, 06:10 y 15:10 hora de España):
   comprueba que la actualización de hoy se ejecutó bien, que todas las noticias tienen
   imagen, que los archivos y **todas las páginas responden por HTTP**, y que **no queda
   ningún logo de Google News**. Si algo falla, el job se pone rojo.
@@ -117,7 +117,7 @@ El archivo `.nojekyll` evita que GitHub ignore carpetas como `js/`.
 ```
 AnimeChronicle/
 ├── .github/workflows/actualizar-noticias.yml   actualización (06:00 y 15:00 hora de España)
-├── .github/workflows/supervisar.yml            supervisor (07:00 y 16:00 hora de España)
+├── .github/workflows/supervisar.yml            supervisor (06:10 y 15:10 hora de España)
 ├── actualizar_noticias.py                      descarga, clasifica y genera todo
 ├── supervisar.py                               comprobación diaria de noticias y fotos
 ├── generar_recursos.py                         crea sonidos WAV y fondos SVG
