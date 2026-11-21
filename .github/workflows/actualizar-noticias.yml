@@ -1,9 +1,10 @@
 name: Actualizar noticias
 
-# Se ejecuta SOLO en GitHub, todos los días a las 06:00 y 15:00 UTC. Sin preguntar.
+# 06:00 y 15:00 en España. GitHub solo entiende UTC, así se programan los cuatro
+# horarios UTC posibles (invierno/verano) y un guardia filtra la hora local.
 on:
   schedule:
-    - cron: '0 6,15 * * *'
+    - cron: '0 4,5,13,14 * * *'
   workflow_dispatch:
 
 permissions:
@@ -34,7 +35,15 @@ jobs:
           pip install -r requirements.txt
 
       - name: Descargar noticias y generar archivos
-        run: python actualizar_noticias.py
+        run: |
+          HORA=$(TZ=Europe/Madrid date +%H)
+          EVENTO="${{ github.event_name }}"
+          if [ "$EVENTO" != "workflow_dispatch" ] && [ "$HORA" != "06" ] && [ "$HORA" != "15" ]; then
+            echo "Son las $HORA en España: no es hora de actualizar, se omite."
+            exit 0
+          fi
+          echo "Son las $HORA en España: actualizando."
+          python actualizar_noticias.py
 
       # Comprobación diaria: si algo falla, el workflow falla y queda registrado.
       - name: Verificar que la actualización se ha realizado correctamente
