@@ -76,12 +76,26 @@ def comprobar_enlaces(noticias):
     return fallos, len(urls)
 
 
+def guardar_informe(informe):
+    """Escribe datos/supervision.json para que MCad Hub pueda mostrarlo."""
+    ruta = BASE / 'datos' / 'supervision.json'
+    ruta.parent.mkdir(parents=True, exist_ok=True)
+    ruta.write_text(json.dumps(informe, ensure_ascii=False, indent=2) + '\n',
+                    encoding='utf-8')
+
+
 def main():
     errores = []
     avisos = []
 
     historico = BASE / 'datos' / 'historico.json'
     if not historico.exists():
+        guardar_informe({
+            'revisado': datetime.now(timezone.utc).isoformat(),
+            'resultado': 'error',
+            'errores': ['no existe datos/historico.json'],
+            'avisos': [],
+        })
         print('FALLO: no existe datos/historico.json')
         return 1
 
@@ -145,6 +159,27 @@ def main():
         ruta = BASE / archivo
         if not ruta.exists() or ruta.stat().st_size < 40:
             errores.append(f'{archivo} ausente o vacío')
+
+    guardar_informe({
+        'revisado': datetime.now(timezone.utc).isoformat(),
+        'resultado': 'error' if errores else 'ok',
+        'portal': 'AnimeChronicle',
+        'actualizado': actualizado,
+        'actualizacion_hoy': actualizado.startswith(hoy),
+        'noticias': len(noticias),
+        'con_imagen': sum(1 for n in noticias if n.get('image')),
+        'sin_imagen': len(sin_imagen),
+        'imagenes_ausentes': len(archivos_faltan),
+        'logos_google': len(logos),
+        'paginas': len(paginas),
+        'enlaces': {
+            'total': total_enlaces,
+            'fallidos': len(fallos_enlaces),
+            'ejemplos': fallos_enlaces[:5],
+        },
+        'errores': errores,
+        'avisos': avisos,
+    })
 
     print('=== SUPERVISOR ANIMECHRONICLE ===')
     print(f'Fecha UTC: {datetime.now(timezone.utc).isoformat()}')
