@@ -914,7 +914,7 @@ img.portada{width:100%;height:auto;display:block;margin:0 0 24px;border:1px soli
             '  <link rel="preconnect" href="https://fonts.googleapis.com">',
             '  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Barlow:wght@400;700&display=swap" rel="stylesheet">',
             estilos,
-            '</head>', '<body>',
+            '</head>', f'<body data-seccion="{e(n["sec"], quote=True)}">',
             f'  <div class="cabecera"><a href="../index.html">◀ {NOMBRE} — Volver a la portada</a></div>',
             f'  <article class="articulo" style="--accent:{color}">',
             f'    <span class="seccion">{e(nombre_sec)} · {e(nombre_gen)}</span>',
@@ -966,6 +966,7 @@ img.portada{width:100%;height:auto;display:block;margin:0 0 24px;border:1px soli
             '    <a class="volver" href="../index.html">← Volver a la portada</a>',
             '  </article>',
             f'  <div class="pie">{NOMBRE} · Noticias de fuentes públicas RSS · ¡Comparte con tu nakama!</div>',
+            '  <script src="../js/analitica.js?v=1"></script>',
             '</body>', '</html>',
         ]
         escribir_si_cambia(carpeta / nombre, '\n'.join(pagina))
